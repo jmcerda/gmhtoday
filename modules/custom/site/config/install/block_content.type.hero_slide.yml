@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+id: hero_slide
+label: 'Hero slide'
+revision: 1
+description: 'Slider content for page heros.'

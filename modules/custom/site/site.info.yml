@@ -1,0 +1,14 @@
+name: Site
+description: 'Provides site components.'
+type: module
+package: gmhToday
+core: 8.x
+dependencies:
+  - block_content
+  - core
+  - field
+  - image
+  - link
+  - taxonomy
+  - text
+  - workbench_moderation

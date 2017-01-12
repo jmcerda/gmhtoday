@@ -1,0 +1,17 @@
+name: Testimonial
+description: 'Provides Testimonial content type and related configuration. Testimonial content type.'
+type: module
+package: gmhToday
+core: 8.x
+dependencies:
+  - core
+  - entity_browser
+  - field
+  - image
+  - lightning_media_image
+  - menu_ui
+  - node
+  - path
+  - text
+  - user
+  - workbench_moderation

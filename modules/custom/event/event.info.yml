@@ -1,0 +1,21 @@
+name: Event
+description: 'Provides Event content type and related configuration. Event content type GMH Today.'
+type: module
+package: gmhToday
+core: 8.x
+dependencies:
+  - address
+  - core
+  - datetime
+  - entity_browser
+  - field
+  - image
+  - lightning_media_image
+  - mailchimp_lists
+  - menu_ui
+  - node
+  - panelizer
+  - path
+  - text
+  - user
+  - workbench_moderation

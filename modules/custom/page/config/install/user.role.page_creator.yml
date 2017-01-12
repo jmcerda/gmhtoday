@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+id: page_creator
+label: 'Basic page Creator'
+weight: -4
+is_admin: null

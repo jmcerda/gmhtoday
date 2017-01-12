@@ -1,0 +1,43 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.hero_slide
+    - field.field.block_content.hero_slide.body
+    - field.field.block_content.hero_slide.field_link
+    - field.field.block_content.hero_slide.field_slider_hero_image
+  module:
+    - image
+    - link
+    - text
+id: block_content.hero_slide.default
+targetEntityType: block_content
+bundle: hero_slide
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+  field_link:
+    weight: 1
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+  field_slider_hero_image:
+    weight: 2
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+hidden: {  }

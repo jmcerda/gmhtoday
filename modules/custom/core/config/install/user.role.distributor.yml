@@ -1,0 +1,12 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - lightning_core
+third_party_settings:
+  lightning_core:
+    description: ''
+id: distributor
+label: Distributor
+weight: -11
+is_admin: null

@@ -1,0 +1,21 @@
+<?php
+
+function gmh_roles() {
+  $role = \Drupal\user\Entity\Role::create(array('id' => 'publisher', 'label' => 'Publisher'));
+  $role->save();
+
+  $role = \Drupal\user\Entity\Role::create(array('id' => 'staff', 'label' => 'Staff'));
+  $role->save();
+
+  $role = \Drupal\user\Entity\Role::create(array('id' => 'writer', 'label' => 'Writer'));
+  $role->save();
+
+  $role = \Drupal\user\Entity\Role::create(array('id' => 'distributor', 'label' => 'Distributor'));
+  $role->save();
+
+  $role = \Drupal\user\Entity\Role::create(array('id' => 'advertiser', 'label' => 'Advertiser'));
+  $role->save();
+
+  $role = \Drupal\user\Entity\Role::create(array('id' => 'contributor', 'label' => 'Contributor'));
+  $role->save();
+}

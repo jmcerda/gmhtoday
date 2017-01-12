@@ -1,0 +1,16 @@
+name: Issue
+description: 'Provides Issue content type and related configuration. Provides an "issue" content type for gmhToday.net.'
+type: module
+package: gmhToday
+core: 8.x
+dependencies:
+  - core
+  - datetime
+  - field
+  - image
+  - menu_ui
+  - node
+  - path
+  - text
+  - user
+  - workbench_moderation
