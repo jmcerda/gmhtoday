@@ -22,7 +22,6 @@
         "drupal/geolocation": "^1.9",
         "drupal/geofield": "1.x-dev",
         "drupal/geocoder_autocomplete": "1.x-dev",
-        "drupal/geocoder": "2.x-dev",
         "drupal/disqus": "1.x-dev",
         "drupal/mailchimp": "^1.2",
         "drupal/dropzonejs": "1.x-dev",
