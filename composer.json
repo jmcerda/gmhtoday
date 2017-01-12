@@ -17,7 +17,12 @@
         "drupal/admin_toolbar": "^1.18",
         "drupal/honeypot": "^1.23",
         "drupal/mollom": "^1.2",
-        "drupal/google_analytics": "^2.1"
+        "drupal/google_analytics": "^2.1",
+        "drupal/address": "1.x-dev",
+        "drupal/geolocation": "^1.9",
+        "drupal/geofield": "1.x-dev",
+        "drupal/geocoder_autocomplete": "1.x-dev",
+        "drupal/geocoder": "2.x-dev"
     },
     "replace": {
         "drupal/core": "~8.2"

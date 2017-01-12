@@ -15,6 +15,7 @@ return array(
     'Prophecy\\' => array($vendorDir . '/phpspec/prophecy/src'),
     'Instagram' => array($vendorDir . '/php-instagram-api/php-instagram-api'),
     'HTMLPurifier' => array($vendorDir . '/ezyang/htmlpurifier/library'),
+    'Geocoder' => array($vendorDir . '/willdurand/geocoder/src'),
     'Egulias\\' => array($vendorDir . '/egulias/email-validator/src'),
     'EasyRdf_' => array($vendorDir . '/easyrdf/easyrdf/lib'),
     'Doctrine\\Common\\Lexer\\' => array($vendorDir . '/doctrine/lexer/lib'),

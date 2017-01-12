@@ -18,6 +18,7 @@ return array(
     'fbeead2280a8f3911a1fe6dd034f7d5e' => $vendorDir . '/mkalkbrenner/php-htmldiff-advanced/src/HtmlDiffAdvancedInterface.php',
     '96f8d8288528d52059397cad6ec61f17' => $vendorDir . '/mkalkbrenner/php-htmldiff-advanced/src/HtmlDiffAdvanced.php',
     'aca594cec0c196659a3b7d4dc2665c0b' => $vendorDir . '/j7mbo/twitter-api-php/TwitterAPIExchange.php',
+    'a16312f9300fed4a097923eacb0ba814' => $vendorDir . '/igorw/get-in/src/get_in.php',
     '5255c38a0faeba867671b61dfda6d864' => $vendorDir . '/paragonie/random_compat/lib/random.php',
     'def43f6c87e4f8dfd0c9e1b1bab14fe8' => $vendorDir . '/symfony/polyfill-iconv/bootstrap.php',
 );
