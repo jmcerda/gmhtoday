@@ -16,7 +16,8 @@
         "drupal/zurb_foundation": "6.x-dev",
         "drupal/admin_toolbar": "^1.18",
         "drupal/honeypot": "^1.23",
-        "drupal/mollom": "^1.2"
+        "drupal/mollom": "^1.2",
+        "drupal/google_analytics": "^2.1"
     },
     "replace": {
         "drupal/core": "~8.2"
