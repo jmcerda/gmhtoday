@@ -15,11 +15,19 @@ class ComposerStaticInitDrupal8
         'c964ee0ededf28c96ebd9db5099ef910' => __DIR__ . '/..' . '/guzzlehttp/promises/src/functions_include.php',
         'a0edc8309cc5e1d60e3047b5df6b7052' => __DIR__ . '/..' . '/guzzlehttp/psr7/src/functions_include.php',
         '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
+        '2cffec82183ee1cea088009cef9a6fc3' => __DIR__ . '/..' . '/ezyang/htmlpurifier/library/HTMLPurifier.composer.php',
+        'fbeead2280a8f3911a1fe6dd034f7d5e' => __DIR__ . '/..' . '/mkalkbrenner/php-htmldiff-advanced/src/HtmlDiffAdvancedInterface.php',
+        '96f8d8288528d52059397cad6ec61f17' => __DIR__ . '/..' . '/mkalkbrenner/php-htmldiff-advanced/src/HtmlDiffAdvanced.php',
+        'aca594cec0c196659a3b7d4dc2665c0b' => __DIR__ . '/..' . '/j7mbo/twitter-api-php/TwitterAPIExchange.php',
         '5255c38a0faeba867671b61dfda6d864' => __DIR__ . '/..' . '/paragonie/random_compat/lib/random.php',
         'def43f6c87e4f8dfd0c9e1b1bab14fe8' => __DIR__ . '/..' . '/symfony/polyfill-iconv/bootstrap.php',
     );
 
     public static $prefixLengthsPsr4 = array (
+        'c' => 
+        array (
+            'cweagans\\Composer\\' => 18,
+        ),
         'Z' => 
         array (
             'Zumba\\Mink\\Driver\\' => 18,
@@ -59,6 +67,10 @@ class ComposerStaticInitDrupal8
             'Symfony\\Cmf\\Component\\Routing\\' => 30,
             'Symfony\\Bridge\\PsrHttpMessage\\' => 30,
         ),
+        'R' => 
+        array (
+            'Relaxed\\LCA\\' => 12,
+        ),
         'P' => 
         array (
             'Psr\\Http\\Message\\' => 17,
@@ -72,7 +84,12 @@ class ComposerStaticInitDrupal8
             'GuzzleHttp\\Psr7\\' => 16,
             'GuzzleHttp\\Promise\\' => 19,
             'GuzzleHttp\\' => 11,
+            'Graphp\\Algorithms\\' => 18,
             'Goutte\\' => 7,
+        ),
+        'F' => 
+        array (
+            'Fhaculty\\Graph\\' => 15,
         ),
         'D' => 
         array (
@@ -80,6 +97,7 @@ class ComposerStaticInitDrupal8
             'Drupal\\Core\\Composer\\' => 21,
             'Drupal\\Core\\' => 12,
             'Drupal\\Component\\' => 17,
+            'DrupalComposer\\DrupalScaffold\\' => 30,
             'Doctrine\\Instantiator\\' => 22,
         ),
         'C' => 
@@ -91,9 +109,17 @@ class ComposerStaticInitDrupal8
             'Behat\\Mink\\Driver\\' => 18,
             'Behat\\Mink\\' => 11,
         ),
+        'A' => 
+        array (
+            'Acquia\\LightningExtension\\' => 26,
+        ),
     );
 
     public static $prefixDirsPsr4 = array (
+        'cweagans\\Composer\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/cweagans/composer-patches/src',
+        ),
         'Zumba\\Mink\\Driver\\' => 
         array (
             0 => __DIR__ . '/..' . '/jcalderonzumba/mink-phantomjs-driver/src',
@@ -214,6 +240,10 @@ class ComposerStaticInitDrupal8
         array (
             0 => __DIR__ . '/..' . '/symfony/psr-http-message-bridge',
         ),
+        'Relaxed\\LCA\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/relaxedws/lca/src',
+        ),
         'Psr\\Http\\Message\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/http-message/src',
@@ -234,9 +264,17 @@ class ComposerStaticInitDrupal8
         array (
             0 => __DIR__ . '/..' . '/guzzlehttp/guzzle/src',
         ),
+        'Graphp\\Algorithms\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/graphp/algorithms/src',
+        ),
         'Goutte\\' => 
         array (
             0 => __DIR__ . '/..' . '/fabpot/goutte/Goutte',
+        ),
+        'Fhaculty\\Graph\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/clue/graph/src',
         ),
         'Drupal\\Driver\\' => 
         array (
@@ -254,6 +292,10 @@ class ComposerStaticInitDrupal8
         array (
             0 => __DIR__ . '/../..' . '/core/lib/Drupal/Component',
         ),
+        'DrupalComposer\\DrupalScaffold\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/drupal-composer/drupal-scaffold/src',
+        ),
         'Doctrine\\Instantiator\\' => 
         array (
             0 => __DIR__ . '/..' . '/doctrine/instantiator/src/Doctrine/Instantiator',
@@ -270,6 +312,10 @@ class ComposerStaticInitDrupal8
         'Behat\\Mink\\' => 
         array (
             0 => __DIR__ . '/..' . '/behat/mink/src',
+        ),
+        'Acquia\\LightningExtension\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/profiles/contrib/lightning/src/LightningExtension',
         ),
     );
 
@@ -297,6 +343,10 @@ class ComposerStaticInitDrupal8
         ),
         'S' => 
         array (
+            'Sunra\\PhpSimple\\HtmlDomParser' => 
+            array (
+                0 => __DIR__ . '/..' . '/sunra/php-simple-html-dom-parser/Src',
+            ),
             'Stack' => 
             array (
                 0 => __DIR__ . '/..' . '/stack/builder/src',
@@ -311,6 +361,20 @@ class ComposerStaticInitDrupal8
             'Prophecy\\' => 
             array (
                 0 => __DIR__ . '/..' . '/phpspec/prophecy/src',
+            ),
+        ),
+        'I' => 
+        array (
+            'Instagram' => 
+            array (
+                0 => __DIR__ . '/..' . '/php-instagram-api/php-instagram-api',
+            ),
+        ),
+        'H' => 
+        array (
+            'HTMLPurifier' => 
+            array (
+                0 => __DIR__ . '/..' . '/ezyang/htmlpurifier/library',
             ),
         ),
         'E' => 
@@ -356,6 +420,10 @@ class ComposerStaticInitDrupal8
             'Composer\\Installers\\' => 
             array (
                 0 => __DIR__ . '/..' . '/composer/installers/src',
+            ),
+            'Caxy\\HtmlDiff' => 
+            array (
+                0 => __DIR__ . '/..' . '/caxy/php-htmldiff/lib',
             ),
         ),
         'A' => 

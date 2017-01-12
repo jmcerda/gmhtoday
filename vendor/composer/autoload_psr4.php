@@ -6,6 +6,7 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'cweagans\\Composer\\' => array($vendorDir . '/cweagans/composer-patches/src'),
     'Zumba\\Mink\\Driver\\' => array($vendorDir . '/jcalderonzumba/mink-phantomjs-driver/src'),
     'Zumba\\GastonJS\\' => array($vendorDir . '/jcalderonzumba/gastonjs/src'),
     'Zend\\Stdlib\\' => array($vendorDir . '/zendframework/zend-stdlib/src'),
@@ -36,18 +37,23 @@ return array(
     'Symfony\\Component\\BrowserKit\\' => array($vendorDir . '/symfony/browser-kit'),
     'Symfony\\Cmf\\Component\\Routing\\' => array($vendorDir . '/symfony-cmf/routing'),
     'Symfony\\Bridge\\PsrHttpMessage\\' => array($vendorDir . '/symfony/psr-http-message-bridge'),
+    'Relaxed\\LCA\\' => array($vendorDir . '/relaxedws/lca/src'),
     'Psr\\Http\\Message\\' => array($vendorDir . '/psr/http-message/src'),
     'Masterminds\\' => array($vendorDir . '/masterminds/html5/src'),
     'GuzzleHttp\\Psr7\\' => array($vendorDir . '/guzzlehttp/psr7/src'),
     'GuzzleHttp\\Promise\\' => array($vendorDir . '/guzzlehttp/promises/src'),
     'GuzzleHttp\\' => array($vendorDir . '/guzzlehttp/guzzle/src'),
+    'Graphp\\Algorithms\\' => array($vendorDir . '/graphp/algorithms/src'),
     'Goutte\\' => array($vendorDir . '/fabpot/goutte/Goutte'),
+    'Fhaculty\\Graph\\' => array($vendorDir . '/clue/graph/src'),
     'Drupal\\Driver\\' => array($baseDir . '/drivers/lib/Drupal/Driver'),
     'Drupal\\Core\\Composer\\' => array($baseDir . '/core/lib/Drupal/Core/Composer'),
     'Drupal\\Core\\' => array($baseDir . '/core/lib/Drupal/Core'),
     'Drupal\\Component\\' => array($baseDir . '/core/lib/Drupal/Component'),
+    'DrupalComposer\\DrupalScaffold\\' => array($vendorDir . '/drupal-composer/drupal-scaffold/src'),
     'Doctrine\\Instantiator\\' => array($vendorDir . '/doctrine/instantiator/src/Doctrine/Instantiator'),
     'Composer\\Semver\\' => array($vendorDir . '/composer/semver/src'),
     'Behat\\Mink\\Driver\\' => array($vendorDir . '/behat/mink-browserkit-driver/src', $vendorDir . '/behat/mink-goutte-driver/src'),
     'Behat\\Mink\\' => array($vendorDir . '/behat/mink/src'),
+    'Acquia\\LightningExtension\\' => array($baseDir . '/profiles/contrib/lightning/src/LightningExtension'),
 );
