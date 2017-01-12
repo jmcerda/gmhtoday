@@ -1,7 +1,0 @@
-langcode: en
-status: true
-dependencies: {  }
-id: advertisment_creator
-label: 'Advertisment Creator'
-weight: 6
-is_admin: null

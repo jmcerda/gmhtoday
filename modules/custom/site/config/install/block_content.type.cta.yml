@@ -1,7 +1,0 @@
-langcode: en
-status: true
-dependencies: {  }
-id: cta
-label: CTA
-revision: 1
-description: 'Call to action block'

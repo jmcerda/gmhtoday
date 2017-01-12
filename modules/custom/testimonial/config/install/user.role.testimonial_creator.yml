@@ -1,7 +1,0 @@
-langcode: en
-status: true
-dependencies: {  }
-id: testimonial_creator
-label: 'Testimonial Creator'
-weight: 8
-is_admin: null

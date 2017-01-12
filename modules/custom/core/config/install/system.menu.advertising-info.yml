@@ -1,7 +1,0 @@
-langcode: en
-status: true
-dependencies: {  }
-id: advertising-info
-label: 'Advertising Info'
-description: ''
-locked: false

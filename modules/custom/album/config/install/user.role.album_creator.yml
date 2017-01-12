@@ -1,7 +1,0 @@
-langcode: en
-status: true
-dependencies: {  }
-id: album_creator
-label: 'Album Creator'
-weight: 12
-is_admin: null
