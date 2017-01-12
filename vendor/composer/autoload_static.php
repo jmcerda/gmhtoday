@@ -77,6 +77,7 @@ class ComposerStaticInitDrupal8
         ),
         'M' => 
         array (
+            'Mollom\\' => 7,
             'Masterminds\\' => 12,
         ),
         'G' => 
@@ -247,6 +248,10 @@ class ComposerStaticInitDrupal8
         'Psr\\Http\\Message\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/http-message/src',
+        ),
+        'Mollom\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/mollom/client/src',
         ),
         'Masterminds\\' => 
         array (

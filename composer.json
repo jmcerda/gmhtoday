@@ -13,7 +13,10 @@
         "composer/installers": "^1.0.21",
         "wikimedia/composer-merge-plugin": "~1.3",
         "acquia/lightning": "^2.0",
-        "drupal/zurb_foundation": "6.x-dev"
+        "drupal/zurb_foundation": "6.x-dev",
+        "drupal/admin_toolbar": "^1.18",
+        "drupal/honeypot": "^1.23",
+        "drupal/mollom": "^1.2"
     },
     "replace": {
         "drupal/core": "~8.2"
