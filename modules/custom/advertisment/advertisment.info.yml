@@ -4,6 +4,7 @@ type: module
 package: gmhToday
 core: 8.x
 dependencies:
+  - core
   - field
   - image
   - menu_ui
