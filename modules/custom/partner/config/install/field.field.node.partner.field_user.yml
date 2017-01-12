@@ -1,0 +1,59 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_user
+    - node.type.partner
+id: node.partner.field_user
+field_name: field_user
+entity_type: node
+bundle: partner
+label: 'User profile'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: false
+    filter:
+      type: role
+      role:
+        publisher: publisher
+        staff: staff
+        writer: writer
+        distributor: distributor
+        advertiser: advertiser
+        contributor: contributor
+        administrator: '0'
+        layout_manager: '0'
+        media_manager: '0'
+        landing_page_creator: '0'
+        landing_page_reviewer: '0'
+        page_creator: '0'
+        page_reviewer: '0'
+        article_creator: '0'
+        article_reviewer: '0'
+        blog_post_creator: '0'
+        blog_post_reviewer: '0'
+        issue_creator: '0'
+        issue_reviewer: '0'
+        event_creator: '0'
+        event_reviewer: '0'
+        advertisment_creator: '0'
+        advertisment_reviewer: '0'
+        testimonial_creator: '0'
+        testimonial_reviewer: '0'
+        news_creator: '0'
+        news_reviewer: '0'
+        album_creator: '0'
+        album_reviewer: '0'
+        partner_creator: '0'
+        partner_reviewer: '0'
+    target_bundles: null
+    sort:
+      field: _none
+    auto_create: true
+field_type: entity_reference

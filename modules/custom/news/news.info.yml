@@ -1,0 +1,17 @@
+name: News
+description: 'Provides News content type and related configuration. News content type.'
+type: module
+package: gmhToday
+core: 8.x
+dependencies:
+  - core
+  - entity_browser
+  - field
+  - image
+  - lightning_media_image
+  - menu_ui
+  - node
+  - path
+  - text
+  - user
+  - workbench_moderation

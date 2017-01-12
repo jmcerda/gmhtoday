@@ -1,0 +1,20 @@
+name: Partner
+description: 'Provides Partner content type and related configuration. Content type for friends and partners of gmhToday. Can be linked to user profiles.'
+type: module
+package: gmhToday
+core: 8.x
+dependencies:
+  - address
+  - core
+  - entity_browser
+  - field
+  - geocoder_field
+  - image
+  - lightning_media_image
+  - menu_ui
+  - node
+  - path
+  - telephone
+  - text
+  - user
+  - workbench_moderation
