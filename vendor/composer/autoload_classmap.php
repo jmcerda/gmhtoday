@@ -7,6 +7,11 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'CallbackFilterIterator' => $vendorDir . '/symfony/polyfill-php54/Resources/stubs/CallbackFilterIterator.php',
+    'DisqusAPI' => $vendorDir . '/drexarj/disqus-php/disqusapi/disqusapi.php',
+    'DisqusAPIError' => $vendorDir . '/drexarj/disqus-php/disqusapi/disqusapi.php',
+    'DisqusAPITest' => $vendorDir . '/drexarj/disqus-php/disqusapi/tests/disqusapi.php',
+    'DisqusInterfaceNotDefined' => $vendorDir . '/drexarj/disqus-php/disqusapi/disqusapi.php',
+    'DisqusResource' => $vendorDir . '/drexarj/disqus-php/disqusapi/disqusapi.php',
     'Drupal' => $baseDir . '/core/lib/Drupal.php',
     'Drupal\\Component\\Utility\\Timer' => $baseDir . '/core/lib/Drupal/Component/Utility/Timer.php',
     'Drupal\\Component\\Utility\\Unicode' => $baseDir . '/core/lib/Drupal/Component/Utility/Unicode.php',
@@ -17,6 +22,8 @@ return array(
     'File_Iterator' => $vendorDir . '/phpunit/php-file-iterator/src/Iterator.php',
     'File_Iterator_Facade' => $vendorDir . '/phpunit/php-file-iterator/src/Facade.php',
     'File_Iterator_Factory' => $vendorDir . '/phpunit/php-file-iterator/src/Factory.php',
+    'JSON' => $vendorDir . '/drexarj/disqus-php/disqusapi/json.php',
+    'JSONTest' => $vendorDir . '/drexarj/disqus-php/disqusapi/tests/json.php',
     'PHPUnit_Exception' => $vendorDir . '/phpunit/phpunit/src/Exception.php',
     'PHPUnit_Extensions_GroupTestSuite' => $vendorDir . '/phpunit/phpunit/src/Extensions/GroupTestSuite.php',
     'PHPUnit_Extensions_PhptTestCase' => $vendorDir . '/phpunit/phpunit/src/Extensions/PhptTestCase.php',

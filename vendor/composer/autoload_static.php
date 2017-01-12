@@ -478,6 +478,11 @@ class ComposerStaticInitDrupal8
 
     public static $classMap = array (
         'CallbackFilterIterator' => __DIR__ . '/..' . '/symfony/polyfill-php54/Resources/stubs/CallbackFilterIterator.php',
+        'DisqusAPI' => __DIR__ . '/..' . '/drexarj/disqus-php/disqusapi/disqusapi.php',
+        'DisqusAPIError' => __DIR__ . '/..' . '/drexarj/disqus-php/disqusapi/disqusapi.php',
+        'DisqusAPITest' => __DIR__ . '/..' . '/drexarj/disqus-php/disqusapi/tests/disqusapi.php',
+        'DisqusInterfaceNotDefined' => __DIR__ . '/..' . '/drexarj/disqus-php/disqusapi/disqusapi.php',
+        'DisqusResource' => __DIR__ . '/..' . '/drexarj/disqus-php/disqusapi/disqusapi.php',
         'Drupal' => __DIR__ . '/../..' . '/core/lib/Drupal.php',
         'Drupal\\Component\\Utility\\Timer' => __DIR__ . '/../..' . '/core/lib/Drupal/Component/Utility/Timer.php',
         'Drupal\\Component\\Utility\\Unicode' => __DIR__ . '/../..' . '/core/lib/Drupal/Component/Utility/Unicode.php',
@@ -488,6 +493,8 @@ class ComposerStaticInitDrupal8
         'File_Iterator' => __DIR__ . '/..' . '/phpunit/php-file-iterator/src/Iterator.php',
         'File_Iterator_Facade' => __DIR__ . '/..' . '/phpunit/php-file-iterator/src/Facade.php',
         'File_Iterator_Factory' => __DIR__ . '/..' . '/phpunit/php-file-iterator/src/Factory.php',
+        'JSON' => __DIR__ . '/..' . '/drexarj/disqus-php/disqusapi/json.php',
+        'JSONTest' => __DIR__ . '/..' . '/drexarj/disqus-php/disqusapi/tests/json.php',
         'PHPUnit_Exception' => __DIR__ . '/..' . '/phpunit/phpunit/src/Exception.php',
         'PHPUnit_Extensions_GroupTestSuite' => __DIR__ . '/..' . '/phpunit/phpunit/src/Extensions/GroupTestSuite.php',
         'PHPUnit_Extensions_PhptTestCase' => __DIR__ . '/..' . '/phpunit/phpunit/src/Extensions/PhptTestCase.php',
