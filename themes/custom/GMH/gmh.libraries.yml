@@ -1,0 +1,7 @@
+global:
+  version: 1.x
+  css:
+    base:
+      css/gmh.css: {}
+  js:
+    js/gmh.js: {}

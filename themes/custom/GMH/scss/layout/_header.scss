@@ -1,0 +1,17 @@
+// Non-modular or client styles for .l-header region.
+.brand_parent {
+	display: flex;
+}
+
+.brand_inline {
+	display: inline-block;
+	padding: 1em;
+}
+
+.site-branding__text {
+	display: flex;
+	align-items: flex-end;
+    font-size: 1.5em;
+    width: 16em;
+    line-height: normal;
+}

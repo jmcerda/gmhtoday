@@ -1,0 +1,7 @@
+// Common abstract classes to extend or parametrics are stored here.
+
+@import url('https://fonts.googleapis.com/css?family=Fanwood+Text|Raleway');
+
+// %font-FONTNAME   {}
+%font-sans-serif { font-family: 'Raleway', sans-serif; }
+%font-serif      { font-family: 'Fanwood Text', serif; }

@@ -7214,5 +7214,71 @@
             "GPL-2.0+"
         ],
         "description": "The best of Drupal, curated by Acquia"
+    },
+    {
+        "name": "drupal/zurb_foundation",
+        "version": "dev-6.x",
+        "version_normalized": "dev-6.x",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupal.org/project/zurb-foundation",
+            "reference": "f50946017f08c276b6e58e7b3b389d864529cecb"
+        },
+        "require": {
+            "drupal/core": "~8.0"
+        },
+        "type": "drupal-theme",
+        "extra": {
+            "branch-alias": {
+                "dev-6.x": "6.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-6.0-alpha1+9-dev",
+                "datestamp": "1479408540"
+            }
+        },
+        "installation-source": "source",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "Bcwald",
+                "homepage": "https://www.drupal.org/user/215794"
+            },
+            {
+                "name": "alexweber",
+                "homepage": "https://www.drupal.org/user/850856"
+            },
+            {
+                "name": "chrisjlee",
+                "homepage": "https://www.drupal.org/user/760600"
+            },
+            {
+                "name": "ishmael-sanchez",
+                "homepage": "https://www.drupal.org/user/464624"
+            },
+            {
+                "name": "kevinquillen",
+                "homepage": "https://www.drupal.org/user/317279"
+            },
+            {
+                "name": "nickBumgarner",
+                "homepage": "https://www.drupal.org/user/1580732"
+            },
+            {
+                "name": "samuel.mortenson",
+                "homepage": "https://www.drupal.org/user/2582268"
+            },
+            {
+                "name": "shauntyndall",
+                "homepage": "https://www.drupal.org/user/611384"
+            }
+        ],
+        "homepage": "https://www.drupal.org/project/zurb_foundation",
+        "support": {
+            "source": "http://cgit.drupalcode.org/zurb_foundation"
+        }
     }
 ]
