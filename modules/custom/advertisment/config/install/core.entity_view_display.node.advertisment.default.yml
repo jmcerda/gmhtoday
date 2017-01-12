@@ -1,0 +1,33 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.advertisment.body
+    - field.field.node.advertisment.field_image
+    - node.type.advertisment
+  module:
+    - image
+    - text
+    - user
+id: node.advertisment.default
+targetEntityType: node
+bundle: advertisment
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+  field_image:
+    weight: 102
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+  links:
+    weight: 100
+hidden: {  }
