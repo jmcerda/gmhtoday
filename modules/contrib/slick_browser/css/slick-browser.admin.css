@@ -1,0 +1,13 @@
+/**
+ * @file
+ */
+
+/** The willy-nilly !important to deal with JS inline states. */
+.field-plugin-settings-editing .form__title--grid small,
+.field-plugin-settings-editing .form--slick.form--style-off > * {
+  display: none !important;
+}
+
+.field-plugin-settings-editing .form--slick.form--style-off > .form-item--style {
+  display: block !important;
+}

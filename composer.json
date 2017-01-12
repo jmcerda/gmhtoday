@@ -24,7 +24,11 @@
         "drupal/geocoder_autocomplete": "1.x-dev",
         "drupal/geocoder": "2.x-dev",
         "drupal/disqus": "1.x-dev",
-        "drupal/mailchimp": "^1.2"
+        "drupal/mailchimp": "^1.2",
+        "drupal/dropzonejs": "1.x-dev",
+        "drupal/slick_browser": "1.x-dev",
+        "drupal/slick_views": "1.x-dev",
+        "drupal/slick_media": "1.x-dev"
     },
     "replace": {
         "drupal/core": "~8.2"
