@@ -1,5 +1,0 @@
-name: 'GMH Roles'
-type: module
-description: Role definitions for gmhToday.net
-package: gmhToday
-core: 8.x
