@@ -3,6 +3,7 @@ status: true
 dependencies:
   config:
     - field.storage.node.scheduled_update
+    - node.type.article
     - scheduled_updates.scheduled_update_type.node_embargo
 id: node.article.scheduled_update
 field_name: scheduled_update
