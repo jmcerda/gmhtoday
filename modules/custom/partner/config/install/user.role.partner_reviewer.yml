@@ -1,7 +1,0 @@
-langcode: en
-status: true
-dependencies: {  }
-id: partner_reviewer
-label: 'Partner Reviewer'
-weight: 15
-is_admin: null

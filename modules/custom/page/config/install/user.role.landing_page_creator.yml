@@ -1,7 +1,0 @@
-langcode: en
-status: true
-dependencies: {  }
-id: landing_page_creator
-label: 'Landing Page Creator'
-weight: -6
-is_admin: null
