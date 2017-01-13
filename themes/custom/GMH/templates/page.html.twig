@@ -198,20 +198,20 @@
             {% endif %}
           </div>
           <div class="row">
-            <div class="large-3 columns">
-              {% if advertising-info_menu %}
+            {% if advertising-info_menu %}
+              <div class="large-3 columns">
                 <nav class="navigation" role="navigation">
                     {{ advertising-info_menu }}
                 </nav>
-              {% endif %}
-            </div>
-            <div class="large-3 columns">
-              {% if footer_menu %}
+              </div>
+            {% endif %}
+            {% if footer_menu %}
+              <div class="large-3 columns">
                 <nav class="navigation" role="navigation">
                     {{ footer_menu }}
                 </nav>
-              {% endif %}
-            </div>
+              </div>
+            {% endif %}
             {% if logopath %}
             <div class="large-3 columns">
               <img src="{{ logopath }}" />
