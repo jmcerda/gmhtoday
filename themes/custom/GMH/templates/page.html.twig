@@ -179,27 +179,56 @@
         {% endif %}
       </div>
       {% if page.footer_first or page.footer_second or page.footer_third or page.footer_fourth %}
-        <footer class="row">
-          {% if page.footer_first %}
-            <div id="footer-first" class="large-3 columns">
-              {{ page.footer_first }}
+        <footer>
+          <div class="row">
+            {% if page.footer_first %}
+              <div id="footer-first" class="large-4 columns">
+                {{ page.footer_first }}
+              </div>
+            {% endif %}
+            {% if page.footer_second %}
+              <div id="footer-second" class="large-4 columns">
+                {{ page.footer_second }}
+              </div>
+            {% endif %}
+            {% if page.footer_third %}
+              <div id="footer-third" class="large-4 columns">
+                {{ page.footer_third }}
+              </div>
+            {% endif %}
+          </div>
+          <div class="row">
+            <div class="large-3 columns">
+              {% if advertising-info_menu %}
+                <nav class="navigation" role="navigation">
+                    {{ advertising-info_menu }}
+                </nav>
+              {% endif %}
             </div>
-          {% endif %}
-          {% if page.footer_second %}
-            <div id="footer-second" class="large-3 columns">
-              {{ page.footer_second }}
+            <div class="large-3 columns">
+              {% if footer_menu %}
+                <nav class="navigation" role="navigation">
+                    {{ footer_menu }}
+                </nav>
+              {% endif %}
             </div>
-          {% endif %}
-          {% if page.footer_third %}
-            <div id="footer-third" class="large-3 columns">
-              {{ page.footer_third }}
+            {% if logopath %}
+            <div class="large-3 columns">
+              {{ logopath }}"
             </div>
-          {% endif %}
-          {% if page.footer_fourth %}
-            <div id="footer-fourth" class="large-3 columns">
-              {{ page.footer_fourth }}
+            {% endif %}
+            <div class="large-3 columns">
+              <div itemscope itemtype="http://schema.org/LocalBusiness">
+                <h2>Contact <span itemprop="name">gmhToday</span></h2>
+                <span itemprop="address">7446 Rosanna Street<br />Gilroy, CA 95020</span>
+                <span itemprop="telephone">
+                  <a href="tel:+14088486540">408.848.6540</a>
+                <span>
+                <span itemprop="email">
+                  <a href="mailto:info@gmhtoday.net">info@gmhtoday.net</a>
+                </span>
+              </div>
             </div>
-          {% endif %}
         </footer>
       {% endif %}
       <div class="bottom-bar panel">

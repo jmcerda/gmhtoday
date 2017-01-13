@@ -36,6 +36,7 @@ function gmh_preprocess_node(&$variables) {
  * Add convenience variables and template suggestions
  */
 function gmh_preprocess_page(&$variables) {
+	$variables['logopath'] = '/' . drupal_get_path('theme','gmh') . '/images/logo.svg';
 }
 
 /**
