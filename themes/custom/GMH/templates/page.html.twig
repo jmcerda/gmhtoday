@@ -202,18 +202,14 @@
                 {{ advertising_info_menu }}
             </nav>
           </div>
-          {% if page.main_menu %}
-            <div class="large-3 columns">
-              <nav class="navigation" role="navigation">
-                  {{ page.main_menu }}
-              </nav>
-            </div>
-          {% endif %}
-          {% if logopath %}
+          <div class="large-3 columns">
+            <nav class="navigation" role="navigation">
+                {{ footer_menu }}
+            </nav>
+          </div>
           <div class="large-3 columns">
             <img class="footer-logo" src="{{ logopath }}" />
           </div>
-          {% endif %}
           <div class="large-3 columns">
             <div itemscope itemtype="http://schema.org/LocalBusiness">
               <h2>Contact <span itemprop="name">gmhToday</span></h2>
