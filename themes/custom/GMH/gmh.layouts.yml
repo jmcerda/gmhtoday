@@ -1,7 +1,6 @@
 gmh_frontpage:
   label: 'GMH: Multi-row layout'
   category: 'GMH: Pages'
-  class: '\Drupal\zurb_foundation\Plugin\Layout\FoundationLayout'
   template: layouts/frontpage-2col-bricks.html.twig
   regions:
     top:
@@ -18,4 +17,4 @@ gmh_frontpage:
       label: Below Right
     bottom:
       label: Bottom
-  icon: images/logo.svg
+  icon: layouts/frontpage-2col-bricks.png
