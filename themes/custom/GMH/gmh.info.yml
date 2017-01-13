@@ -25,7 +25,6 @@ regions:
   footer_first: 'Footer first column'
   footer_second: 'Footer second column'
   footer_third: 'Footer third column'
-  footer_fourth: 'Footer fourth column'
   left_off_canvas: 'Left off canvas'
   right_off_canvas: 'Right off canvas'
 regions_hidden:
