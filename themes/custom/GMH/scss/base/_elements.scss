@@ -56,3 +56,12 @@
 // }
 
 // select {}
+
+.button.secondary {
+    background-color:$gmh-db-color;
+    color: #fefefe; }
+    .button.secondary:hover, .button.secondary:focus {
+      background-color: #5f5f5f;
+      color: #fefefe;
+  }
+}
