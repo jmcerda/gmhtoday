@@ -193,6 +193,9 @@
           {% if page.footer_third %}
             <div id="footer-third" class="large-3 columns">
               {{ page.footer_third }}
+              {% if linked_logo %}
+                {{ linked_logo }}
+              {% endif %}
             </div>
           {% endif %}
           {% if page.footer_fourth %}
