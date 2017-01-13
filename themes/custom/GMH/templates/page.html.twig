@@ -204,16 +204,16 @@
               </nav>
             </div>
           {% endif %}
-          {% if footer_menu %}
+          {% if main_menu %}
             <div class="large-3 columns">
               <nav class="navigation" role="navigation">
-                  {{ footer_menu }}
+                  {{ main_menu }}
               </nav>
             </div>
           {% endif %}
           {% if logopath %}
           <div class="large-3 columns">
-            <img src="{{ logopath }}" />
+            <img class="footer-logo" src="{{ logopath }}" />
           </div>
           {% endif %}
           <div class="large-3 columns">
