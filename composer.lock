@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "5e552f21072a453776f201c6b9ad8c2d",
-    "content-hash": "176beca5c27316489d8be6d3f396231c",
+    "hash": "fbaf53e18a87578e93333c4baaa0d5a0",
+    "content-hash": "15f20ea202a4526d2e9e916f84c33e52",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -2308,8 +2308,7 @@
                 "source": "https://cgit.drupalcode.org/geocoder",
                 "issues": "https://drupal.org/project/issues/geocoder",
                 "irc": "irc://irc.freenode.org/drupal-geo"
-            },
-            "time": "2016-12-06 21:29:09"
+            }
         },
         {
             "name": "drupal/geocoder_autocomplete",
@@ -2652,6 +2651,45 @@
             }
         },
         {
+            "name": "drupal/juicebox",
+            "version": "dev-2.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/juicebox",
+                "reference": "97637409dd5e3fa3ccb2ae04d2955c2f40cabc6b"
+            },
+            "require": {
+                "drupal/core": "*",
+                "drupal/libraries": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-2.x": "2.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-2.0-beta3+4-dev",
+                    "datestamp": "1475726639"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "rjacobs",
+                    "homepage": "https://www.drupal.org/user/422459"
+                }
+            ],
+            "description": "Provides an integration between the Juicebox HTML5 responsive gallery library and Drupal.",
+            "homepage": "https://www.drupal.org/project/juicebox",
+            "support": {
+                "source": "http://cgit.drupalcode.org/juicebox"
+            },
+            "time": "2016-10-06 04:00:09"
+        },
+        {
             "name": "drupal/key_value",
             "version": "1.0.0",
             "source": {
@@ -2756,6 +2794,58 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/layout_plugin"
             }
+        },
+        {
+            "name": "drupal/libraries",
+            "version": "dev-3.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/libraries",
+                "reference": "5e7ea584db3e5d9aa5acac130bda1359ad048f5c"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-3.x": "3.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-3.x-dev",
+                    "datestamp": "1483547343"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Pol",
+                    "homepage": "https://www.drupal.org/user/47194"
+                },
+                {
+                    "name": "rjacobs",
+                    "homepage": "https://www.drupal.org/user/422459"
+                },
+                {
+                    "name": "sun",
+                    "homepage": "https://www.drupal.org/user/54136"
+                },
+                {
+                    "name": "tstoeckler",
+                    "homepage": "https://www.drupal.org/user/107158"
+                }
+            ],
+            "description": "Allows version-dependent and shared usage of external libraries in Drupal.",
+            "homepage": "http://drupal.org/project/libraries",
+            "support": {
+                "source": "http://cgit.drupalcode.org/libraries",
+                "issues": "http://drupal.org/project/issues/libraries",
+                "irc": "irc://irc.freenode.org/drupal-contribute"
+            },
+            "time": "2017-01-04 16:26:54"
         },
         {
             "name": "drupal/mailchimp",
@@ -8573,7 +8663,8 @@
         "drupal/slick_browser": 20,
         "drupal/slick_views": 20,
         "drupal/slick_media": 20,
-        "drupal/geocoder": 20
+        "drupal/geocoder": 20,
+        "drupal/juicebox": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
