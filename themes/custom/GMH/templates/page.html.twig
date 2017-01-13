@@ -178,59 +178,57 @@
           </div>
         {% endif %}
       </div>
-      {% if page.footer_first or page.footer_second or page.footer_third or page.footer_fourth %}
-        <footer>
-          <div class="row">
-            {% if page.footer_first %}
-              <div id="footer-first" class="large-4 columns">
-                {{ page.footer_first }}
-              </div>
-            {% endif %}
-            {% if page.footer_second %}
-              <div id="footer-second" class="large-4 columns">
-                {{ page.footer_second }}
-              </div>
-            {% endif %}
-            {% if page.footer_third %}
-              <div id="footer-third" class="large-4 columns">
-                {{ page.footer_third }}
-              </div>
-            {% endif %}
+      <footer>
+        <div class="row">
+          {% if page.footer_first %}
+            <div id="footer-first" class="large-4 columns">
+              {{ page.footer_first }}
+            </div>
+          {% endif %}
+          {% if page.footer_second %}
+            <div id="footer-second" class="large-4 columns">
+              {{ page.footer_second }}
+            </div>
+          {% endif %}
+          {% if page.footer_third %}
+            <div id="footer-third" class="large-4 columns">
+              {{ page.footer_third }}
+            </div>
+          {% endif %}
+        </div>
+        <div class="row">
+          {% if advertising-info_menu %}
+            <div class="large-3 columns">
+              <nav class="navigation" role="navigation">
+                  {{ advertising-info_menu }}
+              </nav>
+            </div>
+          {% endif %}
+          {% if footer_menu %}
+            <div class="large-3 columns">
+              <nav class="navigation" role="navigation">
+                  {{ footer_menu }}
+              </nav>
+            </div>
+          {% endif %}
+          {% if logopath %}
+          <div class="large-3 columns">
+            <img src="{{ logopath }}" />
           </div>
-          <div class="row">
-            {% if advertising-info_menu %}
-              <div class="large-3 columns">
-                <nav class="navigation" role="navigation">
-                    {{ advertising-info_menu }}
-                </nav>
-              </div>
-            {% endif %}
-            {% if footer_menu %}
-              <div class="large-3 columns">
-                <nav class="navigation" role="navigation">
-                    {{ footer_menu }}
-                </nav>
-              </div>
-            {% endif %}
-            {% if logopath %}
-            <div class="large-3 columns">
-              <img src="{{ logopath }}" />
+          {% endif %}
+          <div class="large-3 columns">
+            <div itemscope itemtype="http://schema.org/LocalBusiness">
+              <h2>Contact <span itemprop="name">gmhToday</span></h2>
+              <span itemprop="address">7446 Rosanna Street<br />Gilroy, CA 95020</span>
+              <span itemprop="telephone">
+                <a href="tel:+14088486540">408.848.6540</a>
+              <span>
+              <span itemprop="email">
+                <a href="mailto:info@gmhtoday.net">info@gmhtoday.net</a>
+              </span>
             </div>
-            {% endif %}
-            <div class="large-3 columns">
-              <div itemscope itemtype="http://schema.org/LocalBusiness">
-                <h2>Contact <span itemprop="name">gmhToday</span></h2>
-                <span itemprop="address">7446 Rosanna Street<br />Gilroy, CA 95020</span>
-                <span itemprop="telephone">
-                  <a href="tel:+14088486540">408.848.6540</a>
-                <span>
-                <span itemprop="email">
-                  <a href="mailto:info@gmhtoday.net">info@gmhtoday.net</a>
-                </span>
-              </div>
-            </div>
-        </footer>
-      {% endif %}
+          </div>
+      </footer>
       <div class="bottom-bar panel">
         <div class="row">
           <div class="large-12 columns">
