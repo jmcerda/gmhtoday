@@ -35,8 +35,14 @@ function gmh_preprocess_node(&$variables) {
  *
  * Add convenience variables and template suggestions
  */
+use Drupal\block\Entity\Block;
 function gmh_preprocess_page(&$variables) {
+	// Making theme logo available to print anywhere.
 	$variables['logopath'] = '/' . drupal_get_path('theme','gmh') . '/images/logo.svg';
+
+	// Loading footer menus.
+	$menu = Block::load('advertising-info');
+  		$variables['advertising_info_menu'] = \Drupal::entityTypeManager()->getViewBuilder('block')->view($menu);
 }
 
 /**
