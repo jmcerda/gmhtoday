@@ -41,7 +41,7 @@ function gmh_preprocess_page(&$variables) {
 	$variables['logopath'] = '/' . drupal_get_path('theme','gmh') . '/images/logo.svg';
 
 	// Loading footer menus.
-	$menu = Block::load('advertising-info');
+	$menu = Block::load('advertisinginfo');
   		$variables['advertising_info_menu'] = \Drupal::entityTypeManager()->getViewBuilder('block')->view($menu);
 }
 
