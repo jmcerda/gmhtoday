@@ -6,5 +6,5 @@ global:
       js/slicknav/dist/slicknav.min.css: {}
   js:
     js/gmh.js: {}
-    js/matchHeight/jquery.matchHeight-min.js: {}
-    js/slicknav/dist/jquery.slicknav.min.js: {}
+    # js/matchHeight/jquery.matchHeight-min.js: {}
+    # js/slicknav/dist/jquery.slicknav.min.js: {}
