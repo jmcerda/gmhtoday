@@ -4095,3 +4095,6 @@ table.hover tbody tr:nth-of-type(even):hover {
   font-size: 1.5em;
   width: 16em;
   line-height: normal; }
+
+#fp_slick {
+  height: 800px; }
