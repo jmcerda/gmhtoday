@@ -2,6 +2,9 @@
   "name": "GMH",
   "version": "1.0.0",
   "devDependencies": {
+    "breakpoint-sass": "^2.7.1",
+    "drupal-sass-breakpoints": "^1.0.1",
+    "eyeglass": "^1.2.1",
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^3.1.0",
     "gulp-load-plugins": "^1.1.0",
