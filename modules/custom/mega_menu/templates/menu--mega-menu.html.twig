@@ -1,0 +1,37 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a mega menu.
+ *
+ * Available variables:
+ * - render_content_outside: If the mega menu content should be rendered
+ *   outside of the list.
+ * - content: A render array of menu content.
+ *
+ * @see menu.html.twig for additional variables.
+ */
+#}
+<div {{ attributes.addClass('mega-menu') }}>
+  {% if items %}
+    {% if menu_level == 0 %}
+      <ul>
+    {% else %}
+      <ul>
+    {% endif %}
+
+    {% for item in items %}
+      <li{{ item.attributes }}>
+        {{ link(item.title, item.url) }}
+
+        {% if item.content and render_content_outside == false %}
+          {{ item.content }}
+        {% endif %}
+      </li>
+    {% endfor %}
+    </ul>
+
+    {% if render_content_outside == true %}
+      {{ content }}
+    {% endif %}
+  {% endif %}
+</div>

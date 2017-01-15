@@ -1,0 +1,7 @@
+.mega-menu-content {
+  display: none;
+}
+
+.mega-menu-content.visible {
+  display: block;
+}

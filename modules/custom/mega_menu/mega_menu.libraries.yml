@@ -1,0 +1,24 @@
+menu:
+  version: VERSION
+  js:
+    assets/js/mega_menu.js: {}
+  css:
+    component:
+      assets/css/mega_menu.css: {}
+  dependencies:
+    - core/drupal
+    - core/jquery
+    - core/jquery.once
+    - core/drupalSettings
+
+admin:
+  version: VERSION
+  js:
+    assets/js/mega_menu.admin.js: {}
+  css:
+    component:
+      assets/css/mega_menu.admin.css: {}
+  dependencies:
+    - core/drupal
+    - core/jquery
+    - core/jquery.once
