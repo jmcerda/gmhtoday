@@ -1,0 +1,35 @@
+gmh.small:
+  label: small
+  mediaQuery: ''
+  weight: 0
+  multipliers:
+    - 1x
+    - 2x
+gmh.medium:
+  label: medium
+  mediaQuery: 'screen and (min-width: 640px)'
+  weight: 1
+  multipliers:
+    - 1x
+    - 2x
+gmh.large:
+  label: large
+  mediaQuery: 'screen and (min-width: 1024px)'
+  weight: 2
+  multipliers:
+    - 1x
+    - 2x
+gmh.xlarge:
+  label: xlarge
+  mediaQuery: 'screen and (min-width: 1200px)'
+  weight: 2
+  multipliers:
+    - 1x
+    - 2x
+gmh.xxlarge:
+  label: xxlarge
+  mediaQuery: 'screen and (min-width: 1440px)'
+  weight: 2
+  multipliers:
+    - 1x
+    - 2x
