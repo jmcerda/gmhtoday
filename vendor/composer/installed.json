@@ -8936,5 +8936,107 @@
         "support": {
             "source": "http://cgit.drupalcode.org/juicebox"
         }
+    },
+    {
+        "name": "drupal/notification",
+        "version": "1.0.0",
+        "version_normalized": "1.0.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupal.org/project/notification",
+            "reference": "8.x-1.0"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/notification-8.x-1.0.zip",
+            "reference": "8.x-1.0",
+            "shasum": "cef8a844be73fc7f391cdc5e962d2e757f36d634"
+        },
+        "require": {
+            "drupal/core": "*"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-1.x": "1.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-1.0",
+                "datestamp": "1474041239"
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "Kevin Quillen (kevinquillen)",
+                "homepage": "https://www.drupal.org/u/kevinquillen",
+                "role": "Maintainer"
+            }
+        ],
+        "description": "Adds the Notification plugin to CKEditor.",
+        "homepage": "http://drupal.org/project/notification",
+        "keywords": [
+            "Drupal"
+        ],
+        "support": {
+            "source": "http://cgit.drupalcode.org/notification",
+            "issues": "http://drupal.org/project/issues/notification"
+        }
+    },
+    {
+        "name": "drupal/ckwordcount",
+        "version": "1.0.0",
+        "version_normalized": "1.0.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupal.org/project/ckwordcount",
+            "reference": "8.x-1.0"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/ckwordcount-8.x-1.0.zip",
+            "reference": null,
+            "shasum": "fd60408c97cfbc491e7cd0e2c033219ec84e787d"
+        },
+        "require": {
+            "drupal/ckeditor": "*",
+            "drupal/core": "*",
+            "drupal/notification": "*"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-1.x": "1.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-1.0",
+                "datestamp": "1474040339"
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "Kevin Quillen (kevinquillen)",
+                "homepage": "https://www.drupal.org/u/kevinquillen",
+                "role": "Maintainer"
+            }
+        ],
+        "description": "Adds the ability to count words and/or characters to CKEditor.",
+        "homepage": "http://drupal.org/project/ckwordcount",
+        "keywords": [
+            "Drupal"
+        ],
+        "support": {
+            "source": "http://cgit.drupalcode.org/ckwordcount",
+            "issues": "http://drupal.org/project/issues/ckwordcount"
+        }
     }
 ]

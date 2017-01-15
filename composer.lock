@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "fbaf53e18a87578e93333c4baaa0d5a0",
-    "content-hash": "15f20ea202a4526d2e9e916f84c33e52",
+    "hash": "63f7e11183e43e725e24e3bf76c7e163",
+    "content-hash": "e796c555b91b5169862cc008e18a79f8",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -1385,6 +1385,56 @@
             }
         },
         {
+            "name": "drupal/ckwordcount",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/ckwordcount",
+                "reference": "8.x-1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/ckwordcount-8.x-1.0.zip",
+                "reference": null,
+                "shasum": "fd60408c97cfbc491e7cd0e2c033219ec84e787d"
+            },
+            "require": {
+                "drupal/ckeditor": "*",
+                "drupal/core": "*",
+                "drupal/notification": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0",
+                    "datestamp": "1474040339"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Kevin Quillen (kevinquillen)",
+                    "homepage": "https://www.drupal.org/u/kevinquillen",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Adds the ability to count words and/or characters to CKEditor.",
+            "homepage": "http://drupal.org/project/ckwordcount",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/ckwordcount",
+                "issues": "http://drupal.org/project/issues/ckwordcount"
+            }
+        },
+        {
             "name": "drupal/config_update",
             "version": "1.2.0",
             "source": {
@@ -2686,8 +2736,7 @@
             "homepage": "https://www.drupal.org/project/juicebox",
             "support": {
                 "source": "http://cgit.drupalcode.org/juicebox"
-            },
-            "time": "2016-10-06 04:00:09"
+            }
         },
         {
             "name": "drupal/key_value",
@@ -2844,8 +2893,7 @@
                 "source": "http://cgit.drupalcode.org/libraries",
                 "issues": "http://drupal.org/project/issues/libraries",
                 "irc": "irc://irc.freenode.org/drupal-contribute"
-            },
-            "time": "2017-01-04 16:26:54"
+            }
         },
         {
             "name": "drupal/mailchimp",
@@ -3435,6 +3483,54 @@
             "homepage": "https://www.drupal.org/project/multiversion",
             "support": {
                 "source": "http://cgit.drupalcode.org/multiversion"
+            }
+        },
+        {
+            "name": "drupal/notification",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/notification",
+                "reference": "8.x-1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/notification-8.x-1.0.zip",
+                "reference": "8.x-1.0",
+                "shasum": "cef8a844be73fc7f391cdc5e962d2e757f36d634"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0",
+                    "datestamp": "1474041239"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Kevin Quillen (kevinquillen)",
+                    "homepage": "https://www.drupal.org/u/kevinquillen",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Adds the Notification plugin to CKEditor.",
+            "homepage": "http://drupal.org/project/notification",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/notification",
+                "issues": "http://drupal.org/project/issues/notification"
             }
         },
         {
