@@ -15,3 +15,13 @@
   };
 
 })(jQuery, Drupal);
+
+// MatchHeights
+$(function() {
+    $('.equalHeight').matchHeight();
+});
+
+// SlickNav
+$(function(){
+    $('#menu').slicknav();
+});
