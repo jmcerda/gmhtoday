@@ -3,6 +3,7 @@ status: true
 dependencies:
   config:
     - field.storage.node.field_user
+    - node.type.testimonial
 id: node.testimonial.field_user
 field_name: field_user
 entity_type: node
