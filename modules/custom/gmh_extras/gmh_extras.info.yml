@@ -1,7 +1,6 @@
 name: GMH Extras
 type: module
 core: 8.x
-description: Megamenu solutions for Drupal
+description: Miscellaneous functionality for gmhToday.net
 package: gmhToday
-dependencies:
-  - views
+
