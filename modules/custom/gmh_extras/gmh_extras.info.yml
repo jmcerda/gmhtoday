@@ -1,0 +1,6 @@
+name: GMH Extras
+type: module
+description: Megamenu solutions for Drupal
+package: gmhToday
+dependencies:
+  - views
