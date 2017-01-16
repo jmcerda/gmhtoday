@@ -30,7 +30,8 @@
         "drupal/slick_media": "1.x-dev",
         "drupal/geocoder": "2.x-dev",
         "drupal/juicebox": "2.x-dev",
-        "drupal/ckwordcount": "^1.0"
+        "drupal/ckwordcount": "^1.0",
+        "drupal/console": "~1.0"
     },
     "replace": {
         "drupal/core": "~8.2"

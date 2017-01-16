@@ -13,6 +13,7 @@ return array(
     'DisqusInterfaceNotDefined' => $vendorDir . '/drexarj/disqus-php/disqusapi/disqusapi.php',
     'DisqusResource' => $vendorDir . '/drexarj/disqus-php/disqusapi/disqusapi.php',
     'Drupal' => $baseDir . '/core/lib/Drupal.php',
+    'DrupalFinder\\DrupalFinder' => $vendorDir . '/webflo/drupal-finder/src/DrupalFinder.php',
     'Drupal\\Component\\Utility\\Timer' => $baseDir . '/core/lib/Drupal/Component/Utility/Timer.php',
     'Drupal\\Component\\Utility\\Unicode' => $baseDir . '/core/lib/Drupal/Component/Utility/Unicode.php',
     'Drupal\\Core\\Database\\Database' => $baseDir . '/core/lib/Drupal/Core/Database/Database.php',
