@@ -31,7 +31,8 @@
         "drupal/geocoder": "2.x-dev",
         "drupal/juicebox": "2.x-dev",
         "drupal/ckwordcount": "^1.0",
-        "drupal/console": "~1.0"
+        "drupal/console": "~1.0",
+        "drupal/name": "1.x-dev"
     },
     "replace": {
         "drupal/core": "~8.2"
