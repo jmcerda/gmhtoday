@@ -4125,7 +4125,8 @@ footer {
     color: #c35019; }
   footer li {
     list-style: none;
-    border-bottom: 1px dashed #fff; }
+    border-bottom: 1px dashed #fff;
+    display: inline-block; }
   footer .footer_quicklinks {
     border-top-right-radius: 10% 100%;
     border-bottom-right-radius: 10% 100%; }
