@@ -1,5 +1,5 @@
 global:
-  version: 1.x
+  version: VERSION
   css:
     base:
       css/gmh.css: {}
