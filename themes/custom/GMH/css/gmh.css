@@ -4098,3 +4098,6 @@ table.hover tbody tr:nth-of-type(even):hover {
 
 #fp_slick {
   height: 100%; }
+  #fp_slick img {
+    float: right;
+    border-radius: 50%; }
