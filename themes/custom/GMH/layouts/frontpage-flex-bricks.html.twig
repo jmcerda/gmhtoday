@@ -24,39 +24,45 @@
  */
 #}
 {% if  settings.css_id or settings.css_classes %}
-<div {{ attributes.setAttribute('id', settings.css_id).addClass('gmh-front-2col-bricks', settings.css_classes) }}>
+<div {{ attributes.setAttribute('id', settings.css_id).addClass('gmh-front-bricks', settings.css_classes) }}>
 {% endif %}
 
-  <div class="row">
-    <div class="medium-12 columns">{{ content.top }}</div>
-  </div>
-
-  <div class="row">
-    <div class="medium-6 small-12 columns">
-      {{ content.above_left }}
-    </div>
-    <div class="medium-6 small-12 columns">
-      {{ content.above_right }}
+  <div id="hero_front_gmh" class="row">
+    <div class="medium-12 columns">
+      {{ content.hero }}
     </div>
   </div>
-
-  <div class="row">
-    <div class="medium-12 columns">{{ content.middle }}</div>
-  </div>
-
-  <div class="row">
-    <div class="medium-6 small-12 columns">
-      {{ content.below_left }}
-    </div>
-
-    <div class="medium-6 small-12 columns">
-      {{ content.below_right }}
+  <div id="about_front_gmh" class="row">
+    <div class="medium-12 columns">
+      {{ content.about }}
     </div>
   </div>
-
+  <div id="latest_front_gmh" class="row">
+    <div class="medium-12 columns">
+      {{ content.latest }}
+    </div>
+  </div>
+  <div id="testimonials_front_gmh" class="row">
+    <div class="medium-12 columns">
+      {{ content.testimonials }}
+    </div>
+  </div>
+  <div id="ads_front_gmh" class="row">
+    <div class="medium-12 columns">
+      {{ content.ads }}
+    </div>
+  </div>
+  <div id="events_front_gmh" class="row">
+    <div class="medium-6 small-12 columns">
+      {{ content.events_left }}
+    </div>
+    <div class="medium-6 small-12 columns">
+      {{ content.events_right }}
+    </div>
+  </div>
   <div class="row">
     <div class="medium-12 columns">{{ content.bottom }}</div>
   </div>
 {% if  settings.css_id or settings.css_classes %}
-</div> <!-- /.gmh-front-2col-bricks -->
+</div>
 {% endif %}
