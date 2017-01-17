@@ -13,7 +13,7 @@
       // MatchHeights
       $('.equalHeight').matchHeight();
       // SlickNav
-      $('#menu').slicknav();
+      $('.menu').slicknav();
     }
   };
 

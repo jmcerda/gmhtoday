@@ -4143,10 +4143,7 @@ footer {
 .supported-logo {
   display: inline; }
 
-.gmh_primary_nav {
-  margin: 0 auto;
-  display: table; }
-  .gmh_primary_nav a {
-    text-transform: uppercase;
-    color: #685d1f;
-    font-weight: bold; }
+.gmh_primary_nav a {
+  text-transform: uppercase;
+  color: #685d1f;
+  font-weight: bold; }
