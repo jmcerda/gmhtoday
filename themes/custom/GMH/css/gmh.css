@@ -4118,10 +4118,13 @@ table.hover tbody tr:nth-of-type(even):hover {
 
 footer h2 {
   font-size: 1.75em;
-  color: #fff !important; }
+  color: #fff; }
 
-footer .block-advertisinginfo h2, footer .block-gmh-footer h2 {
+footer .column:last-child h2, footer .columns:last-child h2 {
   color: #c35019; }
 
 footer li {
   list-style: none; }
+
+footer .block-advertisinginfo li, footer .block-gmh-footer li {
+  color: #fff; }

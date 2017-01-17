@@ -29,15 +29,20 @@
 footer {
 	h2 {
 		font-size: 1.75em;
-		color: #fff !important;
+		color: #fff;
 	}
-	.block-advertisinginfo, .block-gmh-footer {
+	.column:last-child {
 		h2 {
 			color: $alert-color;
 		}
 	}
 	li {
 		list-style: none;
+	}
+	.block-advertisinginfo, .block-gmh-footer {
+		li {
+			color: #fff;
+		}
 	}
 
 }
