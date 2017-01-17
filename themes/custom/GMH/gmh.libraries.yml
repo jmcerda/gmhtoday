@@ -5,16 +5,18 @@ global:
       css/gmh.css: {}
   js:
     js/gmh.js: {}
+    js/slicknav/dist/jquery.slicknav.min.js: {}
+    js/matchHeight/jquery.matchHeight-min.js: {}
 
-slick:
-  version: VERSION
-  css:
-    base:
-      js/slicknav/dist/slicknav.min.css: {preprocess: false}
-  js:
-    js/slicknav/dist/jquery.slicknav.min.js: {preprocess: false}
+# slick:
+#   version: VERSION
+#   css:
+#     base:
+#       js/slicknav/dist/slicknav.min.css: {preprocess: false}
+#   js:
+#     js/slicknav/dist/jquery.slicknav.min.js: {preprocess: false}
 
-matchHeight:
-  version: VERSION
-  js:
-    js/matchHeight/jquery.matchHeight-min.js: {preprocess: false}
+# matchHeight:
+#   version: VERSION
+#   js:
+#     js/matchHeight/jquery.matchHeight-min.js: {preprocess: false}
