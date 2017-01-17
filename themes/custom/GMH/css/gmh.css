@@ -4126,6 +4126,9 @@ footer {
   footer li {
     list-style: none;
     border-bottom: 1px dashed #fff; }
+  footer .footer_quicklinks {
+    border-top-right-radius: 10% 100%;
+    border-bottom-right-radius: 10% 100%; }
   footer .footer_advertising, footer .footer_quicklinks {
     background-color: #487dad; }
     footer .footer_advertising a, footer .footer_quicklinks a {
