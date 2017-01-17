@@ -16,10 +16,10 @@
 
 })(jQuery, Drupal);
 
-MatchHeights
-$(function() {
-    $('.equalHeight').matchHeight();
-});
+// MatchHeights
+// $(function() {
+//     $('.equalHeight').matchHeight();
+// });
 
 // // SlickNav
 // $(function(){
