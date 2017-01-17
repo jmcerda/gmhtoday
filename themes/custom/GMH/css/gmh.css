@@ -4126,5 +4126,5 @@ footer .column:last-child h2, footer .columns:last-child h2 {
 footer li {
   list-style: none; }
 
-footer .block-advertisinginfo li, footer .block-gmh-footer li {
+footer .block-advertisinginfo a, footer .block-gmh-footer a {
   color: #fff; }
