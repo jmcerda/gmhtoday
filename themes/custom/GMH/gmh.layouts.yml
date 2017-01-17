@@ -1,6 +1,6 @@
 gmh_frontpage:
   label: 'GMH: frontpage-flex-bricks layout'
-  category: 'GMH: Pages'
+  category: 'GMH Pages'
   template: layouts/frontpage-flex-bricks.html.twig
   regions:
     hero:
