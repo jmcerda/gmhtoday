@@ -3,6 +3,7 @@ global:
   css:
     base:
       css/gmh.css: {}
+      js/slicknav/dist/slicknav.min.css: {}
   js:
     js/gmh.js: {}
     js/slicknav/dist/jquery.slicknav.min.js: {}
