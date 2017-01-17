@@ -10,13 +10,16 @@
    */
   Drupal.behaviors.equalHeight_behavior = {
     attach: function (context, settings) {
+      // MatchHeights
       $('.equalHeight').matchHeight();
+      // SlickNav
+      $('#menu').slicknav();
     }
   };
 
 })(jQuery, Drupal);
 
-// MatchHeights
+
 // $(function() {
 //     $('.equalHeight').matchHeight();
 // });
