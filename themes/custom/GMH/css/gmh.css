@@ -4116,11 +4116,12 @@ table.hover tbody tr:nth-of-type(even):hover {
     color: #685d1f;
     font-weight: bold; }
 
-footer {
-  color: #fff; }
-  footer h2 {
-    font-size: 1.75em; }
-  footer .block-advertisinginfo h2, footer .block-gmh-footer h2 {
-    color: #c35019; }
-  footer li {
-    list-style: none; }
+footer h2 {
+  font-size: 1.75em;
+  color: #fff !important; }
+
+footer .block-advertisinginfo h2, footer .block-gmh-footer h2 {
+  color: #c35019; }
+
+footer li {
+  list-style: none; }
