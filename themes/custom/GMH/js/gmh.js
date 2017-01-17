@@ -8,18 +8,18 @@
   /**
    * Use this behavior as a template for custom Javascript.
    */
-  Drupal.behaviors.exampleBehavior = {
+  Drupal.behaviors.equalHeight_behavior = {
     attach: function (context, settings) {
-      //alert("I'm alive!");
+      $('.equalHeight').matchHeight();
     }
   };
 
 })(jQuery, Drupal);
 
 // MatchHeights
-$(function() {
-    $('.equalHeight').matchHeight();
-});
+// $(function() {
+//     $('.equalHeight').matchHeight();
+// });
 
 // // SlickNav
 // $(function(){
