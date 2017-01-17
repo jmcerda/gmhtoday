@@ -4135,3 +4135,6 @@ footer .footer_advertising, footer .footer_quicklinks {
 footer .footer_logo_div img {
   max-width: 75%;
   float: right; }
+
+footer .columns {
+  padding: 2em; }
