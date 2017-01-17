@@ -1,20 +1,21 @@
 gmh_frontpage:
-  label: 'GMH: Multi-row layout'
+  label: 'GMH: frontpage-flex-bricks layout'
   category: 'GMH: Pages'
-  template: layouts/frontpage-2col-bricks.html.twig
+  template: layouts/frontpage-flex-bricks.html.twig
   regions:
-    top:
-      label: Top
-    above_left:
-      label: Above Left
-    above_right:
-      label: Above Right
-    middle:
-      label: Middle
-    below_left:
-      label: Below Left
-    below_right:
-      label: Below Right
+    hero:
+      label: Hero
+    about:
+      label: About
+    latest:
+      label: Latest
+    testimonials:
+      label: Testimonials
+    ads:
+      label: Ads
+    events_left:
+      label: Events Left
+    events_right:
+      label: Events Right
     bottom:
       label: Bottom
-  icon: layouts/frontpage-2col-bricks.png
