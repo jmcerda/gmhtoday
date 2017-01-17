@@ -4102,5 +4102,5 @@ table.hover tbody tr:nth-of-type(even):hover {
     float: right;
     border-radius: 50%; }
 
-.latest-issues-front {
+#views_block:issues-block_1 {
   background-color: #dae5ef; }
