@@ -4102,5 +4102,5 @@ table.hover tbody tr:nth-of-type(even):hover {
     float: right;
     border-radius: 50%; }
 
-.latest_issues li {
+.latest-issues li {
   display: inline-block; }
