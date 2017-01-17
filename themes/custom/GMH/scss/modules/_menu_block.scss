@@ -1,0 +1,14 @@
+.gmh_primary_nav {
+	// margin: 0 auto;
+	// display: table;
+	a {
+		text-transform: uppercase;
+		color: $secondary-color;
+		font-weight: bold;
+	}
+
+@media screen and (min-width: 40em) {}
+	.slicknav_menu {
+		display: none;
+	}
+}
