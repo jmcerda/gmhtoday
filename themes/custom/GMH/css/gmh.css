@@ -4144,4 +4144,6 @@ footer {
   display: inline; }
 
 .gmh_primary_nav {
-  text-align: center; }
+  text-align: center;
+  text-transform: uppercase;
+  color: #685d1f; }
