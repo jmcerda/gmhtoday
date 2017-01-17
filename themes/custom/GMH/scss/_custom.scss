@@ -6,6 +6,15 @@
   }
 }
 
-#views_block:issues-block_1 {
+.latest-issues-front {
 	background-color: $light-blue-background;
+	text-align: center;
+	.column {
+		padding: 2em;
+	}
+	.latest-issue-date {
+		color: $primary-color;
+		text-transform: uppercase;
+		font-size: 25;
+	}
 }

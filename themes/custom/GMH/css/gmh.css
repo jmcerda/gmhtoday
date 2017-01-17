@@ -4102,5 +4102,12 @@ table.hover tbody tr:nth-of-type(even):hover {
     float: right;
     border-radius: 50%; }
 
-#views_block:issues-block_1 {
-  background-color: #dae5ef; }
+.latest-issues-front {
+  background-color: #dae5ef;
+  text-align: center; }
+  .latest-issues-front .column, .latest-issues-front .columns {
+    padding: 2em; }
+  .latest-issues-front .latest-issue-date {
+    color: #2199e8;
+    text-transform: uppercase;
+    font-size: 25; }
