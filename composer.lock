@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "eff402857ea1d8914a01fff48723b5a1",
-    "content-hash": "2c444f82fb862ac12a1b7577156b784f",
+    "hash": "7403b6790703ba79014062961760d416",
+    "content-hash": "cf3a8752f1db5212178ae731120b4a84",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -1645,6 +1645,85 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/blazy",
                 "issues": "https://drupal.org/project/issues/blazy"
+            }
+        },
+        {
+            "name": "drupal/block_class",
+            "version": "1.0.0-alpha1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/block_class",
+                "reference": "8.x-1.0-alpha1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/block_class-8.x-1.0-alpha1.zip",
+                "reference": null,
+                "shasum": "194cd52210ea2e0e5dbbd34fad4528d500424430"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-alpha1",
+                    "datestamp": "1475623439"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Aaron Stanush",
+                    "homepage": "https://www.drupal.org/user/89718"
+                },
+                {
+                    "name": "DYdave",
+                    "homepage": "https://www.drupal.org/user/467284"
+                },
+                {
+                    "name": "Four Kitchens",
+                    "homepage": "https://www.drupal.org/user/358502"
+                },
+                {
+                    "name": "Todd Nienkerk",
+                    "homepage": "https://www.drupal.org/user/92096"
+                },
+                {
+                    "name": "berenddeboer",
+                    "homepage": "https://www.drupal.org/user/143552"
+                },
+                {
+                    "name": "elliotttf",
+                    "homepage": "https://www.drupal.org/user/61601"
+                },
+                {
+                    "name": "mirzu",
+                    "homepage": "https://www.drupal.org/user/7710"
+                },
+                {
+                    "name": "patrickcoffeyo",
+                    "homepage": "https://www.drupal.org/user/2837945"
+                },
+                {
+                    "name": "pcoffey",
+                    "homepage": "https://www.drupal.org/user/1595818"
+                },
+                {
+                    "name": "tsmith512",
+                    "homepage": "https://www.drupal.org/user/2031446"
+                }
+            ],
+            "description": "Allows assigning classes to Blocks",
+            "homepage": "https://www.drupal.org/project/block_class",
+            "support": {
+                "source": "http://cgit.drupalcode.org/block_class"
             }
         },
         {
@@ -4541,8 +4620,7 @@
             "homepage": "https://www.drupal.org/project/simple_menu_icons",
             "support": {
                 "source": "http://cgit.drupalcode.org/simple_menu_icons"
-            },
-            "time": "2016-10-03 15:25:52"
+            }
         },
         {
             "name": "drupal/slick",
