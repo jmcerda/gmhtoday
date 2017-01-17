@@ -31,10 +31,14 @@ footer {
 		font-size: 1.75em;
 	}
 	color: #fff;
-}
-.block-advertisinginfo, .block-gmh-footer {
-	h2 {
-		1.75em;
-		color: $alert-color;
+	.block-advertisinginfo, .block-gmh-footer {
+		h2 {
+			1.75em;
+			color: $alert-color;
+		}
 	}
+	li {
+		list-style: none;
+	}
+
 }
