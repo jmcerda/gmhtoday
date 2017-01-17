@@ -4139,3 +4139,6 @@ footer {
     float: right; }
   footer .columns {
     padding: 1em; }
+
+.supported_logo {
+  display: inline; }
