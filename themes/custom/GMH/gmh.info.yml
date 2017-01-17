@@ -9,6 +9,7 @@ screenshot: images/screenshot.jpg
 
 libraries:
  - gmh/global
+ - js/matchHeight/jquery.matchHeight-min.js
 
 # Regions are output in the page.html.twig
 
