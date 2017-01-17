@@ -4131,3 +4131,7 @@ footer .footer_advertising, footer .footer_quicklinks {
   background-color: #487dad; }
   footer .footer_advertising a, footer .footer_quicklinks a {
     color: #fff; }
+
+footer .footer_logo_div img {
+  max-width: 75%;
+  float: right; }
