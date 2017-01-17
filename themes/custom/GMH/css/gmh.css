@@ -4096,6 +4096,14 @@ table.hover tbody tr:nth-of-type(even):hover {
   width: 16em;
   line-height: normal; }
 
+.gmh_primary_nav a {
+  text-transform: uppercase;
+  color: #777;
+  font-weight: bold; }
+
+.gmh_primary_nav .slicknav_menu {
+  display: none; }
+
 #fp_slick {
   height: 100%; }
   #fp_slick img {
