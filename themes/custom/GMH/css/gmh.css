@@ -4148,4 +4148,5 @@ footer {
   display: table; }
   .gmh_primary_nav a {
     text-transform: uppercase;
-    color: #685d1f; }
+    color: #685d1f;
+    font-weight: bold; }
