@@ -68,7 +68,10 @@ footer {
 	display: inline;
 }
 .gmh_primary_nav {
-	text-align: center;
-	text-transform: uppercase;
-	color: $secondary-color;
+	margin: 0 auto;
+	display: table;
+	li {
+		text-transform: uppercase;
+		color: $secondary-color;
+	}
 }
