@@ -4107,7 +4107,7 @@ table.hover tbody tr:nth-of-type(even):hover {
   text-align: center;
   padding: 2em 0; }
   .latest-issues-front .column, .latest-issues-front .columns {
-    padding: 2em; }
+    padding: 2em 5em; }
   .latest-issues-front .latest-issue-date {
     color: #2199e8;
     text-transform: uppercase;
