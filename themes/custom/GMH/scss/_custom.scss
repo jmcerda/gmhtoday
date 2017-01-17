@@ -26,8 +26,15 @@
 	}
 }
 
+footer {
+	h2 {
+		font-size: 1.75em;
+	}
+	color: #fff;
+}
 .block-advertisinginfo, .block-gmh-footer {
 	h2 {
 		1.75em;
+		color: $alert-color;
 	}
 }
