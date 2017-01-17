@@ -4124,7 +4124,8 @@ footer .footer_contact h2 {
   color: #c35019; }
 
 footer li {
-  list-style: none; }
+  list-style: none;
+  border-bottom: 1px dashed #fff; }
 
 footer .footer_advertising, footer .footer_quicklinks {
   background-color: #487dad; }

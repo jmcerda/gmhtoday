@@ -38,6 +38,7 @@ footer {
 	}
 	li {
 		list-style: none;
+		border-bottom: 1px dashed #fff;
 	}
 	.footer_advertising, .footer_quicklinks {
 		background-color: $primary-color;
