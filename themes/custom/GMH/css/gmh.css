@@ -4116,25 +4116,22 @@ table.hover tbody tr:nth-of-type(even):hover {
     color: #685d1f;
     font-weight: bold; }
 
-footer h2 {
-  font-size: 1.75em;
-  color: #fff; }
-
-footer .footer_contact h2 {
-  color: #c35019; }
-
-footer li {
-  list-style: none;
-  border-bottom: 1px dashed #fff; }
-
-footer .footer_advertising, footer .footer_quicklinks {
-  background-color: #487dad; }
-  footer .footer_advertising a, footer .footer_quicklinks a {
+footer {
+  margin: 2em auto; }
+  footer h2 {
+    font-size: 1.75em;
     color: #fff; }
-
-footer .footer_logo_div img {
-  max-width: 75%;
-  float: right; }
-
-footer .columns {
-  padding: 2em; }
+  footer .footer_contact h2 {
+    color: #c35019; }
+  footer li {
+    list-style: none;
+    border-bottom: 1px dashed #fff; }
+  footer .footer_advertising, footer .footer_quicklinks {
+    background-color: #487dad; }
+    footer .footer_advertising a, footer .footer_quicklinks a {
+      color: #fff; }
+  footer .footer_logo_div img {
+    max-width: 75%;
+    float: right; }
+  footer .columns {
+    padding: 2em; }
