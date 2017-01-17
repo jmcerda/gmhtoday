@@ -2,7 +2,7 @@ gmh_frontpage:
   label: 'GMH: frontpage-flex-bricks layout'
   category: 'GMH Pages'
   template: layouts/frontpage-flex-bricks.html.twig
-  class: '\Drupal\GMH\Plugin\Layout\gmhLayout'
+  # class: '\Drupal\GMH\Plugin\Layout\gmhLayout'
   regions:
     hero:
       label: Hero
