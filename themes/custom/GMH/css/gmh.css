@@ -4101,3 +4101,6 @@ table.hover tbody tr:nth-of-type(even):hover {
   #fp_slick img {
     float: right;
     border-radius: 50%; }
+
+.latest_issues li {
+  display: inline-block; }
