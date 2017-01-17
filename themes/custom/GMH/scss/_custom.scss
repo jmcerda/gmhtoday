@@ -31,7 +31,7 @@ footer {
 		font-size: 1.75em;
 		color: #fff;
 	}
-	.column:last-child {
+	.column_contact {
 		h2 {
 			color: $alert-color;
 		}
@@ -39,7 +39,7 @@ footer {
 	li {
 		list-style: none;
 	}
-	.block-advertisinginfo, .block-gmh-footer {
+	.footer_advertising, .footer_quicklinks {
 		background-color: $primary-color;
 		a {
 			color: #fff;

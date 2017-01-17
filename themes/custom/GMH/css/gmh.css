@@ -4120,13 +4120,13 @@ footer h2 {
   font-size: 1.75em;
   color: #fff; }
 
-footer .column:last-child h2, footer .columns:last-child h2 {
+footer .column_contact h2 {
   color: #c35019; }
 
 footer li {
   list-style: none; }
 
-footer .block-advertisinginfo, footer .block-gmh-footer {
+footer .footer_advertising, footer .footer_quicklinks {
   background-color: #487dad; }
-  footer .block-advertisinginfo a, footer .block-gmh-footer a {
+  footer .footer_advertising a, footer .footer_quicklinks a {
     color: #fff; }

@@ -184,50 +184,51 @@
           </div>
         {% endif %}
       </div>
+      <div class="row">
+        {% if page.footer_first %}
+          <div id="footer-first" class="large-4 columns">
+            {{ page.footer_first }}
+          </div>
+        {% endif %}
+        {% if page.footer_second %}
+          <div id="footer-second" class="large-4 columns">
+            {{ page.footer_second }}
+          </div>
+        {% endif %}
+        {% if page.footer_third %}
+          <div id="footer-third" class="large-4 columns">
+            {{ page.footer_third }}
+          </div>
+        {% endif %}
+      </div>
       <footer>
-        <div class="row">
-          {% if page.footer_first %}
-            <div id="footer-first" class="large-4 columns">
-              {{ page.footer_first }}
-            </div>
-          {% endif %}
-          {% if page.footer_second %}
-            <div id="footer-second" class="large-4 columns">
-              {{ page.footer_second }}
-            </div>
-          {% endif %}
-          {% if page.footer_third %}
-            <div id="footer-third" class="large-4 columns">
-              {{ page.footer_third }}
-            </div>
-          {% endif %}
-        </div>
-        <div class="row">
-          <div class="large-3 columns">
+        <!-- <div class="row"> -->
+          <div class="large-3 columns footer_advertising">
             <nav class="navigation" role="navigation">
                 {{ advertising_info_menu }}
             </nav>
           </div>
-          <div class="large-3 columns">
+          <div class="large-3 columns footer_quicklinks">
             <nav class="navigation" role="navigation">
                 {{ footer_menu }}
             </nav>
           </div>
-          <div class="large-3 columns">
+          <div class="large-3 columns footer_logo_div">
             <img class="footer-logo" src="{{ logopath }}" />
           </div>
-          <div class="large-3 columns">
+          <div class="large-3 columns footer-contact">
             <div itemscope itemtype="http://schema.org/LocalBusiness">
               <h2>Contact <span itemprop="name">gmhToday</span></h2>
               <span itemprop="address">7446 Rosanna Street<br />Gilroy, CA 95020</span>
               <span itemprop="telephone">
                 <a href="tel:+14088486540">408.848.6540</a>
-              <span>
+              </span>
               <span itemprop="email">
                 <a href="mailto:info@gmhtoday.net">info@gmhtoday.net</a>
               </span>
             </div>
           </div>
+        <!-- </div> -->
       </footer>
       <div class="bottom-bar panel">
         <div class="row">
