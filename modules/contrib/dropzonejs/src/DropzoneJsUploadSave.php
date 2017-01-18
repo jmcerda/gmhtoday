@@ -31,14 +31,14 @@ class DropzoneJsUploadSave implements DropzoneJsUploadSaveInterface {
   /**
    * Mime type guesser service.
    *
-   * @var \Symfony\Component\HttpFoundation\File\MimeType\MimeTypeGuesserInterface;
+   * @var \Symfony\Component\HttpFoundation\File\MimeType\MimeTypeGuesserInterface
    */
   protected $mimeTypeGuesser;
 
   /**
    * The file system service.
    *
-   * @var \Drupal\Core\File\FileSystemInterface;
+   * @var \Drupal\Core\File\FileSystemInterface
    */
   protected $fileSystem;
 
@@ -101,7 +101,7 @@ class DropzoneJsUploadSave implements DropzoneJsUploadSaveInterface {
   /**
    * {@inheritdoc}
    */
-  public function createFile($uri, $destination, $extensions, AccountProxyInterface $user, $validators = []) {
+  public function createFile($uri, $destination, $extensions, AccountProxyInterface $user, array $validators = []) {
     // Create the file entity.
     $uri = file_stream_wrapper_uri_normalize($uri);
     $file_info = new \SplFileInfo($uri);
