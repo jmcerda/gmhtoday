@@ -2,8 +2,8 @@ global:
   version: VERSION
   css:
     base:
-      css/gmh.css: {}
       js/slicknav/dist/slicknav.min.css: {}
+      css/gmh.css: {}
   js:
     js/gmh.js: {}
     js/slicknav/dist/jquery.slicknav.min.js: {}
