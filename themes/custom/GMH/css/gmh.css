@@ -4129,7 +4129,13 @@ footer {
   color: #685d1f;
   font-weight: bold; }
 
+.brand_parent {
+  background: #fbfbfb; }
+
 .slicknav_menu {
+  background: #fbfbfb; }
+
+#hero_front_gmh {
   background: #fbfbfb; }
 
 @media screen and (min-width: 40em) {
