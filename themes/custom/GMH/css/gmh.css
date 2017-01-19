@@ -4129,8 +4129,9 @@ footer {
   color: #685d1f;
   font-weight: bold; }
 
-.gmh_primary_nav .slicknav_menu {
-  display: none; }
+@media screen and (min-width: 64em) {
+  .gmh_primary_nav .slicknav_menu {
+    display: none; } }
 
 #fp_slick {
   height: 100%; }
