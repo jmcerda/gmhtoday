@@ -14,10 +14,14 @@ gmh_frontpage_bricks:
       label: Testimonials
     ads:
       label: Ads
+    partners:
+      label: Partners
     events:
       label: Events
     blog:
       label: Blog
+    editor_choice:
+      label: Editor's Choice
     bottom:
       label: Bottom
   icon: layouts/gmh_frontpage_bricks/gmh_frontpage_bricks.png
