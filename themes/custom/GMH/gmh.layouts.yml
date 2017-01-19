@@ -14,10 +14,8 @@ gmh_frontpage:
       label: Testimonials
     ads:
       label: Ads
-    events_left:
+    events:
       label: Events
-    events_right:
+    blog:
       label: Blog
-    bottom:
-      label: Bottom
   icon: layouts/frontpage_2col_bricks.png
