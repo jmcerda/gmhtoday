@@ -8,7 +8,7 @@
 		color: $secondary-color;
 		font-weight: bold;
 	}
-	@include breakpoint(large) {
+	@include breakpoint(medium) {
 		.slicknav_menu {
 			display: none;
 		}
