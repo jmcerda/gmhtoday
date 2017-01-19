@@ -26,8 +26,7 @@
 // Make sure the charset is set appropriately
 @charset 'utf-8';
 
-//This is your _settings.scss file where you can override foundation variables.
-@import 'settings';
+
 
 // Core
 // The following imports bootstrap the theme.
@@ -84,3 +83,6 @@ $flex: false;
 // @import "vendor/ie";
 
 @import "custom";
+
+//This is your _settings.scss file where you can override foundation variables.
+@import 'settings';
