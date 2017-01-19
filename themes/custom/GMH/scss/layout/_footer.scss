@@ -5,7 +5,7 @@ footer {
 	background: linear-gradient(
 	    to right,
 	    #487dad 0%,
-	    #487dad 50%,
+	    #487dad 25%,
 	    #ffffff 50%,
 	    #ffffff 100%
   );
@@ -28,7 +28,7 @@ footer {
 		border-bottom-right-radius: 10% 100%
 	}
 	.footer_advertising, .footer_quicklinks {
-		// background-color: $primary-color;
+		background-color: $primary-color;
 		a {
 			color: #fff;
 		}

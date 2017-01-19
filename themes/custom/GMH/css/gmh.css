@@ -4098,7 +4098,7 @@ table.hover tbody tr:nth-of-type(even):hover {
 
 footer {
   margin: 2em auto;
-  background: linear-gradient(to right, #487dad 0%, #487dad 50%, #ffffff 50%, #ffffff 100%); }
+  background: linear-gradient(to right, #487dad 0%, #487dad 25%, #ffffff 50%, #ffffff 100%); }
   footer h2 {
     font-size: 1.75em;
     color: #fff; }
@@ -4111,8 +4111,10 @@ footer {
   footer .footer_quicklinks {
     border-top-right-radius: 10% 100%;
     border-bottom-right-radius: 10% 100%; }
-  footer .footer_advertising a, footer .footer_quicklinks a {
-    color: #fff; }
+  footer .footer_advertising, footer .footer_quicklinks {
+    background-color: #2199e8; }
+    footer .footer_advertising a, footer .footer_quicklinks a {
+      color: #fff; }
   footer .footer_logo_div img {
     max-width: 75%;
     float: right; }
