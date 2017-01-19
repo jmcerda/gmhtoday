@@ -4130,7 +4130,7 @@ footer {
   font-weight: bold; }
 
 @media screen and (min-width: 40em) {
-  .gmh_primary_nav .slicknav_menu {
+  .slicknav_menu {
     display: none; } }
 
 #fp_slick {

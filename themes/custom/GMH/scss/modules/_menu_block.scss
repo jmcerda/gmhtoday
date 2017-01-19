@@ -8,9 +8,10 @@
 		color: $secondary-color;
 		font-weight: bold;
 	}
-	@include breakpoint(medium) {
-		.slicknav_menu {
-			display: none;
-		}
+}
+
+@include breakpoint(medium) {
+	.slicknav_menu {
+		display: none;
 	}
 }
