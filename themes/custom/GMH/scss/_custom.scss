@@ -19,7 +19,7 @@
 .latest-issues-front {
 	text-align: center;
 	padding: 2em 0;
-  @include breakpoint(medium) {
+  @include breakpoint(large) {
   	.column {
   		padding: 2em 5em;
   	}
