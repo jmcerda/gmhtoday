@@ -4129,6 +4129,9 @@ footer {
   color: #685d1f;
   font-weight: bold; }
 
+.slicknav_menu {
+  background: #fbfbfb; }
+
 @media screen and (min-width: 40em) {
   .slicknav_menu {
     display: none; } }
