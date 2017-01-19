@@ -1,6 +1,6 @@
 gmh_frontpage_bricks:
   label: 'GMH: Frontpage bricks'
-  category: 'GHM: 2'
+  category: 'GMH'
   class: '\Drupal\zurb_foundation\Plugin\Layout\FoundationLayout'
   template: layouts/gmh_frontpage_bricks/gmh-frontpage-bricks
   regions:
