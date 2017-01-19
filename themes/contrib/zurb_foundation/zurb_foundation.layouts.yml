@@ -134,28 +134,3 @@ foundation_6row_combo:
     bottom:
       label: Bottom
   icon: layouts/foundation_6row_combo/foundation_6row_combo.png
-
-# Custom
-foundation_frontpage_bricks:
-  label: 'Foundation: Frontpage bricks'
-  category: 'Foundation: 2'
-  class: '\Drupal\zurb_foundation\Plugin\Layout\FoundationLayout'
-  template: layouts/foundation_frontpage_bricks/foundation-frontpage-bricks
-  regions:
-    hero:
-      label: Hero
-    about:
-      label: About
-    latest:
-      label: Latest
-    testimonials:
-      label: Testimonials
-    ads:
-      label: Ads
-    events:
-      label: Events
-    blog:
-      label: Blog
-    bottom:
-      label: Bottom
-  icon: layouts/foundation_frontpage_bricks/foundation_frontpage_bricks.png
