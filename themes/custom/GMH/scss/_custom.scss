@@ -8,8 +8,12 @@
   }
 }
 
-.latest-issues-front {
+#latest_front_gmh {
 	background-color: $light-blue-background;
+}
+
+
+.latest-issues-front {
 	text-align: center;
 	padding: 2em 0;
 	.column {
@@ -24,44 +28,6 @@
 		color: $secondary-color;
 		font-weight: bold;
 	}
-}
-
-footer {
-	margin: 2em auto;
-	h2 {
-		font-size: 1.75em;
-		color: #fff;
-	}
-	.footer_contact {
-		h2 {
-			color: $alert-color;
-		}
-	}
-	li {
-		list-style: none;
-		border-bottom: 1px dashed #fff;
-		width: 60%;
-	}
-	.footer_quicklinks {
-		border-top-right-radius: 10% 100%;
-		border-bottom-right-radius: 10% 100%
-	}
-	.footer_advertising, .footer_quicklinks {
-		background-color: $primary-color;
-		a {
-			color: #fff;
-		}
-	}
-	.footer_logo_div {
-		img {
-			max-width: 75%;
-			float: right;
-		}
-	}
-	.columns {
-		padding: 1em;
-	}
-
 }
 
 .supported-logo {
