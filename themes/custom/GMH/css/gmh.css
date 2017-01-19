@@ -4103,7 +4103,7 @@ footer {
     font-size: 1.75em;
     color: #fff; }
   footer .footer_contact h2 {
-    color: #ec5840; }
+    color: #c35019; }
   footer li {
     list-style: none;
     border-bottom: 1px dashed #fff;
@@ -4112,7 +4112,7 @@ footer {
     border-top-right-radius: 10% 100%;
     border-bottom-right-radius: 10% 100%; }
   footer .footer_advertising, footer .footer_quicklinks {
-    background-color: #2199e8; }
+    background-color: #487dad; }
     footer .footer_advertising a, footer .footer_quicklinks a {
       color: #fff; }
   footer .footer_logo_div img {
@@ -4123,7 +4123,7 @@ footer {
 
 .gmh_primary_nav a {
   text-transform: uppercase;
-  color: #777;
+  color: #685d1f;
   font-weight: bold; }
 
 .gmh_primary_nav .slicknav_menu {
