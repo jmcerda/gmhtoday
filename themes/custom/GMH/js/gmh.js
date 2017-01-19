@@ -14,7 +14,7 @@
       $('.equalHeight').matchHeight();
       // SlickNav
       $('.menu').slicknav({
-		  duration: 1000,
+		  duration: 500,
 		  easingOpen: "easeOutBounce"
 	  });
     }
