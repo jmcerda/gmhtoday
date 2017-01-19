@@ -27,50 +27,68 @@
 <div {{ attributes.setAttribute('id', settings.css_id).addClass('gmh-frontpage-bricks', settings.css_classes) }}>
 {% endif %}
 
-  <div id="hero_front_gmh" class="row">
-    <div class="medium-12 columns">
-      {{ content.hero }}
+  <div id="hero_front_gmh">
+    <div class="row">
+      <div class="medium-12 columns">
+        {{ content.hero }}
+      </div>
     </div>
   </div>
-  <div id="about_front_gmh" class="row">
-    <div class="medium-12 columns">
-      {{ content.about }}
+  <div id="about_front_gmh">
+    <div class="row">
+      <div class="medium-12 columns">
+        {{ content.about }}
+      </div>
     </div>
   </div>
-  <div id="latest_front_gmh" class="row">
-    <div class="medium-12 columns">
-      {{ content.latest }}
+  <div id="latest_front_gmh">
+    <div class="row">
+      <div class="medium-12 columns">
+        {{ content.latest }}
+      </div>
     </div>
   </div>
-  <div id="testimonials_front_gmh" class="row">
-    <div class="medium-12 columns">
-      {{ content.testimonials }}
+  <div id="testimonials_front_gmh">
+    <div class="row">
+      <div class="medium-12 columns">
+        {{ content.testimonials }}
+      </div>
     </div>
   </div>
-  <div id="ads_front_gmh" class="row">
-    <div class="medium-12 columns">
-      {{ content.ads }}
+  <div id="ads_front_gmh">
+    <div class="row">
+      <div class="medium-12 columns">
+        {{ content.ads }}
+      </div>
     </div>
   </div>
-  <div id="events_front_gmh" class="row">
-    <div class="medium-6 small-12 columns">
-      {{ content.partners }}
-    </div>
-    <div class="medium-6 small-12 columns">
-      {{ content.events }}
-    </div>
-  </div>
-  <div id="events_front_gmh" class="row">
-    <div class="medium-6 small-12 columns">
-      {{ content.blog }}
-    </div>
-    <div class="medium-6 small-12 columns">
-      {{ content.editor_choice }}
+  <div id="partners_front_gmh">
+    <div class="row">
+      <div class="medium-6 small-12 columns">
+        {{ content.partners }}
+      </div>
+      <div class="medium-6 small-12 columns">
+        {{ content.events }}
+      </div>
     </div>
   </div>
-  <div class="row">
-    <div class="medium-12 columns">{{ content.bottom }}</div>
+  <div id="blog_front_gmh">
+    <div class="row">
+      <div class="medium-6 small-12 columns">
+        {{ content.blog }}
+      </div>
+      <div class="medium-6 small-12 columns">
+        {{ content.editor_choice }}
+      </div>
+    </div>
+  </div>
+  <div id="bottom_front_gmh">
+    <div class="row">
+      <div class="medium-12 columns">
+        {{ content.bottom }}
+      </div>
+    </div>
   </div>
 {% if  settings.css_id or settings.css_classes %}
-</div> <!-- /.foundation-frontpage-bricks -->
+</div> <!-- /.gmh-frontpage-bricks -->
 {% endif %}
