@@ -1,8 +1,8 @@
 gmh_frontpage:
   label: 'GMH: frontpage-flex-bricks layout'
-  category: 'GMH Pages'
+  category: 'GMH'
   template: layouts/frontpage-flex-bricks.html.twig
-  # class: '\Drupal\GMH\Plugin\Layout\gmhLayout'
+  class: '\Drupal\zurb_foundation\Plugin\Layout\FoundationLayout'
   regions:
     hero:
       label: Hero
@@ -15,8 +15,9 @@ gmh_frontpage:
     ads:
       label: Ads
     events_left:
-      label: Events Left
+      label: Events
     events_right:
-      label: Events Right
+      label: Blog
     bottom:
       label: Bottom
+  icon: layouts/frontpage_2col_bricks.png
