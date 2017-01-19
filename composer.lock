@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "7403b6790703ba79014062961760d416",
-    "content-hash": "cf3a8752f1db5212178ae731120b4a84",
+    "hash": "2e9ba9f6c0dda4c72202d5009f100dbf",
+    "content-hash": "219e3339dc754a0fd5bfa4a18933a7da",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -1671,7 +1671,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/block_class-8.x-1.0-alpha1.zip",
-                "reference": null,
+                "reference": "8.x-1.0-alpha1",
                 "shasum": "194cd52210ea2e0e5dbbd34fad4528d500424430"
             },
             "require": {
@@ -1800,7 +1800,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/config_update-8.x-1.3.zip",
-                "reference": null,
+                "reference": "8.x-1.3",
                 "shasum": "4fc57add91c090ea3c9ed4848579b450253b1eed"
             },
             "require": {
@@ -2327,7 +2327,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/diff-8.x-1.0-rc1.zip",
-                "reference": null,
+                "reference": "8.x-1.0-rc1",
                 "shasum": "4945154c2c07444195a7ae07011a3b3db941c72a"
             },
             "require": {
@@ -2518,8 +2518,7 @@
             "homepage": "https://www.drupal.org/project/dropzonejs",
             "support": {
                 "source": "http://cgit.drupalcode.org/dropzonejs"
-            },
-            "time": "2017-01-18 17:55:55"
+            }
         },
         {
             "name": "drupal/embed",
@@ -2652,7 +2651,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/entity_browser-8.x-1.0-beta3.zip",
-                "reference": null,
+                "reference": "8.x-1.0-beta3",
                 "shasum": "8883e7badca5db5a04fdd210fb9c9c4d45f8d194"
             },
             "require": {
@@ -2930,8 +2929,7 @@
                 "source": "https://cgit.drupalcode.org/geocoder",
                 "issues": "https://drupal.org/project/issues/geocoder",
                 "irc": "irc://irc.freenode.org/drupal-geo"
-            },
-            "time": "2017-01-12 17:39:36"
+            }
         },
         {
             "name": "drupal/geocoder_autocomplete",
@@ -2980,8 +2978,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/geocoder_autocomplete",
                 "issues": "http://drupal.org/project/issues/geocoder_autocomplete"
-            },
-            "time": "2017-01-13 10:30:46"
+            }
         },
         {
             "name": "drupal/geofield",
@@ -3273,6 +3270,44 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/inline_entity_form"
             }
+        },
+        {
+            "name": "drupal/joomag_filter",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/joomag_filter",
+                "reference": "307c7ee99419577db6233d7ac2054c70b8479125"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.x-dev",
+                    "datestamp": "1443187439"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "mariano.barcia",
+                    "homepage": "https://www.drupal.org/user/69496"
+                }
+            ],
+            "description": "Input filter for the Joomag service.",
+            "homepage": "https://www.drupal.org/project/joomag_filter",
+            "support": {
+                "source": "http://cgit.drupalcode.org/joomag_filter"
+            },
+            "time": "2015-09-25 13:37:18"
         },
         {
             "name": "drupal/juicebox",
@@ -4895,7 +4930,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/video_embed_field-8.x-1.4.zip",
-                "reference": null,
+                "reference": "8.x-1.4",
                 "shasum": "7bf93a52e2e8d639b4dbefd65f0ee2b170d73f43"
             },
             "require": {
@@ -10256,7 +10291,8 @@
         "drupal/geocoder": 20,
         "drupal/juicebox": 20,
         "drupal/name": 20,
-        "drupal/simple_menu_icons": 20
+        "drupal/simple_menu_icons": 20,
+        "drupal/joomag_filter": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

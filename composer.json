@@ -34,7 +34,8 @@
         "drupal/console": "~1.0",
         "drupal/name": "1.x-dev",
         "drupal/simple_menu_icons": "1.x-dev",
-        "drupal/block_class": "1.0-alpha1"
+        "drupal/block_class": "1.0-alpha1",
+        "drupal/joomag_filter": "1.x-dev"
     },
     "replace": {
         "drupal/core": "~8.2"

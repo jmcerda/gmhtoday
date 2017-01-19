@@ -6964,7 +6964,7 @@
         "dist": {
             "type": "zip",
             "url": "https://ftp.drupal.org/files/projects/block_class-8.x-1.0-alpha1.zip",
-            "reference": null,
+            "reference": "8.x-1.0-alpha1",
             "shasum": "194cd52210ea2e0e5dbbd34fad4528d500424430"
         },
         "require": {
@@ -10086,7 +10086,7 @@
         "dist": {
             "type": "zip",
             "url": "https://ftp.drupal.org/files/projects/config_update-8.x-1.3.zip",
-            "reference": null,
+            "reference": "8.x-1.3",
             "shasum": "4fc57add91c090ea3c9ed4848579b450253b1eed"
         },
         "require": {
@@ -10135,7 +10135,7 @@
         "dist": {
             "type": "zip",
             "url": "https://ftp.drupal.org/files/projects/diff-8.x-1.0-rc1.zip",
-            "reference": null,
+            "reference": "8.x-1.0-rc1",
             "shasum": "4945154c2c07444195a7ae07011a3b3db941c72a"
         },
         "require": {
@@ -10219,7 +10219,7 @@
         "dist": {
             "type": "zip",
             "url": "https://ftp.drupal.org/files/projects/entity_browser-8.x-1.0-beta3.zip",
-            "reference": null,
+            "reference": "8.x-1.0-beta3",
             "shasum": "8883e7badca5db5a04fdd210fb9c9c4d45f8d194"
         },
         "require": {
@@ -10301,7 +10301,7 @@
         "dist": {
             "type": "zip",
             "url": "https://ftp.drupal.org/files/projects/video_embed_field-8.x-1.4.zip",
-            "reference": null,
+            "reference": "8.x-1.4",
             "shasum": "7bf93a52e2e8d639b4dbefd65f0ee2b170d73f43"
         },
         "require": {
@@ -10583,5 +10583,44 @@
             "testing",
             "xunit"
         ]
+    },
+    {
+        "name": "drupal/joomag_filter",
+        "version": "dev-1.x",
+        "version_normalized": "dev-1.x",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupal.org/project/joomag_filter",
+            "reference": "307c7ee99419577db6233d7ac2054c70b8479125"
+        },
+        "require": {
+            "drupal/core": "~8.0"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-1.x": "1.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-1.x-dev",
+                "datestamp": "1443187439"
+            }
+        },
+        "installation-source": "source",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "mariano.barcia",
+                "homepage": "https://www.drupal.org/user/69496"
+            }
+        ],
+        "description": "Input filter for the Joomag service.",
+        "homepage": "https://www.drupal.org/project/joomag_filter",
+        "support": {
+            "source": "http://cgit.drupalcode.org/joomag_filter"
+        }
     }
 ]
