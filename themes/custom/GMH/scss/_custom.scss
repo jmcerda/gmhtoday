@@ -19,9 +19,11 @@
 .latest-issues-front {
 	text-align: center;
 	padding: 2em 0;
-	.column {
-		padding: 2em 5em;
-	}
+  @include breakpoint(medium) {
+  	.column {
+  		padding: 2em 5em;
+  	}
+  }
 	.latest-issue-date {
 		color: $primary-color;
 		text-transform: uppercase;
