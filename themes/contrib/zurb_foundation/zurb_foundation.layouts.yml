@@ -134,3 +134,26 @@ foundation_6row_combo:
     bottom:
       label: Bottom
   icon: layouts/foundation_6row_combo/foundation_6row_combo.png
+
+# Custom
+foundation_frontpage_bricks:
+  label: 'Foundation: Frontpage bricks'
+  category: 'Foundation: 2'
+  class: '\Drupal\zurb_foundation\Plugin\Layout\FoundationLayout'
+  template: layouts/foundation_frontpage_bricks/foundation-frontpage-bricks
+  regions:
+    top:
+      label: Top
+    above_left:
+      label: Above Left
+    above_right:
+      label: Above Right
+    middle:
+      label: Middle
+    below_left:
+      label: Below Left
+    below_right:
+      label: Below Right
+    bottom:
+      label: Bottom
+  icon: layouts/foundation_frontpage_bricks/foundation_frontpage_bricks.png
