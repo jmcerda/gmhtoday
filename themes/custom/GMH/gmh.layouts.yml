@@ -32,8 +32,8 @@ gmh_6row_combo_hero:
   class: '\Drupal\zurb_foundation\Plugin\Layout\FoundationLayout'
   template: layouts/foundation_6row_combo/foundation-6row-combo
   regions:
-    Hero:
-      label: Hero
+    top:
+      label: Top
     top_first:
       label: Top First
     top_second:

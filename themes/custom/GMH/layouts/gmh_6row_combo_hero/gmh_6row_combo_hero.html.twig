@@ -10,7 +10,7 @@
  * - css_classes: Optional CSS classes to use for the layout.
  * - content: An array of content, each item in the array is keyed to one
  *   panel of the layout. This layout supports the following sections:
- *   - content.hero: Content in the bottom top row.
+ *   - content.top: Content in the bottom top row.
  *   - content.top_first: Content in the top first column.
  *   - content.top_second: Content in the top second column.
  *   - content.top_third: Content in the top third column.
@@ -29,7 +29,7 @@
 {% if  settings.css_id or settings.css_classes %}
 <div {{ attributes.setAttribute('id', settings.css_id).addClass('gmh-6row-combo-hero', settings.css_classes) }}>
 {% endif %}
-  <div id="gmh_page_hero">{{ content.hero }}</div>
+  <div id="gmh_page_hero">{{ content.top }}</div>
   <div class="row">
     <div class="medium-3 small-12 columns">
       {{ content.top_first }}
