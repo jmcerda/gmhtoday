@@ -26,7 +26,12 @@
   Drupal.behaviors.slickSlider_behavior = {
     attach: function (context, settings) {
       // Slick Slider
-      $('.single-item').slick();
+      // Single Item no dots
+      $('.single-item').slick({
+        dots: false
+      });
+      // Single Item w/ dots
+      $('.single-item-dots').slick();
     }
   };
 
