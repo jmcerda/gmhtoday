@@ -40,7 +40,7 @@
   Drupal.behaviors.pageHero_behavior = {
     attach: function (context, settings) {
       $("#gmh_page_hero")
-        .appendTo("#destination");
+        .appendTo("#gmh_page_hero_div");
     }
   };
 
