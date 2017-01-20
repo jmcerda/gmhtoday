@@ -18,7 +18,7 @@
     attach: function (context, settings) {
       // SlickNav
       $('.menu').slicknav({
-        duration: 500,
+        duration: 1500,
         easingOpen: "easeOutBounce"
       });
     }

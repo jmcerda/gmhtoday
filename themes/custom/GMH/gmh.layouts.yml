@@ -25,3 +25,39 @@ gmh_frontpage_bricks:
     bottom:
       label: Bottom
   icon: layouts/gmh_frontpage_bricks/gmh_frontpage_bricks.png
+
+gmh_6row_combo_hero:
+  label: 'GMH: 6 row combo with hero'
+  category: 'GMH'
+  class: '\Drupal\zurb_foundation\Plugin\Layout\FoundationLayout'
+  template: layouts/foundation_6row_combo/foundation-6row-combo
+  regions:
+    top:
+      label: Top
+    top_first:
+      label: Top First
+    top_second:
+      label: Top Second
+    top_third:
+      label: Top Third
+    top_fourth:
+      label: Top Fourth
+    middle_small:
+      label: Middle Small
+    middle_large:
+      label: Middle Large
+    middle_first:
+      label: Middle First
+    middle_second:
+      label: Middle Second
+    bottom_first:
+      label: Bottom First
+    bottom_second:
+      label: Bottom Second
+    bottom_third:
+      label: Bottom Third
+    bottom_fourth:
+      label: Bottom Fourth
+    bottom:
+      label: Bottom
+  icon: layouts/foundation_6row_combo/foundation_6row_combo.png
