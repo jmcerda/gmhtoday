@@ -1,4 +1,6 @@
-
+$(function() {
+    ParallaxScroll.init();
+});
 
 var ParallaxScroll = {
     /* PUBLIC VARIABLES */
@@ -181,7 +183,3 @@ var ParallaxScroll = {
         }
     }
 };
-
-(function($) {
-    ParallaxScroll.init();
-})(jQuery);
