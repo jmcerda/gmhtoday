@@ -6,6 +6,12 @@
 		color: $secondary-color;
 		font-weight: bold;
 	}
+	ul {
+		text-align: center;
+		li {
+			display: inline-block;
+		}
+	}
 }
 .brand_parent {
 	background: $off-white-background;

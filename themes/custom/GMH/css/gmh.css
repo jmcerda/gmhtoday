@@ -4132,6 +4132,11 @@ footer {
   color: #685d1f;
   font-weight: bold; }
 
+.gmh_primary_nav ul {
+  text-align: center; }
+  .gmh_primary_nav ul li {
+    display: inline-block; }
+
 .brand_parent {
   background: #fbfbfb; }
 
