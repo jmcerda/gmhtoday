@@ -1,15 +1,17 @@
 .gmh_primary_nav {
 	// margin: 0 auto;
 	// display: table;
-	a {
-		text-transform: uppercase;
-		color: $secondary-color;
-		font-weight: bold;
-	}
 	ul {
 		text-align: center;
+		font-size: 1.25em;
+		margin: 1em auto;
 		li {
 			display: inline-block;
+			a {
+				text-transform: uppercase;
+				color: $secondary-color;
+				font-weight: bold;
+			}
 		}
 	}
 }
