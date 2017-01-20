@@ -4079,7 +4079,7 @@ table.hover tbody tr:nth-of-type(even):hover {
 .long-delay {
   animation-delay: 700ms !important; }
 
-#gmh_header_background {
+.gmh_header_background {
   background: #fbfbfb; }
 
 .brand_parent {
