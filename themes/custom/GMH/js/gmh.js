@@ -37,5 +37,11 @@
       $('.single-item-dots').slick();
     }
   };
+  Drupal.behaviors.pageHero_behavior = {
+    attach: function (context, settings) {
+      $("#gmh_page_hero")
+        .appendTo("#destination");
+    }
+  };
 
 })(jQuery, Drupal);
