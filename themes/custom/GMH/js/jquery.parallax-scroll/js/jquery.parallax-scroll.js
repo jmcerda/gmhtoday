@@ -1,6 +1,6 @@
-$(function() {
+(function($) {
     ParallaxScroll.init();
-});
+})(jQuery);
 
 var ParallaxScroll = {
     /* PUBLIC VARIABLES */
