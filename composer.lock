@@ -2642,17 +2642,17 @@
         },
         {
             "name": "drupal/entity_browser",
-            "version": "1.0.0-beta3",
+            "version": "1.0.0-beta4",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/entity_browser",
-                "reference": "8.x-1.0-beta3"
+                "reference": "8.x-1.0-beta4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/entity_browser-8.x-1.0-beta3.zip",
-                "reference": "8.x-1.0-beta3",
-                "shasum": "8883e7badca5db5a04fdd210fb9c9c4d45f8d194"
+                "url": "https://ftp.drupal.org/files/projects/entity_browser-8.x-1.0-beta4.zip",
+                "reference": null,
+                "shasum": "7e79b579e0d8d7c42f408cd54da328318cb4f398"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -2671,8 +2671,8 @@
                     "dev-8.x-1.x": "8.1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-beta3",
-                    "datestamp": "1484252583"
+                    "version": "8.x-1.0-beta4",
+                    "datestamp": "1484816284"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -3306,8 +3306,7 @@
             "homepage": "https://www.drupal.org/project/joomag_filter",
             "support": {
                 "source": "http://cgit.drupalcode.org/joomag_filter"
-            },
-            "time": "2015-09-25 13:37:18"
+            }
         },
         {
             "name": "drupal/juicebox",
@@ -4461,17 +4460,17 @@
         },
         {
             "name": "drupal/pathauto",
-            "version": "1.0.0-beta1",
+            "version": "1.0.0-beta2",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/pathauto",
-                "reference": "8.x-1.0-beta1"
+                "reference": "8.x-1.0-beta2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/pathauto-8.x-1.0-beta1.zip",
-                "reference": "8.x-1.0-beta1",
-                "shasum": "0c8756d73d5b1f95419921926e8e55bc0c69e41b"
+                "url": "https://ftp.drupal.org/files/projects/pathauto-8.x-1.0-beta2.zip",
+                "reference": null,
+                "shasum": "08962a207e4273eaaf9d2edf79111db9fbcb8c8e"
             },
             "require": {
                 "drupal/core": "*",
@@ -4484,8 +4483,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-beta1",
-                    "datestamp": "1474313339"
+                    "version": "8.x-1.0-beta2",
+                    "datestamp": "1484781483"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -4823,7 +4822,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/slick_views",
-                "reference": "f08d10237d2150a73929994d9c0ba05aaeab26ef"
+                "reference": "29a4f1cd0c694543ce761bf243bc380a7ba6b8c3"
             },
             "require": {
                 "drupal/core": "*",
@@ -4853,7 +4852,8 @@
             "homepage": "https://www.drupal.org/project/slick_views",
             "support": {
                 "source": "http://cgit.drupalcode.org/slick_views"
-            }
+            },
+            "time": "2017-01-19 12:25:54"
         },
         {
             "name": "drupal/token",
@@ -5491,20 +5491,23 @@
         },
         {
             "name": "ezyang/htmlpurifier",
-            "version": "v4.8.0",
+            "version": "v4.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ezyang/htmlpurifier.git",
-                "reference": "d0c392f77d2f2a3dcf7fcb79e2a1e2b8804e75b2"
+                "reference": "a1c09b09e398687deeb8e309a6305def4b43439b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ezyang/htmlpurifier/zipball/d0c392f77d2f2a3dcf7fcb79e2a1e2b8804e75b2",
-                "reference": "d0c392f77d2f2a3dcf7fcb79e2a1e2b8804e75b2",
+                "url": "https://api.github.com/repos/ezyang/htmlpurifier/zipball/a1c09b09e398687deeb8e309a6305def4b43439b",
+                "reference": "a1c09b09e398687deeb8e309a6305def4b43439b",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.2"
+            },
+            "require-dev": {
+                "simpletest/simpletest": "^1.1"
             },
             "type": "library",
             "autoload": {
@@ -5531,7 +5534,7 @@
             "keywords": [
                 "html"
             ],
-            "time": "2016-07-16 12:58:58"
+            "time": "2017-01-13 12:31:37"
         },
         {
             "name": "gabordemooij/redbean",

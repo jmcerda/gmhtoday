@@ -89,8 +89,9 @@ class SlickViews extends BlazyStylePluginBase {
     }
 
     $this->admin()->buildSettingsForm($form, $definition);
-
-    $wide = count($definition['captions']) > 2 ? ' form--wide' : '';
+    
+    $count = count($definition['captions']);
+    $wide = $count > 2 ? ' form--wide form--caption-' . $count : ' form--caption-' . $count;
     $title = '<p class="form__header form__title">';
     $title .= $this->t('Check Vanilla if using content/custom markups, not fields. <small>See it under <strong>Format > Show</strong> section. Otherwise slick markups apply which require some fields added below.</small>');
     $title .= '</p>';
