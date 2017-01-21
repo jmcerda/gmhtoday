@@ -9,8 +9,6 @@ screenshot: images/screenshot.jpg
 
 libraries:
  - gmh/global
- # - gmh/matchHeight
- # - gmh/slick
 
 # Regions are output in the page.html.twig
 

@@ -24,7 +24,7 @@
           prependTo:'.brand_parent'
         });
     }
-  };
+  }
   // Drupal.behaviors.slickSlider = {
   //   attach: function (context, settings) {
   //     context.once(function() {
