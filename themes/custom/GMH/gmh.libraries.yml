@@ -11,4 +11,8 @@ global:
     js/slick-carousel/slick/slick.min.js: {minified: true}
     # js/jquery.parallax-scroll/js/jquery.parallax-scroll.js: {}
   dependencies:
-  - core/jquery
+    - core/jquery
+    - core/drupal.ajax
+    - core/drupal
+    - core/drupalSettings
+    - core/jquery.once
