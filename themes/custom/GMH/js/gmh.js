@@ -18,8 +18,10 @@
     attach: function (context, settings) {
         // SlickNav
         $('.menu').slicknav({
+          label: '',
           duration: 1000,
-          easingOpen: "easeOutBounce"
+          easingOpen: "easeOutBounce", //available with jQuery UI
+          prependTo:'.brand_parent'
         });
     }
   };
