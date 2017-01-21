@@ -8,12 +8,12 @@
   /**
    * Use this behavior as a template for custom Javascript.
    */
-  Drupal.behaviors.equalHeight = {
-    attach: function (context, settings) {
-      // MatchHeights
-      $('.equalHeight').matchHeight();
-    }
-  };
+  // Drupal.behaviors.equalHeight = {
+  //   attach: function (context, settings) {
+  //     // MatchHeights
+  //     $('.equalHeight').matchHeight();
+  //   }
+  // };
   Drupal.behaviors.slickNav = {
     attach: function (context, settings) {
         // SlickNav
