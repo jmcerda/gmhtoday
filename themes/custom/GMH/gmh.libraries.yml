@@ -5,8 +5,8 @@ global:
       js/slicknav/dist/slicknav.min.css: {minified: true}
       css/gmh.css: {}
   js:
-    js/slicknav/dist/jquery.slicknav.min.js: {minified: true}
-    js/matchHeight/jquery.matchHeight-min.js: {minified: true}
-    js/slick-carousel/slick/slick.min.js: {minified: true}
+    js/slicknav/dist/jquery.slicknav.min.js: {scope: footer, minified: true}
+    js/matchHeight/jquery.matchHeight-min.js: {scope: footer, minified: true}
+    js/slick-carousel/slick/slick.min.js: {scope: footer, minified: true}
     # js/jquery.parallax-scroll/js/jquery.parallax-scroll.js: {}
-    js/gmh.js: {}
+    js/gmh.js: {scope: footer}
