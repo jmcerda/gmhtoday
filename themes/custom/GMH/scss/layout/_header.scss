@@ -22,6 +22,9 @@
 
 #block-gmh-branding {
 	img {
-		max-height: 200px;
+		height: 110px;
+    @include breakpoint(medium) {
+      height: 250px;
+    }
 	}
 }
