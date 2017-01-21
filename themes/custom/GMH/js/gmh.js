@@ -23,28 +23,28 @@
         });
     }
   };
-  Drupal.behaviors.slickSlider = {
-    attach: function (context, settings) {
-      context.once(function() {
-        // Slick Slider
-        // Single Item no dots
-        $('.single-item').slick({
-          dots: false,
-          arrows: true,
-          slidesToShow: 1,
-          fade: true
-        });
-        // Single Item w/ dots
-        $('.single-item-dots').slick();
-      }
-    }
-  };
-  Drupal.behaviors.pageHero = {
-    attach: function (context, settings) {
-      context.once(function() {
-        $("#gmh_page_hero").appendTo("#gmh_page_hero_div");
-      }
-    }
-  };
+  // Drupal.behaviors.slickSlider = {
+  //   attach: function (context, settings) {
+  //     context.once(function() {
+  //       // Slick Slider
+  //       // Single Item no dots
+  //       $('.single-item').slick({
+  //         dots: false,
+  //         arrows: true,
+  //         slidesToShow: 1,
+  //         fade: true
+  //       });
+  //       // Single Item w/ dots
+  //       $('.single-item-dots').slick();
+  //     }
+  //   }
+  // };
+  // Drupal.behaviors.pageHero = {
+  //   attach: function (context, settings) {
+  //     context.once(function() {
+  //       $("#gmh_page_hero").appendTo("#gmh_page_hero_div");
+  //     }
+  //   }
+  // };
 
 })(jQuery, Drupal);
