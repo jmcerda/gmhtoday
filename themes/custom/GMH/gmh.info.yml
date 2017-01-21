@@ -10,14 +10,6 @@ screenshot: images/screenshot.jpg
 libraries:
  - gmh/global
 
-dependencies:
-  - core/jquery
-  - core/drupal.ajax
-  - core/drupal
-  - core/drupalSettings
-  - core/jquery.once
-
-
 # Regions are output in the page.html.twig
 regions:
   meta_header: 'Meta Header'
