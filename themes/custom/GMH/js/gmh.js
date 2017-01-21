@@ -18,8 +18,8 @@
     attach: function (context, settings) {
         // SlickNav
         $('.menu').slicknav({
-          label: '',
-          duration: 1000,
+          // label: '',
+          // duration: 1000,
           // easingOpen: "easeOutBounce", //available with jQuery UI
           appendTo:'#brand'
         });

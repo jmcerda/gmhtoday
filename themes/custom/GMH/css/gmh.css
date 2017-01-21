@@ -4109,6 +4109,13 @@ table.hover tbody tr:nth-of-type(even):hover {
 #hero_front_gmh {
   background: #fbfbfb; }
 
+.slicknav_btn {
+  background-color: transparent;
+  margin: -8em 1em 6px 5px; }
+
+.slicknav_icon-bar {
+  background-color: #2199e8; }
+
 footer {
   margin: 2em auto; }
   @media screen and (min-width: 40em) {
