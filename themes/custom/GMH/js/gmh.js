@@ -41,13 +41,12 @@
   //     }
   //   }
   // };
-  Drupal.behaviors.pageHero = {
-    attach: function (context, settings) {
-      context.once(function() {
-        $("#gmh_page_hero").appendTo("#gmh_page_hero_div");
-        // $(".slicknav_btn").appendTo(".brand_inline");
-      }
-    }
-  };
+  // Drupal.behaviors.pageHero = {
+  //   attach: function (context, settings) {
+  //     context.once(function() {
+  //       $("#gmh_page_hero").appendTo("#gmh_page_hero_div");
+  //     }
+  //   }
+  // };
 
 })(jQuery, Drupal);
