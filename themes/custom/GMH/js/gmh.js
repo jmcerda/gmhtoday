@@ -45,7 +45,7 @@
     attach: function (context, settings) {
       context.once(function() {
         $("#gmh_page_hero").appendTo("#gmh_page_hero_div");
-        $(".slicknav_btn").appendTo(".brand_inline");
+        // $(".slicknav_btn").appendTo(".brand_inline");
       }
     }
   };
