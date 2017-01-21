@@ -12,17 +12,22 @@
     attach: function (context, settings) {
       // MatchHeights
       $('.equalHeight').matchHeight();
+      // SlickNav
+      $('.menu').slicknav({
+        duration: 1500,
+        easingOpen: "easeOutBounce"
+      });
     }
   };
-  Drupal.behaviors.slickNav = {
-    attach: function (context, settings) {
-        // SlickNav
-        $('.menu').slicknav({
-          duration: 1500,
-          easingOpen: "easeOutBounce"
-        });
-    }
-  };
+  // Drupal.behaviors.slickNav = {
+  //   attach: function (context, settings) {
+  //       // SlickNav
+  //       $('.menu').slicknav({
+  //         duration: 1500,
+  //         easingOpen: "easeOutBounce"
+  //       });
+  //   }
+  // };
   // Drupal.behaviors.slickSlider = {
   //   attach: function (context, settings) {
   //     context.once(function() {
