@@ -17,7 +17,10 @@
   Drupal.behaviors.slickNav = {
     attach: function (context, settings) {
         // SlickNav
-        $('.menu').slicknav();
+        $('.menu').slicknav({
+          duration: 1000,
+          easingOpen: "easeOutBounce"
+        });
     }
   };
   // Drupal.behaviors.slickSlider = {
