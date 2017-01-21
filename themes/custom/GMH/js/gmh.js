@@ -16,13 +16,11 @@
   };
   Drupal.behaviors.slickNav = {
     attach: function (context, settings) {
-      context.once(function() {
         // SlickNav
         $('.menu').slicknav({
           duration: 1500,
           easingOpen: "easeOutBounce"
         });
-      }
     }
   };
   Drupal.behaviors.slickSlider = {

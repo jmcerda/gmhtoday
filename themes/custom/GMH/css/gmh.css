@@ -4103,7 +4103,11 @@ table.hover tbody tr:nth-of-type(even):hover {
   height: 110px; }
   @media screen and (min-width: 40em) {
     #block-gmh-branding img {
-      height: 250px; } }
+      height: 200px;
+      float: right; } }
+
+#hero_front_gmh {
+  background: #fbfbfb; }
 
 footer {
   margin: 2em auto; }
@@ -4154,9 +4158,6 @@ footer {
 
 .slicknav_nav a {
   color: #685d1f; }
-
-#hero_front_gmh {
-  background: #fbfbfb; }
 
 @media screen and (min-width: 40em) {
   .slicknav_menu {

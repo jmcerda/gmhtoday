@@ -24,7 +24,12 @@
 	img {
 		height: 110px;
     @include breakpoint(medium) {
-      height: 250px;
+      height: 200px;
+      float: right;
     }
 	}
+}
+
+#hero_front_gmh {
+  background: $off-white-background;
 }
