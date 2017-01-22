@@ -45,7 +45,7 @@
     attach: function (context, settings) {
       context.once(function() {
         $("#gmh_page_hero").appendTo("#gmh_page_hero_div");
-      }
+      });
     }
   };
 
