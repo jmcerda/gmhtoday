@@ -2,10 +2,8 @@ global:
   version: VERSION
   css:
     base:
-      js/slicknav/dist/slicknav.min.css: {}
       css/gmh.css: {}
   js:
-    js/slicknav/dist/jquery.slicknav.min.js: {}
     #js/slick-carousel/slick/slick.min.js: {}
     # js/jquery.parallax-scroll/js/jquery.parallax-scroll.js: {}
     js/gmh.js: {}
@@ -14,3 +12,11 @@ matchHeight:
   version: VERSION
   js:
     js/matchHeight/jquery.matchHeight-min.js: {}
+
+slickNav:
+  version: VERSION
+  css:
+    base:
+      js/slicknav/dist/slicknav.min.css: {}
+  js:
+    js/slicknav/dist/jquery.slicknav.min.js: {}
