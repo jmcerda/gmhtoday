@@ -2,11 +2,11 @@ global:
   version: VERSION
   css:
     base:
-      js/slicknav/dist/slicknav.min.css: {minified: true}
+      js/slicknav/dist/slicknav.min.css: {}
       css/gmh.css: {}
   js:
-    js/slicknav/dist/jquery.slicknav.min.js: {scope: footer, minified: true}
-    js/matchHeight/jquery.matchHeight-min.js: {scope: footer, minified: true}
-    js/slick-carousel/slick/slick.min.js: {scope: footer, minified: true}
+    js/gmh.js: {}
+    js/slicknav/dist/jquery.slicknav.min.js: {}
+    js/matchHeight/jquery.matchHeight-min.js: {}
+    js/slick-carousel/slick/slick.min.js: {}
     # js/jquery.parallax-scroll/js/jquery.parallax-scroll.js: {}
-    js/gmh.js: {scope: footer}
