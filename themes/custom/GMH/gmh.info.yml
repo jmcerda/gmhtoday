@@ -9,6 +9,7 @@ screenshot: images/screenshot.jpg
 
 libraries:
  - gmh/global
+ - gmh/matchHeight
 
 # Regions are output in the page.html.twig
 regions:
