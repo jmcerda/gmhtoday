@@ -4145,17 +4145,14 @@ footer {
     padding: 1em; }
 
 .gmh_primary_nav ul {
-  display: table;
   width: 100%;
   text-align: center;
   font-size: 1.25em;
   margin: 1em auto; }
-  .gmh_primary_nav ul li {
-    display: table-cell; }
-    .gmh_primary_nav ul li a {
-      text-transform: uppercase;
-      color: #685d1f;
-      font-weight: bold; }
+  .gmh_primary_nav ul li a {
+    text-transform: uppercase;
+    color: #685d1f;
+    font-weight: bold; }
 
 .brand_parent {
   background: #fbfbfb; }
