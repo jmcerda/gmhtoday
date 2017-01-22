@@ -8,5 +8,5 @@ global:
     js/gmh.js: {}
     js/slicknav/dist/jquery.slicknav.min.js: {}
     js/matchHeight/jquery.matchHeight-min.js: {}
-    js/slick-carousel/slick/slick.min.js: {}
+    #js/slick-carousel/slick/slick.min.js: {}
     # js/jquery.parallax-scroll/js/jquery.parallax-scroll.js: {}
