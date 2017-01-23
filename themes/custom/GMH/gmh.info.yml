@@ -8,8 +8,8 @@ base theme: zurb_foundation
 screenshot: images/screenshot.jpg
 
 libraries:
- # - gmh/matchHeight
- # - gmh/slickNav
+ - gmh/matchHeight
+ - gmh/slickNav
  # - gmh/slickSlider
  - gmh/global
 
