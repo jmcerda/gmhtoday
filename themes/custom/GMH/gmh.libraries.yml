@@ -2,33 +2,38 @@ global:
   version: VERSION
   css:
     base:
+      js/slicknav/dist/slicknav.min.css: {}
       css/gmh.css: {}
   js:
+    js/matchHeight/jquery.matchHeight-min.js: {}
+    js/slicknav/dist/jquery.slicknav.min.js: {}
+    js/slick-carousel/slick/slick.min.js: {}
+    js/jquery.parallax-scroll/js/jquery.parallax-scroll.js: {}
     js/gmh.js: {}
   # dependencies:
   #   - core/drupal
   #   - core/jquery
   #   - core/jquery.once
 
-matchHeight:
-  version: VERSION
-  js:
-    js/matchHeight/jquery.matchHeight-min.js: {}
+# matchHeight:
+#   version: VERSION
+#   js:
+#     js/matchHeight/jquery.matchHeight-min.js: {}
 
-slickNav:
-  version: VERSION
-  css:
-    base:
-      js/slicknav/dist/slicknav.min.css: {}
-  js:
-    js/slicknav/dist/jquery.slicknav.min.js: {}
+# slickNav:
+#   version: VERSION
+#   css:
+#     base:
+#       js/slicknav/dist/slicknav.min.css: {}
+#   js:
+#     js/slicknav/dist/jquery.slicknav.min.js: {}
 
-slickSlider:
-  version: VERSION
-  js:
-    js/slick-carousel/slick/slick.min.js: {}
+# slickSlider:
+#   version: VERSION
+#   js:
+#     js/slick-carousel/slick/slick.min.js: {}
 
-parallax-scroll:
-  version: VERSION
-  js:
-    js/jquery.parallax-scroll/js/jquery.parallax-scroll.js: {}
+# parallax-scroll:
+#   version: VERSION
+#   js:
+#     js/jquery.parallax-scroll/js/jquery.parallax-scroll.js: {}
