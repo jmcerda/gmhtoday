@@ -26,7 +26,8 @@
       $('.single-item').slick({
         dots: false,
         arrows: true,
-        slidesToShow: 1
+        slidesToShow: 1,
+        fade: true
       });
       // Single Item w/ dots
       $('.single-item-dots').slick();
