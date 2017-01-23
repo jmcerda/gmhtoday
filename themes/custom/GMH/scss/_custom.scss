@@ -56,6 +56,8 @@
 	background-color: $alert-color;
 	width: 580px;
     height: 580px;
+    position: absolute;
+    padding: 7em 5em;
 	h2, p {
 		color: #fff;
 	}
