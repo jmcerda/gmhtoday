@@ -4177,6 +4177,9 @@ footer {
     float: right;
     border-radius: 50%; }
 
+.gmh_first_hero {
+  padding-top: 3em; }
+
 #latest_front_gmh {
   background-color: #dae5ef; }
 
