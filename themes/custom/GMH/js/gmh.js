@@ -19,7 +19,17 @@
         // easingOpen: "easeOutBounce", //available with jQuery UI
         appendTo:'#brand'
       });
+      // Page header moves
       $("#gmh_page_hero").appendTo("#gmh_page_hero_div");
+      //Slick Slider
+      // Single Item no dots
+      $('.single-item').slick({
+        dots: false,
+        arrows: true,
+        slidesToShow: 1
+      });
+      // Single Item w/ dots
+      $('.single-item-dots').slick();
     }
   };
   // Drupal.behaviors.slickNav = {
