@@ -50,4 +50,13 @@
 .hero_copy {
 	border-radius: 50%;
 	background-color: $alert-color;
+	h2, p {
+		color: #fff;
+	}
+	.fp_slide_link {
+		float: right;
+		color: #fff;
+		background-color: #000;
+		border-radius: 100%;
+	}
 }
