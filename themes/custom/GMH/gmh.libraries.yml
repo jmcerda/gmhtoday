@@ -4,9 +4,11 @@ global:
     base:
       css/gmh.css: {}
   js:
-    #js/slick-carousel/slick/slick.min.js: {}
-    # js/jquery.parallax-scroll/js/jquery.parallax-scroll.js: {}
     js/gmh.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery
+    - core/jquery.once
 
 matchHeight:
   version: VERSION
@@ -25,3 +27,8 @@ slickSlider:
   version: VERSION
   js:
     js/slick-carousel/slick/slick.min.js: {}
+
+# parallax-scroll:
+#   version: VERSION
+#   js:
+#     js/jquery.parallax-scroll/js/jquery.parallax-scroll.js: {}
