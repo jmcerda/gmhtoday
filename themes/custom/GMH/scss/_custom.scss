@@ -1,8 +1,8 @@
 @import 'settings';
 
-#main {
-	margin-top: 1em;
-}
+// #main {
+// 	margin-top: 1em;
+// }
 
 #hero_front_gmh {
   height: 100%;
@@ -77,4 +77,22 @@
 			line-height: 1em;
 		}
 	}
+}
+
+.partners_left {
+	position: absolute;
+	margin-top: 6em;
+}
+.partners_copy {
+	border-radius: 50%;
+	background-color: $alert-color;
+	width: 580px;
+    height: 580px;
+    position: absolute;
+    padding: 7em 5em;
+    text-align: center;
+	h2, p {
+		color: #fff;
+	}
+
 }

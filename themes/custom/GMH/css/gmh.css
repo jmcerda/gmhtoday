@@ -4168,9 +4168,6 @@ footer {
   .slicknav_menu {
     display: none; } }
 
-#main {
-  margin-top: 1em; }
-
 #hero_front_gmh {
   height: 100%; }
   #hero_front_gmh img {
@@ -4230,3 +4227,18 @@ footer {
       font-size: 2.5em;
       color: #fff;
       line-height: 1em; }
+
+.partners_left {
+  position: absolute;
+  margin-top: 6em; }
+
+.partners_copy {
+  border-radius: 50%;
+  background-color: #c35019;
+  width: 580px;
+  height: 580px;
+  position: absolute;
+  padding: 7em 5em;
+  text-align: center; }
+  .partners_copy h2, .partners_copy p {
+    color: #fff; }
