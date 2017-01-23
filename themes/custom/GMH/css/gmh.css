@@ -4145,8 +4145,6 @@ footer {
     padding: 1em; }
 
 .gmh_primary_nav ul {
-  display: -ms-flexbox;
-  display: flex;
   width: 75%;
   font-size: 1.25em;
   margin: 1em auto; }
