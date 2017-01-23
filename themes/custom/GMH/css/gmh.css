@@ -4144,9 +4144,17 @@ footer {
   footer .columns {
     padding: 1em; }
 
+.gmh_primary_nav .menu > li {
+  display: inline-block; }
+
 .gmh_primary_nav ul {
+  display: -ms-flexbox;
+  display: flex;
   width: 100%;
-  text-align: center;
+  -ms-flex-align: stretch;
+      align-items: stretch;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
   font-size: 1.25em;
   margin: 1em auto; }
   .gmh_primary_nav ul li {

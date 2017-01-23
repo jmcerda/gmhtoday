@@ -1,10 +1,15 @@
 .gmh_primary_nav {
 	// margin: 0 auto;
 	// display: table;
+	.menu > li {
+	    display: inline-block;
+	}
 	ul {
-		// display: table;
+		display: flex;
 		width: 100%;
-		text-align: center;
+		// text-align: center;
+		align-items: stretch;
+		justify-content: space-between;
 		font-size: 1.25em;
 		margin: 1em auto;
 		li {
