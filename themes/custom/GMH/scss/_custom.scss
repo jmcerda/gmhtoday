@@ -60,9 +60,16 @@
 		color: #fff;
 	}
 	.fp_slide_link {
-		float: right;
-		color: #fff;
+		position: absolute;
+		bottom: -40px;
+		right: 0;
+		height: 172px;
+		width: 172px;
 		background-color: #000;
-		border-radius: 100%;
+		border-radius: 50%;
+		a {
+			font-size: large;
+			color: #fff;
+		}
 	}
 }
