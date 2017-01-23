@@ -8,7 +8,7 @@
 		font-size: 1.25em;
 		margin: 1em auto;
 		li {
-			// display: table-cell;
+			display: inline-block;
 			a {
 				text-transform: uppercase;
 				color: $secondary-color;
