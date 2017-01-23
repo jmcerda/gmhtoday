@@ -4202,3 +4202,7 @@ footer {
 
 .supported-logo {
   display: inline; }
+
+.hero_copy {
+  border-radius: 50%;
+  background-color: #c35019; }
