@@ -4221,7 +4221,9 @@ footer {
     height: 172px;
     width: 172px;
     background-color: #000;
-    border-radius: 50%; }
+    border-radius: 50%;
+    text-align: center; }
     .hero_copy .fp_slide_link a {
       font-size: large;
-      color: #fff; }
+      color: #fff;
+      line-height: 172px; }
