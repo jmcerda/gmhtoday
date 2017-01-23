@@ -4147,7 +4147,7 @@ footer {
 .gmh_primary_nav ul {
   width: 75%;
   font-size: 1.25em;
-  margin: 1em auto; }
+  margin: auto; }
   .gmh_primary_nav ul li {
     display: inline-block; }
     .gmh_primary_nav ul li a {
