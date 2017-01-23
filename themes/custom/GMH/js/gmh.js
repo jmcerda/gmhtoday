@@ -8,23 +8,31 @@
   /**
    * Use this behavior as a template for custom Javascript.
    */
-  Drupal.behaviors.equalHeight = {
+  Drupal.behaviors.gmh = {
     attach: function (context, settings) {
       // MatchHeights
       $('.equalHeight').matchHeight();
+      // SlickNav
+      $('.menu').slicknav({
+        // label: '',
+        // duration: 1000,
+        // easingOpen: "easeOutBounce", //available with jQuery UI
+        appendTo:'#brand'
+      });
+      $("#gmh_page_hero").appendTo("#gmh_page_hero_div");
     }
   };
-  Drupal.behaviors.slickNav = {
-    attach: function (context, settings) {
-        // SlickNav
-        $('.menu').slicknav({
-          // label: '',
-          // duration: 1000,
-          // easingOpen: "easeOutBounce", //available with jQuery UI
-          appendTo:'#brand'
-        });
-    }
-  };
+  // Drupal.behaviors.slickNav = {
+  //   attach: function (context, settings) {
+  //       // SlickNav
+  //       $('.menu').slicknav({
+  //         // label: '',
+  //         // duration: 1000,
+  //         // easingOpen: "easeOutBounce", //available with jQuery UI
+  //         appendTo:'#brand'
+  //       });
+  //   }
+  // };
   // Drupal.behaviors.slickSlider = {
   //   attach: function (context, settings) {
   //     context.once(function() {
@@ -41,12 +49,12 @@
   //     }
   //   }
   // };
-  Drupal.behaviors.pageHero = {
-    attach: function (context, settings) {
-      context.once(function() {
-        $("#gmh_page_hero").appendTo("#gmh_page_hero_div");
-      });
-    }
-  };
+  // Drupal.behaviors.pageHero = {
+  //   attach: function (context, settings) {
+  //     context.once(function() {
+  //       $("#gmh_page_hero").appendTo("#gmh_page_hero_div");
+  //     });
+  //   }
+  // };
 
 })(jQuery, Drupal);
