@@ -4203,9 +4203,15 @@ footer {
 .supported-logo {
   display: inline; }
 
+.hero_left {
+  position: absolute;
+  margin-top: 4em; }
+
 .hero_copy {
   border-radius: 50%;
-  background-color: #c35019; }
+  background-color: #c35019;
+  width: 580px;
+  height: 580px; }
   .hero_copy h2, .hero_copy p {
     color: #fff; }
   .hero_copy .fp_slide_link {

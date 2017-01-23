@@ -47,9 +47,15 @@
 	display: inline;
 }
 
+.hero_left {
+	position: absolute;
+	margin-top: 4em;
+}
 .hero_copy {
 	border-radius: 50%;
 	background-color: $alert-color;
+	width: 580px;
+    height: 580px;
 	h2, p {
 		color: #fff;
 	}
