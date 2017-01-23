@@ -4145,7 +4145,7 @@ footer {
     padding: 1em; }
 
 .gmh_primary_nav ul {
-  width: 75%;
+  width: 80%;
   font-size: 1.25em;
   margin: auto; }
   .gmh_primary_nav ul li {
@@ -4167,6 +4167,9 @@ footer {
 @media screen and (min-width: 40em) {
   .slicknav_menu {
     display: none; } }
+
+#main {
+  margin-top: 1em; }
 
 #hero_front_gmh {
   height: 100%; }
