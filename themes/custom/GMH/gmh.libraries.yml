@@ -28,7 +28,7 @@ slickSlider:
   js:
     js/slick-carousel/slick/slick.min.js: {}
 
-# parallax-scroll:
-#   version: VERSION
-#   js:
-#     js/jquery.parallax-scroll/js/jquery.parallax-scroll.js: {}
+parallax-scroll:
+  version: VERSION
+  js:
+    js/jquery.parallax-scroll/js/jquery.parallax-scroll.js: {}
