@@ -2,14 +2,14 @@
 	// margin: 0 auto;
 	// display: table;
 	.menu > li {
-	    display: inline-block;
+	    // display: inline-block;
 	}
 	ul {
 		display: flex;
-		width: 100%;
+		width: 75%;
 		// text-align: center;
-		align-items: stretch;
-		justify-content: space-between;
+		// align-items: stretch;
+		// justify-content: space-between;
 		font-size: 1.25em;
 		margin: 1em auto;
 		li {
