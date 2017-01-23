@@ -24,8 +24,8 @@
       //Slick Slider
       // Single Item no dots
       $('.single-item').slick({
-        dots: true,
-        arrows: false
+        // dots: true,
+        arrows: true
         // slidesToShow: 1,
         // fade: true
       });
