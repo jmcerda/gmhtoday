@@ -20,3 +20,8 @@ slickNav:
       js/slicknav/dist/slicknav.min.css: {}
   js:
     js/slicknav/dist/jquery.slicknav.min.js: {}
+
+slickSlider:
+  version: VERSION
+  js:
+    js/slick-carousel/slick/slick.min.js: {}

@@ -43,9 +43,9 @@
   // };
   Drupal.behaviors.pageHero = {
     attach: function (context, settings) {
-      // context.once(function() {
+      context.once(function() {
         $("#gmh_page_hero").appendTo("#gmh_page_hero_div");
-      // });
+      });
     }
   };
 
