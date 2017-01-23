@@ -14,9 +14,9 @@
       $('.equalHeight').matchHeight();
       // SlickNav
       $('.menu').slicknav({
-        // label: '',
-        // duration: 1000,
-        // easingOpen: "easeOutBounce", //available with jQuery UI
+        label: '',
+        duration: 1000,
+        easingOpen: "easeOutBounce", //available with jQuery UI
         appendTo:'#brand'
       });
       $("#gmh_page_hero").appendTo("#gmh_page_hero_div");

@@ -10,10 +10,10 @@ global:
     js/slick-carousel/slick/slick.min.js: {}
     js/jquery.parallax-scroll/js/jquery.parallax-scroll.js: {}
     js/gmh.js: {}
-  # dependencies:
-  #   - core/drupal
-  #   - core/jquery
-  #   - core/jquery.once
+  dependencies:
+    - core/drupal
+    - core/jquery
+    - core/jquery.once
 
 # matchHeight:
 #   version: VERSION
