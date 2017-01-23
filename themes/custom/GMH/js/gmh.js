@@ -48,6 +48,5 @@
       });
     }
   };
-  $.noConflict( true )
 
 })(jQuery, Drupal);
