@@ -5,10 +5,10 @@ global:
       css/gmh.css: {}
   js:
     js/gmh.js: {}
-  dependencies:
-    - core/drupal
-    - core/jquery
-    - core/jquery.once
+  # dependencies:
+  #   - core/drupal
+  #   - core/jquery
+  #   - core/jquery.once
 
 matchHeight:
   version: VERSION
