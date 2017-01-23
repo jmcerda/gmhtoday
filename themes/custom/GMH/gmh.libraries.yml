@@ -3,6 +3,8 @@ global:
   css:
     base:
       js/slicknav/dist/slicknav.min.css: {}
+      js/slick-carousel/slick/slick.css: {}
+      js/slick-carousel/slick/slick-theme.css: {}
       css/gmh.css: {}
   js:
     js/matchHeight/jquery.matchHeight-min.js: {}
