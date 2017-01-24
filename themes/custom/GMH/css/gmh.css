@@ -4255,6 +4255,12 @@ footer {
         .hero_copy .fp_slide_link a {
           font-size: 2em; } }
 
+h2 {
+  line-height: 1; }
+  @media screen and (min-width: 40em) {
+    h2 {
+      line-height: 1.4; } }
+
 .partners_left {
   position: absolute;
   margin-top: 6em; }
