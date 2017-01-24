@@ -4222,12 +4222,16 @@ footer {
   right: 0;
   border-radius: 50%;
   background-color: #c35019;
-  padding: 1.5rem; }
+  padding: 2rem 1rem; }
   @media screen and (min-width: 40em) {
     .hero_copy {
       padding: 5rem; } }
   .hero_copy h2.fp_slide_title {
-    font-size: 1.25rem; }
+    font-size: 1.5rem;
+    line-height: 1.5rem; }
+    @media screen and (min-width: 40em) {
+      .hero_copy h2.fp_slide_title {
+        font-size: 3rem; } }
   .hero_copy h2, .hero_copy p {
     color: #fff; }
   .hero_copy .fp_slide_link {
