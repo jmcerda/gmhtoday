@@ -62,9 +62,6 @@
 
 
 .hero_copy_wrapper {
-  // width: 100%;
-  // padding-bottom: 100%;
-  // position: relative;
   width: 50%;
   padding-bottom: 50%;
   position: relative;
@@ -77,6 +74,9 @@
 	padding: 1.5rem;
 	@include breakpoint(medium){
 		padding: 5rem;
+	}
+	h2.fp_slide_title {
+		font-size: 20;
 	}
 	h2, p {
 		color: #fff;
