@@ -4233,7 +4233,7 @@ footer {
         display: block; } }
   .hero_copy .fp_slide_link {
     position: absolute;
-    bottom: -40px;
+    bottom: -1em;
     right: 0;
     height: 30%;
     width: 30%;
@@ -4241,6 +4241,9 @@ footer {
     border-radius: 50%;
     text-align: center;
     padding-top: 2.7rem; }
+    @media screen and (min-width: 40em) {
+      .hero_copy .fp_slide_link {
+        bottom: -40px; } }
     .hero_copy .fp_slide_link a {
       font-size: .75em;
       color: #fff;

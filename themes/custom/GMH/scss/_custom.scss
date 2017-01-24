@@ -87,7 +87,7 @@
 	}
 	.fp_slide_link {
 		position: absolute;
-		bottom: -40px;
+		bottom: -1em;
 		right: 0;
 		height: 30%;
 		width: 30%;
@@ -95,6 +95,9 @@
 		border-radius: 50%;
 		text-align: center;
 		padding-top: 2.7rem;
+		@include breakpoint(medium) {
+			bottom: -40px;
+		}
 		a {
 			font-size: .75em;
 			color: #fff;
