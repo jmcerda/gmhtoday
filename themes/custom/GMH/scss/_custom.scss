@@ -76,6 +76,12 @@
 	h2, p {
 		color: #fff;
 	}
+	.fp_slide_body {
+		display: none;
+		@include breakpoint(medium){
+			display: block;
+		}
+	}
 	.fp_slide_link {
 		position: absolute;
 		bottom: -40px;
