@@ -13,7 +13,9 @@
 }
 
 .gmh_first_hero {
-	padding-top: 3em;
+	@include breakpoint(medium){
+		padding-top: 3em;
+	}
 }
 
 #latest_front_gmh {
