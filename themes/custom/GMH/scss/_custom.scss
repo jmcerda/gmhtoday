@@ -10,6 +10,7 @@
   	float: right;
   	border-radius: 50%;
   }
+  margin-bottom: 2em;
 }
 
 .gmh_first_hero {
@@ -81,12 +82,7 @@
 	h2, p {
 		color: #fff;
 	}
-	.fp_slide_body {
-		display: none;
-		@include breakpoint(medium){
-			display: block;
-		}
-	}
+	.fp_slide_body {}
 	.fp_slide_link {
 		position: absolute;
 		bottom: -1em;
