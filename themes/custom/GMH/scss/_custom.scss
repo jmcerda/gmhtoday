@@ -52,13 +52,17 @@
 .hero_left {
   width: 50%;
   margin-top: 3em;
+  position: absolute;
 }
 
 
 .hero_copy_wrapper {
-  width: 100%;
-  padding-bottom: 56.25%;
-  position: relative;
+  // width: 100%;
+  // padding-bottom: 100%;
+  // position: relative;
+  width: 50%;
+  padding-bottom: 50%;
+  position: absolute;
 }
 .hero_copy {
   	position: absolute;
