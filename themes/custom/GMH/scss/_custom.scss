@@ -94,8 +94,8 @@
 		background-color: #000;
 		border-radius: 50%;
 		text-align: center;
-		padding-top: 2.7rem;
 		@include breakpoint(medium) {
+			padding-top: 2.7rem;
 			bottom: -40px;
 		}
 		a {

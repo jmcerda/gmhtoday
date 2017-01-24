@@ -4239,10 +4239,10 @@ footer {
     width: 30%;
     background-color: #000;
     border-radius: 50%;
-    text-align: center;
-    padding-top: 2.7rem; }
+    text-align: center; }
     @media screen and (min-width: 40em) {
       .hero_copy .fp_slide_link {
+        padding-top: 2.7rem;
         bottom: -40px; } }
     .hero_copy .fp_slide_link a {
       font-size: .75em;
