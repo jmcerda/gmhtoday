@@ -50,9 +50,12 @@
 
 
 .hero_left {
-  width: 15%;
-  margin-top: 1.5%;
-  position: absolute;
+	position: absolute;
+  	width: 15%;
+  	margin-top: 1%;
+  	@include breakpoint(medium) {
+  		margin-top: 1.5%;
+  	}
 }
 
 
@@ -69,9 +72,9 @@
   	top: 0; bottom: 0; left: 0; right: 0;
   	border-radius: 50%;
 	background-color: $alert-color;
-	padding: 1em;
+	padding: 1.5rem;
 	@include breakpoint(medium){
-		padding: 5em;
+		padding: 5rem;
 	}
 	h2, p {
 		color: #fff;
@@ -91,11 +94,14 @@
 		background-color: #000;
 		border-radius: 50%;
 		text-align: center;
-		padding-top: 2.7em;
+		padding-top: 2.7rem;
 		a {
-			font-size: 2em;
+			font-size: .75em;
 			color: #fff;
 			line-height: 1em;
+			@include breakpoint(medium) {
+				font-size: 2em;
+			}
 		}
 	}
 }

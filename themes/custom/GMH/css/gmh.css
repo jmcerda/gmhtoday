@@ -4200,9 +4200,12 @@ footer {
   display: inline; }
 
 .hero_left {
+  position: absolute;
   width: 15%;
-  margin-top: 1.5%;
-  position: absolute; }
+  margin-top: 1%; }
+  @media screen and (min-width: 40em) {
+    .hero_left {
+      margin-top: 1.5%; } }
 
 .hero_copy_wrapper {
   width: 50%;
@@ -4217,10 +4220,10 @@ footer {
   right: 0;
   border-radius: 50%;
   background-color: #c35019;
-  padding: 1em; }
+  padding: 1.5rem; }
   @media screen and (min-width: 40em) {
     .hero_copy {
-      padding: 5em; } }
+      padding: 5rem; } }
   .hero_copy h2, .hero_copy p {
     color: #fff; }
   .hero_copy .fp_slide_body {
@@ -4237,11 +4240,14 @@ footer {
     background-color: #000;
     border-radius: 50%;
     text-align: center;
-    padding-top: 2.7em; }
+    padding-top: 2.7rem; }
     .hero_copy .fp_slide_link a {
-      font-size: 2em;
+      font-size: .75em;
       color: #fff;
       line-height: 1em; }
+      @media screen and (min-width: 40em) {
+        .hero_copy .fp_slide_link a {
+          font-size: 2em; } }
 
 .partners_left {
   position: absolute;
