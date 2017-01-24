@@ -4200,16 +4200,22 @@ footer {
   display: inline; }
 
 .hero_left {
-  position: absolute;
-  margin-top: 3em; }
+  width: 50%;
+  margin: 3em auto; }
+
+.hero_copy_wrapper {
+  width: 100%;
+  padding-bottom: 56.25%;
+  position: relative; }
 
 .hero_copy {
-  border-radius: 50%;
-  background-color: #c35019;
   position: absolute;
-  width: 500px;
-  height: 500px;
-  padding: 5em; }
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 50%;
+  background-color: #c35019; }
   .hero_copy h2, .hero_copy p {
     color: #fff; }
   .hero_copy .fp_slide_link {
