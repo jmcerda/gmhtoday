@@ -4206,6 +4206,9 @@ footer {
 .hero_copy {
   border-radius: 50%;
   background-color: #c35019;
+  position: absolute;
+  width: 500px;
+  height: 500px;
   padding: 5em; }
   .hero_copy h2, .hero_copy p {
     color: #fff; }
