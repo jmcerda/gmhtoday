@@ -29,7 +29,6 @@
 
 .latest-issues-front {
 	text-align: center;
-	padding: 2em 0;
   @include breakpoint(large) {
   	.column {
   		padding: 2em 5em;
@@ -46,6 +45,11 @@
 	}
 }
 
+.about_ront_gmh, .latest_front_gmh, .testimonials_front_gmh, .ads_front_gmh, .partners_front_gmh, .blog_front_gmh, .bottom_front_gmh {
+	h2 {
+		padding: 1em 0;
+	}
+}
 .supported-logo {
 	display: inline;
 }
@@ -111,6 +115,8 @@
 	}
 }
 
+
+
 h2 {
 	line-height: 1;
 	@include breakpoint(medium) {
@@ -118,7 +124,9 @@ h2 {
 	}
 }
 
+.path-frontpage {
 
+}
 
 // .hero_left {
 // 	position: absolute;

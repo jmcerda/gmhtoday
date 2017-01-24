@@ -4185,8 +4185,7 @@ footer {
   background-color: #fbfbfb; }
 
 .latest-issues-front {
-  text-align: center;
-  padding: 2em 0; }
+  text-align: center; }
   @media screen and (min-width: 64em) {
     .latest-issues-front .column, .latest-issues-front .columns {
       padding: 2em 5em; } }
@@ -4197,6 +4196,9 @@ footer {
   .latest-issues-front .views-more-link {
     color: #685d1f;
     font-weight: bold; }
+
+.about_ront_gmh h2, .latest_front_gmh h2, .testimonials_front_gmh h2, .ads_front_gmh h2, .partners_front_gmh h2, .blog_front_gmh h2, .bottom_front_gmh h2 {
+  padding: 1em 0; }
 
 .supported-logo {
   display: inline; }
