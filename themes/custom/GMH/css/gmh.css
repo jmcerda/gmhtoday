@@ -4201,7 +4201,7 @@ footer {
 
 .hero_left {
   width: 50%;
-  margin: 3em auto; }
+  margin-top: 3em; }
 
 .hero_copy_wrapper {
   width: 100%;
