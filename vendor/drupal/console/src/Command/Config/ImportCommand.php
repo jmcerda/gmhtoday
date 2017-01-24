@@ -6,12 +6,9 @@
 
 namespace Drupal\Console\Command\Config;
 
-use Symfony\Component\Config\Definition\Exception\Exception;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
-use Symfony\Component\Yaml\Parser;
-use Symfony\Component\Finder\Finder;
 use Symfony\Component\Console\Command\Command;
 use Drupal\Core\Config\CachedStorage;
 use Drupal\Core\Config\ConfigManager;
@@ -106,6 +103,9 @@ class ImportCommand extends Command
         if ($this->configImport($io, $storage_comparer)) {
             $io->success($this->trans('commands.config.import.messages.imported'));
         }
+        else {
+            return 1;
+        }
     }
 
 
@@ -127,8 +127,9 @@ class ImportCommand extends Command
             $io->success($this->trans('commands.config.import.messages.already-imported'));
         } else {
             try {
-                $config_importer->import();
                 $io->info($this->trans('commands.config.import.messages.importing'));
+                $config_importer->import();
+                return TRUE;
             } catch (ConfigImporterException $e) {
                 $message = 'The import failed due for the following reasons:' . "\n";
                 $message .= implode("\n", $config_importer->getErrors());

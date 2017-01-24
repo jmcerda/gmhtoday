@@ -1,4 +1,8 @@
 
+Slick views 8.x-1.0-dev, 2017-01-24
+-----------------------------------
+- Fixed for whitespace.
+
 Slick views 8.x-1.0-dev, 2017-01-19
 -----------------------------------
 - Added caption count for proper form styling with various amount of captions.

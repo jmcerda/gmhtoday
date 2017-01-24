@@ -41,8 +41,14 @@ Run this in your terminal client:
 ```bash
 cd /install/location ; composer require pantheon-systems/terminus
 ```
+If you are having issues installing, please see to it that any old versions of Terminus are removed by using
+```bash
+composer remove pantheon-systems/terminus
+```
+before requiring it.
 
 ### Installing with [Homebrew](http://brew.sh/) (for Macs)
+This only installs stable versions of Terminus, and will install the latest 0.13.x release until 1.0 is out of beta.
 If you do not have `homebrew-php` already tapped, here are the commands for the taps:
 ```bash
 brew tap homebrew/dupes ; brew tap homebrew/versions ; brew tap homebrew/php
@@ -188,3 +194,4 @@ To deploy a new version of Terminus:
  
 ## Debugging
 - Run Terminus with the `-vvv` option to get debug output.
+- If you are getting `PHP Fatal error:  Uncaught exception 'ReflectionException' ...`, install php-xml.

@@ -89,7 +89,7 @@ class SlickViews extends BlazyStylePluginBase {
     }
 
     $this->admin()->buildSettingsForm($form, $definition);
-    
+
     $count = count($definition['captions']);
     $wide = $count > 2 ? ' form--wide form--caption-' . $count : ' form--caption-' . $count;
     $title = '<p class="form__header form__title">';

@@ -218,6 +218,7 @@ abstract class BlazyAdminBase implements BlazyAdminInterface {
       '#weight'             => 114,
       '#attributes'         => ['class' => ['form-text--sizes', 'js-expandable']],
       '#wrapper_attributes' => ['class' => ['form-item--sizes']],
+      '#prefix'             => '<h2 class="form__title form__title--breakpoints">' . $title . '</h2>',
     ];
 
     $form['breakpoints'] = [
@@ -228,7 +229,6 @@ abstract class BlazyAdminBase implements BlazyAdminInterface {
         $this->t('Image style'),
         $this->t('Max-width/Descriptor'),
       ],
-      '#prefix'     => '<h2 class="form__title form__title--breakpoints">' . $title . '</h2>',
       '#attributes' => ['class' => ['form-wrapper--table', 'form-wrapper--table-breakpoints']],
       '#weight'     => 115,
       '#enforced'   => TRUE,
@@ -590,7 +590,7 @@ abstract class BlazyAdminBase implements BlazyAdminInterface {
     $settings = isset($definition['settings']) ? $definition['settings'] : [];
     $vanilla = isset($definition['vanilla']) ? ' form--vanilla' : '';
     $captions = empty($definition['captions']) ? 0 : count($definition['captions']);
-    $wide = $captions > 2 ? ' form--wide' : '';
+    $wide = $captions > 2 ? ' form--wide form--caption-' . $captions : ' form--caption-' . $captions;
     $fallback = $namespace == 'slick' ? 'form--slick' : 'form--' . $namespace . ' form--slick';
     $classes = isset($definition['form_opening_classes'])
       ? $definition['form_opening_classes']
