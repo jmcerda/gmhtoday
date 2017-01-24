@@ -49,15 +49,15 @@
 
 .hero_left {
 	position: absolute;
-	margin-top: 6em;
+	margin-top: 3em;
 }
 .hero_copy {
 	border-radius: 50%;
 	background-color: $alert-color;
-	width: 580px;
-    height: 580px;
-    position: absolute;
-    padding: 7em 5em;
+	// position: absolute;
+	// width: 500px;
+ //    height: 500px;
+	padding: 5em;
 	h2, p {
 		color: #fff;
 	}
