@@ -206,8 +206,14 @@ h2 {
 	@include breakpoint(medium) {
 		text-align: left;
 	}
-	h2, a {
+	h2 {
+		color: #ffffff;
+	}
+	a {
 		color: #ffffff !important;
 		font-weight: bold;
+	}
+	.views-row {
+		margin: 2em auto;
 	}
 }

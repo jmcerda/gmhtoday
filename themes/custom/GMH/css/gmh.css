@@ -4323,6 +4323,10 @@ h2 {
   @media screen and (min-width: 40em) {
     .block-region-events {
       text-align: left; } }
-  .block-region-events h2, .block-region-events a {
+  .block-region-events h2 {
+    color: #ffffff; }
+  .block-region-events a {
     color: #ffffff !important;
     font-weight: bold; }
+  .block-region-events .views-row {
+    margin: 2em auto; }
