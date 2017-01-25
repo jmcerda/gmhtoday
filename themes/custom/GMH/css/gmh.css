@@ -4206,7 +4206,7 @@ footer {
     color: #685d1f;
     font-weight: bold; }
 
-.about_front_gmh h2, .latest_front_gmh h2, .testimonials_front_gmh h2, .ads_front_gmh h2, .partners_front_gmh h2, .blog_front_gmh h2, .bottom_front_gmh h2 {
+.about_front_gmh h2, .latest-issues-front h2, .testimonials_front_gmh h2, .ads_front_gmh h2, .partners_front_gmh h2, .blog_front_gmh h2, .bottom_front_gmh h2 {
   padding: 1em 0; }
 
 .supported-logo {
