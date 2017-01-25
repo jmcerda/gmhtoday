@@ -4198,7 +4198,7 @@ blockquote:after {
   font-size: 7em;
   line-height: 0.1em;
   margin-right: 0.25em;
-  vertical-align: -0.4em; }
+  vertical-align: -0.5em; }
 
 .box_shadow {
   box-shadow: 5px 5px 25px 0px rgba(0, 0, 0, 0.33); }
@@ -4298,7 +4298,8 @@ blockquote:after {
     line-height: 1.5rem; }
     @media screen and (min-width: 40em) {
       .hero_copy h2.fp_slide_title {
-        font-size: 3rem; } }
+        font-size: 3rem;
+        line-height: 3rem; } }
   .hero_copy h2, .hero_copy p {
     color: #fff; }
   .hero_copy .fp_slide_link {
@@ -4365,7 +4366,8 @@ h2 {
   text-align: center; }
   @media screen and (min-width: 40em) {
     .block-region-events {
-      text-align: left; } }
+      text-align: left;
+      border-radius: 50%; } }
   .block-region-events h2 {
     color: #ffffff; }
   .block-region-events a {

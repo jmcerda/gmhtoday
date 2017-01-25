@@ -19,7 +19,7 @@ blockquote:after {
   font-size: 7em;
   line-height: 0.1em;
   margin-right: 0.25em;
-  vertical-align: -0.4em;
+  vertical-align: -0.5em;
 }
 .box_shadow {
 	-webkit-box-shadow: 5px 5px 25px 0px rgba(0,0,0,0.33);
@@ -132,6 +132,7 @@ blockquote:after {
 		line-height: 1.5rem;
 		@include breakpoint(medium){
 			font-size: 3rem;
+			line-height: 3rem;
 		}
 	}
 	h2, p {
@@ -250,6 +251,7 @@ h2 {
 	text-align: center;
 	@include breakpoint(medium) {
 		text-align: left;
+		border-radius: 50%;
 	}
 	h2 {
 		color: #ffffff;
