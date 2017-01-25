@@ -4318,6 +4318,11 @@ h2 {
 .block-region-events {
   background-color: #c35019;
   color: #ffffff;
-  padding: 1em; }
+  padding: 1em;
+  text-align: center; }
+  @media screen and (min-width: 40em) {
+    .block-region-events {
+      text-align: left; } }
   .block-region-events h2, .block-region-events a {
-    color: #ffffff; }
+    color: #ffffff !important;
+    font-weight: bold; }
