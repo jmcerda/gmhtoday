@@ -4160,8 +4160,11 @@ footer {
 .bottom-bar {
   padding: 1em; }
 
+.gmh_primary_nav nav {
+  text-align: center; }
+
 .gmh_primary_nav ul {
-  width: 80%;
+  width: 100%;
   font-size: 1.25em;
   margin: auto; }
   .gmh_primary_nav ul li {
