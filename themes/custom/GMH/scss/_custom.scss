@@ -143,6 +143,10 @@ blockquote:after {
 		font-size: 1.5rem;
 		line-height: 1.5rem;
 		@include breakpoint(medium){
+			font-size: 2rem;
+			line-height: 2rem;
+		}
+		@include breakpoint(xlarge){
 			font-size: 3rem;
 			line-height: 3rem;
 		}
@@ -161,6 +165,10 @@ blockquote:after {
 		border-radius: 50%;
 		text-align: center;
 		@include breakpoint(medium) {
+			padding-top: 2rem;
+			bottom: 0px;
+		}
+		@include breakpoint(xlarge) {
 			padding-top: 2.7rem;
 			bottom: -40px;
 		}
