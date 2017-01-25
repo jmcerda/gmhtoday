@@ -41,7 +41,9 @@ footer {
 	.footer_logo_div {
 		img {
 			max-width: 75%;
-			float: right;
+			@include breakpoint(medium) {
+				float: right;
+			}
 		}
 	}
 	.columns {

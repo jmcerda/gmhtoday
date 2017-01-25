@@ -4138,8 +4138,10 @@ footer {
     footer .footer_advertising a, footer .footer_quicklinks a {
       color: #fff; }
   footer .footer_logo_div img {
-    max-width: 75%;
-    float: right; }
+    max-width: 75%; }
+    @media screen and (min-width: 40em) {
+      footer .footer_logo_div img {
+        float: right; } }
   footer .columns {
     padding: 1em; }
 
