@@ -36,7 +36,8 @@
         "drupal/simple_menu_icons": "1.x-dev",
         "drupal/block_class": "1.0-alpha1",
         "drupal/joomag_filter": "1.x-dev",
-        "pantheon-systems/terminus": "^1.0"
+        "pantheon-systems/terminus": "^1.0",
+        "drupal/menu_link_attributes": "1.x-dev"
     },
     "replace": {
         "drupal/core": "~8.2"

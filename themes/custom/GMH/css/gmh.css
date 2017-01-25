@@ -4179,7 +4179,7 @@ footer {
 blockquote:before {
   color: #c35019;
   content: open-quote;
-  font-size: 4em;
+  font-size: 7em;
   line-height: 0.1em;
   margin-right: 0.25em;
   vertical-align: -0.4em; }
@@ -4187,7 +4187,7 @@ blockquote:before {
 blockquote:after {
   color: #c35019;
   content: close-quote;
-  font-size: 4em;
+  font-size: 7em;
   line-height: 0.1em;
   margin-right: 0.25em;
   vertical-align: -0.4em; }
