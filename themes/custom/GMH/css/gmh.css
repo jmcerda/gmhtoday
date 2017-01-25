@@ -4356,6 +4356,5 @@ h2 {
 
 .block-region-blog .views-field-title, .block-region-editor-choice .views-field-title {
   font-size: 1.5rem;
-  font-weight: bold; }
-  .block-region-blog .views-field-title a, .block-region-editor-choice .views-field-title a {
-    color: #000; }
+  font-weight: bold;
+  color: #685d1f; }
