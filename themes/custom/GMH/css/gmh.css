@@ -4204,9 +4204,12 @@ footer {
   .latest-issues-front .latest-issue-date {
     color: #487dad;
     text-transform: uppercase;
-    font-size: 25; }
-  .latest-issues-front .latest_cover_front {
+    font-size: 1.25rem;
+    font-weight: bold; }
+  .latest-issues-front .latest-cover-front {
     margin: 2em auto; }
+    .latest-issues-front .latest-cover-front img {
+      box-shadow: 5px 5px 25px 0px rgba(0, 0, 0, 0.33); }
 
 .block-region-about h2,
 .latest-issues-front h2,
