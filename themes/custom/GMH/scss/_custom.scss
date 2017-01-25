@@ -91,6 +91,16 @@ blockquote:after {
 		color: $secondary-color;
 	}
 }
+.block-region-about,
+.block-region-testimonials,
+.block-region-blog,
+.block-region-editor-choice {
+	h2 {
+		@include breakpoint (medium) {
+			text-align: left;
+		}
+	}
+}
 .supported-logo {
 	display: block;
     text-align: center;

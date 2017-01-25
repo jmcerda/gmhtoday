@@ -4259,6 +4259,13 @@ blockquote:after {
 .block-region-bottom .views-field-title a {
   color: #685d1f; }
 
+@media screen and (min-width: 40em) {
+  .block-region-about h2,
+  .block-region-testimonials h2,
+  .block-region-blog h2,
+  .block-region-editor-choice h2 {
+    text-align: left; } }
+
 .supported-logo {
   display: block;
   text-align: center;
