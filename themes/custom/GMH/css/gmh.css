@@ -4128,6 +4128,7 @@ footer {
     footer .footer_contact h2 {
       color: #c35019; }
   footer li {
+    list-style: none;
     border-bottom: 1px dashed #fff;
     width: 60%; }
   footer a.subscribe {
