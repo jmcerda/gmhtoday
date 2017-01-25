@@ -4130,13 +4130,13 @@ footer {
   footer li {
     border-bottom: 1px dashed #fff;
     width: 60%; }
-  footer li.subscribe {
+  footer a.subscribe {
     list-style-image: url("../images/icons/subscribe.svg"); }
-  footer li.message {
+  footer a.message {
     list-style-image: url("../images/icons/message.svg"); }
-  footer li.blog {
+  footer a.blog {
     list-style-image: url("../images/icons/blog.svg"); }
-  footer li.facebook {
+  footer a.facebook {
     list-style-image: url("../images/icons/facebook.svg"); }
   @media screen and (min-width: 40em) {
     footer .footer_quicklinks {
