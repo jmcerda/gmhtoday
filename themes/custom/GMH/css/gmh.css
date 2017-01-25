@@ -4207,10 +4207,17 @@ footer {
     font-weight: bold; }
 
 .block-region-about h2, .latest-issues-front h2, .block-region-testimonials h2, .block-region-ads h2, .block-region-partners h2, .block-region-blog h2, .block-region-bottom h2 {
-  padding-top: 1em; }
+  padding-top: 1em;
+  text-align: center; }
 
 .supported-logo {
-  display: inline; }
+  display: block;
+  text-align: center;
+  margin: 2em; }
+  @media screen and (min-width: 40em) {
+    .supported-logo {
+      display: inline;
+      margin: 0; } }
 
 .hero_left {
   position: absolute;

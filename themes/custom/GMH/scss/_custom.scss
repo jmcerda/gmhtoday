@@ -48,10 +48,17 @@
 .block-region-about, .latest-issues-front, .block-region-testimonials, .block-region-ads, .block-region-partners, .block-region-blog, .block-region-bottom {
 	h2 {
 		padding-top: 1em;
+		text-align: center;
 	}
 }
 .supported-logo {
-	display: inline;
+	display: block;
+    text-align: center;
+    margin: 2em;
+    @include breakpoint(medium) {
+    	display: inline;
+    	margin: 0;
+    }
 }
 
 
