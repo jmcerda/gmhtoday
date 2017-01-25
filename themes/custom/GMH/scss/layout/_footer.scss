@@ -27,16 +27,16 @@ footer {
 		border-bottom: 1px dashed #fff;
 		width: 60%;
 	}
-	a.subscribe {
+	a.subscribe:before {
 		list-style-image: url("../images/icons/subscribe.svg")
 	}
-	a.message {
+	a.message:before {
 		list-style-image: url("../images/icons/message.svg")
 	}
-	a.blog {
+	a.blog:before {
 		list-style-image: url("../images/icons/blog.svg")
 	}
-	a.facebook {
+	a.facebook:before {
 		list-style-image: url("../images/icons/facebook.svg")
 	}
 

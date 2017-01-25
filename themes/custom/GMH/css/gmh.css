@@ -4131,13 +4131,13 @@ footer {
     list-style: none;
     border-bottom: 1px dashed #fff;
     width: 60%; }
-  footer a.subscribe {
+  footer a.subscribe:before {
     list-style-image: url("../images/icons/subscribe.svg"); }
-  footer a.message {
+  footer a.message:before {
     list-style-image: url("../images/icons/message.svg"); }
-  footer a.blog {
+  footer a.blog:before {
     list-style-image: url("../images/icons/blog.svg"); }
-  footer a.facebook {
+  footer a.facebook:before {
     list-style-image: url("../images/icons/facebook.svg"); }
   @media screen and (min-width: 40em) {
     footer .footer_quicklinks {
