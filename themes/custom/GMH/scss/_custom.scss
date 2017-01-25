@@ -35,6 +35,7 @@
 
 .latest-issues-front {
 	text-align: center;
+	margin-bottom: 2em;
   @include breakpoint(large) {
   	.column {
   		padding: 2em 5em;
@@ -189,6 +190,10 @@ h2 {
 // 	}
 // }
 
+#partners_front_gmh {
+	background-color: $off-white-background;
+}
+
 .partners_left {
 	position: absolute;
 	margin-top: 6em;
@@ -235,4 +240,11 @@ h2 {
 .testimonial_img img {
 	border-radius: 50%;
 	margin: 2em auto;
+}
+
+.block-region-blog {
+	.views-field-title {
+		color: #000;
+		font-size: 3rem;
+	}
 }

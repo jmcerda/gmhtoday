@@ -4197,7 +4197,8 @@ footer {
   background-color: #fbfbfb; }
 
 .latest-issues-front {
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 2em; }
   @media screen and (min-width: 64em) {
     .latest-issues-front .column, .latest-issues-front .columns {
       padding: 2em 5em; } }
@@ -4303,6 +4304,9 @@ h2 {
     h2 {
       line-height: 1.4; } }
 
+#partners_front_gmh {
+  background-color: #fbfbfb; }
+
 .partners_left {
   position: absolute;
   margin-top: 6em; }
@@ -4342,3 +4346,7 @@ h2 {
 .testimonial_img img {
   border-radius: 50%;
   margin: 2em auto; }
+
+.block-region-blog .views-field-title {
+  color: #000;
+  font-size: 3rem; }
