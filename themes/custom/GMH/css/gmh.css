@@ -4202,9 +4202,6 @@ footer {
     color: #487dad;
     text-transform: uppercase;
     font-size: 25; }
-  .latest-issues-front .views-more-link {
-    color: #685d1f;
-    font-weight: bold; }
 
 .block-region-about h2,
 .latest-issues-front h2,
@@ -4217,6 +4214,17 @@ footer {
 .block-region-bottom h2 {
   padding-top: 1em;
   text-align: center; }
+
+.block-region-about .views-field-title a,
+.latest-issues-front .views-field-title a,
+.block-region-testimonials .views-field-title a,
+.block-region-ads .views-field-title a,
+.block-region-partners .views-field-title a,
+.block-region-events .views-field-title a,
+.block-region-blog .views-field-title a,
+.block-region-editor-choice .views-field-title a,
+.block-region-bottom .views-field-title a {
+  color: #685d1f; }
 
 .supported-logo {
   display: block;
@@ -4302,6 +4310,7 @@ h2 {
   .partners_copy h2, .partners_copy p {
     color: #fff; }
 
-.more-link a {
+.more-link a,
+.views-more-link a {
   font-weight: bold;
   color: #685d1f; }

@@ -39,10 +39,6 @@
 		text-transform: uppercase;
 		font-size: 25;
 	}
-	.views-more-link {
-		color: $secondary-color;
-		font-weight: bold;
-	}
 }
 
 .block-region-about,
@@ -57,6 +53,9 @@
 	h2 {
 		padding-top: 1em;
 		text-align: center;
+	}
+	.views-field-title a {
+		color: $secondary-color;
 	}
 }
 .supported-logo {
@@ -193,7 +192,8 @@ h2 {
 
 }
 
-.more-link a {
+.more-link a,
+.views-more-link a {
 	font-weight: bold;
 	color: $secondary-color;
 }
