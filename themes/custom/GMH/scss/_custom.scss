@@ -45,7 +45,15 @@
 	}
 }
 
-.block-region-about, .latest-issues-front, .block-region-testimonials, .block-region-ads, .block-region-partners, .block-region-blog, .block-region-bottom {
+.block-region-about,
+.latest-issues-front,
+.block-region-testimonials,
+.block-region-ads,
+.block-region-partners,
+.block-region-events,
+.block-region-blog,
+.block-region-editor-choice,
+.block-region-bottom {
 	h2 {
 		padding-top: 1em;
 		text-align: center;
@@ -183,4 +191,9 @@ h2 {
 		color: #fff;
 	}
 
+}
+
+.more-link {
+	font-weight: bold;
+	color: $secondary-color;
 }
