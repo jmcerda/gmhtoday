@@ -4347,7 +4347,7 @@ h2 {
   border-radius: 50%;
   margin: 2em auto; }
 
-.block-region-blog .views-field-title {
+.block-region-blog .views-field-title, .block-region-editor-choice .views-field-title {
   color: #000;
   font-size: 1.5rem;
   font-weight: bold; }
