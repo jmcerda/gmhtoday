@@ -4327,6 +4327,9 @@ h2 {
   font-weight: bold;
   color: #685d1f; }
 
+.block-region-about {
+  margin-bottom: 4em; }
+
 .block-region-events {
   background-color: #c35019;
   color: #ffffff;
@@ -4348,6 +4351,7 @@ h2 {
   margin: 2em auto; }
 
 .block-region-blog .views-field-title, .block-region-editor-choice .views-field-title {
-  color: #000;
   font-size: 1.5rem;
   font-weight: bold; }
+  .block-region-blog .views-field-title a, .block-region-editor-choice .views-field-title a {
+    color: #000; }
