@@ -4382,7 +4382,8 @@ h2 {
 
 .block-region-partners {
   background-color: #fbfbfb;
-  border-radius: 50%; }
+  border-radius: 50%;
+  text-align: center; }
 
 .block-region-events {
   background-color: #c35019;
@@ -4413,4 +4414,5 @@ h2 {
   color: #685d1f; }
 
 .supported-row {
-  width: 20%; }
+  display: -ms-inline-flexbox;
+  display: inline-flex; }
