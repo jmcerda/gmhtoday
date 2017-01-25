@@ -4187,6 +4187,9 @@ footer {
   .slicknav_menu {
     display: none; } }
 
+blockquote {
+  margin: 1rem 0 1rem; }
+
 blockquote:before {
   color: #c35019;
   content: open-quote;
