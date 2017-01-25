@@ -23,7 +23,7 @@ footer {
 		}
 	}
 	li {
-		list-style: im
+		// list-style: none;
 		border-bottom: 1px dashed #fff;
 		width: 60%;
 	}
@@ -33,8 +33,8 @@ footer {
 	a.message {
 		list-style-image: url("../images/icons/message.svg")
 	}
-	li a.blog {
-		list-style-type: url("../images/icons/blog.svg")
+	a.blog {
+		list-style-image: url("../images/icons/blog.svg")
 	}
 	a.facebook {
 		list-style-image: url("../images/icons/facebook.svg")

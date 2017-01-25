@@ -4134,7 +4134,7 @@ footer {
     list-style-image: url("../images/icons/subscribe.svg"); }
   footer a.message {
     list-style-image: url("../images/icons/message.svg"); }
-  footer li a.blog {
+  footer a.blog {
     list-style-image: url("../images/icons/blog.svg"); }
   footer a.facebook {
     list-style-image: url("../images/icons/facebook.svg"); }
