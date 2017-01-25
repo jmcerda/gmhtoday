@@ -45,9 +45,9 @@
 	}
 }
 
-.block-region-about, .latest-issues-front, .testimonials_front_gmh, .ads_front_gmh, .partners_front_gmh, .blog_front_gmh, .bottom_front_gmh {
+.block-region-about, .latest-issues-front, .block-region-testimonials, .block-region-ads, .block-region-partners, .block-region-blog, .block-region-bottom {
 	h2 {
-		padding: 1em 0;
+		padding-top: 1em;
 	}
 }
 .supported-logo {

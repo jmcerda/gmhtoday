@@ -4206,8 +4206,8 @@ footer {
     color: #685d1f;
     font-weight: bold; }
 
-.block-region-about h2, .latest-issues-front h2, .testimonials_front_gmh h2, .ads_front_gmh h2, .partners_front_gmh h2, .blog_front_gmh h2, .bottom_front_gmh h2 {
-  padding: 1em 0; }
+.block-region-about h2, .latest-issues-front h2, .block-region-testimonials h2, .block-region-ads h2, .block-region-partners h2, .block-region-blog h2, .block-region-bottom h2 {
+  padding-top: 1em; }
 
 .supported-logo {
   display: inline; }
