@@ -202,4 +202,7 @@ h2 {
 	background-color: $alert-color;
 	color: #ffffff;
 	padding: 1em;
+	h2, a {
+		color: #ffffff;
+	}
 }

@@ -4319,3 +4319,5 @@ h2 {
   background-color: #c35019;
   color: #ffffff;
   padding: 1em; }
+  .block-region-events h2, .block-region-events a {
+    color: #ffffff; }
