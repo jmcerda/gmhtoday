@@ -4132,13 +4132,13 @@ footer {
     border-bottom: 1px dashed #fff;
     width: 60%; }
   footer a.subscribe:before {
-    list-style-image: url("../images/icons/subscribe.svg"); }
+    content: url("../images/icons/subscribe.svg"); }
   footer a.message:before {
-    list-style-image: url("../images/icons/message.svg"); }
+    content: url("../images/icons/message.svg"); }
   footer a.blog:before {
-    list-style-image: url("../images/icons/blog.svg"); }
+    content: url("../images/icons/blog.svg"); }
   footer a.facebook:before {
-    list-style-image: url("../images/icons/facebook.svg"); }
+    content: url("../images/icons/facebook.svg"); }
   @media screen and (min-width: 40em) {
     footer .footer_quicklinks {
       border-top-right-radius: 10% 100%;

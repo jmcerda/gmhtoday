@@ -28,16 +28,16 @@ footer {
 		width: 60%;
 	}
 	a.subscribe:before {
-		list-style-image: url("../images/icons/subscribe.svg")
+		content: url("../images/icons/subscribe.svg")
 	}
 	a.message:before {
-		list-style-image: url("../images/icons/message.svg")
+		content: url("../images/icons/message.svg")
 	}
 	a.blog:before {
-		list-style-image: url("../images/icons/blog.svg")
+		content: url("../images/icons/blog.svg")
 	}
 	a.facebook:before {
-		list-style-image: url("../images/icons/facebook.svg")
+		content: url("../images/icons/facebook.svg")
 	}
 
 	.footer_quicklinks {
