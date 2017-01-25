@@ -4149,6 +4149,9 @@ footer {
   footer .columns {
     padding: 1em; }
 
+.bottom-bar {
+  padding: 1em; }
+
 .gmh_primary_nav ul {
   width: 80%;
   font-size: 1.25em;
