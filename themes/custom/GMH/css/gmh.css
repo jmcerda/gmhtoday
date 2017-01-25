@@ -4314,3 +4314,8 @@ h2 {
 .views-more-link a {
   font-weight: bold;
   color: #685d1f; }
+
+.block-region-events {
+  background-color: #c35019;
+  color: #ffffff;
+  padding: 1em; }
