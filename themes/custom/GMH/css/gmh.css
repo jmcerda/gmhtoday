@@ -4176,6 +4176,9 @@ footer {
   .slicknav_menu {
     display: none; } }
 
+.box_shadow {
+  box-shadow: 5px 5px 25px 0px rgba(0, 0, 0, 0.33); }
+
 #hero_front_gmh {
   height: 100%;
   margin-bottom: 2em; }
@@ -4202,6 +4205,8 @@ footer {
     color: #487dad;
     text-transform: uppercase;
     font-size: 25; }
+  .latest-issues-front .latest_cover_front {
+    margin: 2em auto; }
 
 .block-region-about h2,
 .latest-issues-front h2,

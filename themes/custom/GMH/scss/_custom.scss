@@ -4,6 +4,11 @@
 // 	margin-top: 1em;
 // }
 
+.box_shadow {
+	-webkit-box-shadow: 5px 5px 25px 0px rgba(0,0,0,0.33);
+	-moz-box-shadow: 5px 5px 25px 0px rgba(0,0,0,0.33);
+	box-shadow: 5px 5px 25px 0px rgba(0,0,0,0.33);
+}
 #hero_front_gmh {
   height: 100%;
   img {
@@ -23,6 +28,7 @@
 	background-color: $light-blue-background;
 }
 
+
 #ads_front_gmh {
 	background-color: $off-white-background;
 }
@@ -38,6 +44,9 @@
 		color: $primary-color;
 		text-transform: uppercase;
 		font-size: 25;
+	}
+	.latest_cover_front {
+		margin: 2em auto;
 	}
 }
 
