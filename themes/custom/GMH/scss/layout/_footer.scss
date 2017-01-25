@@ -23,10 +23,23 @@ footer {
 		}
 	}
 	li {
-		list-style: none;
+		// list-style: none;
 		border-bottom: 1px dashed #fff;
 		width: 60%;
 	}
+	li.subscribe {
+		list-style-image: url("../images/icons/subscribe.svg")
+	}
+	li.message {
+		list-style-image: url("../images/icons/message.svg")
+	}
+	li.blog {
+		list-style-image: url("../images/icons/blog.svg")
+	}
+	li.facebook {
+		list-style-image: url("../images/icons/facebook.svg")
+	}
+
 	.footer_quicklinks {
 		@include breakpoint(medium) {
 			border-top-right-radius: 10% 100%;
@@ -53,6 +66,8 @@ footer {
 	}
 
 }
+
+
 
 .bottom-bar {
 	padding: 1em;
