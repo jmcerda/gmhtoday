@@ -4302,6 +4302,6 @@ h2 {
   .partners_copy h2, .partners_copy p {
     color: #fff; }
 
-.more-link {
+.more-link a {
   font-weight: bold;
-  color: #685d1f !important; }
+  color: #685d1f; }
