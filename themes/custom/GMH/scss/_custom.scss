@@ -266,8 +266,10 @@ h2 {
 }
 .block-region-partners {
 	background-color: $off-white-background;
-	border-radius: 50%;
-	text-align: center;
+	@include breakpoint(medium) {
+		border-radius: 50%;
+		text-align: center;
+	}
 }
 .block-region-events {
 	background-color: $alert-color;
