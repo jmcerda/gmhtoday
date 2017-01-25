@@ -4330,3 +4330,6 @@ h2 {
     font-weight: bold; }
   .block-region-events .views-row {
     margin: 2em auto; }
+
+.testimonial_img {
+  border-radius: 50%; }
