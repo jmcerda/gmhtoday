@@ -17,6 +17,7 @@ footer {
 		color: #fff;
 	}
 	.footer_contact {
+		background-color: $off-white-background;
 		h2 {
 			color: $alert-color;
 		}
@@ -39,6 +40,7 @@ footer {
 		}
 	}
 	.footer_logo_div {
+		background-color: $off-white-background;
 		img {
 			max-width: 75%;
 			@include breakpoint(medium) {

@@ -4123,8 +4123,10 @@ footer {
   footer h2 {
     font-size: 1.75em;
     color: #fff; }
-  footer .footer_contact h2 {
-    color: #c35019; }
+  footer .footer_contact {
+    background-color: #fbfbfb; }
+    footer .footer_contact h2 {
+      color: #c35019; }
   footer li {
     list-style: none;
     border-bottom: 1px dashed #fff;
@@ -4137,11 +4139,13 @@ footer {
     background-color: #487dad; }
     footer .footer_advertising a, footer .footer_quicklinks a {
       color: #fff; }
-  footer .footer_logo_div img {
-    max-width: 75%; }
-    @media screen and (min-width: 40em) {
-      footer .footer_logo_div img {
-        float: right; } }
+  footer .footer_logo_div {
+    background-color: #fbfbfb; }
+    footer .footer_logo_div img {
+      max-width: 75%; }
+      @media screen and (min-width: 40em) {
+        footer .footer_logo_div img {
+          float: right; } }
   footer .columns {
     padding: 1em; }
 
