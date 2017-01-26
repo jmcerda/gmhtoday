@@ -22,7 +22,7 @@
       //   // slidesToShow: 1,
       //   // fade: true
       // });
-      $('.single-item').slick();
+      // $('.single-item').slick();
       // SlickNav
       // $('.menu').slicknav();
     }
