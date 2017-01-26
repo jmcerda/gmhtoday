@@ -24,11 +24,7 @@
       // });
       $('.single-item').slick();
       // SlickNav
-      $('.menu').slicknav({
-        label: '',
-        duration: 1000,
-        easingOpen: "easeOutBounce", //available with jQuery UI
-      });
+      $('.menu').slicknav();
     }
   };
   // Drupal.behaviors.slickNav = {
