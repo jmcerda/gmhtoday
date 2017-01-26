@@ -7,7 +7,7 @@ global:
       # js/slicknav/dist/slicknav.css: {}
       css/gmh.css: {}
   js:
-    # js/matchHeight/jquery.matchHeight.js: {}
+    js/matchHeight/jquery.matchHeight.js: {}
     # js/slick-carousel/slick/slick.js: {}
     # js/jquery.parallax-scroll/js/jquery.parallax-scroll.js: {}
     # js/slicknav/jquery.slicknav.js: {}
