@@ -11,9 +11,9 @@
   Drupal.behaviors.gmh = {
     attach: function (context, settings) {
       // MatchHeights
-      $('.equalHeight').matchHeight();
+      // $('.equalHeight').matchHeight();
       // Page header moves
-      $("#gmh_page_hero").appendTo("#gmh_page_hero_div");
+      // $("#gmh_page_hero").appendTo("#gmh_page_hero_div");
       //Slick Slider
       // Single Item no dots
       // $('.single-item').slick({
@@ -22,7 +22,7 @@
       //   // slidesToShow: 1,
       //   // fade: true
       // });
-      $('.single-item').slick();
+      // $('.single-item').slick();
       // SlickNav
       $('.menu').slicknav();
     }
