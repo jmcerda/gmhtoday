@@ -13,7 +13,7 @@
       // MatchHeights
       $('.equalHeight').matchHeight();
       // Page header moves
-      $("#gmh_page_hero").appendTo("#gmh_page_hero_div");
+      // $("#gmh_page_hero").appendTo("#gmh_page_hero_div");
       //Slick Slider
       // Single Item no dots
       // $('.single-item').slick({
