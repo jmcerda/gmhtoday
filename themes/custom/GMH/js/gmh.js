@@ -8,23 +8,28 @@
   /**
    * Use this behavior as a template for custom Javascript.
    */
-  Drupal.behaviors.matchHeight = {
+  Drupal.behaviors.equalHeight_behavior = {
     attach: function (context, settings) {
+      // MatchHeights
       $('.equalHeight').matchHeight();
-      // Page header moves
-      // $("#gmh_page_hero").appendTo("#gmh_page_hero_div");
-      //Slick Slider
-      // Single Item no dots
-      // $('.single-item').slick({
-      //   // dots: true,
-      //   arrows: true
-      //   // slidesToShow: 1,
-      //   // fade: true
-      // });
-      // $('.single-item').slick();
       // SlickNav
-      // $('.menu').slicknav();
+      $('.menu').slicknav({
+		  label: '',
+		  duration: 1000,
+		  easingOpen: "easeOutBounce", //available with jQuery UI
+		  prependTo:'#demo2'
+	  });
     }
   };
 
 })(jQuery, Drupal);
+
+
+// $(function() {
+//     $('.equalHeight').matchHeight();
+// });
+
+// // SlickNav
+// $(function(){
+//     $('#menu').slicknav();
+// });
