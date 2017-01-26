@@ -2,17 +2,13 @@ global:
   version: VERSION
   css:
     base:
-      js/slicknav/dist/slicknav.min.css: {}
       js/slick-carousel/slick/slick.css: {}
       js/slick-carousel/slick/slick-theme.css: {}
+      js/slicknav/dist/slicknav.css: {}
       css/gmh.css: {}
   js:
-    # js/matchHeight/jquery.matchHeight-min.js: {}
-    # js/slick-carousel/slick/slick.min.js: {}
+    js/matchHeight/jquery.matchHeight-min.js: {}
+    js/slick-carousel/slick/slick.min.js: {}
     # js/jquery.parallax-scroll/js/jquery.parallax-scroll.js: {}
     js/slicknav/jquery.slicknav.js: {}
     js/gmh.js: {}
-  # dependencies:
-  #   - core/drupal
-  #   - core/jquery
-  #   - core/jquery.once
