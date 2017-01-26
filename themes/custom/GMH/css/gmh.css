@@ -1526,6 +1526,10 @@ input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
   color: #cacaca; }
 
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  color: #cacaca; }
+
 input:-ms-input-placeholder,
 textarea:-ms-input-placeholder {
   color: #cacaca; }
@@ -4180,10 +4184,6 @@ footer {
 .slicknav_nav a {
   color: #685d1f; }
 
-@media screen and (min-width: 40em) {
-  .slicknav_menu {
-    display: none; } }
-
 blockquote {
   margin: 1rem 0 1rem; }
 
@@ -4390,10 +4390,11 @@ h2 {
   text-align: center; }
   @media screen and (min-width: 40em) {
     .block-region-events {
-      text-align: left;
+      text-align: center;
       border-radius: 50%; } }
   .block-region-events h2 {
-    color: #ffffff; }
+    color: #ffffff;
+    text-align: left; }
   .block-region-events a {
     color: #ffffff !important;
     font-weight: bold; }
