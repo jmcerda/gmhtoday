@@ -24,7 +24,7 @@
       // });
       $('.single-item').slick();
       // SlickNav
-      // $('.menu').slicknav();
+      $('.menu').slicknav();
     }
   };
   // Drupal.behaviors.slickNav = {
