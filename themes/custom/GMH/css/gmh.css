@@ -1249,7 +1249,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Myriad Pro", sans-serif;
+  font-family: "Fanwood Text", serif;
   font-weight: normal;
   font-style: normal;
   color: #c35019;
@@ -4211,6 +4211,9 @@ footer {
 
 .slicknav_nav a {
   color: #685d1f; }
+
+.jeremy {
+  background: shady; }
 
 blockquote {
   margin: 1rem 0 1rem; }
