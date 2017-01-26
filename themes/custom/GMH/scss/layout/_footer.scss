@@ -27,23 +27,47 @@ footer {
 		border-bottom: 1px dashed #fff;
 		width: 60%;
 	}
-	a.subscribe:before {
-		content: url("../images/icons/subscribe.svg")
+	a {
+		font-weight: bold;
 	}
-	a.message:before {
-		content: url("../images/icons/message.svg")
+	// Advertising Info
+	#block-advertisinginfo ul {
+		margin-left: 0;
+		li {
+			height: 47px;
+			padding-top: 10px;
+		}
 	}
-	a.blog:before {
-		content: url("../images/icons/blog.svg")
+	// Quicklinks
+	#block-gmh-footer ul {
+		margin-left: 0;
+		li {
+			height: 47px;
+			a {
+				margin: .5em;
+			}
+		}
+		li:before {
+			position: relative;
+			top: 10px;
+		}
+		li:nth-child(1):before {
+			content: url("../images/icons/subscribe.svg");
+		}
+		li:nth-child(2):before {
+			content: url("../images/icons/message.svg");
+		}
+		li:nth-child(3):before {
+			content: url("../images/icons/blog.svg");
+		}
+		li:nth-child(4):before {
+			content: url("../images/icons/facebook.svg");
+		}
 	}
-	a.facebook:before {
-		content: url("../images/icons/facebook.svg")
-	}
-
 	.footer_quicklinks {
 		@include breakpoint(medium) {
 			border-top-right-radius: 10% 100%;
-			border-bottom-right-radius: 10% 100%
+			border-bottom-right-radius: 10% 100%;
 		}
 	}
 	.footer_advertising, .footer_quicklinks {
