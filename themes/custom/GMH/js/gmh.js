@@ -12,25 +12,23 @@
     attach: function (context, settings) {
       // MatchHeights
       $('.equalHeight').matchHeight();
-      // SlickNav
-      $('.menu').slicknav({
-        label: '',
-        // duration: 1000,
-        easingOpen: "easeOutBounce", //available with jQuery UI
-        appendTo:'#brand'
-      });
       // Page header moves
       $("#gmh_page_hero").appendTo("#gmh_page_hero_div");
       //Slick Slider
       // Single Item no dots
-      $('.single-item').slick({
-        // dots: true,
-        arrows: true
-        // slidesToShow: 1,
-        // fade: true
+      // $('.single-item').slick({
+      //   // dots: true,
+      //   arrows: true
+      //   // slidesToShow: 1,
+      //   // fade: true
+      // });
+      $('.single-item').slick();
+      // SlickNav
+      $('.menu').slicknav({
+        label: '',
+        duration: 1000,
+        easingOpen: "easeOutBounce" //available with jQuery UI
       });
-      // Single Item w/ dots
-      $('.single-item-dots').slick();
     }
   };
   // Drupal.behaviors.slickNav = {
