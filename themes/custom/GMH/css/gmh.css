@@ -4110,7 +4110,23 @@ table.hover tbody tr:nth-of-type(even):hover {
   margin: -8em 1em 6px 5px; }
 
 .slicknav_icon-bar {
-  background-color: #2199e8; }
+  background-color: #487dad; }
+
+.gmh_primary_nav ul {
+  width: 980px !important;
+  margin: 0 auto !important; }
+  .gmh_primary_nav ul .is-dropdown-submenu {
+    background-color: #685d1f;
+    padding: 20px; }
+    .gmh_primary_nav ul .is-dropdown-submenu.is-active {
+      background-color: #685d1f; }
+      .gmh_primary_nav ul .is-dropdown-submenu.is-active a {
+        color: #fefefe; }
+    .gmh_primary_nav ul .is-dropdown-submenu a {
+      color: #fefefe;
+      font-size: 12px;
+      text-align: left;
+      text-transform: none; }
 
 footer {
   margin: 2em auto 0; }
