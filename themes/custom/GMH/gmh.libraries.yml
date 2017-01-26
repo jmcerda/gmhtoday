@@ -7,10 +7,10 @@ global:
       js/slick-carousel/slick/slick-theme.css: {}
       css/gmh.css: {}
   js:
-    js/matchHeight/jquery.matchHeight-min.js: {}
-    js/slicknav/jquery.slicknav.js: {}
-    js/slick-carousel/slick/slick.min.js: {}
+    # js/matchHeight/jquery.matchHeight-min.js: {}
+    # js/slick-carousel/slick/slick.min.js: {}
     # js/jquery.parallax-scroll/js/jquery.parallax-scroll.js: {}
+    js/slicknav/jquery.slicknav.js: {}
     js/gmh.js: {}
   # dependencies:
   #   - core/drupal
