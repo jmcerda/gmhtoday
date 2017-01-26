@@ -30,6 +30,20 @@ function gmh_preprocess_html(&$variables) {
 function gmh_preprocess_node(&$variables) {
 
 }
+/**
+ * Implements template_preprocess_menu
+ *
+ * Add template suggestions and classes
+ */
+ // for embedding Issues menu-block view in menu.
+function gmh_preprocess_menu(&$variables) {
+  switch ($variables['menu_name']) {
+    case 'main':
+      $variables['issues'] = views_embed_view('issues', 'block_2');
+      $variables['anne'] = 'hello beautiful';
+  }
+}
+
 
 /**
  * Implements template_preprocess_page
@@ -56,8 +70,6 @@ function gmh_preprocess_page(&$variables) {
   		$variables['advertising_info_menu'] = \Drupal::entityTypeManager()->getViewBuilder('block')->view($menu);
   	$menu = Block::load('gmh_footer');
   		$variables['footer_menu'] = \Drupal::entityTypeManager()->getViewBuilder('block')->view($menu);
-  // for embedding Issues menu-block view in menu.
-  $variables['view1'] = views_embed_view('issues', 'block_2');    
 }
 
 /**

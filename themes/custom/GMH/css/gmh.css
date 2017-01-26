@@ -4124,7 +4124,7 @@ table.hover tbody tr:nth-of-type(even):hover {
         color: #fefefe; }
     .gmh_primary_nav ul .is-dropdown-submenu a {
       color: #fefefe;
-      font-size: 12px;
+      font-size: 14px;
       text-align: left;
       text-transform: none; }
 
@@ -4146,20 +4146,32 @@ footer {
     width: 60%; }
   footer a {
     font-weight: bold; }
+  footer .footer_advertising {
+    height: 250px; }
+  footer #block-advertisinginfo h2 {
+    margin-bottom: 0; }
   footer #block-advertisinginfo ul {
-    margin-left: 0; }
+    margin-left: 0;
+    margin-bottom: 5px; }
     footer #block-advertisinginfo ul li {
-      height: 47px;
-      padding-top: 10px; }
+      height: 42px;
+      padding-top: 5px; }
+  footer .footer_quicklinks {
+    height: 250px; }
+  footer #block-gmh-footer h2 {
+    margin-bottom: 0; }
   footer #block-gmh-footer ul {
-    margin-left: 0; }
+    margin-left: 0;
+    margin-bottom: 5px; }
     footer #block-gmh-footer ul li {
-      height: 47px; }
+      height: 42px; }
       footer #block-gmh-footer ul li a {
-        margin: .5em; }
+        margin: .5em;
+        position: relative;
+        top: -3px; }
     footer #block-gmh-footer ul li:before {
       position: relative;
-      top: 10px; }
+      top: 5px; }
     footer #block-gmh-footer ul li:nth-child(1):before {
       content: url("../images/icons/subscribe.svg"); }
     footer #block-gmh-footer ul li:nth-child(2):before {
