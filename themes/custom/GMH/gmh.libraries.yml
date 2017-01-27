@@ -10,4 +10,6 @@ global:
     js/matchHeight/jquery.matchHeight.js: {}
     js/slick-carousel/slick/slick.js: {}
     js/slicknav/jquery.slicknav.js: {}
+    js/gmhSlickNav.js: {}
+    js/gmhSlickSlider.js: {}
     js/gmh.js: {}
