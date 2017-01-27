@@ -13,7 +13,7 @@
           arrows: true,
           autoplay: true,
           prevArrow: "<button type="button" class="slick-prev">Previous</button>",
-          nextArrow: "<button type="button" class="slick-prev">Next</button>,"
+          nextArrow: "<button type="button" class="slick-prev">Next</button>",
           dots: true,
           mobileFirst: true
       });
