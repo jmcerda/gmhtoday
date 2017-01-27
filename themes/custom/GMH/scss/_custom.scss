@@ -6,6 +6,7 @@
 
 blockquote {
 	margin: 1rem 0 1rem;
+	border-left: 0;
 }
 blockquote:before {
   color: $alert-color;

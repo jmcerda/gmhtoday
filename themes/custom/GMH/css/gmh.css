@@ -4225,7 +4225,8 @@ footer {
   color: #685d1f; }
 
 blockquote {
-  margin: 1rem 0 1rem; }
+  margin: 1rem 0 1rem;
+  border-left: 0; }
 
 blockquote:before {
   color: #c35019;
