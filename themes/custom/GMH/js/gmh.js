@@ -9,7 +9,7 @@
     attach: function (context, settings) {
 
       // MatchHeights
-      $('.equalHeight').matchHeight();,
+      $('.equalHeight').matchHeight();
 
       // Page header moves
       $("#gmh_page_hero").appendTo("#gmh_page_hero_div");

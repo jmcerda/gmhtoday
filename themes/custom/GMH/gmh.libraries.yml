@@ -12,4 +12,4 @@ global:
     js/slicknav/jquery.slicknav.js: {}
     # js/gmhSlickNav.js: {}
     # js/gmhSlickSlider.js: {}
-    # js/gmh.js: {}
+    js/gmh.js: {}
