@@ -12,4 +12,4 @@ global:
     js/slick-carousel/slick/slick.js: {}
     js/slicknav/jquery.slicknav.js: {}
     js/gmhSlickSlider.js: {}
-    js/gmhSlickNav.js: {}
+    js/gmhSlickNav.js: {scope: header}
