@@ -1,4 +1,5 @@
 // Non-modular or client styles for .l-header region.
+@import "settings";
 
 .gmh_header_background {
 	background: $off-white-background;
@@ -40,4 +41,25 @@
 }
 .slicknav_icon-bar {
   background-color: $primary-color;
+}
+// Menu styles
+.gmh_primary_nav ul {
+	width: 980px!important;
+	margin: 0 auto!important;
+	.is-dropdown-submenu {
+		background-color: $secondary-color;
+		padding: 20px;
+		&.is-active {
+			background-color: $secondary-color;
+			a {
+				color: $white;
+			}
+		}
+		a {
+			color: $white;
+			font-size: 14px;
+			text-align: left;
+			text-transform: none;
+		}
+	}
 }

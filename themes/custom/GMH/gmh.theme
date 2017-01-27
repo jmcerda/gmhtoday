@@ -28,7 +28,22 @@ function gmh_preprocess_html(&$variables) {
  * Add template suggestions and classes
  */
 function gmh_preprocess_node(&$variables) {
+
 }
+/**
+ * Implements template_preprocess_menu
+ *
+ * Add template suggestions and classes
+ */
+ // for embedding Issues menu-block view in menu.
+function gmh_preprocess_menu(&$variables) {
+  switch ($variables['menu_name']) {
+    case 'main':
+      $variables['issues'] = views_embed_view('issues', 'block_2');
+      $variables['anne'] = 'hello beautiful';
+  }
+}
+
 
 /**
  * Implements template_preprocess_page
