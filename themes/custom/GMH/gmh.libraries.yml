@@ -9,7 +9,7 @@ global:
   js:
     js/gmh.js: {}
     js/matchHeight/jquery.matchHeight.js: {}
-    js/gmhSlickNav.js: {}
     js/slick-carousel/slick/slick.js: {}
+    js/gmhSlickNav.js: {}
     js/slicknav/jquery.slicknav.js: {}
     js/gmhSlickSlider.js: {}
