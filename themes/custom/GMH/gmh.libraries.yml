@@ -7,8 +7,8 @@ global:
       js/slicknav/dist/slicknav.css: {}
       css/gmh.css: {}
   js:
-    js/slicknav/jquery.slicknav.js: {}
-    js/gmhSlickNav.js: {}
+    # js/slicknav/jquery.slicknav.js: {}
+    # js/gmhSlickNav.js: {}
     js/gmh.js: {}
     js/matchHeight/jquery.matchHeight.js: {}
     js/slick-carousel/slick/slick.js: {}
