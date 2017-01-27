@@ -227,8 +227,10 @@ h2 {
 // 		}
 // 	}
 // }
-#testimonials_front_gmh {
-	margin: 2em auto;
+@include breakpoint(medium) {
+	#testimonials_front_gmh {
+		margin: 2em auto;
+	}
 }
 // Proud Supporters of (homepage).
 #partners_front_gmh {
@@ -236,9 +238,9 @@ h2 {
 	margin: 2em auto;
 	@include breakpoint(medium) {
 		.medium-5 {
-			padding-top: 3%;
+			padding-top: 9%;
 			position: relative;
-			right: 5%;
+			right: 8%;
 		}
 		.medium-7 {
 			position: relative;
@@ -284,7 +286,7 @@ h2 {
 	}
 	section {
 		@include breakpoint(medium) {
-			width: 63%;
+			width: 60%;
 			margin: 0 auto;
 			position: relative;
 			top: -240px;
@@ -292,15 +294,22 @@ h2 {
 	}
 	// Logos.
 	.logo {
-		display: inline-flex;
-		width: 80%;
-		margin: 0 auto;
+		display: block;
+    width: 25%;
+    margin: 2em auto;
 		@include breakpoint(medium) {
-			width: 50%;
-			min-height: 70px;
+			display: inline-block;
+			width: auto;
+			height: 30px;
+    	padding: .5em 2em;
 		}
 	}
 	@include breakpoint(medium) {
+		.logo.logo-321 {
+	    display: block;
+	    margin: 0 auto;
+	    width: 50%;
+		}
 		.logo.logo-322 {
 	    float: left;
 		}
@@ -310,7 +319,10 @@ h2 {
 		.logo.logo-326 {
 	    float: left;
 	    clear: left;
-			width: 130px;
+			width: 170px;
+		}
+		.logo.logo-327 {
+	    float: right;
 		}
 	}
 }

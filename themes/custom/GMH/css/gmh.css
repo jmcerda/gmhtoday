@@ -4390,16 +4390,17 @@ h2 {
     h2 {
       line-height: 1.4; } }
 
-#testimonials_front_gmh {
-  margin: 2em auto; }
+@media screen and (min-width: 40em) {
+  #testimonials_front_gmh {
+    margin: 2em auto; } }
 
 #partners_front_gmh {
   margin: 2em auto; }
   @media screen and (min-width: 40em) {
     #partners_front_gmh .medium-5 {
-      padding-top: 3%;
+      padding-top: 9%;
       position: relative;
-      right: 5%; }
+      right: 8%; }
     #partners_front_gmh .medium-7 {
       position: relative;
       z-index: 99; } }
@@ -4440,20 +4441,25 @@ h2 {
       border-radius: 50%; } }
   @media screen and (min-width: 40em) {
     .block-region-partners section {
-      width: 63%;
+      width: 60%;
       margin: 0 auto;
       position: relative;
       top: -240px; } }
   .block-region-partners .logo {
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    width: 80%;
-    margin: 0 auto; }
+    display: block;
+    width: 25%;
+    margin: 2em auto; }
     @media screen and (min-width: 40em) {
       .block-region-partners .logo {
-        width: 50%;
-        min-height: 70px; } }
+        display: inline-block;
+        width: auto;
+        height: 30px;
+        padding: .5em 2em; } }
   @media screen and (min-width: 40em) {
+    .block-region-partners .logo.logo-321 {
+      display: block;
+      margin: 0 auto;
+      width: 50%; }
     .block-region-partners .logo.logo-322 {
       float: left; }
     .block-region-partners .logo.logo-324 {
@@ -4461,7 +4467,9 @@ h2 {
     .block-region-partners .logo.logo-326 {
       float: left;
       clear: left;
-      width: 130px; } }
+      width: 170px; }
+    .block-region-partners .logo.logo-327 {
+      float: right; } }
 
 .block-region-events {
   background-color: #c35019;
