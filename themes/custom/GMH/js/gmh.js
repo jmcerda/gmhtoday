@@ -4,7 +4,7 @@
  *
  */
 (function ($, Drupal) {
-
+$('.menu').slicknav();
   /**
    * Use this behavior as a template for custom Javascript.
    */
@@ -26,7 +26,6 @@
           arrows: true
       });
       // SlickNav
-      $('.menu').slicknav();
     }
   };
   // Drupal.behaviors.slickNav = {
