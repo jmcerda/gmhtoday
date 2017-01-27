@@ -7,12 +7,30 @@ global:
       js/slicknav/dist/slicknav.css: {}
       css/gmh.css: {}
   js:
-    js/slicknav/jquery.slicknav.js: {}
-    js/gmhSlickNav.js: {}
     js/gmh.js: {}
     js/matchHeight/jquery.matchHeight.js: {}
     js/slick-carousel/slick/slick.js: {}
     js/gmhSlickSlider.js: {}
+
+slickNav:
+  version: VERSION
+  css:
+    base:
+      js/slicknav/dist/slicknav.css: {}
+  js:
+    js/slicknav/jquery.slicknav.js: {}
+    js/gmhSlickNav.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery
+    - core/jquery.once
+
+foundation:
+  version: VERSION
+  js:
+    ../../contrib/zurb_foundation/js/foundation.min.js: {}
+    ../../contrib/zurb_foundation/js/top_bar_active.js: {}
+    ../../contrib/zurb_foundation/js/motion-ui.min.js: {}
   dependencies:
     - core/drupal
     - core/jquery

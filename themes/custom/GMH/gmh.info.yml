@@ -9,6 +9,8 @@ screenshot: images/screenshot.jpg
 
 libraries:
  - gmh/global
+ - gmh/foundation
+ - gmh/slickNav
 
 # Regions are output in the page.html.twig
 regions:
