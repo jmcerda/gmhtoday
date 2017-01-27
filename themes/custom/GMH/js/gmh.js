@@ -26,7 +26,7 @@
           arrows: true
       });
       // SlickNav
-      // $('.menu').slicknav();
+      $('.menu').slicknav();
     }
   };
   // Drupal.behaviors.slickNav = {
