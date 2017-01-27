@@ -4439,6 +4439,14 @@ h2 {
       height: 0;
       padding: 50% 0;
       border-radius: 50%; } }
+  .block-region-partners h2 {
+    font-size: 2.5em; }
+    @media screen and (min-width: 40em) {
+      .block-region-partners h2 {
+        font-size: 2em; } }
+    @media screen and (min-width: 64em) {
+      .block-region-partners h2 {
+        font-size: 2.5em; } }
   @media screen and (min-width: 40em) {
     .block-region-partners section {
       width: 60%;
@@ -4448,13 +4456,23 @@ h2 {
   .block-region-partners .logo {
     display: block;
     width: 25%;
-    margin: 2em auto; }
+    height: auto;
+    margin: 2em auto;
+    padding: .5em 2em; }
     @media screen and (min-width: 40em) {
       .block-region-partners .logo {
         display: inline-block;
-        width: auto;
+        width: 50%;
+        height: 20px;
+        padding: 1.5em;
+        margin: 0; } }
+    @media screen and (min-width: 64em) {
+      .block-region-partners .logo {
+        display: inline-block;
+        width: 50%;
         height: 30px;
-        padding: .5em 2em; } }
+        padding: 2.5em;
+        margin: 0; } }
   @media screen and (min-width: 40em) {
     .block-region-partners .logo.logo-321 {
       display: block;
@@ -4486,12 +4504,25 @@ h2 {
       border-radius: 50%; } }
   .block-region-events h2 {
     color: #ffffff;
-    text-align: center; }
+    text-align: center;
+    font-size: 2.5em; }
+    @media screen and (min-width: 40em) {
+      .block-region-events h2 {
+        font-size: 2em; } }
+    @media screen and (min-width: 64em) {
+      .block-region-events h2 {
+        font-size: 2.5em; } }
   .block-region-events a {
     color: #ffffff !important;
     font-weight: bold; }
   .block-region-events .views-row {
     margin: 2em auto; }
+    @media screen and (min-width: 64em) {
+      .block-region-events .views-row {
+        margin: .5em auto; } }
+    @media screen and (min-width: 40em) {
+      .block-region-events .views-row {
+        margin: 1em auto; } }
   @media screen and (min-width: 40em) {
     .block-region-events section {
       width: 70%;
