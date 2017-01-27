@@ -19,8 +19,9 @@
  */
 #}
 {% if  settings.css_id or settings.css_classes %}
-<div {{ attributes.setAttribute('id', settings.css_id).addClass('foundation-3col-stacked', settings.css_classes) }}>
+<div {{ attributes.setAttribute('id', settings.css_id).addClass('gmh-3col-stacked', settings.css_classes) }}>
 {% endif %}
+  <div id="gmh_page_hero">{{ content.hero }}</div>
   {% if content.top %}
     <div class="row">
       <div class="small-12 columns">
@@ -49,5 +50,5 @@
     </div>
   {% endif %}
 {% if  settings.css_id or settings.css_classes %}
-</div> <!-- /.foundation-3col-stacked -->
+</div> <!-- /.gmh-3col-stacked -->
 {% endif %}

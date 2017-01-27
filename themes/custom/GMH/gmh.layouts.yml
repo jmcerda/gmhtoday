@@ -31,6 +31,8 @@ gmh_3col_stacked:
   class: '\Drupal\zurb_foundation\Plugin\Layout\FoundationLayout'
   template: layouts/gmh_3col_stacked/gmh-3col-stacked
   regions:
+    hero:
+      label: Hero
     top:
       label: Top
     left:
