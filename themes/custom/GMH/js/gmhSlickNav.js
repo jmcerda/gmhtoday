@@ -9,12 +9,7 @@
     attach: function (context, settings) {
 
       // SlickNav
-      $('.menu').slicknav({
-        label: '',
-        // duration: 1000,
-        // easingOpen: "easeOutBounce", //available with jQuery UI
-        appendTo:'#brand'
-      });
+      $('.menu').slicknav();
     };
   }
 })(jQuery, Drupal);
