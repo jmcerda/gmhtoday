@@ -227,15 +227,23 @@ h2 {
 // 		}
 // 	}
 // }
-
-#partners_front_gmh {
-	// background-color: $off-white-background;
-	margin: 2em auto;
-}
 #testimonials_front_gmh {
 	margin: 2em auto;
 }
-
+// Proud Supporters of (homepage).
+#partners_front_gmh {
+	// background-color: $off-white-background;
+	margin: 2em auto;
+	.medium-5 {
+		padding-top: 3%;
+		position: relative;
+		right: 5%;
+	}
+	.medium-7 {
+		position: relative;
+		z-index: 99;
+	}
+}
 .partners_left {
 	position: absolute;
 	margin-top: 6em;
@@ -253,36 +261,68 @@ h2 {
 	}
 
 }
-
 .more-link a,
 .views-more-link a {
 	font-weight: bold;
 	color: $secondary-color;
 }
-
-
 .block-region-about {
 	margin-bottom: 4em;
 }
 .block-region-partners {
 	background-color: $off-white-background;
+	position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 0;
+  padding: 50% 0;
+  border-radius: 50%;
 	@include breakpoint(medium) {
 		border-radius: 50%;
 		text-align: center;
 	}
+	section {
+		width: 63%;
+		margin: 0 auto;
+		position: relative;
+		top: -240px;
+	}
+	// Logos.
+	.logo {
+    display: block;
+		min-height: 70px;
+	}
+	.logo.logo-322 {
+    float: left;
+	}
+	.logo.logo-324 {
+    float: left;
+	}
+	.logo.logo-326 {
+    float: left;
+    clear: left;
+		width: 130px;
+	}
 }
+// Save the Date (homepage).
 .block-region-events {
 	background-color: $alert-color;
 	color: #ffffff;
-	padding: 1em;
-	text-align: center;
+	//padding: 1em;
+	//text-align: center;
+	position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 0;
+  padding: 50% 0;
+  border-radius: 50%;
 	@include breakpoint(medium) {
 		text-align: center;
 		border-radius: 50%;
 	}
 	h2 {
 		color: #ffffff;
-		text-align: left;
+		text-align: center;
 	}
 	a {
 		color: #ffffff !important;
@@ -290,6 +330,12 @@ h2 {
 	}
 	.views-row {
 		margin: 2em auto;
+	}
+	section {
+		width: 70%;
+		margin: 0 auto;
+		position: relative;
+		top: -190px;
 	}
 }
 .testimonial_img img {
@@ -306,7 +352,7 @@ h2 {
 		color: $secondary-color;
 	}
 }
-
-.supported-row {
-	display: inline-flex;
-}
+// This didn't work in Safari - not supported.
+// .supported-row {
+// 	display: inline-flex;
+// }

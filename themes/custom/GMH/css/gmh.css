@@ -4390,11 +4390,18 @@ h2 {
     h2 {
       line-height: 1.4; } }
 
-#partners_front_gmh {
-  margin: 2em auto; }
-
 #testimonials_front_gmh {
   margin: 2em auto; }
+
+#partners_front_gmh {
+  margin: 2em auto; }
+  #partners_front_gmh .medium-5 {
+    padding-top: 3%;
+    position: relative;
+    right: 5%; }
+  #partners_front_gmh .medium-7 {
+    position: relative;
+    z-index: 99; }
 
 .partners_left {
   position: absolute;
@@ -4420,29 +4427,60 @@ h2 {
   margin-bottom: 4em; }
 
 .block-region-partners {
-  background-color: #fbfbfb; }
+  background-color: #fbfbfb;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 0;
+  padding: 50% 0;
+  border-radius: 50%; }
   @media screen and (min-width: 40em) {
     .block-region-partners {
       border-radius: 50%;
       text-align: center; } }
+  .block-region-partners section {
+    width: 63%;
+    margin: 0 auto;
+    position: relative;
+    top: -240px; }
+  .block-region-partners .logo {
+    display: block;
+    min-height: 70px; }
+  .block-region-partners .logo.logo-322 {
+    float: left; }
+  .block-region-partners .logo.logo-324 {
+    float: left; }
+  .block-region-partners .logo.logo-326 {
+    float: left;
+    clear: left;
+    width: 130px; }
 
 .block-region-events {
   background-color: #c35019;
   color: #ffffff;
-  padding: 1em;
-  text-align: center; }
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 0;
+  padding: 50% 0;
+  border-radius: 50%; }
   @media screen and (min-width: 40em) {
     .block-region-events {
       text-align: center;
       border-radius: 50%; } }
   .block-region-events h2 {
     color: #ffffff;
-    text-align: left; }
+    text-align: center; }
   .block-region-events a {
     color: #ffffff !important;
     font-weight: bold; }
   .block-region-events .views-row {
     margin: 2em auto; }
+  .block-region-events section {
+    width: 70%;
+    margin: 0 auto;
+    position: relative;
+    top: -190px; }
 
 .testimonial_img img {
   border-radius: 50%; }
@@ -4454,7 +4492,3 @@ h2 {
   font-size: 1.5rem;
   font-weight: bold;
   color: #685d1f; }
-
-.supported-row {
-  display: -ms-inline-flexbox;
-  display: inline-flex; }
