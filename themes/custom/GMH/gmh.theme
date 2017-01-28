@@ -76,3 +76,28 @@ function gmh_preprocess_page(&$variables) {
  * Implements template_preprocess_views_view().
  */
 function gmh_preprocess_views_view(&$variables) {}
+
+/**
+ * Modify panels pane template variables
+ */
+function gmh_preprocess_panels_pane(&$variables) {
+  // Merge block_class classes into the pane's $classes_array
+  if (module_exists('block_class')) {
+    // Insert additional classes into panels panes.
+    if ($variables['pane']->type == 'block') {
+      // Infer the block's $module and $delta from the pane subtype.
+      $block_parts = explode('-', $variables['pane']->subtype);
+      // Load the block based on the block parts. - Commented out for mod by jcerda
+      // $block = block_load($block_parts[0], $block_parts[1]);
+      $module = array_shift($block_parts);
+	  $delta = implode('-', $block_parts);
+	  $block = block_load($module, $delta);
+      // Return block_class classes as string.
+      $css_class = block_class($block);
+      // Add a generic module type block class.
+      $variables['classes_array'][] = drupal_html_class('pane-' . $block->module);
+      // Add $css_class to the $classes_array.
+      $variables['classes_array'][] = $css_class;
+    }
+  }
+}
