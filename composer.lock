@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "46facb4a7efd7569b8feb344fb846892",
-    "content-hash": "6385697f3b1a2b2ad626fd783c19e2ff",
+    "hash": "aa59b9d85983cbfe2ad13835a4fae4e9",
+    "content-hash": "101a1911ff2c0b35f4939611d6e9ddcc",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -1928,7 +1928,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/block_class-8.x-1.0-alpha1.zip",
-                "reference": null,
+                "reference": "8.x-1.0-alpha1",
                 "shasum": "194cd52210ea2e0e5dbbd34fad4528d500424430"
             },
             "require": {
@@ -4485,6 +4485,77 @@
             }
         },
         {
+            "name": "drupal/oauth",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/oauth",
+                "reference": "8.x-2.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/oauth-8.x-2.0.zip",
+                "reference": "8.x-2.0",
+                "shasum": "c9d9f69f418b514b7bff7a9d462221608c64262f"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-2.x": "2.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-2.0",
+                    "datestamp": "1453717439"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Hugo Wetterberg",
+                    "homepage": "https://www.drupal.org/user/208601"
+                },
+                {
+                    "name": "SimmeLj",
+                    "homepage": "https://www.drupal.org/user/692532"
+                },
+                {
+                    "name": "Vikom",
+                    "homepage": "https://www.drupal.org/user/279158"
+                },
+                {
+                    "name": "heyrocker",
+                    "homepage": "https://www.drupal.org/user/128537"
+                },
+                {
+                    "name": "jobeirne",
+                    "homepage": "https://www.drupal.org/user/1458362"
+                },
+                {
+                    "name": "juampynr",
+                    "homepage": "https://www.drupal.org/user/682736"
+                },
+                {
+                    "name": "kylebrowning",
+                    "homepage": "https://www.drupal.org/user/211387"
+                },
+                {
+                    "name": "voxpelli",
+                    "homepage": "https://www.drupal.org/user/341713"
+                }
+            ],
+            "description": "Provides OAuth 1.0a server authentication",
+            "homepage": "https://www.drupal.org/project/oauth",
+            "support": {
+                "source": "http://cgit.drupalcode.org/oauth"
+            }
+        },
+        {
             "name": "drupal/page_manager",
             "version": "1.0.0-alpha24",
             "source": {
@@ -5215,6 +5286,66 @@
                 "source": "http://cgit.drupalcode.org/token",
                 "issues": "https://www.drupal.org/project/issues/token"
             }
+        },
+        {
+            "name": "drupal/twitter",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/twitter",
+                "reference": "fba2285dc5c94ffa5701935894adc408ef842c88"
+            },
+            "require": {
+                "drupal/core": "*",
+                "drupal/libraries": "*",
+                "drupal/oauth": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.x-dev",
+                    "datestamp": "1452344339"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "DamienMcKenna",
+                    "homepage": "https://www.drupal.org/user/108450"
+                },
+                {
+                    "name": "eaton",
+                    "homepage": "https://www.drupal.org/user/16496"
+                },
+                {
+                    "name": "juampynr",
+                    "homepage": "https://www.drupal.org/user/682736"
+                },
+                {
+                    "name": "michaek",
+                    "homepage": "https://www.drupal.org/user/251668"
+                },
+                {
+                    "name": "walkah",
+                    "homepage": "https://www.drupal.org/user/1531"
+                },
+                {
+                    "name": "xurizaemon",
+                    "homepage": "https://www.drupal.org/user/76026"
+                }
+            ],
+            "description": "Allows integration with the Twitter microblogging service.",
+            "homepage": "https://www.drupal.org/project/twitter",
+            "support": {
+                "source": "http://cgit.drupalcode.org/twitter"
+            },
+            "time": "2016-01-09 12:55:10"
         },
         {
             "name": "drupal/video_embed_field",
@@ -10608,7 +10739,8 @@
         "drupal/name": 20,
         "drupal/simple_menu_icons": 20,
         "drupal/joomag_filter": 20,
-        "drupal/menu_link_attributes": 20
+        "drupal/menu_link_attributes": 20,
+        "drupal/twitter": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
