@@ -38,7 +38,9 @@
         "pantheon-systems/terminus": "^1.0",
         "drupal/menu_link_attributes": "1.x-dev",
         "drupal/block_class": "1.0.0-alpha1",
-        "drupal/twitter": "1.x-dev"
+        "drupal/twitter": "1.x-dev",
+        "drupal/yaml_editor": "1.x-dev",
+        "drupal/colorbutton": "^1.0"
     },
     "replace": {
         "drupal/core": "~8.2"

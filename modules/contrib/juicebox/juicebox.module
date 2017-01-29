@@ -140,7 +140,6 @@ function juicebox_library_post_detect(&$library) {
     // Check if this is a Pro version.
     if (stripos($library['version'], "Pro") !== FALSE) {
       $pro = TRUE;
-      $library['base_languagelist'] = 'Show Thumbnails|Hide Thumbnails|Expand Gallery|Close Gallery|Open Image in New Window|Next Image|Previous Image|Play Audio|Pause Audio|Show Information|Hide Information|Start AutoPlay|Stop AutoPlay|AutoPlay ON|AutoPlay OFF|Go Back|Buy this Image|Share on Facebook|Share on Twitter|Share on Google+|Share on Pinterest|Share on Tumblr|of';
     }
     // Get numeric part of the version statement.
     $version_number = 0;
@@ -156,6 +155,16 @@ function juicebox_library_post_detect(&$library) {
     // Multisize features are only available in PRO >= v1.4
     if (!$pro || version_compare($version_number, '1.4', '<')) {
       $disallowed_conf = array_merge($disallowed_conf, array('juicebox_multisize_image_style'));
+    }
+    // Set the correct languageList string.
+    if (version_compare($version_number, '1.4.0', '>=')) {
+      $library['base_languagelist'] .= '|Images';
+    }
+    if ($pro) {
+      $library['base_languagelist'] .= '|Next Image|Previous Image|Play Audio|Pause Audio|Show Information|Hide Information|Start AutoPlay|Stop AutoPlay|AutoPlay ON|AutoPlay OFF|Go Back|Buy this Image|Share on Facebook|Share on Twitter|Share on Google+|Share on Pinterest|Share on Tumblr|of';
+      if (version_compare($version_number, '1.5.0', '>=')) {
+        $library['base_languagelist'] .= '|Send Email|Download';
+      }
     }
   }
   $library['pro'] = $pro;

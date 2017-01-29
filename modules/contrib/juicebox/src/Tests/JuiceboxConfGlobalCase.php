@@ -74,7 +74,7 @@ class JuiceboxConfGlobalCase extends JuiceboxBaseCase {
     // Enable translation-related global settings.
     $edit = array(
       'translate_interface' => TRUE,
-      'base_languagelist' => 'Show Thumbnails|Hide Thumbnails|Expand Gallery|Close Gallery|Open Image in New Window',
+      'base_languagelist' => 'Show Thumbnails|Hide Thumbnails|Expand Gallery|Close Gallery|Open Image in New Window|Images',
     );
     $this->drupalPostForm('admin/config/media/juicebox', $edit, t('Save configuration'));
     $this->assertText(t('The Juicebox configuration options have been saved'), 'Custom global options saved.');
@@ -87,7 +87,7 @@ class JuiceboxConfGlobalCase extends JuiceboxBaseCase {
     // Then we set the translation by searching for the base string and then
     // inputting an english translation for it.
     $edit = array(
-      'string' => 'Show Thumbnails|Hide Thumbnails|Expand Gallery|Close Gallery|Open Image in New Window',
+      'string' => 'Show Thumbnails|Hide Thumbnails|Expand Gallery|Close Gallery|Open Image in New Window|Images',
     );
     $this->drupalPostForm('admin/config/regional/translate', $edit, t('Filter'));
     $matches = array();

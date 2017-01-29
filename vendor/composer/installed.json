@@ -5040,7 +5040,7 @@
         "source": {
             "type": "git",
             "url": "https://git.drupal.org/project/libraries",
-            "reference": "5e7ea584db3e5d9aa5acac130bda1359ad048f5c"
+            "reference": "32f503ffd9fc3f2c175e2144136702da0fa7619d"
         },
         "require": {
             "drupal/core": "~8.0"
@@ -5093,7 +5093,7 @@
         "source": {
             "type": "git",
             "url": "https://git.drupal.org/project/juicebox",
-            "reference": "97637409dd5e3fa3ccb2ae04d2955c2f40cabc6b"
+            "reference": "6ea1669e2717b36feccc5124df83b3ac2c5921ec"
         },
         "require": {
             "drupal/core": "*",
@@ -5105,8 +5105,8 @@
                 "dev-2.x": "2.x-dev"
             },
             "drupal": {
-                "version": "8.x-2.0-beta3+4-dev",
-                "datestamp": "1475726639"
+                "version": "8.x-2.0-beta3+5-dev",
+                "datestamp": "1485490984"
             }
         },
         "installation-source": "source",
@@ -8522,72 +8522,6 @@
         ]
     },
     {
-        "name": "sebastian/comparator",
-        "version": "1.2.2",
-        "version_normalized": "1.2.2.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/sebastianbergmann/comparator.git",
-            "reference": "6a1ed12e8b2409076ab22e3897126211ff8b1f7f"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/sebastianbergmann/comparator/zipball/6a1ed12e8b2409076ab22e3897126211ff8b1f7f",
-            "reference": "6a1ed12e8b2409076ab22e3897126211ff8b1f7f",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.3.3",
-            "sebastian/diff": "~1.2",
-            "sebastian/exporter": "~1.2 || ~2.0"
-        },
-        "require-dev": {
-            "phpunit/phpunit": "~4.4"
-        },
-        "time": "2016-11-19 09:18:40",
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "1.2.x-dev"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "classmap": [
-                "src/"
-            ]
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "BSD-3-Clause"
-        ],
-        "authors": [
-            {
-                "name": "Jeff Welch",
-                "email": "whatthejeff@gmail.com"
-            },
-            {
-                "name": "Volker Dusch",
-                "email": "github@wallbash.com"
-            },
-            {
-                "name": "Bernhard Schussek",
-                "email": "bschussek@2bepublished.at"
-            },
-            {
-                "name": "Sebastian Bergmann",
-                "email": "sebastian@phpunit.de"
-            }
-        ],
-        "description": "Provides the functionality to compare PHP values for equality",
-        "homepage": "http://www.github.com/sebastianbergmann/comparator",
-        "keywords": [
-            "comparator",
-            "compare",
-            "equality"
-        ]
-    },
-    {
         "name": "phpunit/php-timer",
         "version": "1.0.8",
         "version_normalized": "1.0.8.0",
@@ -9478,65 +9412,6 @@
         }
     },
     {
-        "name": "drupal/pathauto",
-        "version": "1.0.0-beta2",
-        "version_normalized": "1.0.0.0-beta2",
-        "source": {
-            "type": "git",
-            "url": "https://git.drupal.org/project/pathauto",
-            "reference": "8.x-1.0-beta2"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://ftp.drupal.org/files/projects/pathauto-8.x-1.0-beta2.zip",
-            "reference": "8.x-1.0-beta2",
-            "shasum": "08962a207e4273eaaf9d2edf79111db9fbcb8c8e"
-        },
-        "require": {
-            "drupal/core": "*",
-            "drupal/ctools": "*",
-            "drupal/token": "*"
-        },
-        "type": "drupal-module",
-        "extra": {
-            "branch-alias": {
-                "dev-1.x": "1.x-dev"
-            },
-            "drupal": {
-                "version": "8.x-1.0-beta2",
-                "datestamp": "1484781483"
-            }
-        },
-        "installation-source": "dist",
-        "notification-url": "https://packages.drupal.org/8/downloads",
-        "license": [
-            "GPL-2.0+"
-        ],
-        "authors": [
-            {
-                "name": "Berdir",
-                "homepage": "https://www.drupal.org/user/214652"
-            },
-            {
-                "name": "Dave Reid",
-                "homepage": "https://www.drupal.org/user/53892"
-            },
-            {
-                "name": "Freso",
-                "homepage": "https://www.drupal.org/user/27504"
-            },
-            {
-                "name": "greggles",
-                "homepage": "https://www.drupal.org/user/36762"
-            }
-        ],
-        "description": "Provides a mechanism for modules to automatically generate aliases for the content they manage.",
-        "homepage": "https://www.drupal.org/project/pathauto",
-        "support": {
-            "source": "http://cgit.drupalcode.org/pathauto"
-        }
-    },
-    {
         "name": "ezyang/htmlpurifier",
         "version": "v4.9.0",
         "version_normalized": "4.9.0.0",
@@ -9779,60 +9654,6 @@
             }
         ],
         "description": "Improved Psr-3 / Psr\\Log logger based on Symfony Console components."
-    },
-    {
-        "name": "consolidation/annotated-command",
-        "version": "2.3.1",
-        "version_normalized": "2.3.1.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/consolidation/annotated-command.git",
-            "reference": "46ad263b21517a2aafe21d4651e06c553b8309a7"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/consolidation/annotated-command/zipball/46ad263b21517a2aafe21d4651e06c553b8309a7",
-            "reference": "46ad263b21517a2aafe21d4651e06c553b8309a7",
-            "shasum": ""
-        },
-        "require": {
-            "consolidation/output-formatters": "^3.1.5",
-            "php": ">=5.4.0",
-            "phpdocumentor/reflection-docblock": "^2.0|^3.0.2",
-            "psr/log": "~1",
-            "symfony/console": "^2.8|~3",
-            "symfony/event-dispatcher": "^2.5|~3",
-            "symfony/finder": "^2.5|~3"
-        },
-        "require-dev": {
-            "phpunit/phpunit": "4.*",
-            "satooshi/php-coveralls": "^1.0",
-            "squizlabs/php_codesniffer": "^2.7"
-        },
-        "time": "2017-01-21 06:15:21",
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "2.x-dev"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "Consolidation\\AnnotatedCommand\\": "src"
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Greg Anderson",
-                "email": "greg.1.anderson@greenknowe.org"
-            }
-        ],
-        "description": "Initialize Symfony Console commands from annotated command class methods."
     },
     {
         "name": "consolidation/robo",
@@ -10754,80 +10575,6 @@
         ]
     },
     {
-        "name": "phpunit/phpunit",
-        "version": "4.8.32",
-        "version_normalized": "4.8.32.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/sebastianbergmann/phpunit.git",
-            "reference": "f5e1941a8dacf0d904753ff2895c6f68e54bcee1"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/f5e1941a8dacf0d904753ff2895c6f68e54bcee1",
-            "reference": "f5e1941a8dacf0d904753ff2895c6f68e54bcee1",
-            "shasum": ""
-        },
-        "require": {
-            "ext-dom": "*",
-            "ext-json": "*",
-            "ext-pcre": "*",
-            "ext-reflection": "*",
-            "ext-spl": "*",
-            "php": ">=5.3.3",
-            "phpspec/prophecy": "^1.3.1",
-            "phpunit/php-code-coverage": "~2.1",
-            "phpunit/php-file-iterator": "~1.4",
-            "phpunit/php-text-template": "~1.2",
-            "phpunit/php-timer": "^1.0.6",
-            "phpunit/phpunit-mock-objects": "~2.3",
-            "sebastian/comparator": "~1.2.2",
-            "sebastian/diff": "~1.2",
-            "sebastian/environment": "~1.3",
-            "sebastian/exporter": "~1.2",
-            "sebastian/global-state": "~1.0",
-            "sebastian/version": "~1.0",
-            "symfony/yaml": "~2.1|~3.0"
-        },
-        "suggest": {
-            "phpunit/php-invoker": "~1.1"
-        },
-        "time": "2017-01-22 08:37:05",
-        "bin": [
-            "phpunit"
-        ],
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "4.8.x-dev"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "classmap": [
-                "src/"
-            ]
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "BSD-3-Clause"
-        ],
-        "authors": [
-            {
-                "name": "Sebastian Bergmann",
-                "email": "sebastian@phpunit.de",
-                "role": "lead"
-            }
-        ],
-        "description": "The PHP Unit Testing framework.",
-        "homepage": "https://phpunit.de/",
-        "keywords": [
-            "phpunit",
-            "testing",
-            "xunit"
-        ]
-    },
-    {
         "name": "drupal/menu_link_attributes",
         "version": "dev-1.x",
         "version_normalized": "dev-1.x",
@@ -11083,6 +10830,399 @@
         "homepage": "https://www.drupal.org/project/twitter",
         "support": {
             "source": "http://cgit.drupalcode.org/twitter"
+        }
+    },
+    {
+        "name": "drupal/yaml_editor",
+        "version": "dev-1.x",
+        "version_normalized": "dev-1.x",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupal.org/project/yaml_editor",
+            "reference": "066f05142bb4f909bf8da552552e424a32da9fa5"
+        },
+        "require": {
+            "drupal/core": "~8.0"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-1.x": "1.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-1.x-dev",
+                "datestamp": "1467836568"
+            }
+        },
+        "installation-source": "source",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "yannickoo",
+                "homepage": "https://www.drupal.org/user/531118"
+            }
+        ],
+        "description": "Adds an editor for YAML configuration textareas.",
+        "homepage": "https://www.drupal.org/project/yaml_editor",
+        "support": {
+            "source": "http://cgit.drupalcode.org/yaml_editor"
+        }
+    },
+    {
+        "name": "sebastian/comparator",
+        "version": "1.2.4",
+        "version_normalized": "1.2.4.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/sebastianbergmann/comparator.git",
+            "reference": "2b7424b55f5047b47ac6e5ccb20b2aea4011d9be"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/sebastianbergmann/comparator/zipball/2b7424b55f5047b47ac6e5ccb20b2aea4011d9be",
+            "reference": "2b7424b55f5047b47ac6e5ccb20b2aea4011d9be",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.3",
+            "sebastian/diff": "~1.2",
+            "sebastian/exporter": "~1.2 || ~2.0"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "~4.4"
+        },
+        "time": "2017-01-29 09:50:25",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.2.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "classmap": [
+                "src/"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Jeff Welch",
+                "email": "whatthejeff@gmail.com"
+            },
+            {
+                "name": "Volker Dusch",
+                "email": "github@wallbash.com"
+            },
+            {
+                "name": "Bernhard Schussek",
+                "email": "bschussek@2bepublished.at"
+            },
+            {
+                "name": "Sebastian Bergmann",
+                "email": "sebastian@phpunit.de"
+            }
+        ],
+        "description": "Provides the functionality to compare PHP values for equality",
+        "homepage": "http://www.github.com/sebastianbergmann/comparator",
+        "keywords": [
+            "comparator",
+            "compare",
+            "equality"
+        ]
+    },
+    {
+        "name": "drupal/pathauto",
+        "version": "1.0.0-rc1",
+        "version_normalized": "1.0.0.0-RC1",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupal.org/project/pathauto",
+            "reference": "8.x-1.0-rc1"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/pathauto-8.x-1.0-rc1.zip",
+            "reference": null,
+            "shasum": "2460339ac8739317b3c4e66e9ce7142cc02adac3"
+        },
+        "require": {
+            "drupal/core": "*",
+            "drupal/ctools": "*",
+            "drupal/token": "*"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-1.x": "1.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-1.0-rc1",
+                "datestamp": "1485702484"
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "Berdir",
+                "homepage": "https://www.drupal.org/user/214652"
+            },
+            {
+                "name": "Dave Reid",
+                "homepage": "https://www.drupal.org/user/53892"
+            },
+            {
+                "name": "Freso",
+                "homepage": "https://www.drupal.org/user/27504"
+            },
+            {
+                "name": "greggles",
+                "homepage": "https://www.drupal.org/user/36762"
+            }
+        ],
+        "description": "Provides a mechanism for modules to automatically generate aliases for the content they manage.",
+        "homepage": "https://www.drupal.org/project/pathauto",
+        "support": {
+            "source": "http://cgit.drupalcode.org/pathauto"
+        }
+    },
+    {
+        "name": "phpunit/phpunit",
+        "version": "4.8.34",
+        "version_normalized": "4.8.34.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/sebastianbergmann/phpunit.git",
+            "reference": "7eb45205d27edd94bd2b3614085ea158bd1e2bca"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/7eb45205d27edd94bd2b3614085ea158bd1e2bca",
+            "reference": "7eb45205d27edd94bd2b3614085ea158bd1e2bca",
+            "shasum": ""
+        },
+        "require": {
+            "ext-dom": "*",
+            "ext-json": "*",
+            "ext-pcre": "*",
+            "ext-reflection": "*",
+            "ext-spl": "*",
+            "php": ">=5.3.3",
+            "phpspec/prophecy": "^1.3.1",
+            "phpunit/php-code-coverage": "~2.1",
+            "phpunit/php-file-iterator": "~1.4",
+            "phpunit/php-text-template": "~1.2",
+            "phpunit/php-timer": "^1.0.6",
+            "phpunit/phpunit-mock-objects": "~2.3",
+            "sebastian/comparator": "~1.2.2",
+            "sebastian/diff": "~1.2",
+            "sebastian/environment": "~1.3",
+            "sebastian/exporter": "~1.2",
+            "sebastian/global-state": "~1.0",
+            "sebastian/version": "~1.0",
+            "symfony/yaml": "~2.1|~3.0"
+        },
+        "suggest": {
+            "phpunit/php-invoker": "~1.1"
+        },
+        "time": "2017-01-26 16:15:36",
+        "bin": [
+            "phpunit"
+        ],
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "4.8.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "classmap": [
+                "src/"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Sebastian Bergmann",
+                "email": "sebastian@phpunit.de",
+                "role": "lead"
+            }
+        ],
+        "description": "The PHP Unit Testing framework.",
+        "homepage": "https://phpunit.de/",
+        "keywords": [
+            "phpunit",
+            "testing",
+            "xunit"
+        ]
+    },
+    {
+        "name": "consolidation/annotated-command",
+        "version": "2.3.2",
+        "version_normalized": "2.3.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/consolidation/annotated-command.git",
+            "reference": "3074e408160e1b81bda5483f6d2342abc872ea1b"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/consolidation/annotated-command/zipball/3074e408160e1b81bda5483f6d2342abc872ea1b",
+            "reference": "3074e408160e1b81bda5483f6d2342abc872ea1b",
+            "shasum": ""
+        },
+        "require": {
+            "consolidation/output-formatters": "^3.1.5",
+            "php": ">=5.4.0",
+            "phpdocumentor/reflection-docblock": "^2.0|^3.0.2",
+            "psr/log": "~1",
+            "symfony/console": "^2.8|~3",
+            "symfony/event-dispatcher": "^2.5|~3",
+            "symfony/finder": "^2.5|~3"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "4.*",
+            "satooshi/php-coveralls": "^1.0",
+            "squizlabs/php_codesniffer": "^2.7"
+        },
+        "time": "2017-01-27 01:59:21",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Consolidation\\AnnotatedCommand\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Greg Anderson",
+                "email": "greg.1.anderson@greenknowe.org"
+            }
+        ],
+        "description": "Initialize Symfony Console commands from annotated command class methods."
+    },
+    {
+        "name": "drupal/panelbutton",
+        "version": "1.0.0",
+        "version_normalized": "1.0.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupal.org/project/panelbutton",
+            "reference": "8.x-1.0"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/panelbutton-8.x-1.0.zip",
+            "reference": null,
+            "shasum": "1998dbfa26ddb0245b37715753006a106716fae7"
+        },
+        "require": {
+            "drupal/core": "*"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-1.x": "1.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-1.0",
+                "datestamp": "1474037639"
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "Kevin Quillen (kevinquillen)",
+                "homepage": "https://www.drupal.org/u/kevinquillen",
+                "role": "Maintainer"
+            }
+        ],
+        "description": "Adds the Panel Button plugin to CKEditor. This plugin is a utility plugin that is required by certain user-facing CKEditor plugins.",
+        "homepage": "http://drupal.org/project/panelbutton",
+        "keywords": [
+            "Drupal"
+        ],
+        "support": {
+            "source": "http://cgit.drupalcode.org/panelbutton",
+            "issues": "http://drupal.org/project/issues/panelbutton"
+        }
+    },
+    {
+        "name": "drupal/colorbutton",
+        "version": "1.0.0",
+        "version_normalized": "1.0.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupal.org/project/colorbutton",
+            "reference": "8.x-1.0"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/colorbutton-8.x-1.0.zip",
+            "reference": null,
+            "shasum": "8632c50b840ef6f0325e85b0a1eb5d6448c8976e"
+        },
+        "require": {
+            "drupal/core": "*",
+            "drupal/panelbutton": "*"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-1.x": "1.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-1.0",
+                "datestamp": "1474034939"
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "Kevin Quillen (kevinquillen)",
+                "homepage": "https://www.drupal.org/u/kevinquillen",
+                "role": "Maintainer"
+            }
+        ],
+        "description": "Adds the Color Button plugin to CKEditor.",
+        "homepage": "http://drupal.org/project/colorbutton",
+        "keywords": [
+            "Drupal"
+        ],
+        "support": {
+            "source": "http://cgit.drupalcode.org/colorbutton",
+            "issues": "http://drupal.org/project/issues/colorbutton"
         }
     }
 ]

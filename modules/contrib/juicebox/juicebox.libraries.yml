@@ -7,7 +7,7 @@ juicebox.local:
     js/juicebox_load.js: {}
   css:
     component:
-      css/admin_styles.css: {}
+      css/juicebox_styles.css: {}
   dependencies:
     - core/jquery
     - core/drupal

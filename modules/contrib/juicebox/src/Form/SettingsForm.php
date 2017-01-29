@@ -138,6 +138,10 @@ class SettingsForm extends ConfigFormBase {
    * {@inheritdoc}
    */
   public function submitForm(array &$form, FormStateInterface $form_state) {
+    $library = \Drupal::service('juicebox.formatter')->getLibrary(TRUE, TRUE);
+    if ($form_state->getvalue('translate_interface') && !empty($library['installed']) && $form_state->getvalue('base_languagelist') != $library['base_languagelist']) {
+      drupal_set_message(t('Interface translations are enabled but the base translation string does not match the suggested value for your version of the Juicebox javascript library. If some parts of the Juicebox interface do not appear translated correctly please verify that your base translation string is correct.'), 'warning');
+    }
     $this->config('juicebox.settings')
       ->set('apply_markup_filter', $form_state->getvalue('apply_markup_filter'))
       ->set('enable_cors', $form_state->getvalue('enable_cors'))

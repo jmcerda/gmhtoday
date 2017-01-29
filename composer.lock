@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "aa59b9d85983cbfe2ad13835a4fae4e9",
-    "content-hash": "101a1911ff2c0b35f4939611d6e9ddcc",
+    "hash": "c307b86c5ec4a5b1c9cf7bc05f21b0f8",
+    "content-hash": "1eef61ee926a79a625ffecad35ae8fef",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -701,16 +701,16 @@
         },
         {
             "name": "consolidation/annotated-command",
-            "version": "2.3.1",
+            "version": "2.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/consolidation/annotated-command.git",
-                "reference": "46ad263b21517a2aafe21d4651e06c553b8309a7"
+                "reference": "3074e408160e1b81bda5483f6d2342abc872ea1b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/consolidation/annotated-command/zipball/46ad263b21517a2aafe21d4651e06c553b8309a7",
-                "reference": "46ad263b21517a2aafe21d4651e06c553b8309a7",
+                "url": "https://api.github.com/repos/consolidation/annotated-command/zipball/3074e408160e1b81bda5483f6d2342abc872ea1b",
+                "reference": "3074e408160e1b81bda5483f6d2342abc872ea1b",
                 "shasum": ""
             },
             "require": {
@@ -749,7 +749,7 @@
                 }
             ],
             "description": "Initialize Symfony Console commands from annotated command class methods.",
-            "time": "2017-01-21 06:15:21"
+            "time": "2017-01-27 01:59:21"
         },
         {
             "name": "consolidation/log",
@@ -2044,6 +2044,55 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/ckwordcount",
                 "issues": "http://drupal.org/project/issues/ckwordcount"
+            }
+        },
+        {
+            "name": "drupal/colorbutton",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/colorbutton",
+                "reference": "8.x-1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/colorbutton-8.x-1.0.zip",
+                "reference": null,
+                "shasum": "8632c50b840ef6f0325e85b0a1eb5d6448c8976e"
+            },
+            "require": {
+                "drupal/core": "*",
+                "drupal/panelbutton": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0",
+                    "datestamp": "1474034939"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Kevin Quillen (kevinquillen)",
+                    "homepage": "https://www.drupal.org/u/kevinquillen",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Adds the Color Button plugin to CKEditor.",
+            "homepage": "http://drupal.org/project/colorbutton",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/colorbutton",
+                "issues": "http://drupal.org/project/issues/colorbutton"
             }
         },
         {
@@ -3571,7 +3620,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/juicebox",
-                "reference": "97637409dd5e3fa3ccb2ae04d2955c2f40cabc6b"
+                "reference": "6ea1669e2717b36feccc5124df83b3ac2c5921ec"
             },
             "require": {
                 "drupal/core": "*",
@@ -3583,8 +3632,8 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.0-beta3+4-dev",
-                    "datestamp": "1475726639"
+                    "version": "8.x-2.0-beta3+5-dev",
+                    "datestamp": "1485490984"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -3601,7 +3650,8 @@
             "homepage": "https://www.drupal.org/project/juicebox",
             "support": {
                 "source": "http://cgit.drupalcode.org/juicebox"
-            }
+            },
+            "time": "2017-01-27 04:25:43"
         },
         {
             "name": "drupal/key_value",
@@ -3715,7 +3765,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/libraries",
-                "reference": "5e7ea584db3e5d9aa5acac130bda1359ad048f5c"
+                "reference": "32f503ffd9fc3f2c175e2144136702da0fa7619d"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -4615,6 +4665,54 @@
             }
         },
         {
+            "name": "drupal/panelbutton",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/panelbutton",
+                "reference": "8.x-1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/panelbutton-8.x-1.0.zip",
+                "reference": null,
+                "shasum": "1998dbfa26ddb0245b37715753006a106716fae7"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0",
+                    "datestamp": "1474037639"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Kevin Quillen (kevinquillen)",
+                    "homepage": "https://www.drupal.org/u/kevinquillen",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Adds the Panel Button plugin to CKEditor. This plugin is a utility plugin that is required by certain user-facing CKEditor plugins.",
+            "homepage": "http://drupal.org/project/panelbutton",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/panelbutton",
+                "issues": "http://drupal.org/project/issues/panelbutton"
+            }
+        },
+        {
             "name": "drupal/panelizer",
             "version": "3.0.0-alpha3",
             "source": {
@@ -4829,17 +4927,17 @@
         },
         {
             "name": "drupal/pathauto",
-            "version": "1.0.0-beta2",
+            "version": "1.0.0-rc1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/pathauto",
-                "reference": "8.x-1.0-beta2"
+                "reference": "8.x-1.0-rc1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/pathauto-8.x-1.0-beta2.zip",
-                "reference": "8.x-1.0-beta2",
-                "shasum": "08962a207e4273eaaf9d2edf79111db9fbcb8c8e"
+                "url": "https://ftp.drupal.org/files/projects/pathauto-8.x-1.0-rc1.zip",
+                "reference": null,
+                "shasum": "2460339ac8739317b3c4e66e9ce7142cc02adac3"
             },
             "require": {
                 "drupal/core": "*",
@@ -4852,8 +4950,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-beta2",
-                    "datestamp": "1484781483"
+                    "version": "8.x-1.0-rc1",
+                    "datestamp": "1485702484"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -5344,8 +5442,7 @@
             "homepage": "https://www.drupal.org/project/twitter",
             "support": {
                 "source": "http://cgit.drupalcode.org/twitter"
-            },
-            "time": "2016-01-09 12:55:10"
+            }
         },
         {
             "name": "drupal/video_embed_field",
@@ -5658,6 +5755,43 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/workspace",
                 "issues": "http://drupal.org/project/issues/workspace"
+            }
+        },
+        {
+            "name": "drupal/yaml_editor",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/yaml_editor",
+                "reference": "066f05142bb4f909bf8da552552e424a32da9fa5"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.x-dev",
+                    "datestamp": "1467836568"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "yannickoo",
+                    "homepage": "https://www.drupal.org/user/531118"
+                }
+            ],
+            "description": "Adds an editor for YAML configuration textareas.",
+            "homepage": "https://www.drupal.org/project/yaml_editor",
+            "support": {
+                "source": "http://cgit.drupalcode.org/yaml_editor"
             }
         },
         {
@@ -10166,16 +10300,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "4.8.32",
+            "version": "4.8.34",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "f5e1941a8dacf0d904753ff2895c6f68e54bcee1"
+                "reference": "7eb45205d27edd94bd2b3614085ea158bd1e2bca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/f5e1941a8dacf0d904753ff2895c6f68e54bcee1",
-                "reference": "f5e1941a8dacf0d904753ff2895c6f68e54bcee1",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/7eb45205d27edd94bd2b3614085ea158bd1e2bca",
+                "reference": "7eb45205d27edd94bd2b3614085ea158bd1e2bca",
                 "shasum": ""
             },
             "require": {
@@ -10234,7 +10368,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2017-01-22 08:37:05"
+            "time": "2017-01-26 16:15:36"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
@@ -10294,16 +10428,16 @@
         },
         {
             "name": "sebastian/comparator",
-            "version": "1.2.2",
+            "version": "1.2.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/comparator.git",
-                "reference": "6a1ed12e8b2409076ab22e3897126211ff8b1f7f"
+                "reference": "2b7424b55f5047b47ac6e5ccb20b2aea4011d9be"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/comparator/zipball/6a1ed12e8b2409076ab22e3897126211ff8b1f7f",
-                "reference": "6a1ed12e8b2409076ab22e3897126211ff8b1f7f",
+                "url": "https://api.github.com/repos/sebastianbergmann/comparator/zipball/2b7424b55f5047b47ac6e5ccb20b2aea4011d9be",
+                "reference": "2b7424b55f5047b47ac6e5ccb20b2aea4011d9be",
                 "shasum": ""
             },
             "require": {
@@ -10354,7 +10488,7 @@
                 "compare",
                 "equality"
             ],
-            "time": "2016-11-19 09:18:40"
+            "time": "2017-01-29 09:50:25"
         },
         {
             "name": "sebastian/diff",
@@ -10740,7 +10874,8 @@
         "drupal/simple_menu_icons": 20,
         "drupal/joomag_filter": 20,
         "drupal/menu_link_attributes": 20,
-        "drupal/twitter": 20
+        "drupal/twitter": 20,
+        "drupal/yaml_editor": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
