@@ -27,10 +27,8 @@ slickNav:
       js/slicknav/dist/slicknav.css: {}
   js:
     js/slicknav/jquery.slicknav.js: {}
-  # dependencies:
-  #   - core/drupal
-  #   - core/jquery
-  #   - core/jquery.once
+  dependencies:
+    - core/jquery
 
 # foundation:
 #   version: VERSION
