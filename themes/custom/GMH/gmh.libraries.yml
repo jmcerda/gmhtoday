@@ -1,37 +1,46 @@
-global:
+matchHeight:
   version: VERSION
+  js:
+    js/matchHeight/jquery.matchHeight.js: {}
+
+slickSlider:
+  version: version
   css:
     base:
       js/slick-carousel/slick/slick.css: {}
       js/slick-carousel/slick/slick-theme.css: {}
-      js/slicknav/dist/slicknav.css: {}
-      css/gmh.css: {}
   js:
-    js/matchHeight/jquery.matchHeight.js: {}
-    js/gmh.js: {}
     js/slick-carousel/slick/slick.js: {}
     js/gmhSlickSlider.js: {}
 
-slickNav:
+# slickNav:
+#   version: VERSION
+#   css:
+#     base:
+#       js/slicknav/dist/slicknav.css: {}
+#   js:
+#     js/slicknav/jquery.slicknav.js: {}
+#     js/gmhSlickNav.js: {}
+#   dependencies:
+#     - core/drupal
+#     - core/jquery
+#     - core/jquery.once
+
+# foundation:
+#   version: VERSION
+#   js:
+#     ../../contrib/zurb_foundation/js/foundation.min.js: {}
+#     ../../contrib/zurb_foundation/js/top_bar_active.js: {}
+#     ../../contrib/zurb_foundation/js/motion-ui.min.js: {}
+#   dependencies:
+#     - core/drupal
+#     - core/jquery
+#     - core/jquery.once
+
+global:
   version: VERSION
   css:
     base:
-      js/slicknav/dist/slicknav.css: {}
+      css/gmh.css: {}
   js:
-    js/slicknav/jquery.slicknav.js: {}
-    js/gmhSlickNav.js: {}
-  dependencies:
-    - core/drupal
-    - core/jquery
-    - core/jquery.once
-
-foundation:
-  version: VERSION
-  js:
-    ../../contrib/zurb_foundation/js/foundation.min.js: {}
-    ../../contrib/zurb_foundation/js/top_bar_active.js: {}
-    ../../contrib/zurb_foundation/js/motion-ui.min.js: {}
-  dependencies:
-    - core/drupal
-    - core/jquery
-    - core/jquery.once
+    js/gmh.js: {}

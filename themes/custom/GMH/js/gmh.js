@@ -5,8 +5,15 @@
  */
 (function ($, Drupal) {
 
-  Drupal.behaviors.gmh = {
+  Drupal.behaviors.gmhGlobals = {
     attach: function (context, settings) {
+
+      //Slick Slider
+      $('.single-item').slick({
+          // autoplay: true,
+          dots: true,
+          arrows: true,
+      });
 
       // MatchHeights
       $('.equalHeight').matchHeight();
