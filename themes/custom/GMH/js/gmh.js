@@ -20,6 +20,8 @@
 
       // Page header moves
       $("#gmh_page_hero").appendTo("#gmh_page_hero_div");
+      // Title to header
+      $("h1").appendTo("#gmh_page_hero");
 
       // SlickNav
       // $('.gmh_main_menu').slicknav({
