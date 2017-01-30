@@ -11,7 +11,7 @@
       //Slick Slider
       $('.single-item').slick({
           autoplay: true,
-          dots: false,
+          dots: true,
           arrows: true,
           // slidesToShow: 3
       });
