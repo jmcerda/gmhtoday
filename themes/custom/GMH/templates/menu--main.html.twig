@@ -64,9 +64,9 @@
       {% endif %}
     {% else %}
       {% if menu_level == 0 %}
-        <ul{{ attributes.addClass('dropdown', 'menu') }} data-dropdown-menu>
+        <ul{{ attributes.addClass('dropdown', 'menu', 'gmh_main_menu') }} data-dropdown-menu>
       {% else %}
-        <ul class="menu">
+        <ul class="menu gmh_main_menu">
       {% endif %}
     {% endif %}
     {% for item in items %}
