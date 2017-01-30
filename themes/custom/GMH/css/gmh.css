@@ -4130,6 +4130,7 @@ table.hover tbody tr:nth-of-type(even):hover {
 
 #gmh_page_hero {
   margin-top: 1em;
+  height: 400px;
   overflow: hidden; }
 
 #block-gmh-page-title h1 {
