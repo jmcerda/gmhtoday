@@ -37,10 +37,10 @@ function gmh_preprocess_node(&$variables) {
  */
  // for embedding Issues menu-block view in menu.
 function gmh_preprocess_menu(&$variables) {
-  switch ($variables['menu_name']) {
-    case 'main':
-      $variables['issues'] = views_embed_view('issues', 'issue_block');
-  }
+  // switch ($variables['menu_name']) {
+  //   case 'main':
+  //     $variables['issues'] = views_embed_view('issues', 'issue_block');
+  // }
 }
 
 
@@ -51,6 +51,8 @@ function gmh_preprocess_menu(&$variables) {
  */
 use Drupal\block\Entity\Block;
 function gmh_preprocess_page(&$variables) {
+
+  $variables['issues'] = views_embed_view('issues', 'issue_block');
 	// Make theme logo available to print anywhere.
 	$variables['logopath'] = '/' . drupal_get_path('theme','gmh') . '/images/logo.svg';
 
