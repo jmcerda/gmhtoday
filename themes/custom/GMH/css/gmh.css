@@ -4130,11 +4130,7 @@ table.hover tbody tr:nth-of-type(even):hover {
 
 .gmh_front_hero {
   margin-top: 1em;
-  height: 400px;
   overflow: hidden; }
-
-.fp_hero_slides {
-  height: 100%; }
 
 #block-gmh-page-title h1 {
   margin-top: 1em; }
