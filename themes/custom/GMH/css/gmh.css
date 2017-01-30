@@ -4128,7 +4128,7 @@ table.hover tbody tr:nth-of-type(even):hover {
       text-align: left;
       text-transform: none; }
 
-.gmh_front_hero {
+#gmh_page_hero {
   margin-top: 1em;
   overflow: hidden; }
 
