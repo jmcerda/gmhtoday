@@ -9,7 +9,7 @@ screenshot: images/screenshot.jpg
 
 libraries:
   - gmh/global
-  - gmh/matchHeight
+  # - gmh/matchHeight
   - gmh/slickSlider
  # - gmh/foundation
  # - gmh/slickNav
