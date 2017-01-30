@@ -12,7 +12,8 @@
       $('.single-item').slick({
           autoplay: true,
           dots: true,
-          arrows: true,
+          fade: true,
+          // arrows: true,
           // slidesToShow: 3
       });
 
