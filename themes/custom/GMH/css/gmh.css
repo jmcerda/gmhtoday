@@ -4541,3 +4541,9 @@ h2 {
 
 .button.success {
   background-color: #487dad; }
+
+.hero_copy p {
+  display: none; }
+  @media screen and (min-width: 40em) {
+    .hero_copy p {
+      display: block; } }
