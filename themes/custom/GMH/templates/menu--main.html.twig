@@ -31,7 +31,7 @@
       </div>
       <nav class="top-bar" id="main-menu" role="navigation">
         <div class="top-bar-left">
-          <ul class="dropdown menu" data-dropdown-menu>
+          <ul class="dropdown menu gmh_main_menu" data-dropdown-menu>
             <li class="menu-text">{{ site_name }}</li>
           </ul>
         </div>
@@ -58,9 +58,9 @@
   {% if items %}
     {% if top_bar %}
       {% if menu_level == 0 %}
-        <ul{{ attributes.addClass('menu', 'vertical', 'medium-horizontal').setAttribute('data-responsive-menu', 'drilldown medium-dropdown') }}>
+        <ul{{ attributes.addClass('menu', 'vertical', 'medium-horizontal', 'gmh_main_menu').setAttribute('data-responsive-menu', 'drilldown medium-dropdown') }}>
       {% else %}
-        <ul class="submenu menu vertical" data-submenu>
+        <ul class="submenu menu vertical gmh_main_menu" data-submenu>
       {% endif %}
     {% else %}
       {% if menu_level == 0 %}
