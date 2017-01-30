@@ -28,6 +28,7 @@ function gmh_preprocess_html(&$variables) {
  * Add template suggestions and classes
  */
 function gmh_preprocess_node(&$variables) {
+  $variables['issue'] = views_embed_view('issues', 'issue_block');
 
 }
 /**
@@ -52,7 +53,6 @@ function gmh_preprocess_menu(&$variables) {
 use Drupal\block\Entity\Block;
 function gmh_preprocess_page(&$variables) {
 
-  $variables['issues'] = views_embed_view('issues', 'issue_block');
 	// Make theme logo available to print anywhere.
 	$variables['logopath'] = '/' . drupal_get_path('theme','gmh') . '/images/logo.svg';
 
