@@ -40,7 +40,8 @@
         "drupal/block_class": "1.0.0-alpha1",
         "drupal/twitter": "1.x-dev",
         "drupal/yaml_editor": "1.x-dev",
-        "drupal/colorbutton": "^1.0"
+        "drupal/colorbutton": "^1.0",
+        "drupal/contact_block": "^1.3"
     },
     "replace": {
         "drupal/core": "~8.2"
