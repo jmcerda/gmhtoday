@@ -22,7 +22,7 @@
       $("#gmh_page_hero").appendTo("#gmh_page_hero_div");
 
       // SlickNav
-      $('.menu').slicknav({
+      $('ul.menu').slicknav({
         label: '',
         // duration: 1000,
         // easingOpen: "easeOutBounce", //available with jQuery UI
