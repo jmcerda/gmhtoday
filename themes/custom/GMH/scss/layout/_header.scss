@@ -65,9 +65,12 @@
 }
 
 
-#gmh_page_hero_div {
+.block-region-hero {
 	height: 400px;
 	overflow: hidden;
+}
+.gmh_first_hero {
+	height: 100%;
 }
 
 #block-gmh-page-title h1 {
