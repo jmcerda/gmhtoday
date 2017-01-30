@@ -423,8 +423,9 @@ h2 {
 	border-radius: 50%;
 }
 
-.contributers {
+.contributers, .writers, .publishers, .staff {
 	.row {
-		margin: 2em auto;
+		margin-top: 2em;
+		margin-bottom: 2em;
 	}
 }
