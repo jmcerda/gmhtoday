@@ -4541,3 +4541,6 @@ h2 {
 
 .button.success {
   background-color: #487dad; }
+
+.slick-track .slick-track {
+  display: none; }
