@@ -4128,11 +4128,12 @@ table.hover tbody tr:nth-of-type(even):hover {
       text-align: left;
       text-transform: none; }
 
-.block-region-hero {
+.gmh_front_hero {
+  margin-top: 1em;
   height: 400px;
   overflow: hidden; }
 
-.gmh_first_hero {
+.fp_hero_slides {
   height: 100%; }
 
 #block-gmh-page-title h1 {
