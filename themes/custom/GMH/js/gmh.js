@@ -24,8 +24,8 @@
       // SlickNav
       $('.menu').slicknav({
         label: '',
-        duration: 1000,
-        easingOpen: "easeOutBounce", //available with jQuery UI
+        // duration: 1000,
+        // easingOpen: "easeOutBounce", //available with jQuery UI
         appendTo:'#brand'
       });
 
