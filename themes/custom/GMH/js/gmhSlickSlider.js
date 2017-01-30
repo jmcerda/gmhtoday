@@ -12,9 +12,7 @@
       $('.single-item').slick({
           autoplay: true,
           dots: true,
-          fade: true,
-          // arrows: true,
-          // slidesToShow: 3
+          fade: true
       });
 
     }
