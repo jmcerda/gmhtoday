@@ -4132,7 +4132,7 @@ footer {
   margin: 2em auto 0; }
   @media screen and (min-width: 40em) {
     footer {
-      background: linear-gradient(to right, #487dad 0%, #487dad 25%, #ffffff 50%, #ffffff 100%); } }
+      background: linear-gradient(to right, #487dad 0%, #487dad 25%, #fbfbfb 50%, #fbfbfb 100%); } }
   footer h2 {
     font-size: 1.75em;
     color: #fff; }
