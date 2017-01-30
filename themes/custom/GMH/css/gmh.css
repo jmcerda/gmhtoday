@@ -4128,7 +4128,7 @@ table.hover tbody tr:nth-of-type(even):hover {
       text-align: left;
       text-transform: none; }
 
-.block-region-hero {
+#gmh_page_hero_div {
   height: 400px;
   overflow: hidden; }
 
