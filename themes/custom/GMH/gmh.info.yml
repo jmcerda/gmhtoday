@@ -11,8 +11,7 @@ libraries:
   - gmh/global
   - gmh/matchHeight
   - gmh/slickSlider
- # - gmh/foundation
- # - gmh/slickNav
+  - gmh/slickNav
 
 # Regions are output in the page.html.twig
 regions:
