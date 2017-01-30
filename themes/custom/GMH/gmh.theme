@@ -39,8 +39,7 @@ function gmh_preprocess_node(&$variables) {
 function gmh_preprocess_menu(&$variables) {
   switch ($variables['menu_name']) {
     case 'main':
-      $variables['issues'] = views_embed_view('issues', 'block_2');
-      $variables['anne'] = 'hello beautiful';
+      $variables['issues'] = views_embed_view('issues', 'issue_block');
   }
 }
 
