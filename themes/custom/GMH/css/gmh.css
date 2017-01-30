@@ -4099,7 +4099,7 @@ table.hover tbody tr:nth-of-type(even):hover {
   height: 110px; }
   @media screen and (min-width: 40em) {
     #block-gmh-branding img {
-      height: 260px;
+      height: 210px;
       float: right; } }
 
 #hero_front_gmh {
@@ -4547,3 +4547,6 @@ h2 {
   @media screen and (min-width: 40em) {
     .hero_copy p {
       display: block; } }
+
+.user-header-pub img {
+  border-radius: 50%; }
