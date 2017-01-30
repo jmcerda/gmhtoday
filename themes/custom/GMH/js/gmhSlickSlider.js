@@ -10,8 +10,6 @@
 
       //Slick Slider
       $('.single-item').slick({
-          autoplay: true,
-          dots: true,
           fade: true
       });
 
