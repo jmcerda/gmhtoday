@@ -10,9 +10,9 @@
 
       //Slick Slider
       $('.single-item').slick({
-          arrows: true,
           autoplay: true,
-          dots: true
+          dots: true,
+          slidesToShow: 3
       });
 
     }
