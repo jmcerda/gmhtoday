@@ -1,3 +1,11 @@
+global:
+  version: VERSION
+  css:
+    base:
+      css/gmh.css: {}
+  js:
+    js/gmh.js: {}
+
 matchHeight:
   version: VERSION
   js:
@@ -37,10 +45,3 @@ slickSlider:
 #     - core/jquery
 #     - core/jquery.once
 
-global:
-  version: VERSION
-  css:
-    base:
-      css/gmh.css: {}
-  js:
-    js/gmh.js: {}
