@@ -4588,7 +4588,7 @@ h2 {
       text-align: center; }
 
 .node--type-issue .link-control {
-  margin: .5em auto; }
+  margin: .5em 0; }
 
 .publishers .user-header-pub, .staff .user-header-pub {
   text-align: center; }
