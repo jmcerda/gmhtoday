@@ -4583,3 +4583,6 @@ h2 {
     padding: 3em; }
     .node--type-issue #gmh-toc #issue-toc h2 {
       text-align: center; }
+
+.node--type-issue .link-control {
+  margin: 1em auto; }
