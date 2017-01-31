@@ -4232,6 +4232,11 @@ footer {
 .slicknav_nav a {
   color: #685d1f; }
 
+.node--type-issue #issue-toc {
+  background-color: #dae5ef; }
+  .node--type-issue #issue-toc h2 {
+    text-align: center; }
+
 blockquote {
   margin: 1rem 0 1rem;
   border-left: 0; }
