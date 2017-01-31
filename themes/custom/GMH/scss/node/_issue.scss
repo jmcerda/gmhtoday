@@ -1,6 +1,9 @@
 .node--type-issue {
 	#issue-toc {
 		background-color: $light-blue-background;
+		h2 {
+			text-align: center;
+		}
 	}
 
 }
