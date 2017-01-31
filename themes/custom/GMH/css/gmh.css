@@ -4586,3 +4586,12 @@ h2 {
 
 .node--type-issue .link-control {
   margin: .5em auto; }
+
+.publishers .user-header-pub {
+  text-align: center; }
+  .publishers .user-header-pub h2 {
+    font-size: 1.8em;
+    margin-top: 1em; }
+  .publishers .user-header-pub h3 {
+    font-size: 1.2em;
+    color: #0a0a0a; }
