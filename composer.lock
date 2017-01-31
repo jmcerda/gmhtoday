@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "fd36ab12d106def1357c7329679789a3",
-    "content-hash": "8d5434f13824b2cc22bcd777ccdd1c1a",
+    "hash": "5f9ca998461be291252b560fbca1cc17",
+    "content-hash": "2c901b83e2a400aecc324bbf017fb3cd",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -5081,6 +5081,44 @@
             }
         },
         {
+            "name": "drupal/responsive_menus",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/responsive_menus",
+                "reference": "d58325af394be9e59da176981f60f37466ef3b48"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.x-dev",
+                    "datestamp": "1471448909"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "drastik",
+                    "homepage": "https://www.drupal.org/user/433663"
+                }
+            ],
+            "description": "Responsify any menu using CSS Selectors.",
+            "homepage": "https://www.drupal.org/project/responsive_menus",
+            "support": {
+                "source": "http://cgit.drupalcode.org/responsive_menus"
+            },
+            "time": "2016-08-17 15:48:24"
+        },
+        {
             "name": "drupal/scheduled_updates",
             "version": "1.0.0-alpha5",
             "source": {
@@ -5400,8 +5438,7 @@
             "support": {
                 "source": "https://cgit.drupalcode.org/superfish",
                 "issues": "https://www.drupal.org/project/superfish"
-            },
-            "time": "2017-01-28 19:55:25"
+            }
         },
         {
             "name": "drupal/token",
@@ -10958,7 +10995,8 @@
         "drupal/menu_link_attributes": 20,
         "drupal/twitter": 20,
         "drupal/yaml_editor": 20,
-        "drupal/superfish": 20
+        "drupal/superfish": 20,
+        "drupal/responsive_menus": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

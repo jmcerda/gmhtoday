@@ -11310,5 +11310,44 @@
             "source": "https://cgit.drupalcode.org/superfish",
             "issues": "https://www.drupal.org/project/superfish"
         }
+    },
+    {
+        "name": "drupal/responsive_menus",
+        "version": "dev-1.x",
+        "version_normalized": "dev-1.x",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupal.org/project/responsive_menus",
+            "reference": "d58325af394be9e59da176981f60f37466ef3b48"
+        },
+        "require": {
+            "drupal/core": "~8.0"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-1.x": "1.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-1.x-dev",
+                "datestamp": "1471448909"
+            }
+        },
+        "installation-source": "source",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "drastik",
+                "homepage": "https://www.drupal.org/user/433663"
+            }
+        ],
+        "description": "Responsify any menu using CSS Selectors.",
+        "homepage": "https://www.drupal.org/project/responsive_menus",
+        "support": {
+            "source": "http://cgit.drupalcode.org/responsive_menus"
+        }
     }
 ]
