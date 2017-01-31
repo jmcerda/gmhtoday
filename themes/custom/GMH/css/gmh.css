@@ -4566,7 +4566,7 @@ h2 {
 .node--type-issue #gmh-toc {
   margin-top: 3em; }
   .node--type-issue #gmh-toc #issue-toc {
-    background-color: #dae5ef; }
+    background-color: #dae5ef;
+    padding: 3em; }
     .node--type-issue #gmh-toc #issue-toc h2 {
-      padding-top: 2em;
       text-align: center; }
