@@ -20,9 +20,10 @@
 
       // Page header moves
       $("#gmh_page_hero").appendTo("#gmh_page_hero_div");
-      //Title to header
+      // Title to header
       $(".node--type-issue #block-gmh-page-title").appendTo("#issueTitle");
-
+      // Issue TOC
+      $(".node--type-issue #issue-toc").appendTo("#gmh-toc");
       // SlickNav
       // $('.gmh_main_menu').slicknav({
       //   label: '',
