@@ -21,7 +21,7 @@
       // Page header moves
       $("#gmh_page_hero").appendTo("#gmh_page_hero_div");
       Title to header
-      $(".node--type-issue #block-gmh-page-title").appendTo("#issueTitle");
+      $("#block-gmh-page-title").appendTo("#issueTitle");
 
       // SlickNav
       // $('.gmh_main_menu').slicknav({
