@@ -69,6 +69,14 @@
 #}
 <article id="node-{{ node.id }}" {{ attributes }}>
 
+  {{ title_prefix }}
+  {% if not page %}
+    <h2{{ title_attributes }}>
+      <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+    </h2>
+  {% endif %}
+  {{ title_suffix }}
+
   {% if display_submitted %}
     <div class="posted">
       {{ author_picture }}
@@ -88,13 +96,8 @@
       {{ content.field_gmh_cover_image }}
     </div>
     <div class="column small-9">
-      {{ title_prefix }}
-      {% if not page %}
-        <h2{{ title_attributes }}>
-          <a href="{{ url }}" rel="bookmark">{{ label }}</a>
-        </h2>
-      {% endif %}
-      {{ title_suffix }}
+      <h1>{{ node.title }}</h1>
+      <div id="issueTitle"></div>
       <h5>{{ content.field_subtitle }}</h5>
       <p>{{ content.body }}</p>
       <a href="#" data-reveal-id="issueURL">Read more...</a>
