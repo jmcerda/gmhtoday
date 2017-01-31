@@ -83,8 +83,8 @@ $flex: false;
 // Older IE support
 // @import "vendor/ie";
 
+@import "custom";
 
 // Node-based styles
 @import "node/issue";
 
-@import "custom";

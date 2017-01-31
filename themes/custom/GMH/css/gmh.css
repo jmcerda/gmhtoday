@@ -4232,11 +4232,6 @@ footer {
 .slicknav_nav a {
   color: #685d1f; }
 
-.node--type-issue #issue-toc {
-  background-color: #dae5ef; }
-  .node--type-issue #issue-toc h2 {
-    text-align: center; }
-
 blockquote {
   margin: 1rem 0 1rem;
   border-left: 0; }
@@ -4567,3 +4562,11 @@ h2 {
 .contributers .row, .writers .row, .publishers .row, .staff .row {
   margin-top: 2em;
   margin-bottom: 2em; }
+
+.node--type-issue #gmh-toc {
+  margin-top: 3em; }
+  .node--type-issue #gmh-toc #issue-toc {
+    background-color: #dae5ef; }
+    .node--type-issue #gmh-toc #issue-toc h2 {
+      padding-top: 2em;
+      text-align: center; }
