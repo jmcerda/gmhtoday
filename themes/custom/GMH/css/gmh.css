@@ -4244,6 +4244,17 @@ footer .columns {
 .slicknav_nav a {
   color: #685d1f; }
 
+.gmh_main_menu ul {
+  width: 100%;
+  font-size: 1.25em;
+  margin: auto; }
+  .gmh_main_menu ul li {
+    display: inline-block; }
+    .gmh_main_menu ul li a {
+      text-transform: uppercase;
+      color: #685d1f;
+      font-weight: bold; }
+
 blockquote {
   margin: 1rem 0 1rem;
   border-left: 0; }

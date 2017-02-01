@@ -32,3 +32,19 @@
 		// display: none;
 	}
 }
+
+.gmh_main_menu {
+	ul {
+		width: 100%;
+		font-size: 1.25em;
+		margin: auto;
+		li {
+			display: inline-block;
+			a {
+				text-transform: uppercase;
+				color: $secondary-color;
+				font-weight: bold;
+			}
+		}
+	}
+}
