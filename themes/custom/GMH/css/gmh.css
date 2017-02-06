@@ -4245,11 +4245,13 @@ ul#superfish-main {
   margin: 0 auto; }
   ul#superfish-main li {
     display: inline-block; }
-  ul#superfish-main li.sf-depth-2 a {
-    color: #fefefe;
-    font-size: 14px;
-    text-align: left;
-    text-transform: none; }
+  ul#superfish-main li.sf-depth-2 {
+    background-color: #685d1f; }
+    ul#superfish-main li.sf-depth-2 a {
+      color: #fefefe;
+      font-size: 1em;
+      text-align: left;
+      text-transform: none; }
 
 blockquote {
   margin: 1rem 0 1rem;

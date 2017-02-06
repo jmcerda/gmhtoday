@@ -57,9 +57,10 @@ ul#superfish-main {
 		display: inline-block;
 	}
 	li.sf-depth-2 {
+		background-color: $secondary-color;
 		a {
 			color: $white;
-			font-size: 14px;
+			font-size: 1em;
 			text-align: left;
 			text-transform: none;
 		}
