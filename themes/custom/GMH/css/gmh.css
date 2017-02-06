@@ -4244,14 +4244,12 @@ ul#superfish-main {
   font-size: 1.25em;
   margin: 0 auto; }
   ul#superfish-main li {
-    display: inline-block;
-    background-color: #685d1f;
-    padding: 20px; }
-    ul#superfish-main li a {
-      color: #fefefe;
-      font-size: 14px;
-      text-align: left;
-      text-transform: none; }
+    display: inline-block; }
+  ul#superfish-main li.sf-depth-2 a {
+    color: #fefefe;
+    font-size: 14px;
+    text-align: left;
+    text-transform: none; }
 
 blockquote {
   margin: 1rem 0 1rem;
