@@ -63,8 +63,8 @@ function gmh_preprocess_page(&$variables) {
 		  ->view($block);
 
 	//Load main menu.
-	$menu = Block::load('gmh_main_menu');
-  		$variables['main_menu'] = \Drupal::entityTypeManager()->getViewBuilder('block')->view($menu);
+	$menu = Block::load('mainnavigation');
+  		$variables['mainnavigation'] = \Drupal::entityTypeManager()->getViewBuilder('block')->view($menu);
 
 	// Load footer menus.
 	$menu = Block::load('advertisinginfo');
