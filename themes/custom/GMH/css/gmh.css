@@ -4240,7 +4240,6 @@ footer .columns {
       font-weight: bold; }
 
 ul#superfish-main {
-  width: 100%;
   font-size: 1.25em;
   margin: 0 auto; }
   ul#superfish-main li {
@@ -4249,7 +4248,7 @@ ul#superfish-main {
     background-color: #685d1f; }
     ul#superfish-main li.sf-depth-2 a {
       color: #fefefe;
-      font-size: 1em;
+      font-size: .75em;
       text-align: left;
       text-transform: none; }
 

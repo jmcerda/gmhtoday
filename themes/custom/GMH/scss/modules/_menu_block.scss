@@ -50,7 +50,7 @@
 }
 
 ul#superfish-main {
-	width: 100%;
+	// width: 100%;
 	font-size: 1.25em;
 	margin: 0 auto;
 	li {
@@ -60,7 +60,7 @@ ul#superfish-main {
 		background-color: $secondary-color;
 		a {
 			color: $white;
-			font-size: 1em;
+			font-size: .75em;
 			text-align: left;
 			text-transform: none;
 		}
