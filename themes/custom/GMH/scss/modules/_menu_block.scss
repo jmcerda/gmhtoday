@@ -52,13 +52,16 @@
 ul#superfish-main {
 	width: 100%;
 	font-size: 1.25em;
-	margin: auto;
+	margin: 0 auto;
 	li {
 		display: inline-block;
+		background-color: $secondary-color;
+		padding: 20px;
 		a {
-			text-transform: uppercase;
-			color: $secondary-color;
-			font-weight: bold;
+			color: $white;
+			font-size: 14px;
+			text-align: left;
+			text-transform: none;
 		}
 	}
 }
