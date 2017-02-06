@@ -4255,13 +4255,13 @@ footer .columns {
       color: #685d1f;
       font-weight: bold; }
 
-#superfish-main ul {
+ul#superfish-main {
   width: 100%;
   font-size: 1.25em;
   margin: auto; }
-  #superfish-main ul li {
+  ul#superfish-main li {
     display: inline-block; }
-    #superfish-main ul li a {
+    ul#superfish-main li a {
       text-transform: uppercase;
       color: #685d1f;
       font-weight: bold; }
