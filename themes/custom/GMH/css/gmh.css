@@ -4255,6 +4255,17 @@ footer .columns {
       color: #685d1f;
       font-weight: bold; }
 
+#superfish-main ul {
+  width: 100%;
+  font-size: 1.25em;
+  margin: auto; }
+  #superfish-main ul li {
+    display: inline-block; }
+    #superfish-main ul li a {
+      text-transform: uppercase;
+      color: #685d1f;
+      font-weight: bold; }
+
 blockquote {
   margin: 1rem 0 1rem;
   border-left: 0; }
