@@ -10,7 +10,7 @@ use Drupal\libraries\Plugin\MissingPluginConfigurationException;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
 /**
- * Provides a locator utilizing a stream wrapper.
+ * Provides a locator utilizing a URI.
  *
  * It makes the following assumptions:
  * - The library files can be accessed using a specified stream.
@@ -19,11 +19,11 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
  * - The first component of the file URIs are the library IDs (i.e. file URIs
  *   are of the form: scheme://library-id/path/to/file/filename).
  *
- * @Locator("stream")
+ * @Locator("uri")
  *
  * @see \Drupal\libraries\ExternalLibrary\Local\LocatorInterface
  */
-class StreamLocator implements LocatorInterface, ContainerFactoryPluginInterface {
+class UriLocator implements LocatorInterface, ContainerFactoryPluginInterface {
 
   /**
    * The stream wrapper manager.
@@ -33,33 +33,33 @@ class StreamLocator implements LocatorInterface, ContainerFactoryPluginInterface
   protected $streamWrapperManager;
 
   /**
-   * The scheme of the stream wrapper.
+   * The URI to check.
    *
    * @var string
    */
-  protected $scheme;
+  protected $uri;
 
   /**
-   * Constructs a stream locator.
+   * Constructs a URI locator.
    *
    * @param \Drupal\Core\StreamWrapper\StreamWrapperManagerInterface $stream_wrapper_manager
    *   The stream wrapper manager.
-   * @param string $scheme
-   *   The scheme of the stream wrapper.
+   * @param string $uri
+   *   The URI to check.
    */
-  public function __construct(StreamWrapperManagerInterface $stream_wrapper_manager, $scheme) {
+  public function __construct(StreamWrapperManagerInterface $stream_wrapper_manager, $uri) {
     $this->streamWrapperManager = $stream_wrapper_manager;
-    $this->scheme = (string) $scheme;
+    $this->uri = (string) $uri;
   }
 
   /**
    * {@inheritdoc}
    */
   public static function create(ContainerInterface $container, array $configuration, $plugin_id, $plugin_definition) {
-    if (!isset($configuration['scheme'])) {
-      throw new MissingPluginConfigurationException($plugin_id, $plugin_definition, $configuration, 'scheme');
+    if (!isset($configuration['uri'])) {
+      throw new MissingPluginConfigurationException($plugin_id, $plugin_definition, $configuration, 'uri');
     }
-    return new static($container->get('stream_wrapper_manager'), $configuration['scheme']);
+    return new static($container->get('stream_wrapper_manager'), $configuration['uri']);
   }
 
   /**
@@ -72,19 +72,18 @@ class StreamLocator implements LocatorInterface, ContainerFactoryPluginInterface
    */
   public function locate(LocalLibraryInterface $library) {
     /** @var \Drupal\Core\StreamWrapper\LocalStream $stream_wrapper */
-    $stream_wrapper = $this->streamWrapperManager->getViaScheme($this->scheme);
+    $stream_wrapper = $this->streamWrapperManager->getViaUri($this->uri);
     assert('$stream_wrapper instanceof \Drupal\Core\StreamWrapper\LocalStream');
     // Calling LocalStream::getDirectoryPath() explicitly avoids the realpath()
     // usage in LocalStream::getLocalPath(), which breaks if Libraries API is
     // symbolically linked into the Drupal installation.
-    $path = $stream_wrapper->getDirectoryPath() . '/' . $library->getId();
-
-    if (is_dir($path) && is_readable($path)) {
-      $library->setLocalPath($path);
+    list($scheme, $target) = explode('://', $this->uri, 2);
+    $base_path = str_replace('//', '/', $stream_wrapper->getDirectoryPath() . '/' . $target . '/' . $library->getId());
+    if (is_dir($base_path) && is_readable($base_path)) {
+      $library->setLocalPath($base_path);
+      return;
     }
-    else {
-      $library->setUninstalled();
-    }
+    $library->setUninstalled();
   }
 
 }

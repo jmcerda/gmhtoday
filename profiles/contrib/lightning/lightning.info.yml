@@ -2,7 +2,7 @@ name: Lightning
 core: 8.x
 type: profile
 description: 'A fast and feature-rich Drupal distribution.'
-version: '8.x-2.02'
+version: '8.x-2.03'
 distribution:
   name: Lightning
 
@@ -42,6 +42,7 @@ dependencies:
   # contrib
   - diff
   - metatag
+  - search_api_db
   # Our own core functionality.
   - lightning_core
 
