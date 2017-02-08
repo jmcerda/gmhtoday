@@ -66,17 +66,22 @@
     </aside>
 
     <div class="off-canvas-content" data-off-canvas-content>
-      {% if page.meta_header %}
-        {% if meta_header_grid %}
+      {# {% if page.meta_header %} #}
+        {# {% if meta_header_grid %} #}
           <div class="row">
             <div class="large-12 columns">
-        {% endif %}
-        {{ page.meta_header }}
-        {% if meta_header_grid %}
+        {# {% endif %} #}
+            <div class="medium-10 column">
+              {{ page.meta_header }}
+            </div>
+            <div class="medium-2 column show-for-medium">
+             {{ searchform }}
+            </div>
+        {# {% if meta_header_grid %} #}
             </div>
           </div>
-        {% endif %}
-      {% endif %}
+        {# {% endif %} #}
+      {# {% endif %} #}
       <div class="gmh_header_background">
         <header class="row" role="banner" aria-label="{{ 'Site header'|t }}">
           {% if linked_site_name or linked_logo %}
