@@ -54,6 +54,8 @@
 	margin-top: 1em;
 }
 
-.search-block-form {
-	background-color: $off-white-background;
+#custom-search-block-form {
+	> div {
+		display: inline-block;
+	}
 }
