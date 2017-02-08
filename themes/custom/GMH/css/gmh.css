@@ -4606,3 +4606,8 @@ h2 {
 .contributers .row, .columnists .row, .publishers .row, .staff .row {
   margin-top: 2em;
   margin-bottom: 2em; }
+
+.contributors.row {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  border-top: 1px solid #0a0a0a; }
