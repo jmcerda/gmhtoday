@@ -26,4 +26,13 @@
 	margin-top: 2em;
 	margin-bottom: 2em;
 	border-top: 1px solid $black;
+	text-align: center;
+	h2 {
+		font-size: 1.8em;
+		margin-top: 1em;
+	}
+	h3 {
+		font-size: 1.2em;
+		color: $black;
+	}
 }

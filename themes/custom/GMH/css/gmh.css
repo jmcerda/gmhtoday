@@ -4610,4 +4610,11 @@ h2 {
 .contributors.row {
   margin-top: 2em;
   margin-bottom: 2em;
-  border-top: 1px solid #0a0a0a; }
+  border-top: 1px solid #0a0a0a;
+  text-align: center; }
+  .contributors.row h2 {
+    font-size: 1.8em;
+    margin-top: 1em; }
+  .contributors.row h3 {
+    font-size: 1.2em;
+    color: #0a0a0a; }
