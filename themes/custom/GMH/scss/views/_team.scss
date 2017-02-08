@@ -1,5 +1,5 @@
 .publishers, .staff, .columnists {
-	.user-bio {
+	.user-bio, .user-header-pub {
 		// text-align: center;
 		h2 {
 			font-size: 1.8em;
@@ -9,6 +9,9 @@
 			font-size: 1.2em;
 			color: $black;
 		}
+	}
+	.user-header-pub {
+		text-align: center;
 	}
 }
 
