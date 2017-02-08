@@ -4123,6 +4123,9 @@ table.hover tbody tr:nth-of-type(even):hover {
 #custom-search-block-form > div {
   display: inline-block; }
 
+.meta_header_row {
+  background-color: #fbfbfb; }
+
 footer {
   display: block; }
   @media screen and (min-width: 40em) {
