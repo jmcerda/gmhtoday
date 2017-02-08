@@ -58,6 +58,9 @@
 	> div {
 		display: inline-block;
 	}
+	.button.success {
+		background-color: $alert-color;
+	}
 }
 
 .meta_header_row {
