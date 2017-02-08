@@ -4571,10 +4571,6 @@ h2 {
 .user-header-pub img {
   border-radius: 50%; }
 
-.contributers .row, .writers .row, .publishers .row, .staff .row {
-  margin-top: 2em;
-  margin-bottom: 2em; }
-
 .issue-archive {
   padding: 1em;
   text-align: center; }
@@ -4603,3 +4599,7 @@ h2 {
 .publishers .user-bio h3, .staff .user-bio h3, .columnists .user-bio h3 {
   font-size: 1.2em;
   color: #0a0a0a; }
+
+.contributers .row, .columnists .row, .publishers .row, .staff .row {
+  margin-top: 2em;
+  margin-bottom: 2em; }
