@@ -4596,11 +4596,10 @@ h2 {
 .node--type-issue .link-control {
   margin: .5em 0; }
 
-.publishers .user-header-pub, .staff .user-header-pub {
-  text-align: center; }
-  .publishers .user-header-pub h2, .staff .user-header-pub h2 {
-    font-size: 1.8em;
-    margin-top: 1em; }
-  .publishers .user-header-pub h3, .staff .user-header-pub h3 {
-    font-size: 1.2em;
-    color: #0a0a0a; }
+.publishers .user-bio h2, .staff .user-bio h2 {
+  font-size: 1.8em;
+  margin-top: 1em; }
+
+.publishers .user-bio h3, .staff .user-bio h3 {
+  font-size: 1.2em;
+  color: #0a0a0a; }
