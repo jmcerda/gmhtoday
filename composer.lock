@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "2c901b83e2a400aecc324bbf017fb3cd",
+    "content-hash": "2ca4de32e161da53dc1491bad0cc375a",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -2672,6 +2672,56 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/ctools"
             }
+        },
+        {
+            "name": "drupal/custom_search",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/custom_search",
+                "reference": "674c07138f5ac80bec7471b68f3fa6366cb9b089"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-beta4+2-dev",
+                    "datestamp": "1482687183"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "jdanthinne",
+                    "homepage": "https://www.drupal.org/user/313766"
+                },
+                {
+                    "name": "jpontani",
+                    "homepage": "https://www.drupal.org/user/1014606"
+                },
+                {
+                    "name": "rajeshwari10",
+                    "homepage": "https://www.drupal.org/user/3270754"
+                },
+                {
+                    "name": "rooby",
+                    "homepage": "https://www.drupal.org/user/350381"
+                }
+            ],
+            "description": "This module alters the default search box in many ways.",
+            "homepage": "https://www.drupal.org/project/custom_search",
+            "support": {
+                "source": "http://cgit.drupalcode.org/custom_search"
+            },
+            "time": "2016-12-25 17:29:17"
         },
         {
             "name": "drupal/diff",
@@ -11148,7 +11198,8 @@
         "drupal/twitter": 20,
         "drupal/yaml_editor": 20,
         "drupal/superfish": 20,
-        "drupal/responsive_menus": 20
+        "drupal/responsive_menus": 20,
+        "drupal/custom_search": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
