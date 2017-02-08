@@ -23,13 +23,18 @@
 }
 
 .contributors.row {
-	margin-top: 2em;
-	margin-bottom: 2em;
+	margin-top: 4em;
+	margin-bottom: 4em;
 	border-top: 1px solid $black;
 	text-align: center;
+	.column {
+		margin: 2em auto;
+		padding-left: 2em;
+		padding-right: 2em;
+	}
 	h2 {
+		padding-top: 0;
 		font-size: 1.8em;
-		margin-top: 1em;
 	}
 	h3 {
 		font-size: 1.2em;
