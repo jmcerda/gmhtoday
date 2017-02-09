@@ -54,12 +54,13 @@
 	margin-top: 1em;
 }
 
+.gmh-search {
+	margin-top: 1em;
+}
+
 #custom-search-block-form {
 	> div {
 		display: inline-block;
-	}
-	.gmh-search {
-		margin-top: 1em;
 	}
 	.button.success {
 		background-color: $alert-color;
