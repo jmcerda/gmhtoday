@@ -13,7 +13,7 @@
           autoplay: true,
           dots: true,
           arrows: true,
-          slidesToShow: 1,
+          slidesToShow: 3,
           adaptiveHeight: true
       });
 
