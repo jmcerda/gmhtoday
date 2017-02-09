@@ -4127,7 +4127,7 @@ table.hover tbody tr:nth-of-type(even):hover {
   background-color: #c35019; }
 
 #custom-search-block-form .form-item input {
-  border-radius: 20px 0 0 20px;
+  border-radius: 20px;
   padding-right: 50px; }
 
 #custom-search-block-form .form-actions input {
