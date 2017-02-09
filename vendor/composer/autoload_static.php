@@ -132,6 +132,7 @@ class ComposerStaticInitDrupal8
             'Drupal\\Core\\Composer\\' => 21,
             'Drupal\\Core\\' => 12,
             'Drupal\\Console\\Core\\' => 20,
+            'Drupal\\Console\\Composer\\Plugin\\' => 31,
             'Drupal\\Console\\' => 15,
             'Drupal\\Component\\' => 17,
             'DrupalComposer\\DrupalScaffold\\' => 30,
@@ -412,6 +413,10 @@ class ComposerStaticInitDrupal8
         'Drupal\\Console\\Core\\' => 
         array (
             0 => __DIR__ . '/..' . '/drupal/console-core/src',
+        ),
+        'Drupal\\Console\\Composer\\Plugin\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/drupal/console-extend-plugin/src',
         ),
         'Drupal\\Console\\' => 
         array (

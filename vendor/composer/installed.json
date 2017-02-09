@@ -5171,81 +5171,6 @@
         "description": "implementation of xdg base directory specification for php"
     },
     {
-        "name": "psy/psysh",
-        "version": "v0.8.0",
-        "version_normalized": "0.8.0.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/bobthecow/psysh.git",
-            "reference": "4a8860e13aa68a4bbf2476c014f8a1f14f1bf991"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/bobthecow/psysh/zipball/4a8860e13aa68a4bbf2476c014f8a1f14f1bf991",
-            "reference": "4a8860e13aa68a4bbf2476c014f8a1f14f1bf991",
-            "shasum": ""
-        },
-        "require": {
-            "dnoegel/php-xdg-base-dir": "0.1",
-            "jakub-onderka/php-console-highlighter": "0.3.*",
-            "nikic/php-parser": "~1.3|~2.0|~3.0",
-            "php": ">=5.3.9",
-            "symfony/console": "~2.3.10|^2.4.2|~3.0",
-            "symfony/var-dumper": "~2.7|~3.0"
-        },
-        "require-dev": {
-            "friendsofphp/php-cs-fixer": "~1.11",
-            "hoa/console": "~3.16|~1.14",
-            "phpunit/phpunit": "~4.4|~5.0",
-            "symfony/finder": "~2.1|~3.0"
-        },
-        "suggest": {
-            "ext-pcntl": "Enabling the PCNTL extension makes PsySH a lot happier :)",
-            "ext-pdo-sqlite": "The doc command requires SQLite to work.",
-            "ext-posix": "If you have PCNTL, you'll want the POSIX extension as well.",
-            "ext-readline": "Enables support for arrow-key history navigation, and showing and manipulating command history.",
-            "hoa/console": "A pure PHP readline implementation. You'll want this if your PHP install doesn't already support readline or libedit."
-        },
-        "time": "2016-12-07T17:15:07+00:00",
-        "bin": [
-            "bin/psysh"
-        ],
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-develop": "0.8.x-dev"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "files": [
-                "src/Psy/functions.php"
-            ],
-            "psr-4": {
-                "Psy\\": "src/Psy/"
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Justin Hileman",
-                "email": "justin@justinhileman.info",
-                "homepage": "http://justinhileman.com"
-            }
-        ],
-        "description": "An interactive shell for modern PHP.",
-        "homepage": "http://psysh.org",
-        "keywords": [
-            "REPL",
-            "console",
-            "interactive",
-            "shell"
-        ]
-    },
-    {
         "name": "gabordemooij/redbean",
         "version": "v4.3.3",
         "version_normalized": "4.3.3.0",
@@ -8352,62 +8277,6 @@
         "description": "Modern task runner"
     },
     {
-        "name": "drupal/console-en",
-        "version": "1.0.0-rc15",
-        "version_normalized": "1.0.0.0-RC15",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/hechoendrupal/drupal-console-en.git",
-            "reference": "87a886d5084d33f813e0d7c0547534ac43e75da8"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/hechoendrupal/drupal-console-en/zipball/87a886d5084d33f813e0d7c0547534ac43e75da8",
-            "reference": "87a886d5084d33f813e0d7c0547534ac43e75da8",
-            "shasum": ""
-        },
-        "time": "2017-01-23T14:59:05+00:00",
-        "type": "drupal-console-language",
-        "installation-source": "dist",
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "GPL-2.0+"
-        ],
-        "authors": [
-            {
-                "name": "David Flores",
-                "email": "dmousex@gmail.com",
-                "homepage": "http://dmouse.net"
-            },
-            {
-                "name": "Jesus Manuel Olivas",
-                "email": "jesus.olivas@gmail.com",
-                "homepage": "http://jmolivas.com"
-            },
-            {
-                "name": "Drupal Console Contributors",
-                "homepage": "https://github.com/hechoendrupal/DrupalConsole/graphs/contributors"
-            },
-            {
-                "name": "Eduardo Garcia",
-                "email": "enzo@enzolutions.com",
-                "homepage": "http://enzolutions.com/"
-            },
-            {
-                "name": "Omar Aguirre",
-                "email": "omersguchigu@gmail.com"
-            }
-        ],
-        "description": "Drupal Console English Language",
-        "homepage": "http://drupalconsole.com/",
-        "keywords": [
-            "console",
-            "development",
-            "drupal",
-            "symfony"
-        ]
-    },
-    {
         "name": "dflydev/dot-access-data",
         "version": "v1.1.0",
         "version_normalized": "1.1.0.0",
@@ -8528,168 +8397,6 @@
         "keywords": [
             "config",
             "configuration"
-        ]
-    },
-    {
-        "name": "drupal/console-core",
-        "version": "1.0.0-rc15",
-        "version_normalized": "1.0.0.0-RC15",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/hechoendrupal/drupal-console-core.git",
-            "reference": "3b82904b14c40877497d34a2901a72cc987a5808"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/hechoendrupal/drupal-console-core/zipball/3b82904b14c40877497d34a2901a72cc987a5808",
-            "reference": "3b82904b14c40877497d34a2901a72cc987a5808",
-            "shasum": ""
-        },
-        "require": {
-            "dflydev/dot-access-configuration": "1.0.1",
-            "drupal/console-en": "1.0.0-rc15",
-            "php": "^5.5.9 || ^7.0",
-            "stecman/symfony-console-completion": "~0.7",
-            "symfony/config": ">=2.7 <3.0",
-            "symfony/console": ">=2.7 <3.0",
-            "symfony/debug": ">=2.6 <3.0",
-            "symfony/dependency-injection": ">=2.7 <3.0",
-            "symfony/event-dispatcher": ">=2.7 <3.0",
-            "symfony/filesystem": ">=2.7 <3.0",
-            "symfony/finder": ">=2.7 <3.0",
-            "symfony/process": ">=2.7 <3.0",
-            "symfony/translation": ">=2.7 <3.0",
-            "symfony/yaml": ">=2.7 <3.0",
-            "twig/twig": "^1.23.1",
-            "webflo/drupal-finder": "0.*"
-        },
-        "time": "2017-01-23T18:02:51+00:00",
-        "type": "project",
-        "installation-source": "dist",
-        "autoload": {
-            "files": [
-                "src/constants.php",
-                "src/functions.php"
-            ],
-            "psr-4": {
-                "Drupal\\Console\\Core\\": "src"
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "GPL-2.0+"
-        ],
-        "authors": [
-            {
-                "name": "David Flores",
-                "email": "dmousex@gmail.com",
-                "homepage": "http://dmouse.net"
-            },
-            {
-                "name": "Jesus Manuel Olivas",
-                "email": "jesus.olivas@gmail.com",
-                "homepage": "http://jmolivas.com"
-            },
-            {
-                "name": "Drupal Console Contributors",
-                "homepage": "https://github.com/hechoendrupal/DrupalConsole/graphs/contributors"
-            },
-            {
-                "name": "Eduardo Garcia",
-                "email": "enzo@enzolutions.com",
-                "homepage": "http://enzolutions.com/"
-            },
-            {
-                "name": "Omar Aguirre",
-                "email": "omersguchigu@gmail.com"
-            }
-        ],
-        "description": "Drupal Console Core",
-        "homepage": "http://drupalconsole.com/",
-        "keywords": [
-            "console",
-            "development",
-            "drupal",
-            "symfony"
-        ]
-    },
-    {
-        "name": "drupal/console",
-        "version": "1.0.0-rc15",
-        "version_normalized": "1.0.0.0-RC15",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/hechoendrupal/drupal-console.git",
-            "reference": "c4f338de3b66658fff1e1b750613b15628ca74ba"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/hechoendrupal/drupal-console/zipball/c4f338de3b66658fff1e1b750613b15628ca74ba",
-            "reference": "c4f338de3b66658fff1e1b750613b15628ca74ba",
-            "shasum": ""
-        },
-        "require": {
-            "alchemy/zippy": "0.4.3",
-            "composer/installers": "~1.0",
-            "doctrine/annotations": "1.2.*",
-            "doctrine/collections": "1.3.0",
-            "drupal/console-core": "1.0.0-rc15",
-            "gabordemooij/redbean": "~4.3",
-            "guzzlehttp/guzzle": "~6.1",
-            "php": "^5.5.9 || ^7.0",
-            "psy/psysh": "0.6|0.8",
-            "symfony/css-selector": ">=2.7 <3.0",
-            "symfony/dom-crawler": ">=2.7 <3.3",
-            "symfony/expression-language": ">=2.7 <3.0",
-            "symfony/http-foundation": ">=2.7 <3.0"
-        },
-        "time": "2017-01-23T19:34:20+00:00",
-        "bin": [
-            "bin/drupal"
-        ],
-        "type": "project",
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "Drupal\\Console\\": "src"
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "GPL-2.0+"
-        ],
-        "authors": [
-            {
-                "name": "David Flores",
-                "email": "dmousex@gmail.com",
-                "homepage": "http://dmouse.net"
-            },
-            {
-                "name": "Jesus Manuel Olivas",
-                "email": "jesus.olivas@gmail.com",
-                "homepage": "http://jmolivas.com"
-            },
-            {
-                "name": "Drupal Console Contributors",
-                "homepage": "https://github.com/hechoendrupal/DrupalConsole/graphs/contributors"
-            },
-            {
-                "name": "Eduardo Garcia",
-                "email": "enzo@enzolutions.com",
-                "homepage": "http://enzolutions.com/"
-            },
-            {
-                "name": "Omar Aguirre",
-                "email": "omersguchigu@gmail.com"
-            }
-        ],
-        "description": "The Drupal CLI. A tool to generate boilerplate code, interact with and debug Drupal.",
-        "homepage": "http://drupalconsole.com/",
-        "keywords": [
-            "console",
-            "development",
-            "drupal",
-            "symfony"
         ]
     },
     {
@@ -11560,5 +11267,342 @@
         "support": {
             "source": "http://cgit.drupalcode.org/custom_search"
         }
+    },
+    {
+        "name": "psy/psysh",
+        "version": "v0.8.1",
+        "version_normalized": "0.8.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/bobthecow/psysh.git",
+            "reference": "701e8a1cc426ee170f1296f5d9f6b8a26ad25c4a"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/bobthecow/psysh/zipball/701e8a1cc426ee170f1296f5d9f6b8a26ad25c4a",
+            "reference": "701e8a1cc426ee170f1296f5d9f6b8a26ad25c4a",
+            "shasum": ""
+        },
+        "require": {
+            "dnoegel/php-xdg-base-dir": "0.1",
+            "jakub-onderka/php-console-highlighter": "0.3.*",
+            "nikic/php-parser": "~1.3|~2.0|~3.0",
+            "php": ">=5.3.9",
+            "symfony/console": "~2.3.10|^2.4.2|~3.0",
+            "symfony/var-dumper": "~2.7|~3.0"
+        },
+        "require-dev": {
+            "friendsofphp/php-cs-fixer": "~1.11",
+            "hoa/console": "~3.16|~1.14",
+            "phpunit/phpunit": "~4.4|~5.0",
+            "symfony/finder": "~2.1|~3.0"
+        },
+        "suggest": {
+            "ext-pcntl": "Enabling the PCNTL extension makes PsySH a lot happier :)",
+            "ext-pdo-sqlite": "The doc command requires SQLite to work.",
+            "ext-posix": "If you have PCNTL, you'll want the POSIX extension as well.",
+            "ext-readline": "Enables support for arrow-key history navigation, and showing and manipulating command history.",
+            "hoa/console": "A pure PHP readline implementation. You'll want this if your PHP install doesn't already support readline or libedit."
+        },
+        "time": "2017-01-15T17:54:13+00:00",
+        "bin": [
+            "bin/psysh"
+        ],
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-develop": "0.9.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "files": [
+                "src/Psy/functions.php"
+            ],
+            "psr-4": {
+                "Psy\\": "src/Psy/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Justin Hileman",
+                "email": "justin@justinhileman.info",
+                "homepage": "http://justinhileman.com"
+            }
+        ],
+        "description": "An interactive shell for modern PHP.",
+        "homepage": "http://psysh.org",
+        "keywords": [
+            "REPL",
+            "console",
+            "interactive",
+            "shell"
+        ]
+    },
+    {
+        "name": "drupal/console-extend-plugin",
+        "version": "0.2.0",
+        "version_normalized": "0.2.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/hechoendrupal/drupal-console-extend-plugin.git",
+            "reference": "3c6b873205c6e33f24b33807901d3287a4ff9a02"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/hechoendrupal/drupal-console-extend-plugin/zipball/3c6b873205c6e33f24b33807901d3287a4ff9a02",
+            "reference": "3c6b873205c6e33f24b33807901d3287a4ff9a02",
+            "shasum": ""
+        },
+        "require": {
+            "composer-plugin-api": "^1.0",
+            "symfony/finder": ">=2.7 <3.0",
+            "symfony/yaml": ">=2.7 <3.0"
+        },
+        "time": "2017-02-09T17:09:50+00:00",
+        "type": "composer-plugin",
+        "extra": {
+            "class": "Drupal\\Console\\Composer\\Plugin\\Extender"
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Drupal\\Console\\Composer\\Plugin\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "Jesus Manuel Olivas",
+                "email": "jesus.olivas@gmail.com"
+            }
+        ],
+        "description": "Drupal Console Extend Plugin"
+    },
+    {
+        "name": "drupal/console-en",
+        "version": "1.0.0-rc16",
+        "version_normalized": "1.0.0.0-RC16",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/hechoendrupal/drupal-console-en.git",
+            "reference": "32c1e4c31500ba4ccd5e68bd74977fd6258c3e37"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/hechoendrupal/drupal-console-en/zipball/32c1e4c31500ba4ccd5e68bd74977fd6258c3e37",
+            "reference": "32c1e4c31500ba4ccd5e68bd74977fd6258c3e37",
+            "shasum": ""
+        },
+        "time": "2017-02-09T16:02:27+00:00",
+        "type": "drupal-console-language",
+        "installation-source": "dist",
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "David Flores",
+                "email": "dmousex@gmail.com",
+                "homepage": "http://dmouse.net"
+            },
+            {
+                "name": "Jesus Manuel Olivas",
+                "email": "jesus.olivas@gmail.com",
+                "homepage": "http://jmolivas.com"
+            },
+            {
+                "name": "Drupal Console Contributors",
+                "homepage": "https://github.com/hechoendrupal/DrupalConsole/graphs/contributors"
+            },
+            {
+                "name": "Eduardo Garcia",
+                "email": "enzo@enzolutions.com",
+                "homepage": "http://enzolutions.com/"
+            },
+            {
+                "name": "Omar Aguirre",
+                "email": "omersguchigu@gmail.com"
+            }
+        ],
+        "description": "Drupal Console English Language",
+        "homepage": "http://drupalconsole.com/",
+        "keywords": [
+            "console",
+            "development",
+            "drupal",
+            "symfony"
+        ]
+    },
+    {
+        "name": "drupal/console-core",
+        "version": "1.0.0-rc16",
+        "version_normalized": "1.0.0.0-RC16",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/hechoendrupal/drupal-console-core.git",
+            "reference": "42690f652b3a61d7d15fe9b785b946f3eb9227bf"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/hechoendrupal/drupal-console-core/zipball/42690f652b3a61d7d15fe9b785b946f3eb9227bf",
+            "reference": "42690f652b3a61d7d15fe9b785b946f3eb9227bf",
+            "shasum": ""
+        },
+        "require": {
+            "dflydev/dot-access-configuration": "1.0.1",
+            "drupal/console-en": "1.0.0-rc16",
+            "php": "^5.5.9 || ^7.0",
+            "stecman/symfony-console-completion": "~0.7",
+            "symfony/config": ">=2.7 <3.0",
+            "symfony/console": ">=2.7 <3.0",
+            "symfony/debug": ">=2.6 <3.0",
+            "symfony/dependency-injection": ">=2.7 <3.0",
+            "symfony/event-dispatcher": ">=2.7 <3.0",
+            "symfony/filesystem": ">=2.7 <3.0",
+            "symfony/finder": ">=2.7 <3.0",
+            "symfony/process": ">=2.7 <3.0",
+            "symfony/translation": ">=2.7 <3.0",
+            "symfony/yaml": ">=2.7 <3.0",
+            "twig/twig": "^1.23.1",
+            "webflo/drupal-finder": "0.*"
+        },
+        "time": "2017-02-09T18:22:32+00:00",
+        "type": "project",
+        "installation-source": "dist",
+        "autoload": {
+            "files": [
+                "src/constants.php",
+                "src/functions.php"
+            ],
+            "psr-4": {
+                "Drupal\\Console\\Core\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "David Flores",
+                "email": "dmousex@gmail.com",
+                "homepage": "http://dmouse.net"
+            },
+            {
+                "name": "Jesus Manuel Olivas",
+                "email": "jesus.olivas@gmail.com",
+                "homepage": "http://jmolivas.com"
+            },
+            {
+                "name": "Drupal Console Contributors",
+                "homepage": "https://github.com/hechoendrupal/DrupalConsole/graphs/contributors"
+            },
+            {
+                "name": "Eduardo Garcia",
+                "email": "enzo@enzolutions.com",
+                "homepage": "http://enzolutions.com/"
+            },
+            {
+                "name": "Omar Aguirre",
+                "email": "omersguchigu@gmail.com"
+            }
+        ],
+        "description": "Drupal Console Core",
+        "homepage": "http://drupalconsole.com/",
+        "keywords": [
+            "console",
+            "development",
+            "drupal",
+            "symfony"
+        ]
+    },
+    {
+        "name": "drupal/console",
+        "version": "1.0.0-rc16",
+        "version_normalized": "1.0.0.0-RC16",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/hechoendrupal/drupal-console.git",
+            "reference": "955b057042635a5dc935799228ec7bbddf2c0cc2"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/hechoendrupal/drupal-console/zipball/955b057042635a5dc935799228ec7bbddf2c0cc2",
+            "reference": "955b057042635a5dc935799228ec7bbddf2c0cc2",
+            "shasum": ""
+        },
+        "require": {
+            "alchemy/zippy": "0.4.3",
+            "composer/installers": "~1.0",
+            "doctrine/annotations": "1.2.*",
+            "doctrine/collections": "1.3.0",
+            "drupal/console-core": "1.0.0-rc16",
+            "drupal/console-extend-plugin": "~0",
+            "gabordemooij/redbean": "~4.3",
+            "guzzlehttp/guzzle": "~6.1",
+            "php": "^5.5.9 || ^7.0",
+            "psy/psysh": "0.6.* || ~0.8",
+            "symfony/css-selector": ">=2.7 <3.0",
+            "symfony/dom-crawler": ">=2.7 <3.3",
+            "symfony/expression-language": ">=2.7 <3.0",
+            "symfony/http-foundation": ">=2.7 <3.0"
+        },
+        "time": "2017-02-09T18:54:29+00:00",
+        "bin": [
+            "bin/drupal"
+        ],
+        "type": "project",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Drupal\\Console\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "David Flores",
+                "email": "dmousex@gmail.com",
+                "homepage": "http://dmouse.net"
+            },
+            {
+                "name": "Jesus Manuel Olivas",
+                "email": "jesus.olivas@gmail.com",
+                "homepage": "http://jmolivas.com"
+            },
+            {
+                "name": "Drupal Console Contributors",
+                "homepage": "https://github.com/hechoendrupal/DrupalConsole/graphs/contributors"
+            },
+            {
+                "name": "Eduardo Garcia",
+                "email": "enzo@enzolutions.com",
+                "homepage": "http://enzolutions.com/"
+            },
+            {
+                "name": "Omar Aguirre",
+                "email": "omersguchigu@gmail.com"
+            }
+        ],
+        "description": "The Drupal CLI. A tool to generate boilerplate code, interact with and debug Drupal.",
+        "homepage": "http://drupalconsole.com/",
+        "keywords": [
+            "console",
+            "development",
+            "drupal",
+            "symfony"
+        ]
     }
 ]
