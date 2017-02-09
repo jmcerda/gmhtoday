@@ -61,6 +61,12 @@
 	.button.success {
 		background-color: $alert-color;
 	}
+	.form-item input {
+		border-radius: 20px 0 0 20px;
+	}
+	.form-actions input {
+		border-radius: 0 20px 20px 0;
+	}
 }
 
 .meta_header_row {
