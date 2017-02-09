@@ -4123,6 +4123,9 @@ table.hover tbody tr:nth-of-type(even):hover {
 #custom-search-block-form > div {
   display: inline-block; }
 
+#custom-search-block-form .gmh-search {
+  margin-top: 1em; }
+
 #custom-search-block-form .button.success {
   background-color: #c35019; }
 
