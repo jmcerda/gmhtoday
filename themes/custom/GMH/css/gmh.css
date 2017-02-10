@@ -4602,12 +4602,11 @@ h2 {
 .advertiser-name {
   margin: .5em auto; }
 
-.block-region-ads img {
+.block-region-ads {
   text-align: center; }
-
-.block-region-ads .row {
-  margin-top: 3em;
-  margin-bottom: 3em; }
+  .block-region-ads .row {
+    margin-top: 3em;
+    margin-bottom: 3em; }
 
 .node--type-issue #block-gmh-page-title h1 {
   margin-top: 0; }
