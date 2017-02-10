@@ -4123,20 +4123,18 @@ table.hover tbody tr:nth-of-type(even):hover {
 .gmh-search {
   margin-top: 1em; }
 
-#custom-search-block-form > div {
-  display: inline-block; }
-
-#custom-search-block-form .button.success {
-  background-color: #c35019; }
-
-#custom-search-block-form .form-item input {
-  border-radius: 20px;
-  padding-right: 50px; }
-
-#custom-search-block-form .form-actions input {
-  border-radius: 0 20px 20px 0;
-  margin: -2px 0 0 -46px;
-  height: 39px; }
+#custom-search-block-form {
+  display: -ms-flexbox;
+  display: flex; }
+  #custom-search-block-form .button.success {
+    background-color: #c35019; }
+  #custom-search-block-form .form-item input {
+    border-radius: 20px;
+    padding-right: 50px; }
+  #custom-search-block-form .form-actions input {
+    border-radius: 0 20px 20px 0;
+    margin: -2px 0 0 -46px;
+    height: 39px; }
 
 .meta_header_row {
   background-color: #fbfbfb; }

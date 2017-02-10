@@ -59,9 +59,10 @@
 }
 
 #custom-search-block-form {
-	> div {
-		display: inline-block;
-	}
+	display: flex;
+	// > div {
+	// 	display: inline-block;
+	// }
 	.button.success {
 		background-color: $alert-color;
 	}
