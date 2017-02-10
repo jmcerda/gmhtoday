@@ -279,7 +279,7 @@ h2 {
 .block-region-partners {
 	background-color: $off-white-background;
 	padding: 0 2em;
-	width: 60%;
+	// width: 60%;
 	@include breakpoint(medium) {
 		position: relative;
 		display: inline-block;
@@ -308,16 +308,18 @@ h2 {
 	// Logos.
 	.logo {
 		display: block;
-    width: 25%;
+    	width: 100%;
 		height: auto;
-    margin: 2em auto;
+    	margin: 2em auto;
 		padding: .5em 2em;
+		text-align: center;
 		@include breakpoint(medium) {
 			display: inline-block;
 			width: 50%;
 			height: 20px;
 			padding: 1.5em;
 			margin: 0;
+			text-align: inherit;
 		}
 		@include breakpoint(large) {
 			display: inline-block;
