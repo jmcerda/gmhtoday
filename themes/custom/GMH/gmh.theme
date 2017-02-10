@@ -74,9 +74,9 @@ function gmh_preprocess_page(&$variables) {
 	$menu = Block::load('gmh_footer');
 		$variables['footer_menu'] = \Drupal::entityTypeManager()->getViewBuilder('block')->view($menu);
   // Loading menu block
-  $menu = Block::load('issues');
-    $issue_menu_item = views_embed_view('issues', 'issue_menu_block');
-      $variables['issues'] = drupal_render($issue_menu_item);
+  // $menu = Block::load('issues');
+  //   $issue_menu_item = views_embed_view('issues', 'issue_menu_block');
+  //     $variables['issues'] = drupal_render($issue_menu_item);
 }
 
 /**

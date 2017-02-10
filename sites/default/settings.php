@@ -31,7 +31,7 @@ $settings['trusted_host_patterns'] = array(
   '^gmhtoday\.dd$'
 );
 
-// $settings['twig_tweak_enable_php_filter'] = TRUE;
+$settings['twig_tweak_enable_php_filter'] = TRUE;
 
 // <DDSETTINGS>
 // Please don't edit anything between <DDSETTINGS> tags.
