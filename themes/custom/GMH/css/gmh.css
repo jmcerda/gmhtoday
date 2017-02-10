@@ -4133,8 +4133,8 @@ table.hover tbody tr:nth-of-type(even):hover {
     padding-right: 50px; }
   #custom-search-block-form .form-actions input {
     border-radius: 0 20px 20px 0;
-    margin: 0 0 0 -44px;
-    height: 39px; }
+    margin: 1px 0 0 -44px;
+    height: 38px; }
 
 .meta_header_row {
   background-color: #fbfbfb; }
