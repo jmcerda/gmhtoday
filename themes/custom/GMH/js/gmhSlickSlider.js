@@ -16,7 +16,7 @@
           adaptiveHeight: true
       });
       // Ad Slider
-      $('.single-item-ads').slick({
+      $('.ads').slick({
           autoplay: true,
           dots: true,
           arrows: true,
