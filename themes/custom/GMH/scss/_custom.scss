@@ -452,3 +452,7 @@ h2 {
 // .row-funk {
 // 	display: inline-block;
 // }
+
+blockquote::before, blockquote::after {
+	display: none;
+}
