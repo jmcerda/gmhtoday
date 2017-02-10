@@ -37,7 +37,7 @@
     {% else %}
       {{ item['link'] }}
       <div class="menu-issue-space">FORSHIT
-        {{ views_embed_view('issues', 'issue_menu_block') }}
+        {{ issues }}
       </div>
     {% endif %}
     {% if item['multicolumn_wrapper'] %}<ul class="sf-multicolumn"><li class="sf-multicolumn-wrapper {{ item['item_class'] }}">{% endif %}
