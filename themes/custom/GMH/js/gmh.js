@@ -12,7 +12,7 @@
       $('.single-item').slick({
           autoplay: true,
           dots: true,
-          // infinite: false
+          infinite: false,
           // arrows: true
       });
       $('.ads').slick({
