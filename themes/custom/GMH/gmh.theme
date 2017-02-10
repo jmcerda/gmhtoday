@@ -77,6 +77,10 @@ function gmh_preprocess_page(&$variables) {
   		$variables['advertising_info_menu'] = \Drupal::entityTypeManager()->getViewBuilder('block')->view($menu);
 	$menu = Block::load('gmh_footer');
 		$variables['footer_menu'] = \Drupal::entityTypeManager()->getViewBuilder('block')->view($menu);
+  // Loading menu block
+  $menu = Block::load('menuissue');
+    $view_content = views_embed_view('issues', 'issue_menu_block');
+      print render($view_content);
 }
 
 /**
