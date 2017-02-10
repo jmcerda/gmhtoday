@@ -4467,7 +4467,9 @@ h2 {
   margin-bottom: 4em; }
 
 .block-region-partners {
-  background-color: #fbfbfb; }
+  background-color: #fbfbfb;
+  padding: 0 2em;
+  width: 60%; }
   @media screen and (min-width: 40em) {
     .block-region-partners {
       position: relative;
@@ -4611,6 +4613,9 @@ h2 {
 
 blockquote::before, blockquote::after {
   display: none; }
+
+.testimonial_credits {
+  padding-left: 20px; }
 
 .node--type-issue #block-gmh-page-title h1 {
   margin-top: 0; }

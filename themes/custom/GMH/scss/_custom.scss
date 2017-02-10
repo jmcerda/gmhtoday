@@ -278,6 +278,8 @@ h2 {
 }
 .block-region-partners {
 	background-color: $off-white-background;
+	padding: 0 2em;
+	width: 60%;
 	@include breakpoint(medium) {
 		position: relative;
 		display: inline-block;
@@ -455,4 +457,8 @@ h2 {
 
 blockquote::before, blockquote::after {
 	display: none;
+}
+
+.testimonial_credits {
+	padding-left: 20px;
 }
