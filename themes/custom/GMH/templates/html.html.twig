@@ -46,11 +46,6 @@ db_offline ? 'db-offline',
     <link rel="manifest" href="/manifest.json">
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="theme-color" content="#ffffff">
-    <script>
-      (function ($) {
-        $(document).foundation();
-      })(jQuery);
-    </script>
   </head>
   <body{{ attributes.addClass(body_classes) }}>
   <a href="#main-content" class="visually-hidden focusable skip-link">
@@ -60,5 +55,10 @@ db_offline ? 'db-offline',
   {{ page }}
   {{ page_bottom }}
   <js-bottom-placeholder token="{{ placeholder_token|raw }}">
+  <script>
+    (function ($) {
+      $(document).foundation();
+    })(jQuery);
+  </script>
   </body>
 </html>
