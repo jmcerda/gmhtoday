@@ -14,7 +14,7 @@
           dots: true,
           arrows: true,
           adaptiveHeight: true
-      }),
+      });
       // Ad Slider
       $('.single-item-ads').slick({
           autoplay: true,
@@ -22,7 +22,7 @@
           arrows: true,
           slidesToShow: 1,
           adaptiveHeight: true
-      }),
+      });
       // Fade Slider
       $('.fade').slick({
         dots: true,
