@@ -10,7 +10,7 @@
 
       //Slick Slider
       $('.single-item').slick({
-          autoplay: true,
+          // autoplay: true,
           dots: true,
           infinite: false
           // arrows: true
