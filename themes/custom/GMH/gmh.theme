@@ -80,7 +80,6 @@ function gmh_preprocess_page(&$variables) {
   // Loading menu block
   $menu = Block::load('menuissue');
     $view_content = views_embed_view('issues', 'issue_menu_block');
-      print render($view_content);
 }
 
 /**
