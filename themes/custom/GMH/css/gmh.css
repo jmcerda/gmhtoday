@@ -4588,7 +4588,8 @@ h2 {
       display: block; } }
 
 .user-header-pub img {
-  border-radius: 50%; }
+  border-radius: 50%;
+  display: inline-block; }
 
 .issue-archive {
   padding: 1em;
