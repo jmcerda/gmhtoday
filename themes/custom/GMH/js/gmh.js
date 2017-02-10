@@ -11,17 +11,15 @@
       //Slick Slider
       $('.single-item').slick({
           autoplay: true,
-          dots: true,
-          arrows: true
+          dots: true
+          // arrows: true
       });
       $('.ads').slick({
           autoplay: true,
-          // autoplaySpeed: 5000,
           dots: true,
           // infinite: true,
           // slidesToShow: 3,
           slidesToScroll: 3,
-          variableWidth: true
       });
       $('.fade').slick({
         autoplay: true,
