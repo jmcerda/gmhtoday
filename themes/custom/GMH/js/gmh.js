@@ -20,7 +20,7 @@
           infinite: true,
           slidesToShow: 3,
           slidesToScroll: 3,
-          adaptiveHeight: true
+          variableWidth: true
       });
       $('.fade').slick({
         autoplay: true,
