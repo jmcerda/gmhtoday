@@ -4366,7 +4366,7 @@ blockquote:after {
       margin-top: 1.5%; } }
 
 .hero_copy_wrapper {
-  width: 50%;
+  width: 50% !important;
   padding-bottom: 50%;
   position: relative; }
 
