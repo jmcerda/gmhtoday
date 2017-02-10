@@ -17,7 +17,6 @@
       $('.ads').slick({
           autoplay: true,
           dots: true,
-          arrows: true,
           slidesToShow: 3,
           adaptiveHeight: true
       });
