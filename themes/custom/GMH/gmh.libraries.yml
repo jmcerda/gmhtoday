@@ -5,6 +5,13 @@ global:
       css/gmh.css: {}
   js:
     js/gmh.js: {}
+    js/foundation.min.js: {}
+    js/top_bar_active.js: {}
+    js/motion-ui.min.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery
+    - core/jquery.once
 
 matchHeight:
   version: VERSION
