@@ -4609,9 +4609,6 @@ h2 {
     margin-top: 3em;
     margin-bottom: 3em; }
 
-.row-funk {
-  display: inline-block; }
-
 .node--type-issue #block-gmh-page-title h1 {
   margin-top: 0; }
 
@@ -4636,10 +4633,6 @@ h2 {
 
 .publishers .user-header-pub, .staff .user-header-pub, .columnists .user-header-pub {
   text-align: center; }
-
-.contributers .row, .columnists .row, .publishers .row, .staff .row {
-  margin-top: 2em;
-  margin-bottom: 2em; }
 
 .contributors.row {
   margin-top: 4em;
