@@ -4140,7 +4140,7 @@ table.hover tbody tr:nth-of-type(even):hover {
   background-color: #fbfbfb; }
 
 .slick-cloned {
-  display: none; }
+  display: none !important; }
 
 footer {
   display: block; }
