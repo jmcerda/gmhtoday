@@ -17,8 +17,8 @@
       $('.ads').slick({
           autoplay: true,
           dots: true,
-          // slidesToShow: 3,
-          adaptiveHeight: true
+          slidesToShow: 3,
+          // adaptiveHeight: true
       });
       $('.fade').slick({
         autoplay: true,
