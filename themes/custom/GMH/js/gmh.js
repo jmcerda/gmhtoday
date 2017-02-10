@@ -22,6 +22,7 @@
           adaptiveHeight: true
       });
       $('.fade').slick({
+        autoplay: true,
         dots: true,
         infinite: true,
         speed: 500,
