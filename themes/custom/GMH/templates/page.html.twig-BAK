@@ -66,16 +66,22 @@
     </aside>
 
     <div class="off-canvas-content" data-off-canvas-content>
-      <div class="meta_header_row">
-        <div class="row">
-          <div class="large-12 columns">
-            {{ page.meta_header }}
-            <span class="gmh-search show-for-medium float-right">
-              {{ customsearchform }}
-            </span>
+      {# {% if page.meta_header %} #}
+        {# {% if meta_header_grid %} #}
+          <div class="meta_header_row">
+            <div class="row large-12 columns">
+        {# {% endif %} #}
+              <div class="medium-9 column">
+                {{ page.meta_header }}
+              </div>
+              <div class="medium-3 column show-for-medium float-right">
+               {{ customsearchform }}
+              </div>
+        {# {% if meta_header_grid %} #}
+            </div>
           </div>
-        </div>
-      </div>
+        {# {% endif %} #}
+      {# {% endif %} #}
       <div class="gmh_header_background">
         <header class="row" role="banner" aria-label="{{ 'Site header'|t }}">
           {% if linked_site_name or linked_logo %}
@@ -92,7 +98,7 @@
               {% endif %}
             </div>
           {% endif %}
-          <div id="brand" class="row">
+          <div class="row">
             {{ gmh_branding_block }}
           </div>
           <div class="row gmh_primary_nav show-for-medium">
