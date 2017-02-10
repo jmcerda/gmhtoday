@@ -15,12 +15,12 @@
           arrows: true
       });
       $('.ads').slick({
-          autoplay: true,
-          dots: true,
+          // autoplay: true,
+          // dots: true,
           infinite: true,
           slidesToShow: 3,
           slidesToScroll: 3,
-          variableWidth: true
+          // variableWidth: true
       });
       $('.fade').slick({
         autoplay: true,
