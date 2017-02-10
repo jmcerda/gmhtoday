@@ -8,12 +8,19 @@
   Drupal.behaviors.gmh = {
     attach: function (context, settings) {
 
-      //Slick Slider
+      // Slick Slider
       $('.single-item').slick({
           autoplay: true,
           dots: true,
           arrows: true,
-          slidesToShow: 2,
+          adaptiveHeight: true
+      });
+      // Ad Slider
+      $('.single-item-ads').slick({
+          autoplay: true,
+          dots: true,
+          arrows: true,
+          slidesToShow: 3,
           adaptiveHeight: true
       });
 
