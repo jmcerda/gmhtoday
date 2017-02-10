@@ -14,6 +14,13 @@
           dots: true
           // arrows: true,
       });
+      $('.ads').slick({
+          autoplay: true,
+          dots: true,
+          arrows: true,
+          // slidesToShow: 1,
+          adaptiveHeight: true
+      });
 
       // MatchHeights
       $('.equalHeight').matchHeight();

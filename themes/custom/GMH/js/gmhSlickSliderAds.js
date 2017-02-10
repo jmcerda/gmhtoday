@@ -5,14 +5,15 @@
  */
 (function ($, Drupal) {
 
-  Drupal.behaviors.gmh = {
+  Drupal.behaviors.gmhAds = {
     attach: function (context, settings) {
 
-      // Slick Slider
-      $('.single-item').slick({
+      // Ad Slider
+      $('.ads').slick({
           autoplay: true,
           dots: true,
           arrows: true,
+          // slidesToShow: 1,
           adaptiveHeight: true
       });
 
