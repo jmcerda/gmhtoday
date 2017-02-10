@@ -11,8 +11,8 @@
       //Slick Slider
       $('.single-item').slick({
           autoplay: true,
-          dots: true
-          arrows: true,
+          dots: true,
+          arrows: true
       });
       $('.ads').slick({
           autoplay: true,
