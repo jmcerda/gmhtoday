@@ -76,7 +76,7 @@ function gmh_preprocess_page(&$variables) {
   // Loading menu block
   $menu = Block::load('issues');
     $issue_menu_item = views_embed_view('issues', 'issue_menu_block');
-      $variables["issues"] = drupal_render($issue_menu_item);
+      $variables['issues'] = drupal_render($issue_menu_item);
 }
 
 /**
