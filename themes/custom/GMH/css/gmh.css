@@ -4139,6 +4139,9 @@ table.hover tbody tr:nth-of-type(even):hover {
 .meta_header_row {
   background-color: #fbfbfb; }
 
+.slick-cloned {
+  display: none; }
+
 footer {
   display: block; }
   @media screen and (min-width: 40em) {
