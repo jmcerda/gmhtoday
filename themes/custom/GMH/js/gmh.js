@@ -15,7 +15,7 @@
           arrows: true
       });
       $('.ads').slick({
-          // autoplay: true,
+          autoplay: true,
           // dots: true,
           infinite: true,
           slidesToShow: 3,
