@@ -4645,8 +4645,8 @@ h2 {
   text-align: center; }
   .contributors.row .column, .contributors.row .columns {
     margin: 2em auto;
-    padding-left: 1em;
-    padding-right: 1em; }
+    padding-left: 2em;
+    padding-right: 2em; }
   .contributors.row h2 {
     padding-top: 0;
     font-size: 1.8em; }
