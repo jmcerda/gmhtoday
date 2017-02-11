@@ -466,5 +466,8 @@ blockquote::before, blockquote::after {
 }
 
 .distributor-block {
-	padding: 2em;
+	padding: 0 1em;
+	h3 {
+		margin-top: 1em;
+	}
 }
