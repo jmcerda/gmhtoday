@@ -4267,6 +4267,9 @@ ul#superfish-main {
       text-align: left;
       text-transform: none; }
 
+.slicknav_btn {
+  background-color: #fbfbfb; }
+
 blockquote {
   margin: 1rem 0 1rem;
   border-left: 0; }
