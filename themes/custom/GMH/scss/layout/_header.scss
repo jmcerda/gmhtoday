@@ -36,11 +36,11 @@
 }
 
 .slicknav_btn {
-  background-color: transparent;
-  margin: -8em 1em 6px 5px;
+  background-color: transparent !important;
+  margin: -8em 1em 6px 5px !important;
 }
 .slicknav_icon-bar {
-  background-color: $primary-color;
+  background-color: $primary-color !important;
 }
 
 
