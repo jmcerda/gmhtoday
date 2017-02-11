@@ -12,7 +12,7 @@
       $('.single-item').slick({
         autoplay: true,
         dots: true,
-        infinite: false,
+        // infinite: false,
         // onAfterChange: function(slide, index){
         //   if(index == 3){
         //     $('.single-item').slickPause();
