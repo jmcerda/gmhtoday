@@ -20,16 +20,16 @@
 	background: $off-white-background;
 }
 .slicknav_menu {
-	background: $off-white-background;
+	background: $off-white-background !important;
 }
 .slicknav_nav {
 	a {
-		color: $secondary-color;
+		color: $secondary-color !important;
 	}
 }
 @include breakpoint(medium) {
 	.slicknav_menu {
-		display: none;
+		display: none !important;
 	}
 }
 

@@ -4234,14 +4234,14 @@ footer {
   background: #fbfbfb; }
 
 .slicknav_menu {
-  background: #fbfbfb; }
+  background: #fbfbfb !important; }
 
 .slicknav_nav a {
-  color: #685d1f; }
+  color: #685d1f !important; }
 
 @media screen and (min-width: 40em) {
   .slicknav_menu {
-    display: none; } }
+    display: none !important; } }
 
 .gmh_main_menu ul {
   width: 100%;
