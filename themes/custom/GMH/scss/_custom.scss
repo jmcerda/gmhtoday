@@ -478,3 +478,11 @@ blockquote::before, blockquote::after {
 		text-align: left;
 	}
 }
+
+.ad_cta {
+	text-align: left;
+	padding-left: 10px;
+	@include breakpoint(medium) {
+		padding-left: 15px;
+	}
+}
