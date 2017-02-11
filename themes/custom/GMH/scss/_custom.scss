@@ -137,6 +137,8 @@ blockquote:after {
   	border-radius: 50%;
 	background-color: $alert-color;
 	padding: 2rem 1rem;
+	width: 550px;
+    height: 550px;
 	@include breakpoint(medium){
 		padding: 5rem;
 	}
