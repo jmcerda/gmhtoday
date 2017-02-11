@@ -4623,6 +4623,12 @@ blockquote::before, blockquote::after {
   .distributor-block h3 {
     margin-top: 1em; }
 
+.ads-list {
+  text-align: center; }
+  @media screen and (min-width: 40em) {
+    .ads-list {
+      text-align: left; } }
+
 .node--type-issue #block-gmh-page-title h1 {
   margin-top: 0; }
 

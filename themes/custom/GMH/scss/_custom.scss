@@ -471,3 +471,10 @@ blockquote::before, blockquote::after {
 		margin-top: 1em;
 	}
 }
+
+.ads-list {
+	text-align: center;
+	@include breakpoint(medium) {
+		text-align: left;
+	}
+}
