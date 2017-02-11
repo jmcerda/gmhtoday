@@ -12,12 +12,12 @@
       $('.single-item').slick({
         autoplay: true,
         dots: true,
-        // infinite: false,
-        // onAfterChange: function(slide, index){
-        //   if(index == 3){
-        //     $('.single-item').slickPause();
-        //   }
-        // }
+        infinite: false,
+        onAfterChange: function(slide, index){
+          if(index == 3){
+            $('.single-item').slickPause();
+          }
+        }
       });
       $('.ads').slick({
           // autoplay: true,
@@ -56,14 +56,3 @@
   };
 
 })(jQuery, Drupal);
-
-$('.pages .slider').slick({
-  autoplay: true,
-  autoplaySpeed: 5000,
-  infinite: false,
-  onAfterChange: function(slide, index){
-    if(index == 4){
-      $('.pages .slider').slickPause();
-    }
-  }
-});
