@@ -8,10 +8,10 @@ base theme: zurb_foundation
 screenshot: images/screenshot.jpg
 
 libraries:
-  - gmh/global
   - gmh/matchHeight
   - gmh/slickSlider
   - gmh/slickNav
+  - gmh/global
 
 # Regions are output in the page.html.twig
 regions:
