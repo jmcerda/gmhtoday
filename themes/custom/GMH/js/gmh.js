@@ -13,11 +13,11 @@
         autoplay: true,
         dots: true,
         infinite: false,
-        onAfterChange: function(slide, index){
-          if(index == 3){
-            $('.single-item').slickPause();
-          }
-        }
+        // onAfterChange: function(slide, index){
+        //   if(index == 3){
+        //     $('.single-item').slickPause();
+        //   }
+        // }
       });
       $('.ads').slick({
           // autoplay: true,
