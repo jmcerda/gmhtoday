@@ -46,7 +46,7 @@
       // Issue TOC
       $(".node--type-issue #issue-toc").appendTo("#gmh-toc");
       // SlickNav
-      $('.superfish-main').slicknav({
+      $('#superfish-main').slicknav({
         label: '',
         duration: 1000,
         easingOpen: "easeOutBounce", //available with jQuery UI
