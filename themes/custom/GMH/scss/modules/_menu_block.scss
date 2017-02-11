@@ -19,17 +19,17 @@
 .brand_parent {
 	background: $off-white-background;
 }
-.slicknav_menu {
+#superfish-main {
 	background: $off-white-background;
 }
-.slicknav_nav {
+#superfish-main {
 	a {
 		color: $secondary-color;
 	}
 }
 @include breakpoint(medium) {
-	.slicknav_menu {
-		// display: none;
+	#superfish-main {
+		display: none;
 	}
 }
 

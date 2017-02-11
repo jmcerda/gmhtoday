@@ -4233,11 +4233,15 @@ footer {
 .brand_parent {
   background: #fbfbfb; }
 
-.slicknav_menu {
+#superfish-main {
   background: #fbfbfb; }
 
-.slicknav_nav a {
+#superfish-main a {
   color: #685d1f; }
+
+@media screen and (min-width: 40em) {
+  #superfish-main {
+    display: none; } }
 
 .gmh_main_menu ul {
   width: 100%;
