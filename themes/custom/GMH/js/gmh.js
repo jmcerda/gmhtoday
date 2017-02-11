@@ -12,9 +12,10 @@
       $('.single-item').slick({
         autoplay: true,
         dots: true,
+        mobileFirst: true,
         infinite: false,
         onAfterChange: function(slide, index){
-          if(index == 3){
+          if(index == 1){
             $('.single-item').slickPause();
           }
         }
