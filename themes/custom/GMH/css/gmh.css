@@ -4416,7 +4416,7 @@ blockquote:after {
     text-align: center; }
     @media screen and (min-width: 40em) {
       .hero_copy .fp_slide_link {
-        padding-top: 2rem;
+        padding-top: 2.5rem;
         bottom: 0px; } }
     @media screen and (min-width: 75em) {
       .hero_copy .fp_slide_link {
