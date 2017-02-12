@@ -48,7 +48,7 @@
       // SlickNav
       $('#superfish-main').slicknav({
         label: '',
-        duration: 1000,
+        duration: 500,
         // easingOpen: "easeOutBounce", //available with jQuery UI
         appendTo:'#brand'
       });
