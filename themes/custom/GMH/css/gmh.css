@@ -4424,7 +4424,7 @@ blockquote:after {
         bottom: -40px; } }
     .hero_copy .fp_slide_link a {
       font-family: "Fanwood Text", serif;
-      font-size: 2.5em !important;
+      font-size: 2.5em;
       color: #fff;
       line-height: 1em; }
       @media screen and (min-width: 40em) {
