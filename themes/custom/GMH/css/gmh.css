@@ -4386,7 +4386,7 @@ blockquote:after {
   right: 0;
   border-radius: 50%;
   background-color: #c35019;
-  padding: 30% 2rem;
+  padding: 20% 2rem;
   text-align: center; }
   @media screen and (min-width: 40em) {
     .hero_copy {
