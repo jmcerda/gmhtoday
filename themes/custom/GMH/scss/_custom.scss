@@ -136,9 +136,11 @@ blockquote:after {
   	top: 0; bottom: 0; left: 0; right: 0;
   	border-radius: 50%;
 	background-color: $alert-color;
-	padding: 2rem 1rem;
+	padding: 30% 2rem;
+	text-align: center;
 	@include breakpoint(medium){
 		padding: 5rem;
+		text-align: left;
 	}
 	h2.fp_slide_title {
 		font-size: 1.5rem;
