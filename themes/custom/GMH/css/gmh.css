@@ -4367,7 +4367,7 @@ blockquote:after {
 
 .hero_left {
   position: absolute;
-  width: 15%;
+  width: 25%;
   margin-top: 1%; }
   @media screen and (min-width: 40em) {
     .hero_left {
