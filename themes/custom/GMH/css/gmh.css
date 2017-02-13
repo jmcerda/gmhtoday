@@ -4346,27 +4346,36 @@ blockquote:after {
     .latest-issues-front .latest-cover-front img {
       box-shadow: 5px 5px 25px 0px rgba(0, 0, 0, 0.33); }
 
-.block-region-about h2,
-.latest-issues-front h2,
-.block-region-testimonials h2,
-.block-region-ads h2,
-.block-region-partners h2,
-.block-region-events h2,
-.block-region-blog h2,
-.block-region-editor-choice h2,
-.block-region-bottom h2 {
-  text-align: center; }
-
-.block-region-about .views-field-title a,
-.latest-issues-front .views-field-title a,
-.block-region-testimonials .views-field-title a,
-.block-region-ads .views-field-title a,
-.block-region-partners .views-field-title a,
-.block-region-events .views-field-title a,
-.block-region-blog .views-field-title a,
-.block-region-editor-choice .views-field-title a,
-.block-region-bottom .views-field-title a {
-  color: #685d1f; }
+.block-region-about,
+.latest-issues-front,
+.block-region-testimonials,
+.block-region-ads,
+.block-region-partners,
+.block-region-events,
+.block-region-blog,
+.block-region-editor-choice,
+.block-region-bottom {
+  margin-top: 4em; }
+  .block-region-about h2,
+  .latest-issues-front h2,
+  .block-region-testimonials h2,
+  .block-region-ads h2,
+  .block-region-partners h2,
+  .block-region-events h2,
+  .block-region-blog h2,
+  .block-region-editor-choice h2,
+  .block-region-bottom h2 {
+    text-align: center; }
+  .block-region-about .views-field-title a,
+  .latest-issues-front .views-field-title a,
+  .block-region-testimonials .views-field-title a,
+  .block-region-ads .views-field-title a,
+  .block-region-partners .views-field-title a,
+  .block-region-events .views-field-title a,
+  .block-region-blog .views-field-title a,
+  .block-region-editor-choice .views-field-title a,
+  .block-region-bottom .views-field-title a {
+    color: #685d1f; }
 
 @media screen and (min-width: 40em) {
   .block-region-about h2,
