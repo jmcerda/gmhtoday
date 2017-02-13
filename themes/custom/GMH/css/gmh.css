@@ -4099,12 +4099,12 @@ table.hover tbody tr:nth-of-type(even):hover {
 
 #block-gmh-branding {
   height: 150px; }
+  #block-gmh-branding img {
+    height: 110px; }
   @media screen and (min-width: 40em) {
     #block-gmh-branding {
       height: 100%;
       float: right; } }
-  #block-gmh-branding img {
-    height: 110px; }
 
 #hero_front_gmh {
   background: #fbfbfb; }

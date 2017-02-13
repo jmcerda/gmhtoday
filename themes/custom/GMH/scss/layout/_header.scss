@@ -25,13 +25,13 @@
 
 #block-gmh-branding {
 	height: 150px;
+	img {
+		height: 110px;
+	}
 	@include breakpoint(medium) {
       height: 100%;
       float: right;
     }
-	img {
-		height: 110px;
-	}
 }
 
 #hero_front_gmh {
