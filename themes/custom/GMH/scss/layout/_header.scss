@@ -30,7 +30,11 @@
 	}
 	@include breakpoint(medium) {
       height: 100%;
-      float: right;
+      // float: right;
+      img {
+      	float: right;
+      	height: 100%;
+      }
     }
 }
 

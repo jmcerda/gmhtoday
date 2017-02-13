@@ -4103,8 +4103,10 @@ table.hover tbody tr:nth-of-type(even):hover {
     height: 110px; }
   @media screen and (min-width: 40em) {
     #block-gmh-branding {
-      height: 100%;
-      float: right; } }
+      height: 100%; }
+      #block-gmh-branding img {
+        float: right;
+        height: 100%; } }
 
 #hero_front_gmh {
   background: #fbfbfb; }
