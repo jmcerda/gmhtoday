@@ -24,6 +24,7 @@
 }
 
 #block-gmh-branding {
+	height: 150px;
 	img {
 		height: 110px;
     @include breakpoint(medium) {

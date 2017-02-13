@@ -4097,12 +4097,14 @@ table.hover tbody tr:nth-of-type(even):hover {
   width: 16em;
   line-height: normal; }
 
-#block-gmh-branding img {
-  height: 110px; }
-  @media screen and (min-width: 40em) {
-    #block-gmh-branding img {
-      height: 210px;
-      float: right; } }
+#block-gmh-branding {
+  height: 150px; }
+  #block-gmh-branding img {
+    height: 110px; }
+    @media screen and (min-width: 40em) {
+      #block-gmh-branding img {
+        height: 210px;
+        float: right; } }
 
 #hero_front_gmh {
   background: #fbfbfb; }
