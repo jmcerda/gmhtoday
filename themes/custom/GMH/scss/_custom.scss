@@ -177,6 +177,7 @@ blockquote:after {
 		border-radius: 50%;
 		text-align: center;
 		line-height: 0;
+		padding-top: 8px;
 		@include breakpoint(medium) {
 			padding-top: 2.5rem;
 			bottom: 0px;
