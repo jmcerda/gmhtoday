@@ -176,6 +176,7 @@ blockquote:after {
 		background-color: #000;
 		border-radius: 50%;
 		text-align: center;
+		line-height: 0;
 		@include breakpoint(medium) {
 			padding-top: 2.5rem;
 			bottom: 0px;

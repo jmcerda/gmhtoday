@@ -4451,7 +4451,8 @@ blockquote:after {
     width: 30%;
     background-color: #000;
     border-radius: 50%;
-    text-align: center; }
+    text-align: center;
+    line-height: 0; }
     @media screen and (min-width: 40em) {
       .hero_copy .fp_slide_link {
         padding-top: 2.5rem;
