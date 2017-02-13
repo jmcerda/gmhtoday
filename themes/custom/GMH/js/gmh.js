@@ -14,11 +14,11 @@
         dots: true,
         mobileFirst: true,
         infinite: false,
-        onAfterChange: function(slide, index){
-          if(index == 1){
-            $('.single-item').slickPause();
-          }
-        }
+        // onAfterChange: function(slide, index){
+        //   if(index == 1){
+        //     $('.single-item').slickPause();
+        //   }
+        // }
       });
       $('.ads').slick({
           // autoplay: true,
