@@ -13,7 +13,7 @@
         autoplay: true,
         dots: true,
         mobileFirst: true,
-        infinite: false,
+        infinite: false
         // onAfterChange: function(slide, index){
         //   if(index == 1){
         //     $('.single-item').slickPause();
