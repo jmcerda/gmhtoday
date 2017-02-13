@@ -87,7 +87,6 @@ blockquote:after {
 .block-region-editor-choice,
 .block-region-bottom {
 	h2 {
-		padding-top: 1em;
 		text-align: center;
 	}
 	.views-field-title a {
@@ -101,6 +100,7 @@ blockquote:after {
 	h2 {
 		@include breakpoint (medium) {
 			text-align: left;
+			padding-top: 1em;
 		}
 	}
 }
