@@ -45,7 +45,8 @@
         "drupal/superfish": "1.x-dev",
         "drupal/responsive_menus": "1.x-dev",
         "drupal/custom_search": "1.x-dev",
-        "drupal/twig_tweak": "^1.5"
+        "drupal/twig_tweak": "^1.5",
+        "drupal/colorbox": "^1.2"
     },
     "replace": {
         "drupal/core": "~8.2"

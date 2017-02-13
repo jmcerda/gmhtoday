@@ -11617,7 +11617,7 @@
         "dist": {
             "type": "zip",
             "url": "https://ftp.drupal.org/files/projects/twig_tweak-8.x-1.5.zip",
-            "reference": null,
+            "reference": "8.x-1.5",
             "shasum": "8e2820ba3b706909c76cb4fa0a85becd39c5b9b1"
         },
         "require": {
@@ -11648,6 +11648,62 @@
         "homepage": "https://www.drupal.org/project/twig_tweak",
         "support": {
             "source": "http://cgit.drupalcode.org/twig_tweak"
+        }
+    },
+    {
+        "name": "drupal/colorbox",
+        "version": "dev-1.x",
+        "version_normalized": "dev-1.x",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupal.org/project/colorbox",
+            "reference": "bf511a8594ef69cbba37ef1ea0e72fb9727d15f6"
+        },
+        "require": {
+            "drupal/core": "*"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-1.x": "1.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-1.2+5-dev",
+                "datestamp": "1483955042"
+            }
+        },
+        "installation-source": "source",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "Sam152",
+                "homepage": "https://www.drupal.org/user/1485048"
+            },
+            {
+                "name": "frjo",
+                "homepage": "https://www.drupal.org/user/5546"
+            },
+            {
+                "name": "grisendo",
+                "homepage": "https://www.drupal.org/user/848238"
+            },
+            {
+                "name": "jdwfly",
+                "homepage": "https://www.drupal.org/user/298179"
+            },
+            {
+                "name": "podarok",
+                "homepage": "https://www.drupal.org/user/116002"
+            }
+        ],
+        "description": "A light-weight, customizable lightbox plugin for jQuery.",
+        "homepage": "https://www.drupal.org/project/colorbox",
+        "support": {
+            "source": "https://cgit.drupalcode.org/colorbox",
+            "issues": "https://www.drupal.org/project/colorbox"
         }
     }
 ]
