@@ -54,6 +54,7 @@ blockquote:after {
 }
 
 .latest-issues-front {
+	margin-top: 2em;
 	text-align: center;
 	margin-bottom: 2em;
   @include breakpoint(large) {
@@ -114,7 +115,11 @@ blockquote:after {
     }
 }
 
-
+.block-region-hero {
+	@include breakpoint(medium) {
+		margin-top: 2em;
+	}
+}
 
 .hero_left {
 	position: absolute;
