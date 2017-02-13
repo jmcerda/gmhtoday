@@ -13,6 +13,17 @@
         autoplay: true,
         dots: true,
         mobileFirst: true,
+        infinite: false
+        // onAfterChange: function(slide, index){
+        //   if(index == 1){
+        //     $('.single-item').slickPause();
+        //   }
+        // }
+      });
+      $('.testimonial-item').slick({
+        autoplay: false,
+        dots: true,
+        mobileFirst: true,
         infinite: false,
         adaptiveHeight: true
         // onAfterChange: function(slide, index){
