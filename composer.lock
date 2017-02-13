@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "bde980a4acf96c979fa9dcc7b1f45395",
+    "content-hash": "83718ed4a5d125ad384d6659b3cffb45",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -1808,8 +1808,7 @@
             "homepage": "http://drupal.org/project/address",
             "support": {
                 "source": "http://cgit.drupalcode.org/address"
-            },
-            "time": "2017-02-10 14:14:54"
+            }
         },
         {
             "name": "drupal/admin_toolbar",
@@ -2107,6 +2106,99 @@
             "support": {
                 "source": "https://cgit.drupalcode.org/colorbox",
                 "issues": "https://www.drupal.org/project/colorbox"
+            }
+        },
+        {
+            "name": "drupal/colorbox_inline",
+            "version": "1.0.0-rc2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/colorbox_inline",
+                "reference": "8.x-1.0-rc2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/colorbox_inline-8.x-1.0-rc2.zip",
+                "reference": "8.x-1.0-rc2",
+                "shasum": "5944fcdbcca7befa926c300216898996245ba24b"
+            },
+            "require": {
+                "drupal/colorbox": "*",
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-rc2",
+                    "datestamp": "1480382283"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Sam152",
+                    "homepage": "https://www.drupal.org/user/1485048"
+                }
+            ],
+            "description": "Enabled the \"colorbox inline\" functionality for Drupal 8.",
+            "homepage": "https://www.drupal.org/project/colorbox_inline",
+            "support": {
+                "source": "http://cgit.drupalcode.org/colorbox_inline"
+            }
+        },
+        {
+            "name": "drupal/colorbox_load",
+            "version": "1.0.0-rc2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/colorbox_load",
+                "reference": "8.x-1.0-rc2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/colorbox_load-8.x-1.0-rc2.zip",
+                "reference": null,
+                "shasum": "5597f044d8eddb1280d480d096177852f21f7ebf"
+            },
+            "require": {
+                "drupal/colorbox": "*",
+                "drupal/core": "~8.0",
+                "drupal/ng_lightbox": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-rc2",
+                    "datestamp": "1467852839"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Sam152",
+                    "homepage": "https://www.drupal.org/user/1485048"
+                },
+                {
+                    "name": "benjy",
+                    "homepage": "https://www.drupal.org/user/1852732"
+                }
+            ],
+            "description": "Allow you to load any content in a colorbox.",
+            "homepage": "https://www.drupal.org/project/colorbox_load",
+            "support": {
+                "source": "http://cgit.drupalcode.org/colorbox_load"
             }
         },
         {
@@ -4738,6 +4830,53 @@
             }
         },
         {
+            "name": "drupal/ng_lightbox",
+            "version": "1.0.0-beta2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/ng_lightbox",
+                "reference": "8.x-1.0-beta2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/ng_lightbox-8.x-1.0-beta2.zip",
+                "reference": "8.x-1.0-beta2",
+                "shasum": "67ca521c7217f211b3d4cf881edfc79d0f8f071d"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-beta2",
+                    "datestamp": "1455407339"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Sam152",
+                    "homepage": "https://www.drupal.org/user/1485048"
+                },
+                {
+                    "name": "benjy",
+                    "homepage": "https://www.drupal.org/user/1852732"
+                }
+            ],
+            "description": "A path based lightbox solution using CSS 3 properties.",
+            "homepage": "https://www.drupal.org/project/ng_lightbox",
+            "support": {
+                "source": "http://cgit.drupalcode.org/ng_lightbox"
+            }
+        },
+        {
             "name": "drupal/notification",
             "version": "1.0.0",
             "source": {
@@ -5498,7 +5637,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/slick-8.x-1.0-rc2.zip",
-                "reference": null,
+                "reference": "8.x-1.0-rc2",
                 "shasum": "b649cb01b5238097f8da5fcecc9a599c9be0b11d"
             },
             "require": {
@@ -5585,8 +5724,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/slick_browser",
                 "issues": "https://www.drupal.org/project/issues/slick_browser"
-            },
-            "time": "2017-02-13 02:29:24"
+            }
         },
         {
             "name": "drupal/slick_media",
@@ -5664,8 +5802,7 @@
             "homepage": "https://www.drupal.org/project/slick_views",
             "support": {
                 "source": "http://cgit.drupalcode.org/slick_views"
-            },
-            "time": "2017-02-10 11:40:20"
+            }
         },
         {
             "name": "drupal/superfish",
@@ -11340,7 +11477,9 @@
         "drupal/yaml_editor": 20,
         "drupal/superfish": 20,
         "drupal/responsive_menus": 20,
-        "drupal/custom_search": 20
+        "drupal/custom_search": 20,
+        "drupal/colorbox_inline": 5,
+        "drupal/colorbox_load": 5
     },
     "prefer-stable": true,
     "prefer-lowest": false,
