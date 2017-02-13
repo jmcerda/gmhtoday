@@ -4355,7 +4355,7 @@ blockquote:after {
 .block-region-blog,
 .block-region-editor-choice,
 .block-region-bottom {
-  margin-top: 4em; }
+  margin-top: 3em; }
   .block-region-about h2,
   .latest-issues-front h2,
   .block-region-testimonials h2,
@@ -4384,6 +4384,9 @@ blockquote:after {
   .block-region-editor-choice h2 {
     text-align: left;
     padding-top: 1em; } }
+
+.block-region-about {
+  margin-top: 0; }
 
 .supported-logo {
   display: block;

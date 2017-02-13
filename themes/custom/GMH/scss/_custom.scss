@@ -87,7 +87,7 @@ blockquote:after {
 .block-region-blog,
 .block-region-editor-choice,
 .block-region-bottom {
-	margin-top: 4em;
+	margin-top: 3em;
 	h2 {
 		text-align: center;
 	}
@@ -105,6 +105,9 @@ blockquote:after {
 			padding-top: 1em;
 		}
 	}
+}
+.block-region-about {
+	margin-top: 0;
 }
 .supported-logo {
 	display: block;
