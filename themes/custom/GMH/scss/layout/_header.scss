@@ -28,7 +28,7 @@
 	img {
 		height: 110px;
     @include breakpoint(medium) {
-      height: initial !important;
+      height: 100%;
       float: right;
     }
 	}
