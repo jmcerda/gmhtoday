@@ -4080,7 +4080,9 @@ table.hover tbody tr:nth-of-type(even):hover {
 
 .brand_parent {
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  background: #fbfbfb;
+  margin-left: 10px; }
 
 .brand_inline {
   display: inline-block;
@@ -4247,9 +4249,6 @@ footer {
       text-transform: uppercase;
       color: #685d1f;
       font-weight: bold; }
-
-.brand_parent {
-  background: #fbfbfb; }
 
 .slicknav_menu {
   background: #fbfbfb !important; }
