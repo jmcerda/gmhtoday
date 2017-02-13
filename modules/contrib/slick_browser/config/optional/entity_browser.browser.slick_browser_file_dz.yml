@@ -2,6 +2,8 @@ uuid: 9ea73384-9660-4c6c-8984-a41e94531dea
 langcode: en
 status: true
 dependencies:
+  config:
+    - views.view.slick_browser_file
   module:
     - dropzonejs_eb_widget
     - slick_browser

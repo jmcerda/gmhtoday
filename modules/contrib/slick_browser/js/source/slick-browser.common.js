@@ -8,26 +8,6 @@
   'use strict';
 
   /**
-   * Attaches Slick Browser common behavior to HTML element.
-   *
-   * @type {Drupal~behavior}
-   */
-  Drupal.behaviors.slickBrowser = {
-    attach: function (context) {
-      var me = Drupal.slickBrowser;
-
-      $('.sb', context).once('sb').each(me.sb);
-      $('.sb .item-container', context).once('sbItem').each(me.itemContainer);
-      $('.sb--details-hidden', context).once('sbDetails').each(me.sbDetails);
-    },
-    detach: function (context, setting, trigger) {
-      if (trigger === 'unload') {
-        $('.sb .item-container', context).find('.button').off('.sbAction');
-      }
-    }
-  };
-
-  /**
    * Slick Browser utility functions.
    *
    * @namespace
@@ -142,6 +122,26 @@
       $('.js-form-managed-file').removeClass('media--loading');
       if (all) {
         $('.media--loading').removeClass('media--loading');
+      }
+    }
+  };
+
+  /**
+   * Attaches Slick Browser common behavior to HTML element.
+   *
+   * @type {Drupal~behavior}
+   */
+  Drupal.behaviors.slickBrowser = {
+    attach: function (context) {
+      var me = Drupal.slickBrowser;
+
+      $('.sb', context).once('sb').each(me.sb);
+      $('.sb .item-container', context).once('sbItem').each(me.itemContainer);
+      $('.sb--details-hidden', context).once('sbDetails').each(me.sbDetails);
+    },
+    detach: function (context, setting, trigger) {
+      if (trigger === 'unload') {
+        $('.sb .item-container', context).find('.button').off('.sbAction');
       }
     }
   };

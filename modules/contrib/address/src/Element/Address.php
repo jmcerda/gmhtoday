@@ -22,7 +22,6 @@ use Drupal\Core\Render\Element\FormElement;
  * @code
  * $form['address'] = [
  *   '#type' => 'address',
- *   '#title' => $this->t('Address'),
  *   '#default_value' => [
  *     'given_name' => 'John',
  *     'family_name' => 'Smith',
@@ -55,6 +54,7 @@ class Address extends FormElement {
 
       '#input' => TRUE,
       '#multiple' => FALSE,
+      '#default_value' => NULL,
       '#process' => [
         [$class, 'processAddress'],
         [$class, 'processGroup'],
@@ -117,7 +117,7 @@ class Address extends FormElement {
    * @throws \InvalidArgumentException
    *   Thrown when #available_countries or #used_fields is malformed.
    */
-  public static function processAddress(&$element, FormStateInterface $form_state, &$complete_form) {
+  public static function processAddress(array &$element, FormStateInterface $form_state, array &$complete_form) {
     if (isset($element['#available_countries']) && !is_array($element['#available_countries'])) {
       throw new \InvalidArgumentException('The #available_countries property must be an array.');
     }
@@ -146,12 +146,13 @@ class Address extends FormElement {
       $value['country_code'] = key($country_list);
     }
 
-    $element += [
+    $element = [
+      '#tree' => TRUE,
       '#prefix' => '<div id="' . $wrapper_id . '">',
       '#suffix' => '</div>',
       // Pass the id along to other methods.
       '#wrapper_id' => $wrapper_id,
-    ];
+    ] + $element;
     $element['langcode'] = [
       '#type' => 'hidden',
       '#value' => $value['langcode'],
@@ -221,7 +222,8 @@ class Address extends FormElement {
     $locale = \Drupal::languageManager()->getConfigOverrideLanguage()->getId();
     if (LocaleHelper::match($address_format->getLocale(), $locale)) {
       $format_string = $address_format->getLocalFormat();
-    } else {
+    }
+    else {
       $format_string = $address_format->getFormat();
     }
     $grouped_fields = AddressFormatHelper::getGroupedFields($format_string);
@@ -398,6 +400,5 @@ class Address extends FormElement {
 
     return $element;
   }
-
 
 }

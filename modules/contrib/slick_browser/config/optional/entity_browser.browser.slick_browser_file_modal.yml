@@ -2,6 +2,8 @@ uuid: 360d9afd-0c9f-44f5-b24a-c422fa916617
 langcode: und
 status: true
 dependencies:
+  config:
+    - views.view.slick_browser_file
   enforced:
     module:
       - slick_browser

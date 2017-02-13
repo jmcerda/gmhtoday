@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - media_entity.bundle.image
+    - views.view.slick_browser_media
   enforced:
     module:
       - slick_browser

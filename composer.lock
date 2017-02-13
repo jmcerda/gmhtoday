@@ -1768,7 +1768,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/address",
-                "reference": "bca416ec9536f2da14b2407104a0556a23343c92"
+                "reference": "aa0456a4bf6fac8719573b3d3e00d1a8f021462d"
             },
             "require": {
                 "commerceguys/addressing": "~1.0",
@@ -1782,8 +1782,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-rc3+4-dev",
-                    "datestamp": "1485214683"
+                    "version": "8.x-1.0-rc4+0-dev",
+                    "datestamp": "1486736283"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -1808,7 +1808,8 @@
             "homepage": "http://drupal.org/project/address",
             "support": {
                 "source": "http://cgit.drupalcode.org/address"
-            }
+            },
+            "time": "2017-02-10 14:14:54"
         },
         {
             "name": "drupal/admin_toolbar",
@@ -2106,8 +2107,7 @@
             "support": {
                 "source": "https://cgit.drupalcode.org/colorbox",
                 "issues": "https://www.drupal.org/project/colorbox"
-            },
-            "time": "2017-01-09 09:39:17"
+            }
         },
         {
             "name": "drupal/colorbutton",
@@ -5489,17 +5489,17 @@
         },
         {
             "name": "drupal/slick",
-            "version": "1.0.0-rc1",
+            "version": "1.0.0-rc2",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/slick",
-                "reference": "8.x-1.0-rc1"
+                "reference": "8.x-1.0-rc2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/slick-8.x-1.0-rc1.zip",
-                "reference": "8.x-1.0-rc1",
-                "shasum": "5213ea54f562de155a4bc0f196fd024e051d3b75"
+                "url": "https://ftp.drupal.org/files/projects/slick-8.x-1.0-rc2.zip",
+                "reference": null,
+                "shasum": "b649cb01b5238097f8da5fcecc9a599c9be0b11d"
             },
             "require": {
                 "drupal/blazy": "~1.0",
@@ -5511,8 +5511,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-rc1",
-                    "datestamp": "1485194284"
+                    "version": "8.x-1.0-rc2",
+                    "datestamp": "1486728784"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -5547,7 +5547,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/slick_browser",
-                "reference": "eda68697c3d46d972f6b23d851e909d681ef2c00"
+                "reference": "34b286bc3cdc222957a5f7029ef26fe5755fefa6"
             },
             "require": {
                 "drupal/core": "~8.0",
@@ -5585,7 +5585,8 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/slick_browser",
                 "issues": "https://www.drupal.org/project/issues/slick_browser"
-            }
+            },
+            "time": "2017-02-13 02:29:24"
         },
         {
             "name": "drupal/slick_media",
@@ -5633,7 +5634,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/slick_views",
-                "reference": "11c2e332a5afcc23c8d81973742c2de8bb774a3a"
+                "reference": "c17de7ec10c97ca4da084d90473d6832ad3e335b"
             },
             "require": {
                 "drupal/core": "*",
@@ -5645,8 +5646,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-rc1+0-dev",
-                    "datestamp": "1485194583"
+                    "version": "8.x-1.0-rc1+1-dev",
+                    "datestamp": "1486726983"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -5663,7 +5664,8 @@
             "homepage": "https://www.drupal.org/project/slick_views",
             "support": {
                 "source": "http://cgit.drupalcode.org/slick_views"
-            }
+            },
+            "time": "2017-02-10 11:40:20"
         },
         {
             "name": "drupal/superfish",
@@ -7256,16 +7258,16 @@
         },
         {
             "name": "nikic/php-parser",
-            "version": "v3.0.3",
+            "version": "v3.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "5b8182cc0abb4b0ff290ba9df6c0e1323286013a"
+                "reference": "0bf561dfe75ba80441c22adecc0529056671a7d2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/5b8182cc0abb4b0ff290ba9df6c0e1323286013a",
-                "reference": "5b8182cc0abb4b0ff290ba9df6c0e1323286013a",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/0bf561dfe75ba80441c22adecc0529056671a7d2",
+                "reference": "0bf561dfe75ba80441c22adecc0529056671a7d2",
                 "shasum": ""
             },
             "require": {
@@ -7303,7 +7305,7 @@
                 "parser",
                 "php"
             ],
-            "time": "2017-02-03T21:57:31+00:00"
+            "time": "2017-02-10T20:20:03+00:00"
         },
         {
             "name": "pantheon-systems/terminus",

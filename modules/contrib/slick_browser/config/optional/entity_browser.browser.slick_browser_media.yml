@@ -2,6 +2,8 @@ uuid: 17bed42a-3bb3-40cb-b3a9-973c5b086f92
 langcode: und
 status: true
 dependencies:
+  config:
+    - views.view.slick_browser_media
   enforced:
     module:
       - slick_browser

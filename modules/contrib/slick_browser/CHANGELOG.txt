@@ -1,4 +1,10 @@
 
+Slick Browser 8.x-1.0-dev, 2017-02-13
+-------------------------------------
+- #2851867 by Smith76: Can'\''t install with the latest release "Entity browser
+  8.x-1.0-rc1.
+- Positioned the behaviors to bottom.
+
 Slick Browser 8.x-1.0-dev, 2016-12-23
 -------------------------------------
 - Updated to latest Blazy with vanilla JS.
