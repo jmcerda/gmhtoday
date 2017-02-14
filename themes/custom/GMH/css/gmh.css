@@ -4285,6 +4285,11 @@ ul#superfish-main {
   margin: 0 auto; }
   ul#superfish-main li {
     display: inline-block; }
+  ul#superfish-main li:first-child {
+    display: none; }
+    @media screen and (min-width: 64em) {
+      ul#superfish-main li:first-child {
+        display: inline-block; } }
   ul#superfish-main li.sf-depth-2 {
     background-color: #685d1f; }
     ul#superfish-main li.sf-depth-2 a {
