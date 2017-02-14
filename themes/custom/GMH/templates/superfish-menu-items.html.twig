@@ -46,8 +46,8 @@
     {% if item['multicolumn_wrapper'] %}</li></ul>{% endif %}
     {% if item['multicolumn_column'] %}</div>{% endif %}
   </li>
-  {# <div class="menu-issue-space">FORSHIT
-    {{ issues }}
-  </div> #}
+  <div class="menu-issue-space">
+    {{ drupal_view('issues', 'issue_menu_block') }}
+  </div>
 {% endfor %}
 {% endspaceless %}
