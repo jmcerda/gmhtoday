@@ -4428,6 +4428,9 @@ blockquote:after {
   text-align: center; }
   @media screen and (min-width: 40em) {
     .hero_copy {
+      padding: 3em; } }
+  @media screen and (min-width: 64em) {
+    .hero_copy {
       padding: 7rem;
       text-align: left; } }
   .hero_copy h2.fp_slide_title {
@@ -4456,8 +4459,12 @@ blockquote:after {
     padding-top: 8px; }
     @media screen and (min-width: 40em) {
       .hero_copy .fp_slide_link {
-        padding-top: 2.5rem;
+        font-size: 2em;
+        padding-top: 1.5rem;
         bottom: 0px; } }
+    @media screen and (min-width: 64em) {
+      .hero_copy .fp_slide_link {
+        padding-top: 2.5rem; } }
     @media screen and (min-width: 75em) {
       .hero_copy .fp_slide_link {
         padding-top: 2.7rem;
@@ -4467,7 +4474,7 @@ blockquote:after {
       font-size: 1em;
       color: #fff;
       line-height: 1em; }
-      @media screen and (min-width: 40em) {
+      @media screen and (min-width: 64em) {
         .hero_copy .fp_slide_link a {
           font-size: 3em; } }
 

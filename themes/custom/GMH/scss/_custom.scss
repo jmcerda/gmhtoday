@@ -148,6 +148,9 @@ blockquote:after {
 	padding: 20% 2rem;
 	text-align: center;
 	@include breakpoint(medium){
+		padding: 3em;
+	}
+	@include breakpoint(large){
 		padding: 7rem;
 		text-align: left;
 	}
@@ -179,8 +182,12 @@ blockquote:after {
 		line-height: 0;
 		padding-top: 8px;
 		@include breakpoint(medium) {
-			padding-top: 2.5rem;
+			font-size: 2em;
+			padding-top: 1.5rem;
 			bottom: 0px;
+		}
+		@include breakpoint(large) {
+			padding-top: 2.5rem;
 		}
 		@include breakpoint(xlarge) {
 			padding-top: 2.7rem;
@@ -191,7 +198,7 @@ blockquote:after {
 			font-size: 1em;
 			color: #fff;
 			line-height: 1em;
-			@include breakpoint(medium) {
+			@include breakpoint(large) {
 				font-size: 3em;
 			}
 		}
