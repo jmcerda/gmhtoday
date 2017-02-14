@@ -4285,11 +4285,6 @@ ul#superfish-main {
   margin: 0 auto; }
   ul#superfish-main li {
     display: inline-block; }
-  ul#superfish-main li:first-child {
-    display: none; }
-    @media screen and (min-width: 64em) {
-      ul#superfish-main li:first-child {
-        display: inline-block; } }
   ul#superfish-main li.sf-depth-2 {
     background-color: #685d1f; }
     ul#superfish-main li.sf-depth-2 a {
@@ -4297,6 +4292,11 @@ ul#superfish-main {
       font-size: .75em;
       text-align: left;
       text-transform: none; }
+  ul#superfish-main li:first-child {
+    display: none; }
+    @media screen and (min-width: 64em) {
+      ul#superfish-main li:first-child {
+        display: inline-block; } }
 
 .slicknav_btn {
   background-color: #fbfbfb !important; }

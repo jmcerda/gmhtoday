@@ -53,12 +53,6 @@ ul#superfish-main {
 	li {
 		display: inline-block;
 	}
-	li:first-child {
-		display: none;
-		@include breakpoint(large) {
-			display: inline-block;
-		}
-	}
 	li.sf-depth-2 {
 		background-color: $secondary-color;
 		a {
@@ -66,6 +60,12 @@ ul#superfish-main {
 			font-size: .75em;
 			text-align: left;
 			text-transform: none;
+		}
+	}
+	li:first-child {
+		display: none;
+		@include breakpoint(large) {
+			display: inline-block;
 		}
 	}
 }
