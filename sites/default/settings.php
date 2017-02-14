@@ -28,7 +28,8 @@ $settings['install_profile'] = 'lightning';
 $settings['trusted_host_patterns'] = array(
   '^www\.gmhtoday\.net$',
   '^.+\.pantheonsite\.io$',
-  '^gmhtoday\.dd$'
+  '^gmhtoday\.dd$',
+  '^gmhtoday\.com$'
 );
 
 $settings['twig_tweak_enable_php_filter'] = TRUE;
