@@ -27,6 +27,7 @@ $settings['install_profile'] = 'lightning';
 
 $settings['trusted_host_patterns'] = array(
   '^www\.gmhtoday\.net$',
+  '^www\.gmhtoday\.com$',
   '^.+\.pantheonsite\.io$',
   '^gmhtoday\.dd$',
   '^gmhtoday\.com$'
