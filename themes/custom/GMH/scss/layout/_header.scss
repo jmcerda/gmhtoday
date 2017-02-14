@@ -91,3 +91,10 @@
 .slick-cloned {
 	display: none !important;
 }
+
+header {
+	@include breakpoint(medium) {
+		margin-left: 1em;
+		margin-right: 1em;
+	}
+}

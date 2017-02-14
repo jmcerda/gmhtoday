@@ -4148,6 +4148,11 @@ table.hover tbody tr:nth-of-type(even):hover {
 .slick-cloned {
   display: none !important; }
 
+@media screen and (min-width: 40em) {
+  header {
+    margin-left: 1em;
+    margin-right: 1em; } }
+
 footer {
   display: block;
   margin-top: 2em; }
