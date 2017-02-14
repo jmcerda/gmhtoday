@@ -48,7 +48,8 @@
         "drupal/twig_tweak": "^1.5",
         "drupal/colorbox": "^1.2",
         "drupal/colorbox_inline": "^1.0@RC",
-        "drupal/colorbox_load": "^1.0@RC"
+        "drupal/colorbox_load": "^1.0@RC",
+        "drupal/snippet_manager": "^1.0@RC"
     },
     "replace": {
         "drupal/core": "~8.2"

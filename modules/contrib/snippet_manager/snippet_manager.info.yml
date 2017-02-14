@@ -1,0 +1,15 @@
+name: Snippet manager
+type: module
+description: Manages snippets on the site.
+package: custom
+# version: 8.x-1.0-dev
+# core: 8.x
+dependencies:
+  - system (>= 8.2.0)
+configure: entity.snippet.collection
+
+# Information added by Drupal.org packaging script on 2017-02-13
+version: '8.x-1.0-rc4'
+core: '8.x'
+project: 'snippet_manager'
+datestamp: 1486958890
