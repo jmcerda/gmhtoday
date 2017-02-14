@@ -4282,7 +4282,7 @@ footer {
 
 ul#superfish-main {
   font-size: 1.25em;
-  margin: 0 auto; }
+  margin: 0 10px; }
   ul#superfish-main li {
     display: inline-block; }
   ul#superfish-main li.sf-depth-2 {
