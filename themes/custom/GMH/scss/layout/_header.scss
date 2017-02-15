@@ -18,7 +18,8 @@
 .site-branding__text {
 	display: flex;
 	align-items: flex-end;
-    font-size: 1.5em;
+    font-size: 1.3em;
+    // font-size: 1.5em;
     width: 16em;
     line-height: normal;
 }
@@ -33,7 +34,8 @@
       // float: right;
       img {
       	float: right;
-      	height: 100%;
+      	max-height: 180px;
+      	// height: 100%;
       }
     }
 }
