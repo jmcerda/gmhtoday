@@ -29,8 +29,7 @@
 		height: 110px;
 	}
 	@include breakpoint(medium) {
-      height: 150px;
-      // height: 100%;
+      height: 100%;
       // float: right;
       img {
       	float: right;
