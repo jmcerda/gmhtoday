@@ -151,12 +151,12 @@ blockquote:after {
 		padding: 3em;
 	}
 	@include breakpoint(large){
-		padding: 7rem;
+		padding: 5rem;
 		text-align: left;
 	}
 	h2.fp_slide_title {
-		font-size: 1.5rem;
-		line-height: 1.5rem;
+		font-size: 1rem;
+		line-height: 1rem;
 		@include breakpoint(medium){
 			font-size: 2rem;
 			line-height: 2rem;
@@ -199,7 +199,7 @@ blockquote:after {
 			color: #fff;
 			line-height: 1em;
 			@include breakpoint(large) {
-				font-size: 1.5em;
+				font-size: 1em;
 			}
 		}
 	}
