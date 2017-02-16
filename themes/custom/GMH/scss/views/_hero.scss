@@ -5,9 +5,9 @@
 	}
 }
 
-.gmh_front_hero {
-	max-width: 60%;
-}
+// .gmh_front_hero {
+// 	max-width: 60%;
+// }
 
 .block-region-hero {
 	@include breakpoint(medium) {
@@ -102,9 +102,9 @@
 #hero_front_gmh {
   height: 100%;
   background: $off-white-background;
-  @include breakpoint(large) {
-  	width: 60%;
-  }
+  // @include breakpoint(large) {
+  // 	width: 60%;
+  // }
   img {
   	float: right;
   	border-radius: 50%;
