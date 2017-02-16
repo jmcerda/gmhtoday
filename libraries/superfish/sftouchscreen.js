@@ -17,6 +17,7 @@
     options = $.extend({
       mode: 'inactive',
       breakpoint: 640,
+      // breakpoint: 768,
       breakpointUnit: 'px',
       useragent: '',
       behaviour: 2,
