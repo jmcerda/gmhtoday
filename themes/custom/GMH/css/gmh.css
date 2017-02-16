@@ -4642,9 +4642,12 @@ blockquote::before, blockquote::after {
   .gmh_first_hero {
     padding-top: 3em; } }
 
+.gmh_front_hero {
+  max-width: 60%; }
+
 @media screen and (min-width: 40em) {
   .block-region-hero {
-    margin-top: 2em; } }
+    margin-top: 1em; } }
 
 .hero_left {
   position: absolute;

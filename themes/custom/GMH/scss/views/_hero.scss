@@ -5,9 +5,13 @@
 	}
 }
 
+.gmh_front_hero {
+	max-width: 60%;
+}
+
 .block-region-hero {
 	@include breakpoint(medium) {
-		margin-top: 2em;
+		margin-top: 1em;
 	}
 }
 
