@@ -4677,7 +4677,7 @@ blockquote::before, blockquote::after {
       padding: 3em; } }
   @media screen and (min-width: 64em) {
     .hero_copy {
-      padding: 4rem;
+      padding: 5rem;
       text-align: left; } }
   .hero_copy h2.fp_slide_title {
     font-size: 1rem;
