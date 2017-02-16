@@ -30,12 +30,6 @@ blockquote:after {
 	box-shadow: 5px 5px 25px 0px rgba(0,0,0,0.33);
 }
 
-.gmh_first_hero {
-	@include breakpoint(medium){
-		padding-top: 3em;
-	}
-}
-
 #latest_front_gmh {
 	background-color: $light-blue-background;
 }
@@ -111,94 +105,6 @@ blockquote:after {
     }
 }
 
-.block-region-hero {
-	@include breakpoint(medium) {
-		margin-top: 2em;
-	}
-}
-
-.hero_left {
-	position: absolute;
-  	width: 30%;
-  	margin-top: 1%;
-  	@include breakpoint(medium) {
-  		margin-top: 1.5%;
-  	}
-}
-
-
-.hero_copy_wrapper {
-  width: 50% !important;
-  padding-bottom: 50%;
-  position: relative;
-}
-.hero_copy {
-  	position: absolute;
-  	top: 0; bottom: 0; left: 0; right: 0;
-  	border-radius: 50%;
-	background-color: $alert-color;
-	padding: 20% 2rem;
-	text-align: center;
-	@include breakpoint(medium){
-		padding: 3em;
-	}
-	@include breakpoint(large){
-		padding: 5rem;
-		text-align: left;
-	}
-	h2.fp_slide_title {
-		font-size: 1rem;
-		line-height: 1rem;
-		@include breakpoint(medium){
-			font-size: 2rem;
-			line-height: 2rem;
-		}
-		@include breakpoint(xlarge){
-			font-size: 3rem;
-			line-height: 3rem;
-		}
-	}
-	h2, p {
-		color: #fff;
-	}
-	.fp_slide_body {}
-	.fp_slide_link {
-		position: absolute;
-		bottom: -1em;
-		right: 0;
-		height: 30%;
-		width: 30%;
-		background-color: #000;
-		border-radius: 50%;
-		text-align: center;
-		line-height: 0;
-		padding-top: 8px;
-		@include breakpoint(medium) {
-			font-size: 2em;
-			padding-top: 1.5rem;
-			bottom: 0px;
-		}
-		@include breakpoint(large) {
-			padding-top: 2.5rem;
-		}
-		@include breakpoint(xlarge) {
-			padding-top: 2.7rem;
-			bottom: -40px;
-		}
-		a {
-			font-family: $header-font-family;
-			font-size: 1em;
-			color: #fff;
-			line-height: 1em;
-			@include breakpoint(large) {
-				font-size: 1em;
-			}
-		}
-	}
-}
-
-
-
 h2 {
 	line-height: 1;
 	@include breakpoint(medium) {
@@ -206,41 +112,6 @@ h2 {
 	}
 }
 
-.path-frontpage {
-
-}
-
-// .hero_left {
-// 	position: absolute;
-// 	margin-top: 3em;
-// }
-// .hero_copy {
-// 	border-radius: 50%;
-// 	background-color: $alert-color;
-// 	position: absolute;
-// 	width: 500px;
-//     height: 500px;
-// 	padding: 5em;
-// 	h2, p {
-// 		color: #fff;
-// 	}
-// 	.fp_slide_link {
-// 		position: absolute;
-// 		bottom: -40px;
-// 		right: 0;
-// 		height: 172px;
-// 		width: 172px;
-// 		background-color: #000;
-// 		border-radius: 50%;
-// 		text-align: center;
-// 		padding-top: 2.7em;
-// 		a {
-// 			font-size: 2.5em;
-// 			color: #fff;
-// 			line-height: 1em;
-// 		}
-// 	}
-// }
 @include breakpoint(medium) {
 	#testimonials_front_gmh {
 		margin: 2em auto;
@@ -427,13 +298,6 @@ h2 {
 
 .button.success {
 	background-color: $primary-color;
-}
-
-.hero_copy p {
-	display: none;
-	@include breakpoint(medium) {
-		display: block;
-	}
 }
 
 .user-header-pub img {

@@ -40,37 +40,6 @@
     }
 }
 
-#hero_front_gmh {
-  height: 100%;
-  background: $off-white-background;
-  @include breakpoint(large) {
-  	width: 60%;
-  }
-  img {
-  	float: right;
-  	border-radius: 50%;
-  }
-  margin-bottom: 2em;
-}
-.slicknav_btn {
-  background-color: transparent !important;
-  margin: -8em 1em 6px 5px !important;
-}
-.slicknav_icon-bar {
-  background-color: $primary-color !important;
-}
-
-
-#gmh_page_hero {
-	margin-top: 1em;
-	max-height: 400px;
-	overflow: hidden;
-}
-
-#block-gmh-page-title h1 {
-	margin-top: 1em;
-}
-
 .gmh-search {
 	margin-top: 1em;
 }
