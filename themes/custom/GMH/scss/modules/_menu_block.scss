@@ -48,6 +48,12 @@
 
 ul#superfish-main {
 	// width: 100%;
+	@include breakpoint(medium) {
+		margin-right: 7em;
+	}
+	@include breakpoint(large) {
+		margin-right: 0em;
+	}
 	font-size: .9em;
 	// font-size: 1.25em;
 	margin: 0 10px;
