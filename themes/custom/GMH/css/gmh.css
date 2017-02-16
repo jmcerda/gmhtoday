@@ -4287,6 +4287,9 @@ ul#superfish-main {
 .slicknav_btn {
   background-color: #fbfbfb !important; }
 
+#main {
+  background-color: #fbfbfb; }
+
 blockquote {
   margin: 1rem 0 1rem;
   border-left: 0; }
