@@ -16,7 +16,7 @@
   $.fn.sftouchscreen = function(options){
     options = $.extend({
       mode: 'inactive',
-      breakpoint: 768,
+      breakpoint: 640,
       breakpointUnit: 'px',
       useragent: '',
       behaviour: 2,
