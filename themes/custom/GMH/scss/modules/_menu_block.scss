@@ -48,7 +48,8 @@
 
 ul#superfish-main {
 	// width: 100%;
-	font-size: 1.25em;
+	font-size: .9em;
+	// font-size: 1.25em;
 	margin: 0 10px;
 	li {
 		display: inline-block;
@@ -72,3 +73,15 @@ ul#superfish-main {
 .slicknav_btn {
 	background-color: $off-white-background !important;
 }
+
+// .sf-accordion-toggle {
+// 	display: none;
+// }
+
+
+// #block-mainnavigation {
+// 	display: none;
+// 	@include breakpoint(medium) {
+// 		display: block;
+// 	}
+// }
