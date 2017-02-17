@@ -36,18 +36,18 @@ blockquote:after {
 
 
 #ads_front_gmh {
-	background-color: $off-white-background;
+	background-color: $light-blue-background;
 }
 
 .latest-issues-front {
 	margin-top: 2em;
 	text-align: center;
 	margin-bottom: 2em;
-  @include breakpoint(large) {
-  	.column {
-  		padding: 2em 5em;
-  	}
-  }
+    @include breakpoint(large) {
+      .column {
+          padding: 2em 5em;
+      }
+    }
 	.latest-issue-date {
 		color: $primary-color;
 		text-transform: uppercase;
