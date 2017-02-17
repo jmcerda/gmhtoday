@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" autoUpload="Always" serverName="gmh-today-dev">
+  <component name="PublishConfigData" autoUpload="Always" serverName="gmh-today-dev" uploadOnCheckin="a1071a6f-09f0-4190-828c-80161cf245da">
     <serverData>
       <paths name="gmh-today-dev">
         <serverdata>
@@ -10,6 +10,7 @@
         </serverdata>
       </paths>
     </serverData>
+    <option name="myUploadOnCheckinName" value="gmh-today-dev" />
     <option name="myAutoUpload" value="ALWAYS" />
   </component>
 </project>
