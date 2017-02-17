@@ -24,8 +24,8 @@
         autoplay: false,
         dots: true,
         mobileFirst: true,
-        infinite: false,
-        adaptiveHeight: true
+        infinite: false
+        // adaptiveHeight: true
         // onAfterChange: function(slide, index){
         //   if(index == 1){
         //     $('.single-item').slickPause();
