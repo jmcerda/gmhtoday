@@ -1526,6 +1526,10 @@ input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
   color: #cacaca; }
 
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  color: #cacaca; }
+
 input:-ms-input-placeholder,
 textarea:-ms-input-placeholder {
   color: #cacaca; }
@@ -4149,11 +4153,10 @@ footer {
     footer .footer_contact h2 {
       color: #c35019; }
   footer li {
-    list-style: none;
-    border-bottom: 1px dashed #fff;
-    width: 60%; }
+    list-style: none; }
   footer a {
-    font-weight: bold; }
+    font-weight: bold;
+    border-bottom: 1px dashed #fff; }
   footer .footer_advertising {
     height: 250px; }
   footer #block-advertisinginfo h2 {
