@@ -186,7 +186,11 @@ h2 {
 			width: 60%;
 			margin: 0 auto;
 			position: relative;
-			top: -200px;
+			top: -10em;
+		}
+		@include breakpoint(large) {
+			width: 60%;
+			top: -13em;
 		}
 	}
 	// Logos.
@@ -209,8 +213,8 @@ h2 {
 			display: inline-block;
 			width: 50%;
 			height: 30px;
-			padding: 2.5em;
-			margin: 0;
+			// padding: 2.5em;
+			margin: 0 auto 2.5em;
 		}
 	}
 	@include breakpoint(medium) {
@@ -278,7 +282,10 @@ h2 {
 			width: 70%;
 			margin: 0 auto;
 			position: relative;
-			top: -140px;
+			top: -7em;
+		}
+		@include breakpoint(large) {
+			top: -10em;
 		}
 	}
 }
