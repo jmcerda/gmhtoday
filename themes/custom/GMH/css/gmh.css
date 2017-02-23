@@ -4080,7 +4080,8 @@ table.hover tbody tr:nth-of-type(even):hover {
   animation-delay: 700ms !important; }
 
 .gmh_header_background {
-  background: #fbfbfb; }
+  background: #fbfbfb;
+  margin-bottom: 3em; }
 
 .brand_parent {
   display: -ms-flexbox;
