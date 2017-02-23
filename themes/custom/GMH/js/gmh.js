@@ -11,7 +11,7 @@
       //Slick Slider
       $('.single-item').slick({
         autoplay: true,
-        dots: true,
+        dots: false,
         mobileFirst: true,
         infinite: false
         // onAfterChange: function(slide, index){
