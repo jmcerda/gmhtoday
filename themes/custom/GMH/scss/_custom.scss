@@ -374,9 +374,12 @@ blockquote::before, blockquote::after {
 .off-canvas-content {
 	background-color: $off-white-background;
 }
-.slick-prev:before {
+.single-item.slick-slider {
+	padding: 0 3em;
+}
+.single-item .slick-prev:before {
 	content: url("../images/icons/arrow_left.svg");
 }
-.slick-next:before{
+.single-item .slick-next:before{
 	content: url("../images/icons/arrow_right.svg");
 }
