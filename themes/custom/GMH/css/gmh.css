@@ -4189,6 +4189,8 @@ footer {
       content: url("../images/icons/message.svg"); }
     footer #block-gmh-footer ul li:nth-child(4):before {
       content: url("../images/icons/blog.svg"); }
+    footer #block-gmh-footer ul li:nth-child(3):before {
+      content: url("../images/icons/facebook.svg"); }
   @media screen and (min-width: 40em) {
     footer .footer_quicklinks {
       border-top-right-radius: 10% 100%;
