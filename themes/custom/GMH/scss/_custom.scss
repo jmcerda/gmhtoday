@@ -375,11 +375,17 @@ blockquote::before, blockquote::after {
 	background-color: $off-white-background;
 }
 .single-item.slick-slider {
-	padding: 0 3em;
+	@include breakpoint(large) {
+		padding: 0 3em;
+	}
 }
-.single-item .slick-prev:before {
-	content: url("../images/icons/arrow_left.svg");
-}
-.single-item .slick-next:before{
-	content: url("../images/icons/arrow_right.svg");
+.single-item {
+	@include breakpoint(large) {
+		.slick-prev:before {
+			content: url("../images/icons/arrow_left.svg");
+		}
+		.single-item .slick-next:before {
+			content: url("../images/icons/arrow_right.svg");
+		}
+	}
 }
