@@ -384,7 +384,7 @@ blockquote::before, blockquote::after {
 		.slick-prev:before {
 			content: url("../images/icons/arrow_left.svg");
 		}
-		.single-item .slick-next:before {
+		.slick-next:before {
 			content: url("../images/icons/arrow_right.svg");
 		}
 	}

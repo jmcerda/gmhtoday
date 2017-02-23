@@ -4618,7 +4618,7 @@ blockquote::before, blockquote::after {
 @media screen and (min-width: 64em) {
   .single-item .slick-prev:before {
     content: url("../images/icons/arrow_left.svg"); }
-  .single-item .single-item .slick-next:before {
+  .single-item .slick-next:before {
     content: url("../images/icons/arrow_right.svg"); } }
 
 .node--type-issue #block-gmh-page-title h1 {
