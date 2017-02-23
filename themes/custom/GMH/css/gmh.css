@@ -4611,6 +4611,12 @@ blockquote::before, blockquote::after {
 .off-canvas-content {
   background-color: #fbfbfb; }
 
+.slick-prev:before {
+  content: url("../images/icons/arrow_left.svg"); }
+
+.slick-next:before {
+  content: url("../images/icons/arrow_right.svg"); }
+
 .node--type-issue #block-gmh-page-title h1 {
   margin-top: 0; }
 
