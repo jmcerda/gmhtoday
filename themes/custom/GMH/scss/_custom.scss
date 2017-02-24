@@ -119,7 +119,7 @@ h2 {
 }
 // Proud Supporters of (homepage).
 #partners_front_gmh {
-	background-color: #e3e4e5;
+	// background-color: $off-white-background;
 	margin: 2em auto;
 	@include breakpoint(medium) {
 		.medium-5 {
@@ -160,6 +160,7 @@ h2 {
 	margin-bottom: 4em;
 }
 .block-region-partners {
+	background-color: #e3e4e5;
 	padding: 0 2em;
 	// width: 60%;
 
