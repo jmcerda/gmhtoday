@@ -4404,6 +4404,7 @@ h2 {
     margin: 2em auto; } }
 
 #partners_front_gmh {
+  background-color: #e3e4e5;
   margin: 2em auto; }
   @media screen and (min-width: 40em) {
     #partners_front_gmh .medium-5 {
@@ -4439,7 +4440,6 @@ h2 {
   margin-bottom: 4em; }
 
 .block-region-partners {
-  background-color: #e3e4e5;
   padding: 0 2em; }
   @media screen and (min-width: 40em) {
     .block-region-partners {

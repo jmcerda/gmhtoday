@@ -30,7 +30,8 @@ $settings['trusted_host_patterns'] = array(
   '^www\.gmhtoday\.com$',
   '^.+\.pantheonsite\.io$',
   '^gmhtoday\.dd$',
-  '^gmhtoday\.com$'
+  '^gmhtoday\.com$',
+  '^gmh-today\.kbox\.site$'
 );
 
 $settings['twig_tweak_enable_php_filter'] = TRUE;
