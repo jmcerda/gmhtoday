@@ -4098,14 +4098,14 @@ table.hover tbody tr:nth-of-type(even):hover {
   display: flex;
   -ms-flex-align: end;
       align-items: flex-end;
-  font-size: 1.2em;
+  font-size: 1.55em;
   width: 16em;
   line-height: normal; }
 
 #block-gmh-branding {
-  height: 150px; }
+  height: 210px; }
   #block-gmh-branding img {
-    height: 150px; }
+    max-height: 210px; }
   @media screen and (min-width: 40em) {
     #block-gmh-branding {
       height: 100%; }

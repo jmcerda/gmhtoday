@@ -19,16 +19,20 @@
 .site-branding__text {
 	display: flex;
 	align-items: flex-end;
-    font-size: 1.2em;
-    // font-size: 1.5em;
+    // font-size: 1.2em;
+    font-size: 1.55em;
     width: 16em;
     line-height: normal;
 }
 
 #block-gmh-branding {
-	height: 150px;
+	// height: 150px;
+	// img {
+	// 	height: 150px;
+	// }
+	height: 210px;
 	img {
-		height: 150px;
+		max-height: 210px;
 	}
 	@include breakpoint(medium) {
       height: 100%;
