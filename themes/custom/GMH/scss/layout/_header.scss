@@ -26,20 +26,16 @@
 }
 
 #block-gmh-branding {
-	// height: 150px;
-	// img {
-	// 	height: 150px;
-	// }
-	height: 210px;
+	height: 150px;
 	img {
-		max-height: 210px;
+		height: 150px;
 	}
 	@include breakpoint(medium) {
       height: 100%;
       // float: right;
       img {
       	float: right;
-      	max-height: 180px;
+      	max-height: 210px;
       	// height: 100%;
       }
     }

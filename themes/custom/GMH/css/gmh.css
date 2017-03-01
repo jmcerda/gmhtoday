@@ -4103,15 +4103,15 @@ table.hover tbody tr:nth-of-type(even):hover {
   line-height: normal; }
 
 #block-gmh-branding {
-  height: 210px; }
+  height: 150px; }
   #block-gmh-branding img {
-    max-height: 210px; }
+    height: 150px; }
   @media screen and (min-width: 40em) {
     #block-gmh-branding {
       height: 100%; }
       #block-gmh-branding img {
         float: right;
-        max-height: 180px; } }
+        max-height: 210px; } }
 
 .gmh-search {
   margin-top: 1em; }
