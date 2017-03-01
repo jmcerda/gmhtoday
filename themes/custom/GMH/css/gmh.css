@@ -4460,13 +4460,15 @@ h2 {
         font-size: 2.5em; } }
   @media screen and (min-width: 40em) {
     .block-region-partners section {
-      width: 70%;
+      width: 80%;
       margin: 0 auto;
       position: relative;
       top: -10em; } }
   @media screen and (min-width: 64em) {
     .block-region-partners section {
       top: -13em; } }
+  .block-region-partners section div {
+    margin-top: 30px; }
   .block-region-partners .logo {
     display: block;
     width: 100%;

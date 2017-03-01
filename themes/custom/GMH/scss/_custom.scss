@@ -183,7 +183,7 @@ h2 {
 	}
 	section {
 		@include breakpoint(medium) {
-			width: 70%;
+			width: 80%;
 			margin: 0 auto;
 			position: relative;
 			top: -10em;
@@ -191,6 +191,9 @@ h2 {
 		@include breakpoint(large) {
 			// width: 60%;
 			top: -13em;
+		}
+		div {
+			margin-top: 30px;
 		}
 	}
 	// Logos.
