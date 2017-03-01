@@ -53,9 +53,10 @@ ul#superfish-main {
 	}
 	@include breakpoint(large) {
 		margin-right: 0em;
+		margin-left: 3em;
 	}
-	font-size: .9em;
-	// font-size: 1.25em;
+	// font-size: .9em;
+	font-size: 1.25em;
 	margin: 0 10px;
 	li {
 		display: inline-block;

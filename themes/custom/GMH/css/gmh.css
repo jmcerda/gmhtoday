@@ -4267,14 +4267,15 @@ footer {
       font-weight: bold; }
 
 ul#superfish-main {
-  font-size: .9em;
+  font-size: 1.25em;
   margin: 0 10px; }
   @media screen and (min-width: 40em) {
     ul#superfish-main {
       margin-right: 7em; } }
   @media screen and (min-width: 64em) {
     ul#superfish-main {
-      margin-right: 0em; } }
+      margin-right: 0em;
+      margin-left: 3em; } }
   ul#superfish-main li {
     display: inline-block; }
   ul#superfish-main li.sf-depth-2 {
