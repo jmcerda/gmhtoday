@@ -4593,7 +4593,10 @@ blockquote::before, blockquote::after {
   display: none; }
 
 .testimonial_credits {
-  padding-left: 20px !important; }
+  padding-left: 20px !important;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  color: #685d1f; }
 
 .distributor-block {
   padding: 0 1em; }
