@@ -4111,7 +4111,7 @@ table.hover tbody tr:nth-of-type(even):hover {
       height: 100%; }
       #block-gmh-branding img {
         float: right;
-        max-height: 210px; } }
+        min-height: 210px; } }
 
 .gmh-search {
   margin-top: 1em; }
