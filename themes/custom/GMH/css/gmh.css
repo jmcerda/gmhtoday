@@ -4525,10 +4525,12 @@ h2 {
     font-size: 2.5em; }
     @media screen and (min-width: 40em) {
       .block-region-events h2 {
-        font-size: 2em; } }
+        font-size: 1.5em;
+        line-height: 1em; } }
     @media screen and (min-width: 64em) {
       .block-region-events h2 {
-        font-size: 2.5em; } }
+        font-size: 2.5em;
+        line-height: 1.5em; } }
   .block-region-events a {
     color: #ffffff !important;
     font-weight: bold; }
