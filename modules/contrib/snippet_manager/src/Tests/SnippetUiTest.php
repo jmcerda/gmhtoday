@@ -73,7 +73,7 @@ class SnippetUiTest extends TestBase {
    */
   protected function testSnippetVariableForm() {
 
-    $this->drupalGet('admin/structure/snippet/alpha/edit');
+    $this->drupalGet('admin/structure/snippet/alpha/edit/template');
     $this->assertLink(t('Add variable'));
     $this->assertLinkByHref('/admin/structure/snippet/alpha/edit/variable/add');
 
@@ -112,7 +112,7 @@ class SnippetUiTest extends TestBase {
 
     $this->assertUrl('/admin/structure/snippet/alpha/edit/variable/bar/edit');
 
-    $this->drupalGet('admin/structure/snippet/alpha/edit');
+    $this->drupalGet('admin/structure/snippet/alpha/edit/template');
 
     $expected_header = [
       t('Name'),
@@ -162,7 +162,7 @@ class SnippetUiTest extends TestBase {
     $this->assertLinkByHref('/admin/structure/snippet/alpha/edit');
     $this->drupalPostForm(NULL, [], t('Delete'));
     $this->assertStatusMessage(t('The variable has been removed.'));
-    $this->assertUrl('/admin/structure/snippet/alpha/edit');
+    $this->assertUrl('/admin/structure/snippet/alpha/edit/template');
     $this->assertText(t('Variables are not configured yet.'));
   }
 
@@ -180,32 +180,6 @@ class SnippetUiTest extends TestBase {
     $this->assertEqual($textarea->h3[0], 'Hello world!');
     $this->assertEqual($textarea->div->b[0], 8);
     $this->assertPattern('#<div class="snippet-render-time">Render time: <em class="placeholder">.*</em> ms</div>#');
-  }
-
-  /**
-   * Tests snippet form redirect setting.
-   */
-  protected function testSnippetFormRedirectSetting() {
-    $this->drupalPostForm('/admin/structure/snippet/alpha/edit', [], t('Save'));
-    $this->assertUrl('/admin/structure/snippet/alpha');
-
-    /** @var \Drupal\Core\Config\Config $config */
-    $config = \Drupal::service('config.factory')
-      ->getEditable('snippet_manager.settings');
-
-    $config
-      ->set('redirect_page', 'edit-form')
-      ->save();
-
-    $this->drupalPostForm('/admin/structure/snippet/alpha/edit', [], t('Save'));
-    $this->assertUrl('/admin/structure/snippet/alpha/edit');
-
-    $config
-      ->set('redirect_page', 'source')
-      ->save();
-
-    $this->drupalPostForm('/admin/structure/snippet/alpha/edit', [], t('Save'));
-    $this->assertUrl('/admin/structure/snippet/alpha/source');
   }
 
 }

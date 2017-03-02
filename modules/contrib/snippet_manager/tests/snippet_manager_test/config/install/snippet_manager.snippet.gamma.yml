@@ -3,7 +3,7 @@ status: true
 dependencies: {  }
 id: gamma
 label: Gamma
-code:
+template:
   value: "<ol class=\"default-context\">\r\n  <li>{{ theme }}</li>\r\n  <li>{{ theme_directory }}</li>\r\n  <li>{{ base_path }}</li>\r\n  <li>{{ front_page }}</li>\r\n  <li>{{ is_front }}</li>\r\n  <li>{{ is_admin }}</li>\r\n  <li>{{ logged_in }}</li>\r\n  <li>{{ foo }}</li>\r\n  <li>{{ bar }}</li></ol>"
   format: snippet_manager_test_basic_format
 variables: {  }

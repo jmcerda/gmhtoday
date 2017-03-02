@@ -3,7 +3,7 @@
 namespace Drupal\snippet_manager\Tests;
 
 /**
- * Tests snippet access.
+ * Snippet access test.
  *
  * @group snippet_manager
  */
@@ -36,7 +36,7 @@ class SnippetAccessTest extends TestBase {
     }
 
     // Test that unprilivged user has no access to snippet manager pages.
-    $web_user = $this->drupalCreateUser(['view published snippets']);
+    $web_user = $this->drupalCreateUser();
     $this->drupalLogin($web_user);
     foreach ($pages as $page) {
       $this->drupalGet($page);

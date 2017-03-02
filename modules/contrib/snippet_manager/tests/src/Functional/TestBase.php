@@ -14,24 +14,42 @@ abstract class TestBase extends BrowserTestBase {
    */
   public static $modules = ['snippet_manager', 'snippet_manager_test'];
 
+  protected $permissions = [
+    'administer snippets',
+    'use text format snippet_manager_test_restricted_format',
+    'use text format snippet_manager_test_basic_format',
+  ];
+
+  protected $snippetId;
+  protected $snippetLabel;
+  protected $snippetUrl;
+
   /**
    * {@inheritdoc}
    */
   protected function setUp() {
     parent::setUp();
 
-    // Redirect to canonical to check snippet content immediately.
-    \Drupal::service('config.factory')
-      ->getEditable('snippet_manager.settings')
-      ->set('redirect_page', 'canonical')
-      ->save();
+    $user = $this->drupalCreateUser($this->permissions);
+    $this->drupalLogin($user);
 
-    $admin_user = $this->drupalCreateUser([
-      'administer snippets',
-      'use text format snippet_manager_test_restricted_format',
-      'use text format snippet_manager_test_basic_format',
-    ]);
-    $this->drupalLogin($admin_user);
+    $this->snippetId = strtolower($this->randomMachineName());
+    $this->snippetLabel = $this->snippetId;
+    $this->snippetUrl = 'admin/structure/snippet/' . $this->snippetId;
+
+    $edit = [
+      'id' => $this->snippetId,
+      'label' => $this->snippetLabel,
+    ];
+    $this->drupalPostForm('admin/structure/snippet/add', $edit, 'Save');
+
+    $this->drupalGet($this->snippetUrl);
+
+    $edit = [
+      'template[value]' => '<div class="snippet-test">{{ 3 * 3 }}</div>',
+      'template[format]' => 'snippet_manager_test_basic_format',
+    ];
+    $this->drupalPostForm($this->snippetUrl . '/edit/template', $edit, 'Save');
   }
 
   /**
@@ -80,14 +98,16 @@ abstract class TestBase extends BrowserTestBase {
     }
     $wrapper = $this->xpath($xpath);
     if (!empty($wrapper[0])) {
+      unset($wrapper[0]->h2);
+      $items = $wrapper[0]->findAll('xpath', '/ul/li');
+
       // Multiple messages are rendered with an HTML list.
-      if (isset($wrapper[0]->ul)) {
-        foreach ($wrapper[0]->ul->li as $li) {
-          $messages[] = $get_message($li);
+      if ($items) {
+        foreach ($items as $item) {
+          $messages[] = $get_message($item);
         }
       }
       else {
-        unset($wrapper[0]->h2);
         $messages[] = $get_message($wrapper[0]);
       }
     }

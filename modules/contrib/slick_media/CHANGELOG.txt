@@ -1,4 +1,8 @@
 
+Slick Media 8.x-1.0-dev, 2017-02-13
+-----------------------------------
+- #2852030 by mtodor: Cleanup default configuration.
+
 Slick Media 8.x-1.0-dev, 2016-12-27
 -----------------------------------
 - Marked it Beta7.

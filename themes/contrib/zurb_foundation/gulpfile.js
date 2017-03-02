@@ -20,10 +20,10 @@ gulp.task('sass', function() {
 });
 
 gulp.task('copy', function() {
-  gulp.src('bower_components/foundation-sites/dist/*.css')
-    .pipe($.copy('css', {prefix: 3}));
-  gulp.src('bower_components/foundation-sites/dist/*.js')
-    .pipe($.copy('js', {prefix: 3}));
+  gulp.src('bower_components/foundation-sites/dist/css/*.css')
+    .pipe($.copy('css', {prefix: 4}));
+  gulp.src('bower_components/foundation-sites/dist/js/*.js')
+    .pipe($.copy('js', {prefix: 4}));
   gulp.src('bower_components/motion-ui/dist/*.css')
     .pipe($.copy('css', {prefix: 3}));
   gulp.src('bower_components/motion-ui/dist/*.js')

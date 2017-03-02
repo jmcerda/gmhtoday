@@ -31,13 +31,17 @@ class UrlVariableTest extends TestBase {
 
     $this->assertStatusMessage('The variable has been updated.');
 
+    $this->drupalGet('admin/structure/snippet/alpha/edit/template');
+
     $label = $this->xpath('//main//table/tbody/tr/td[position() = 1]/a[@href="#snippet-edit-form" and text() = "url"]');
     $this->assertTrue($label, 'Valid snippet variable label was found');
 
     $edit = [
-      'code[value]' => '<div class="snippet-url">{{ url }}</div>',
+      'template[value]' => '<div class="snippet-url">{{ url }}</div>',
     ];
-    $this->drupalPostForm(NULL, $edit, 'Save');
+    $this->drupalPostForm('admin/structure/snippet/alpha/edit/template', $edit, 'Save');
+
+    $this->drupalGet('admin/structure/snippet/alpha');
 
     $url = base_path() . $path;
     $this->assertByXpath("//div[@class='snippet-url' and text()='$url']");

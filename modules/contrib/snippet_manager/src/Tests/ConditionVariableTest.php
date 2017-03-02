@@ -38,7 +38,7 @@ class ConditionVariableTest extends TestBase {
     $this->drupalPostForm('admin/structure/snippet/alpha/edit/variable/node_page/edit', $edit, 'Save');
 
     $edit = [
-      'code[value]' => "{% if node_page %}Foo{% else %}Bar{% endif %}",
+      'template[value]' => "{% if node_page %}Foo{% else %}Bar{% endif %}",
     ];
     $this->drupalPostForm(NULL, $edit, 'Save');
 

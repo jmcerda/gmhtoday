@@ -4,8 +4,8 @@ namespace Drupal\snippet_manager\EventSubscriber;
 
 use Drupal\Core\Render\PageDisplayVariantSelectionEvent;
 use Drupal\Core\Render\RenderEvents;
-use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Drupal\snippet_manager\SnippetInterface;
+use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 
 /**
  * Selects the display variant for snippet pages.

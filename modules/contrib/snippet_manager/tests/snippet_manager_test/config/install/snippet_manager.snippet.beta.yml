@@ -3,7 +3,7 @@ status: true
 dependencies: {  }
 id: beta
 label: Beta
-code:
+template:
   value: '<div class="snippet-main-content">-= {{ main_content | render | striptags | upper }} =-</div>'
   format: snippet_manager_test_basic_format
 variables: {  }
@@ -14,6 +14,3 @@ page:
   display_variant:
     id: ''
   theme: ''
-block:
-  status: true
-  name: bar

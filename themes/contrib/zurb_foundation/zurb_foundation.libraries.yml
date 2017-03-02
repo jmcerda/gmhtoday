@@ -7,6 +7,7 @@ global:
       css/zurb_foundation.css: {}
   js:
     js/foundation.min.js: {}
+    js/foundation_init.js: {}
     js/top_bar_active.js: {}
     js/motion-ui.min.js: {}
   dependencies:

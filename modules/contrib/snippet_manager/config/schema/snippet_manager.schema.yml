@@ -18,9 +18,6 @@ snippet_manager.settings:
         theme:
           type: string
           label: CodeMirror theme
-    redirect_page:
-      type: string
-      label: Redirect page
 
 snippet_manager.snippet.*:
   type: config_entity
@@ -34,29 +31,6 @@ snippet_manager.snippet.*:
     label:
       type: label
       label: Label
-    code:
-      type: mapping
-      label: Code
-      mapping:
-        value:
-          label: Code
-          type: string
-        format:
-          label: Format
-          type: string
-    variables:
-      label: Variables
-      type: sequence
-      sequence:
-        type: mapping
-        label: Variable settings
-        mapping:
-          plugin_id:
-            type: string
-            label: Plugin ID
-          configuration:
-            type: snippet_manager_variable_settings.[%parent.plugin_id]
-            label: Configuration
     page:
       type: mapping
       label: Page settings
@@ -113,6 +87,58 @@ snippet_manager.snippet.*:
           sequence:
             type: string
             label: Role ID
+    template:
+      type: mapping
+      label: Template
+      mapping:
+        value:
+          label: Value
+          type: string
+        format:
+          label: Format
+          type: string
+    css:
+      type: mapping
+      label: CSS
+      mapping:
+        status:
+          type: boolean
+          label: Status
+        value:
+          label: Code
+          type: string
+        format:
+          label: Format
+          type: string
+        group:
+          label: Group
+          type: string
+    js:
+      type: mapping
+      label: JS
+      mapping:
+        status:
+          type: boolean
+          label: Status
+        value:
+          label: Code
+          type: string
+        format:
+          label: Format
+          type: string
+    variables:
+      label: Variables
+      type: sequence
+      sequence:
+        type: mapping
+        label: Variable settings
+        mapping:
+          plugin_id:
+            type: string
+            label: Plugin ID
+          configuration:
+            type: snippet_manager_variable_settings.[%parent.plugin_id]
+            label: Configuration
 
 # Drupal core does not provide schema for this plugin.
 # @see https://www.drupal.org/node/2787529

@@ -3,12 +3,12 @@
 namespace Drupal\snippet_manager\Plugin\SnippetVariable;
 
 use Drupal\Core\Form\FormStateInterface;
-use Drupal\Core\Menu\MenuActiveTrailInterface;
 use Drupal\Core\Menu\MenuLinkTreeInterface;
 use Drupal\Core\Plugin\ContainerFactoryPluginInterface;
 use Drupal\snippet_manager\SnippetVariableBase;
 use Drupal\snippet_manager\SnippetVariableInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
+use Drupal\Core\Entity\EntityTypeManagerInterface;
 
 /**
  * Provides Menu variable type.
@@ -23,18 +23,19 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
 class Menu extends SnippetVariableBase implements SnippetVariableInterface, ContainerFactoryPluginInterface {
 
   /**
+   * The entity type manager.
+   *
+   * @var \Drupal\Core\Entity\EntityTypeManagerInterface
+   */
+  protected $entityTypeManager;
+
+
+  /**
    * The menu link tree service.
    *
    * @var \Drupal\Core\Menu\MenuLinkTreeInterface
    */
   protected $menuTree;
-
-  /**
-   * The active menu trail service.
-   *
-   * @var \Drupal\Core\Menu\MenuActiveTrailInterface
-   */
-  protected $menuActiveTrail;
 
   /**
    * Constructs a new SystemMenuBlock.
@@ -45,15 +46,15 @@ class Menu extends SnippetVariableBase implements SnippetVariableInterface, Cont
    *   The plugin_id for the plugin instance.
    * @param array $plugin_definition
    *   The plugin implementation definition.
+   * @param \Drupal\Core\Entity\EntityTypeManagerInterface $entity_type_manager
+   *   The entity type manager.
    * @param \Drupal\Core\Menu\MenuLinkTreeInterface $menu_tree
    *   The menu tree service.
-   * @param \Drupal\Core\Menu\MenuActiveTrailInterface $menu_active_trail
-   *   The active menu trail service.
    */
-  public function __construct(array $configuration, $plugin_id, array $plugin_definition, MenuLinkTreeInterface $menu_tree, MenuActiveTrailInterface $menu_active_trail) {
+  public function __construct(array $configuration, $plugin_id, array $plugin_definition, EntityTypeManagerInterface $entity_type_manager, MenuLinkTreeInterface $menu_tree) {
     parent::__construct($configuration, $plugin_id, $plugin_definition);
+    $this->entityTypeManager = $entity_type_manager;
     $this->menuTree = $menu_tree;
-    $this->menuActiveTrail = $menu_active_trail;
   }
 
   /**
@@ -64,8 +65,8 @@ class Menu extends SnippetVariableBase implements SnippetVariableInterface, Cont
       $configuration,
       $plugin_id,
       $plugin_definition,
-      $container->get('menu.link_tree'),
-      $container->get('menu.active_trail')
+      $container->get('entity_type.manager'),
+      $container->get('menu.link_tree')
     );
   }
 
@@ -113,7 +114,7 @@ class Menu extends SnippetVariableBase implements SnippetVariableInterface, Cont
   /**
    * {@inheritdoc}
    */
-  public function getContent() {
+  public function build() {
     $menu_name = $this->getDerivativeId();
     $parameters = $this->menuTree->getCurrentRouteMenuTreeParameters($menu_name);
 
@@ -136,6 +137,26 @@ class Menu extends SnippetVariableBase implements SnippetVariableInterface, Cont
     ];
     $tree = $this->menuTree->transform($tree, $manipulators);
     return $this->menuTree->build($tree);
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+  public function getOperations() {
+    $links = parent::getOperations();
+
+    $menu_storage = $this->entityTypeManager->getStorage('menu');
+    $menu = $menu_storage->load($this->getDerivativeId());
+
+    // Check implicitly if Menu UI module is enabled.
+    if ($menu && $menu->hasLinkTemplate('edit-form')) {
+      $links['edit_menu'] = [
+        'title' => t('Edit menu'),
+        'url' => $menu->toUrl('edit-form'),
+      ];
+    }
+
+    return $links;
   }
 
   /**

@@ -17,13 +17,16 @@ use Drupal\snippet_manager\SnippetInterface;
  *     "view_builder" = "Drupal\snippet_manager\SnippetViewBuilder",
  *     "list_builder" = "Drupal\snippet_manager\SnippetListBuilder",
  *     "form" = {
- *       "add" = "Drupal\snippet_manager\Form\SnippetForm",
- *       "edit" = "Drupal\snippet_manager\Form\SnippetForm",
+ *       "add" = "Drupal\snippet_manager\Form\GeneralForm",
+ *       "edit" = "Drupal\snippet_manager\Form\GeneralForm",
  *       "delete" = "Drupal\Core\Entity\EntityDeleteForm",
- *       "duplicate" = "Drupal\snippet_manager\Form\SnippetDuplicateForm",
+ *       "duplicate" = "Drupal\snippet_manager\Form\DuplicateForm",
  *       "variable_add" = "Drupal\snippet_manager\Form\VariableAddForm",
  *       "variable_edit" = "Drupal\snippet_manager\Form\VariableEditForm",
- *       "variable_delete" = "Drupal\snippet_manager\Form\VariableDeleteForm"
+ *       "variable_delete" = "Drupal\snippet_manager\Form\VariableDeleteForm",
+ *       "template_edit" = "Drupal\snippet_manager\Form\TemplateForm",
+ *       "css_edit" = "Drupal\snippet_manager\Form\CssForm",
+ *       "js_edit" = "Drupal\snippet_manager\Form\JsForm"
  *     }
  *   },
  *   config_prefix = "snippet",
@@ -34,6 +37,7 @@ use Drupal\snippet_manager\SnippetInterface;
  *     "source" = "/admin/structure/snippet/{snippet}/source",
  *     "add-form" = "/admin/structure/snippet/add",
  *     "edit-form" = "/admin/structure/snippet/{snippet}/edit",
+ *     "template-edit-form" = "/admin/structure/snippet/{snippet}/edit/template",
  *     "delete-form" = "/admin/structure/snippet/{snippet}/delete",
  *     "duplicate-form" = "/admin/structure/snippet/{snippet}/duplicate",
  *     "enable" = "/admin/structure/snippet/{snippet}/enable",
@@ -46,6 +50,8 @@ use Drupal\snippet_manager\SnippetInterface;
  *     "uuid" = "uuid",
  *   }
  * )
+ *
+ * @property \Drupal\snippet_manager\SnippetInterface $original;
  */
 class Snippet extends ConfigEntityBase implements SnippetInterface {
 
@@ -71,12 +77,11 @@ class Snippet extends ConfigEntityBase implements SnippetInterface {
   protected $description;
 
   /**
-   * The snippet code.
+   * The snippet template.
    *
    * @var array
    */
-  protected $code;
-
+  protected $template;
   /**
    * The snippet variables.
    *
@@ -89,50 +94,118 @@ class Snippet extends ConfigEntityBase implements SnippetInterface {
    *
    * @var array
    */
-  protected $page = [
-    'status' => FALSE,
-    'title' => '',
-    'path' => '',
-    'display_variant' => [
-      'id' => NULL,
-      'configuration' => [],
-    ],
-    'theme' => '',
-  ];
+  protected $page;
 
   /**
    * The snippet block settings.
    *
    * @var array
    */
-  protected $block = [
-    'status' => FALSE,
-    'name' => '',
-  ];
+  protected $block;
 
   /**
    * The snippet block settings.
    *
    * @var array
    */
-  protected $access = [
-    'type' => 'all',
-    'role' => [],
-    'permission' => '',
-  ];
+  protected $access;
+
+  /**
+   * The snippet CSS.
+   *
+   * @var array
+   */
+  protected $css;
+
+  /**
+   * The snippet JS.
+   *
+   * @var array
+   */
+  protected $js;
+
+  /**
+   * {@inheritdoc}
+   */
+  public function __construct(array $values, $entity_type) {
+
+    $this->page = [
+      'status' => FALSE,
+      'title' => '',
+      'path' => '',
+      'display_variant' => [
+        'id' => NULL,
+        'configuration' => [],
+      ],
+      'theme' => '',
+    ];
+
+    $this->block = [
+      'status' => FALSE,
+      'name' => '',
+    ];
+
+    $this->access = [
+      'type' => 'all',
+      'role' => [],
+      'permission' => '',
+    ];
+
+    $default_format = self::getDefaultFormat();
+
+    $this->template = [
+      'value' => '',
+      'format' => $default_format,
+    ];
+
+    $this->css = [
+      'status' => FALSE,
+      'value' => '',
+      'format' => $default_format,
+      'group' => 'component',
+    ];
+
+    $this->js = [
+      'status' => FALSE,
+      'value' => '',
+      'format' => $default_format,
+    ];
+
+    parent::__construct($values, $entity_type);
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+  public function preSave(EntityStorageInterface $storage) {
+    // Sort variables by name to make their listing and configuration export
+    // more consistent.
+    ksort($this->variables);
+    parent::preSave($storage);
+  }
 
   /**
    * {@inheritdoc}
    */
   public function postSave(EntityStorageInterface $storage, $update = TRUE) {
     parent::postSave($storage, $update);
-    \Drupal::service('plugin.manager.block')->clearCachedDefinitions();
+
+    $original = isset($this->original) ? $this->original : NULL;
+    $status_changed = !$original || $this->status() != $this->original->status();
+
+    if ($status_changed || $this->get('block') != $this->original->get('block')) {
+      \Drupal::service('plugin.manager.block')->clearCachedDefinitions();
+    }
 
     // Rebuild the router if this is a new snippet, or its page settings has
     // been updated, or its status has been changed.
-    if (!$update || $this->get('page') !== $this->original->get('page') || $this->status() != $this->original->status()) {
+    if ($status_changed || $this->get('page') !== $this->original->get('page')) {
       \Drupal::service('router.builder')->setRebuildNeeded();
     }
+
+    // Update attached library.
+    $library_builder = \Drupal::service('snippet_manager.snippet_library_builder');
+    $library_builder->updateAssets($this, $original);
   }
 
   /**
@@ -141,37 +214,6 @@ class Snippet extends ConfigEntityBase implements SnippetInterface {
   public static function preDelete(EntityStorageInterface $storage, array $entities) {
     parent::preDelete($storage, $entities);
     \Drupal::service('plugin.manager.block')->clearCachedDefinitions();
-  }
-
-  /**
-   * {@inheritdoc}
-   */
-  public function getCode() {
-    return $this->code ? $this->code : [
-      'value' => str_repeat("\n", 10),
-      'format' => self::getDefaultCodeFormat(),
-    ];
-  }
-
-  /**
-   * {@inheritdoc}
-   */
-  public function setCode(array $code) {
-    return $this->code = $code;
-  }
-
-  /**
-   * {@inheritdoc}
-   */
-  public function getVariables() {
-    return $this->variables;
-  }
-
-  /**
-   * {@inheritdoc}
-   */
-  public function setVariables($variables) {
-    $this->variables = $variables;
   }
 
   /**
@@ -203,30 +245,9 @@ class Snippet extends ConfigEntityBase implements SnippetInterface {
   }
 
   /**
-   * {@inheritdoc}
-   */
-  public function getContext() {
-    return $this->context;
-  }
-
-  /**
-   * {@inheritdoc}
-   */
-  public function setContext($context) {
-    $this->context = $context;
-  }
-
-  /**
-   * {@inheritdoc}
-   */
-  public function pageIsPublished() {
-    return $this->page['status'];
-  }
-
-  /**
    * Returns the ID of default filter format.
    */
-  protected static function getDefaultCodeFormat() {
+  protected static function getDefaultFormat() {
     // Full HTML is the most suitable format for snippets.
     $formats = filter_formats(\Drupal::currentUser());
     return isset($formats['full_html']) ? 'full_html' : filter_default_format();

@@ -2,11 +2,11 @@ BUILD A CHILD THEME WITH ZURB FOUNDATION
 ----------------------------------------
 
 The base Foundation theme is designed to be easily extended by its sub-themes.
-You shouldn't modify any of the CSS or PHP files in the zurb_foundation/ folder; 
+You shouldn't modify any of the CSS or PHP files in the zurb_foundation/ folder;
 but instead you should create a sub-theme of zurb_foundation which is located in
 a folder outside of the root zurb_foundation/ folder. The examples below assume
 zurb_foundation and your sub-theme will be installed in themes/,
-but any valid theme directory is acceptable. Read the 
+but any valid theme directory is acceptable. Read the
 sites/default/default.settings.php for more info.
 
 This theme does not support IE7. If you need it downgrade to Foundation 2 see
@@ -15,11 +15,13 @@ template.php THEMENAME_preprocess_html function.
 
 *** IMPORTANT NOTE ***
 * After adding a new theme in Drupal 8, you'll need to clear the theme registry's
-* cache, which you can do by clearing all cache in the UI or running `drush cr` ,
-* if you have Drush installed.
+cache, which you can do by clearing all cache in the UI or running `drush cr` ,
+if you have Drush installed.
 
-Automatic drush sub-theme setup
+Using Drush
 -------------------------------
+
+**Automatic drush sub-theme setup**
 
 To create a sub-theme, simply run the Drush command `drush fst sub_theme`, where
 "sub_theme" is the desired machine name of your sub-theme. Once a sub-theme is
@@ -27,6 +29,15 @@ created, you can enable it at /admin/appearance .
 
 Then follow step 6 below to generate the necessary Foundation files that are not
 included in the repository by default.
+
+**Drush and Gulp**
+
+The `gulpfile.js` includes drush commands that can be run every time scss/css
+is updated. To use drush, edit the `config.js` file. In the `drush` option:
+
+1. Set `enabled: false` to `enabled: true`
+1. (Optional) Set the `drush_alias` variable.
+
 
 Manual sub-theme setup
 ----------------------
@@ -71,10 +82,6 @@ Manual sub-theme setup
     folder; replace ALL occurrences of "STARTER" with the name of your
     sub-theme.
 
-    Do not forget to update gulpfile.js. You will need to update this line:
-
-      gulp.src('scss/STARTER.scss')
-
     For example, edit foo/foo.theme and foo/theme-settings.php and replace
     every occurrence of "STARTER" with "foo".
 
@@ -96,8 +103,9 @@ Manual sub-theme setup
     - `npm install`
     - `bower install`
 
-    Finally, run `npm start` to run the Sass compiler. It will re-run every time
-    you save a Sass file. Press Ctrl-C to break out of watching files.
+    Finally, run `gulp` to run the Sass compiler, or 'gulp watch' which
+    will re-run every time you save a Sass file. Press Ctrl-C to break out of
+    watching files.
 
 
 Optional steps:
@@ -123,5 +131,5 @@ Optional steps:
 
  9. Further extend your sub-theme.
 
-    Discover further ways to extend your sub-theme by reading 
+    Discover further ways to extend your sub-theme by reading
     Drupal 8's Theme Guide online at: https://www.drupal.org/theme-guide/8

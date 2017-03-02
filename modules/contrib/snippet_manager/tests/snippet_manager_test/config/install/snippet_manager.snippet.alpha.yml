@@ -3,7 +3,7 @@ status: true
 dependencies: {}
 id: alpha
 label: Alpha
-code:
+template:
   value: "<h3>{{ foo }}</h3>\n<div>3 + 5 = <b>{{ 3 + 5 }}</b></div>\n\n"
   format: snippet_manager_test_basic_format
 variables:

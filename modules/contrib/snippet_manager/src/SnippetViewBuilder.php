@@ -49,7 +49,7 @@ class SnippetViewBuilder extends EntityViewBuilder {
     $render_time = Timer::read('snippet');
     $build['snippet']['content']['#attributes']['class'][] = 'snippet-html-source';
 
-    $build['snippet']['#attributes']['class'][] = 'snippet-admin';
+    $build['snippet']['#attributes']['class'][] = 'snippet-editor';
 
     $build['render_time_wrapper'] = [
       '#type' => 'container',
@@ -59,7 +59,7 @@ class SnippetViewBuilder extends EntityViewBuilder {
       '#markup' => t('Render time: %time ms', ['%time' => $render_time]),
     ];
 
-    $build['#attached']['library'][] = 'snippet_manager/snippet_manager';
+    $build['#attached']['library'][] = 'snippet_manager/editor';
 
     return $build;
   }
@@ -99,13 +99,13 @@ class SnippetViewBuilder extends EntityViewBuilder {
     $module_handler = \Drupal::moduleHandler();
     // The context is an array of processed twig variables.
     $context = $module_handler->invokeAll('snippet_context', [$snippet]);
-    foreach ($snippet->getVariables() as $variable_name => $variable) {
+    foreach ($snippet->get('variables') as $variable_name => $variable) {
       try {
         $plugin = $variable_manager->createInstance(
           $variable['plugin_id'],
           $variable['configuration']
         );
-        $context[$variable_name] = $plugin->getContent();
+        $context[$variable_name] = $plugin->build();
       }
       catch (PluginNotFoundException $exception) {
         $context[$variable_name] = '';
@@ -113,13 +113,17 @@ class SnippetViewBuilder extends EntityViewBuilder {
     }
     $module_handler->alter('snippet_context', $context, $snippet);
 
-    $code = $snippet->getCode();
+    $template = $snippet->get('template');
 
     $build['snippet'] = [
       '#type' => 'inline_template',
-      '#template' => check_markup($code['value'], $code['format']),
+      '#template' => check_markup($template['value'], $template['format']),
       '#context' => $context,
     ];
+
+    if ($snippet->get('css')['status'] || $snippet->get('js')['status']) {
+      $build['snippet']['#attached']['library'][] = 'snippet_manager/snippet_' . $entity_id;
+    }
 
     return $build;
   }

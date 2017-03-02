@@ -123,13 +123,12 @@ class GeolocationGoogleGeocoderWidgetTest extends JavascriptTestBase {
   }
 
   /**
-   * Tests the GoogleMap widget.
+   * Tests the Google Maps widget.
    */
   public function testGeocoderWidgetMapPresent() {
     $this->drupalLogin($this->adminUser);
 
     $this->drupalGetFilterGoogleKey('node/3/edit');
-    $this->assertSession()->statusCodeEquals(200);
 
     $this->assertSession()->elementExists('css', '.geolocation-map-canvas');
 
@@ -138,7 +137,7 @@ class GeolocationGoogleGeocoderWidgetTest extends JavascriptTestBase {
   }
 
   /**
-   * Tests the GoogleMap widget.
+   * Tests the Google Maps widget.
    */
   public function testGeocoderWidgetEmptyValuePreserved() {
     EntityFormDisplay::load('node.article.default')
@@ -154,7 +153,6 @@ class GeolocationGoogleGeocoderWidgetTest extends JavascriptTestBase {
     $this->drupalLogin($this->adminUser);
 
     $this->drupalGetFilterGoogleKey('node/add/article');
-    $this->assertSession()->statusCodeEquals(200);
 
     $page = $this->getSession()->getPage();
     $page->findField('Title')->setValue('I am new');

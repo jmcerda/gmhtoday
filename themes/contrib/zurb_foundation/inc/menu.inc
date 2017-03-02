@@ -1,5 +1,7 @@
 <?php
 
+use Drupal\Core\Link;
+
 /**
  * Implements theme_menu_local_tasks().
  */
@@ -39,7 +41,7 @@ function zurb_foundation_menu_local_task(&$variables) {
   $state = !empty($variables['element']['#active']) ? 'active' : 'secondary';
   $link['url']->setOption('attributes', array('class' => array('button', $state)));
 
-  $a_tag = \Drupal::l($link_text, $link['url']);
+  $a_tag = Link::fromTextAndUrl($link_text, $link['url'])->toString();
 
   return $a_tag;
 }
@@ -65,6 +67,13 @@ function zurb_foundation_preprocess_menu__off_canvas(&$variables) {
       }
     }
   }
+}
+
+/**
+ * Implements theme_preprocess_menu().
+ */
+function zurb_foundation_preprocess_menu(&$variables) {
+  $variables['attributes']['class'][] = 'menu';
 }
 
 /**
@@ -116,10 +125,10 @@ function zurb_foundation_preprocess_menu__main(&$variables) {
 
     $variables['linked_site_name'] = '';
     if (!empty($variables['site_name'])) {
-      $variables['linked_site_name'] = \Drupal::l($variables['site_name'], $url);
+      $variables['linked_site_name'] = Link::fromTextAndUrl($variables['site_name'], $url)->toString();
     }
 
-    $variables['site_name'] = \Drupal::l($site_name, $url);
+    $variables['site_name'] = Link::fromTextAndUrl($site_name, $url)->toString();
 
     // Embed the search form inside the Top Bar.
     if (theme_get_setting('zurb_foundation_top_bar_search')) {

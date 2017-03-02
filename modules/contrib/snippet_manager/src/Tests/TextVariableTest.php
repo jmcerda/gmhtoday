@@ -30,9 +30,11 @@ class TextVariableTest extends TestBase {
     $this->drupalPostForm(NULL, $edit, 'Save');
 
     $edit = [
-      'code[value]' => '<div class="snippet-content">-={{ beer }}=-</div>',
+      'template[value]' => '<div class="snippet-content">-={{ beer }}=-</div>',
     ];
     $this->drupalPostForm(NULL, $edit, 'Save');
+
+    $this->drupalGet('admin/structure/snippet/alpha');
 
     $this->assertByXpath('//div[@class="snippet-content"]/p[text() = "Dark"]');
     $result = $this->xpath('//div[@class="snippet-content"]/span');

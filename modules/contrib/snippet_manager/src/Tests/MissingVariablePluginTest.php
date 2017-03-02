@@ -23,7 +23,7 @@ class MissingVariablePluginTest extends TestBase {
    */
   public function testMissingVariablePlugin() {
     $view_name = 'who_s_online';
-    $warning_message = t('The %plugin does not exist.', ['%plugin' => 'view:' . $view_name]);
+    $warning_message = t('The %plugin plugin does not exist.', ['%plugin' => 'view:' . $view_name]);
 
     $edit = [
       'plugin_id' => 'view:' . $view_name,
@@ -40,7 +40,7 @@ class MissingVariablePluginTest extends TestBase {
     $this->assertResponse(404);
     $this->assertWarningMessage($warning_message);
 
-    $this->drupalGet('admin/structure/snippet/alpha/edit');
+    $this->drupalGet('admin/structure/snippet/alpha/edit/template');
     $this->assertWarningMessage($warning_message);
     $this->assertText("view:$view_name - missing");
 

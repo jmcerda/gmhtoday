@@ -37,6 +37,8 @@ class EntityVariableTest extends TestBase {
 
   /**
    * Tests entity variable plugin.
+   *
+   * @todo Test operations.
    */
   public function testEntityVariable() {
     $edit = [
@@ -58,7 +60,7 @@ class EntityVariableTest extends TestBase {
     $this->assertTrue($label, 'Valid snippet variable label was found');
 
     $edit = [
-      'code[value]' => '<div class="snippet-node">{{ node }}</div>',
+      'template[value]' => '<div class="snippet-node">{{ node }}</div>',
     ];
     $this->drupalPostForm(NULL, $edit, 'Save');
 

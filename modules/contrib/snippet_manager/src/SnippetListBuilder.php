@@ -39,10 +39,6 @@ class SnippetListBuilder extends ConfigEntityListBuilder {
       'class' => [RESPONSIVE_PRIORITY_MEDIUM],
     ];
     $header += parent::buildHeader();
-    $header['operations'] = [
-      'data' => $header['operations'],
-      'class' => 'sm-snippet-operations',
-    ];
     return $header;
   }
 
@@ -62,14 +58,14 @@ class SnippetListBuilder extends ConfigEntityListBuilder {
       $row['status']['class'] = ['sm-inactive'];
     }
 
-    $code = $entity->getCode();
-    $row['size'] = $this->formatSize(strlen($code['value']));
+    $template = $entity->get('template');
+    $row['size'] = $this->formatSize(strlen($template['value']));
 
-    if ($format_label = $this->getFormatLabel($code['format'])) {
+    if ($format_label = $this->getFormatLabel($template['format'])) {
       $row['format'] = $format_label;
     }
     else {
-      $row['format']['data'] = $code['format'];
+      $row['format']['data'] = $template['format'];
       $row['format']['class'] = ['sm-inactive'];
     }
 
@@ -142,7 +138,7 @@ class SnippetListBuilder extends ConfigEntityListBuilder {
 
     $build['table']['#attributes']['class'][] = 'sm-snippets-overview';
     $build['table']['#attributes']['data-drupal-selector'] = 'sm-snippet-list';
-    $build['#attached']['library'][] = 'snippet_manager/snippet_manager';
+    $build['#attached']['library'][] = 'snippet_manager/listing';
     return $build;
   }
 
