@@ -360,9 +360,14 @@ blockquote::before, blockquote::after {
 	}
 }
 .testimonials-block {
-	.slick-dots {
+	ul.slick-dots {
 		text-align: left;
 		margin-left: 28%;
+		list-style-image: url('../images/dot_nonactive.png');
+		li.slick-active button:before {
+			color: #ffffff;
+			list-style-image: url('../images/dot_active.png');
+		}
 	}
 }
 
