@@ -4603,8 +4603,6 @@ blockquote::before, blockquote::after {
   text-align: left;
   margin-left: 28%;
   list-style-image: url("../images/dot_nonactive.png"); }
-  .testimonials-block ul.slick-dots li.slick-active button:before {
-    list-style-image: url("../images/dot_active.png"); }
 
 .distributor-block {
   padding: 0 1em; }
