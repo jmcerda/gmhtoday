@@ -4604,7 +4604,6 @@ blockquote::before, blockquote::after {
   margin-left: 28%;
   list-style-image: url("../images/dot_nonactive.png"); }
   .testimonials-block ul.slick-dots li.slick-active button:before {
-    color: #ffffff;
     list-style-image: url("../images/dot_active.png"); }
 
 .distributor-block {

@@ -365,7 +365,7 @@ blockquote::before, blockquote::after {
 		margin-left: 28%;
 		list-style-image: url('../images/dot_nonactive.png');
 		li.slick-active button:before {
-			color: #ffffff;
+			//color: #ffffff;
 			list-style-image: url('../images/dot_active.png');
 		}
 	}
