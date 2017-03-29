@@ -60,7 +60,13 @@ class NgLightboxSettingsForm extends ConfigFormBase {
       '#type' => 'textfield',
       '#title' => $this->t('Default Width'),
       '#default_value' => $this->config->get('default_width'),
-      '#description' => $this->t('The default with for modals opened with NG Lightbox'),
+      '#description' => $this->t('The default width for modals opened with NG Lightbox.'),
+    );
+    $form['container']['lightbox_class'] = array(
+      '#type' => 'textfield',
+      '#title' => $this->t('Lightbox Class'),
+      '#default_value' => $this->config->get('lightbox_class'),
+      '#description' => $this->t('The css custom class for modals opened with NG Lightbox.'),
     );
     $form['container']['skip_admin_paths'] = array(
       '#title' => $this->t('Skip all admin paths'),
@@ -87,6 +93,7 @@ class NgLightboxSettingsForm extends ConfigFormBase {
     $this->config
       ->set('patterns', $values['patterns'])
       ->set('default_width', $values['default_width'])
+      ->set('lightbox_class', $values['lightbox_class'])
       ->set('skip_admin_paths', $values['skip_admin_paths'])
       ->set('renderer', $values['renderer'])
       ->save();

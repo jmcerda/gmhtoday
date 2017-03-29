@@ -3,6 +3,7 @@
 namespace Drupal\juicebox\Tests;
 
 use Drupal\Component\Utility\Html;
+use Drupal\image\Entity\ImageStyle;
 
 /**
  * Tests gallery-specific configuration logic for Juicebox galleries.
@@ -109,7 +110,7 @@ class JuiceboxConfCase extends JuiceboxBaseCase {
     // Get the urls to the main image with and without "large" styling.
     $uri = \Drupal\file\Entity\File::load($node->{$this->instFieldName}[0]->target_id)->getFileUri();
     $test_image_url = file_create_url($uri);
-    $test_image_url_formatted = entity_load('image_style', 'juicebox_medium')->buildUrl($uri);
+    $test_image_url_formatted = ImageStyle::load('juicebox_medium')->buildUrl($uri);
     // Check control case without custom configuration.
     $this->drupalGet('juicebox/xml/field/node/' . $node->id() . '/' . $this->instFieldName . '/full');
     $this->assertRaw('linkTarget="_blank"', 'Default linkTarget setting found.');

@@ -8,6 +8,7 @@
 use Drupal\Core\Language\LanguageInterface;
 use Drupal\Core\Url;
 use Drupal\Component\Utility\Html;
+use Drupal\Component\Utility\UrlHelper;
 
 /*
  * Presents links to filter the search results.
@@ -19,7 +20,7 @@ function custom_search_preprocess_item_list__search_results(&$variables) {
 
   // Search for the config of this page
   foreach ($config as $c) {
-    if ($c['path'] == $path) {
+    if (isset($c['path']) && $c['path'] == $path) {
       $page_config = $c;
       break;
     }
@@ -28,10 +29,10 @@ function custom_search_preprocess_item_list__search_results(&$variables) {
   $types = array();
   foreach ($variables['items'] as $key => $item) {
     // Render results.
-    $variables['items'][$key]['value'] = drupal_render($item);
+    $variables['items'][$key]['value'] = \Drupal::service('renderer')->render($item);
     // Count results for the filter.
     if ($page_config && $page_config['filter']['position'] != 'disabled') {
-      $bundle = $item['#result']['node']->bundle();
+      $bundle = $item['value']['#result']['node']->bundle();
       if (!array_key_exists($bundle, $types)) {
         $types[$bundle] = 1;
       }
@@ -61,11 +62,11 @@ function custom_search_preprocess_item_list__search_results(&$variables) {
         if (isset($key_exploded[1])) {
           if (substr(urldecode($key_exploded[0]), 0, 2) == 'f[') {
             if (substr($key_exploded[1], 0, 4) != 'type') {
-              $filters[] = $key_exploded[1];
+              $filters[] = urldecode($key_exploded[1]);
             }
           }
           else {
-            $keys[$key_exploded[0]] = $key_exploded[1];
+            $keys[$key_exploded[0]] = urldecode($key_exploded[1]);
           }
         }
       }
@@ -93,7 +94,7 @@ function custom_search_preprocess_item_list__search_results(&$variables) {
             ),
           ),
         );
-        $variables['filter'] = drupal_render($filter_list);
+        $variables['filter'] = \Drupal::service('renderer')->render($filter_list);
       }
     }
 
@@ -126,12 +127,28 @@ function custom_search_preprocess_search_result(&$variables) {
   }
 
   $result = $variables['result'];
-  $variables['url'] = check_url($result['link']);
-  $variables['title'] = Html::escape($result['title']);
+  $variables['url'] = UrlHelper::stripDangerousProtocols($result['link']);
+  $variables['title'] = $result['title'];
   if (isset($result['language']) && $result['language'] != $language_interface->getId() && $result['language'] != LanguageInterface::LANGCODE_NOT_SPECIFIED) {
     $variables['title_attributes']['lang'] = $result['language'];
     $variables['content_attributes']['lang'] = $result['language'];
   }
+
+  $info = array();
+  if (!empty($result['plugin_id'])) {
+    $info['plugin_id'] = $result['plugin_id'];
+  }
+  if (!empty($result['user'])) {
+    $info['user'] = $result['user'];
+  }
+  if (!empty($result['date'])) {
+    $info['date'] = \Drupal::service('date.formatter')->format($result['date'], 'short');
+  }
+  if (isset($result['extra']) && is_array($result['extra'])) {
+    $info = array_merge($info, $result['extra']);
+  }
+  // Check for existence. User search does not include snippets.
+  $variables['snippet'] = isset($result['snippet']) ? $result['snippet'] : '';
   
   if ($page_config) {
     $info = array();
@@ -150,13 +167,15 @@ function custom_search_preprocess_search_result(&$variables) {
     if (isset($result['extra']) && is_array($result['extra'])) {
       $info = array_merge($info, $result['extra']);
     }
-    // Check for existence. User search does not include snippets.
-    $variables['snippet'] = isset($result['snippet']) ? $result['snippet'] : '';
-    // Provide separated and grouped meta information..
-    $variables['info_split'] = $info;
-    $variables['info'] = implode(' - ', $info);
   }
 
+  // Provide separated and grouped meta information..
+  $variables['info_split'] = $info;
+  $variables['info'] = array(
+    '#type' => 'inline_template',
+    '#template' => '{{ info|safe_join(" - ") }}',
+    '#context' => array('info' => $info),
+  );
 }
 
 /**

@@ -87,5 +87,6 @@ return array(
     'Behat\\Mink\\Driver\\' => array($vendorDir . '/behat/mink-browserkit-driver/src', $vendorDir . '/behat/mink-goutte-driver/src'),
     'Behat\\Mink\\' => array($vendorDir . '/behat/mink/src'),
     'Alchemy\\Zippy\\' => array($vendorDir . '/alchemy/zippy/src'),
+    'Acquia\\Lightning\\' => array($baseDir . '/profiles/contrib/lightning/src'),
     'Acquia\\LightningExtension\\' => array($baseDir . '/profiles/contrib/lightning/src/LightningExtension'),
 );

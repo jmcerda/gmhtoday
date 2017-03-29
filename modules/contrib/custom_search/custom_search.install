@@ -26,7 +26,7 @@ function custom_search_install() {
   $languages[Language::LANGCODE_NOT_APPLICABLE] = Language::LANGCODE_NOT_APPLICABLE;
 
   // Set default settings for all search pages.
-  $search_pages = entity_load_multiple('search_page');
+  $search_pages = \Drupal::entityTypeManager()->getStorage('search_page')->loadMultiple();
   foreach ($search_pages as $page) {
     if ($page->getPlugin()->getPluginId() == 'node_search') {
       $pageId = $page->id();

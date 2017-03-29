@@ -158,7 +158,8 @@ class JuiceboxXmlControllerField extends JuiceboxXmlControllerBase {
     // Also fetch the tags from the display configuration as that is where our
     // gallery-specific settings are stored (so changes there should also
     // invalidate the XML).
-    $display = entity_get_display($this->entityType, $this->entity->bundle(), $this->displayName);
+    $display = $this->entityTypeManager->getStorage('entity_view_display')
+      ->load($this->entityType . '.' . $this->entity->bundle() . '.' . $this->displayName);
     $display_tags = array();
     if ($display instanceof CacheableDependencyInterface) {
       $display_tags = $display->getCacheTags();
@@ -166,7 +167,9 @@ class JuiceboxXmlControllerField extends JuiceboxXmlControllerBase {
       // default display cache tags as Drupal may reference this display
       // elsewhere by the "default" label.
       if (!$display->status() || $display->isNew()) {
-        $display_default = entity_get_display($this->entityType, $this->entity->bundle(), 'default');
+        $display_default = $this->entityTypeManager
+          ->getStorage('entity_view_display')
+          ->load($this->entityType . '.' . $this->entity->bundle() . '.default');
         if ($display_default instanceof CacheableDependencyInterface) {
           $display_tags = Cache::mergeTags($display_tags, $display_default->getCacheTags());
         }

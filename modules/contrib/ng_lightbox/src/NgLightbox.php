@@ -88,8 +88,9 @@ class NgLightbox {
     $path = strtolower($url->toString());
 
     // We filter out empty paths because some modules (such as Media) use
-    // theme_link() to generate links with empty paths.
-    if (empty($path)) {
+    // theme_link() to generate links with empty paths and we filter out paths
+    // that do not start with a /, such as #hash-only URLs.
+    if (empty($path) || $path[0] !== '/') {
       return FALSE;
     }
 
@@ -142,6 +143,7 @@ class NgLightbox {
     $link['options']['attributes']['data-dialog-type'] = str_replace('drupal_', '', $this->config->get('renderer') ?: static::DEFAULT_MODAL);
     $data = [
       'width' => $this->config->get('default_width'),
+      'dialogClass' => $this->config->get('lightbox_class'),
     ];
 
     $link['options']['attributes']['data-dialog-options'] = json_encode($data);

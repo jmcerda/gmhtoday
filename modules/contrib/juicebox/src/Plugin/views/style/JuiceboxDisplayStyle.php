@@ -439,39 +439,41 @@ class JuiceboxDisplayStyle extends StylePluginBase {
     $field_labels = $view->display_handler->getFieldLabels();
     // Separate image fields from non-image fields. For image fields we can
     // work with fids and fields of type image or file.
-    foreach ($field_handlers as $field => $handler) {
+    foreach ($field_handlers as $viewfield => $handler) {
       $is_image = FALSE;
       $id = $handler->getPluginId();
-      $name = $field_labels[$field];
+      $name = $field_labels[$viewfield];
       if ($id == 'field') {
         // The field definition is on the handler, it's right bloody there, but
         // it's protected so we can't access it. This means we have to take the
         // long road (via our own injected entity manager) to get the field type
         // info.
-        $entity_type = $handler->getEntityType();
-        $field_definition = $this->entityFieldManager->getFieldStorageDefinitions($entity_type)[$field];
-        $field_type = $field_definition->getType();
-        if ($field_type == 'image' || $field_type == 'file') {
-          $field_cardinality = $field_definition->get('cardinality');
-          $options['field_options_images'][$field] = $name . ($field_cardinality == 1 ? '' : '*');
-          $options['field_options_images_type'][$field] = 'file_field';
-          $is_image = TRUE;
-        }
-        elseif ($field_type == 'integer' && $field == 'fid') {
-          $options['field_options_images'][$field] = $name;
-          $options['field_options_images_type'][$field] = 'file_id_field';
-          $is_image = TRUE;
+        $entity = $this->entityFieldManager->getFieldStorageDefinitions($handler->getEntityType());
+        if (isset($handler->field) && array_key_exists($handler->field, $entity)) {
+          $field_definition = $entity[$handler->field];
+          $field_type = $field_definition->getType();
+          if ($field_type == 'image' || $field_type == 'file') {
+            $field_cardinality = $field_definition->get('cardinality');
+            $options['field_options_images'][$viewfield] = $name . ($field_cardinality == 1 ? '' : '*');
+            $options['field_options_images_type'][$viewfield] = 'file_field';
+            $is_image = TRUE;
+          }
+          elseif ($field_type == 'integer' && $handler->field == 'fid') {
+            $options['field_options_images'][$viewfield] = $name;
+            $options['field_options_images_type'][$viewfield] = 'file_id_field';
+            $is_image = TRUE;
+          }
         }
       }
       // Previous D8 betas listed files differently, so we still try to support
       // that case for legacy purposes.
-      elseif ($id == 'file' && $field == 'fid') {
-        $options['field_options_images'][$field] = $name;
-        $options['field_options_images_type'][$field] = 'file_id_field';
+      elseif ($id == 'file' && $viewfield == 'fid') {
+        $options['field_options_images'][$viewfield] = $name;
+        $options['field_options_images_type'][$viewfield] = 'file_id_field';
         $is_image = TRUE;
       }
       if (!$is_image) {
-        $options['field_options'][$field] = $name;
+        $options['field_options'][$viewfield] = $name;
       }
     }
     return $options;

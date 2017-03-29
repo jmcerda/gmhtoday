@@ -14,6 +14,15 @@ function ng_lightbox_link_alter(&$vars) {
   if ($lightbox->isNgLightboxEnabledPath($vars['url'])) {
     $lightbox->addLightbox($vars);
   }
+  elseif (!empty($vars['options']['attributes']['class'])) {
+    // We have to normalize to an array because many places incorrectly set
+    // class to a string.
+    $vars['options']['attributes']['class'] = (array) $vars['options']['attributes']['class'];
+
+    if (in_array('ng-lightbox', $vars['options']['attributes']['class'])) {
+      $lightbox->addLightbox($vars);
+    }
+  }
 
   // If you've enabled/disabled the modal for admin paths this allows you to
   // override it for one off paths.

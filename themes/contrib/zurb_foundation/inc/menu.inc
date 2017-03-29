@@ -84,7 +84,7 @@ function zurb_foundation_preprocess_menu__main(&$variables) {
     $top_bar_attributes = new \Drupal\Core\Template\Attribute();
 
     if (theme_get_setting('zurb_foundation_top_bar_grid')) {
-      $top_bar_attributes->addClass('contain-to-grid');
+      $top_bar_attributes->addClass('row column');
     }
 
     if (theme_get_setting('zurb_foundation_top_bar_sticky')) {

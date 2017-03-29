@@ -5,6 +5,7 @@ namespace Drupal\juicebox\Tests;
 use Drupal\Component\Utility\Html;
 use Drupal\Component\Serialization\Json;
 use Drupal\Core\Url;
+use Drupal\image\Entity\ImageStyle;
 
 /**
  * Tests the Juicebox field formatter.
@@ -43,8 +44,8 @@ class JuiceboxFieldFormatterCase extends JuiceboxBaseCase {
     $xml_url = Url::fromRoute('juicebox.xml_field', array('entityType' => 'node', 'entityId' => $node->id(), 'fieldName' => $this->instFieldName, 'displayName' => 'full'));
     // Get the urls to the test image and thumb derivative used by default.
     $uri = \Drupal\file\Entity\File::load($node->{$this->instFieldName}[0]->target_id)->getFileUri();
-    $test_image_url = entity_load('image_style', 'juicebox_medium')->buildUrl($uri);
-    $test_thumb_url = entity_load('image_style', 'juicebox_square_thumb')->buildUrl($uri);
+    $test_image_url = ImageStyle::load('juicebox_medium')->buildUrl($uri);
+    $test_thumb_url = ImageStyle::load('juicebox_square_thumb')->buildUrl($uri);
     // Check for correct embed markup.
     $this->drupalGet('node/' . $node->id());
     $this->assertRaw(trim(json_encode(array('configUrl' => $xml_url)), '{}"'), 'Gallery setting found in Drupal.settings.');
@@ -92,7 +93,7 @@ class JuiceboxFieldFormatterCase extends JuiceboxBaseCase {
     // Get the urls to the image and thumb derivatives expected.
     $uri = \Drupal\file\Entity\File::load($node->{$this->instFieldName}[0]->target_id)->getFileUri();
     $test_formatted_image_url = file_create_url($uri);
-    $test_formatted_thumb_url = entity_load('image_style', 'thumbnail')->buildUrl($uri);
+    $test_formatted_thumb_url = ImageStyle::load('thumbnail')->buildUrl($uri);
     // Check for correct embed markup as anon user.
     $this->drupalLogout();
     $this->drupalGet('node/' . $node->id());

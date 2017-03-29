@@ -5,6 +5,7 @@ namespace Drupal\juicebox\Tests;
 use Drupal\Component\Utility\Html;
 use Drupal\Component\Serialization\Json;
 use Drupal\Core\Url;
+use Drupal\image\Entity\ImageStyle;
 
 /**
  * Tests integration with Views module.
@@ -47,8 +48,8 @@ class JuiceboxViewsCase extends JuiceboxBaseCase {
     $xml_url = Url::fromRoute('juicebox.xml_viewsstyle', array('viewName' => 'juicebox_views_test', 'displayName' => 'page_1'));
     // Get the urls to the test image and thumb derivative used by default.
     $uri = \Drupal\file\Entity\File::load($node->{$this->instFieldName}[0]->target_id)->getFileUri();
-    $test_image_url = entity_load('image_style', 'juicebox_medium')->buildUrl($uri);
-    $test_thumb_url = entity_load('image_style', 'juicebox_square_thumb')->buildUrl($uri);
+    $test_image_url = ImageStyle::load('juicebox_medium')->buildUrl($uri);
+    $test_thumb_url = ImageStyle::load('juicebox_square_thumb')->buildUrl($uri);
     // Check for correct embed markup.
     $this->drupalGet('juicebox-views-test');
     $this->assertRaw(trim(json_encode(array('configUrl' => $xml_url)), '{}"'), 'Gallery setting found in Drupal.settings.');
@@ -105,8 +106,8 @@ class JuiceboxViewsCase extends JuiceboxBaseCase {
     $xml_url = Url::fromRoute('juicebox.xml_viewsstyle', array('viewName' => 'juicebox_views_test', 'displayName' => 'page_2'));
     // Get the urls to the test image and thumb derivative used by default.
     $uri = \Drupal\file\Entity\File::load($node->{$this->instFieldName}[0]->target_id)->getFileUri();
-    $test_image_url = entity_load('image_style', 'juicebox_medium')->buildUrl($uri);
-    $test_thumb_url = entity_load('image_style', 'juicebox_square_thumb')->buildUrl($uri);
+    $test_image_url = ImageStyle::load('juicebox_medium')->buildUrl($uri);
+    $test_thumb_url = ImageStyle::load('juicebox_square_thumb')->buildUrl($uri);
     // Check for correct embed markup.
     $this->drupalGet('juicebox-views-test-advanced');
     $this->assertRaw(trim(json_encode(array('configUrl' => $xml_url)), '{}"'), 'Gallery setting found in Drupal.settings.');
@@ -133,8 +134,8 @@ class JuiceboxViewsCase extends JuiceboxBaseCase {
     $xml_url = Url::fromRoute('juicebox.xml_viewsstyle', array('viewName' => 'juicebox_views_files_test', 'displayName' => 'page_1'));
     // Get the urls to the test image and thumb derivative used by default.
     $uri = \Drupal\file\Entity\File::load($node->{$this->instFieldName}[0]->target_id)->getFileUri();
-    $test_image_url = entity_load('image_style', 'juicebox_medium')->buildUrl($uri);
-    $test_thumb_url = entity_load('image_style', 'juicebox_square_thumb')->buildUrl($uri);
+    $test_image_url = ImageStyle::load('juicebox_medium')->buildUrl($uri);
+    $test_thumb_url = ImageStyle::load('juicebox_square_thumb')->buildUrl($uri);
     // Check for correct embed markup.
     $this->drupalGet('juicebox-views-files-test');
     $this->assertRaw(trim(json_encode(array('configUrl' => $xml_url)), '{}"'), 'Gallery setting found in Drupal.settings.');

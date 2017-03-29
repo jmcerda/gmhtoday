@@ -4,6 +4,7 @@ namespace Drupal\custom_search\Plugin\Block;
 
 use Drupal\Core\Access\AccessResult;
 use Drupal\Core\Block\BlockBase;
+use Drupal\Core\Entity\EntityTypeManagerInterface;
 use Drupal\Core\Extension\ModuleHandlerInterface;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Language\Language;
@@ -50,7 +51,12 @@ class CustomSearchBlock extends BlockBase implements ContainerFactoryPluginInter
    * @param \Drupal\Core\Extension\ModuleHandlerInterface $module_handler
    *   The Module handler object.
    */
-  public function __construct(array $configuration, $plugin_id, $plugin_definition, ModuleHandlerInterface $module_handler) {
+  public function __construct(
+    array $configuration,
+    $plugin_id,
+    $plugin_definition,
+    ModuleHandlerInterface $module_handler
+  ) {
     parent::__construct($configuration, $plugin_id, $plugin_definition);
 
     $this->moduleHandler = $module_handler;
@@ -164,7 +170,7 @@ class CustomSearchBlock extends BlockBase implements ContainerFactoryPluginInter
       ),
     );
     
-    $search_pages = entity_load_multiple('search_page');
+    $search_pages = \Drupal::entityTypeManager()->getStorage('search_page')->loadMultiple();
     foreach ($search_pages as $page) {
       if ($page->getPlugin()->getPluginId() == 'node_search' && $page->isDefaultSearch()) {
         $defaults['content']['page'] = $page->id();
@@ -172,7 +178,7 @@ class CustomSearchBlock extends BlockBase implements ContainerFactoryPluginInter
       }
     }
 
-    $vocabularies = entity_load_multiple('taxonomy_vocabulary');
+    $vocabularies = \Drupal::entityTypeManager()->getStorage('search_page')->loadMultiple();
     $vocWeight = -7;
     foreach ($vocabularies as $voc) {
       $vocId = $voc->id();
@@ -293,7 +299,7 @@ class CustomSearchBlock extends BlockBase implements ContainerFactoryPluginInter
       '#description'  => $this->t("Select the search types to present as search options in the search block. If none is selected, no selector will be displayed. <strong>Note</strong>: if there's only one type checked, the selector won't be displayed BUT only this type will be searched."),
       '#open'         => (count(array_filter($this->configuration['content']['types'])) + count(array_filter($this->configuration['content']['excluded']))),
     );
-    $search_pages = entity_load_multiple('search_page');
+    $search_pages = \Drupal::entityTypeManager()->getStorage('search_page')->loadMultiple();
     $pages_options = array();
     foreach ($search_pages as $page) {
       if ($page->getPlugin()->getPluginId() == 'node_search') {
@@ -389,7 +395,7 @@ class CustomSearchBlock extends BlockBase implements ContainerFactoryPluginInter
     );
 
     // Taxonomy.
-    $vocabularies = entity_load_multiple('taxonomy_vocabulary');
+    $vocabularies = \Drupal::entityTypeManager()->getStorage('taxonomy_vocabulary')->loadMultiple();
     if (count($vocabularies)) {
       $open = FALSE;
       foreach ($vocabularies as $voc) {
@@ -912,7 +918,7 @@ class CustomSearchBlock extends BlockBase implements ContainerFactoryPluginInter
       'region'    => $form_state->getValue(array('order', 'table', 'content', 'region')),
     );
 
-    $vocabularies = entity_load_multiple('taxonomy_vocabulary');
+    $vocabularies = \Drupal::entityTypeManager()->getStorage('taxonomy_vocabulary')->loadMultiple();
     if (count($vocabularies)) {
       foreach ($vocabularies as $voc) {
         $vocId = $voc->id();

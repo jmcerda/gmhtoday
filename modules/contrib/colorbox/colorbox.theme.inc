@@ -7,6 +7,7 @@
 
 use Drupal\Component\Utility\Crypt;
 use Drupal\Component\Utility\Unicode;
+use Drupal\file\Entity\File;
 use Drupal\image\Entity\ImageStyle;
 
 /**
@@ -26,11 +27,12 @@ function template_preprocess_colorbox_formatter(&$variables) {
   static $gallery_token = NULL;
 
   $item = $variables['item'];
-  $item_attributes = isset($variables['item_attributes']) ? $variables['item_attributes'] : array();
+  $item_attributes = isset($variables['item_attributes']) ? $variables['item_attributes'] : [];
   $entity = $variables['entity'];
   $settings = $variables['settings'];
   $image_uri = $item->entity->getFileUri();
-  $classes_array = array('colorbox');
+  $classes_array = ['colorbox'];
+  $data_cbox_img_attrs = [];
 
   // Build the caption.
   $entity_title = $entity->label();
@@ -68,7 +70,7 @@ function template_preprocess_colorbox_formatter(&$variables) {
 
     case 'custom':
       $token_service = \Drupal::token();
-      $caption = $token_service->replace($settings['colorbox_caption_custom'], array($entity_type => $entity, 'file' => $item), array('clear' => TRUE));
+      $caption = $token_service->replace($settings['colorbox_caption_custom'], [$entity_type => $entity, 'file' => $item], ['clear' => TRUE]);
       break;
 
     default:
@@ -108,7 +110,7 @@ function template_preprocess_colorbox_formatter(&$variables) {
 
     case 'custom':
       $token_service = \Drupal::token();
-      $gallery_id = $token_service->replace($settings['colorbox_gallery_custom'], array($entity_type => $entity, 'file' => $item), array('clear' => TRUE));
+      $gallery_id = $token_service->replace($settings['colorbox_gallery_custom'], [$entity_type => $entity, 'file' => $item], ['clear' => TRUE]);
       break;
 
     default:
@@ -129,19 +131,19 @@ function template_preprocess_colorbox_formatter(&$variables) {
 
   // Set up the $variables['image'] parameter.
   if ($settings['style_name'] == 'hide') {
-    $variables['image'] = array();
+    $variables['image'] = [];
     $classes_array[] = 'js-hide';
   }
   elseif (!empty($settings['style_name'])) {
-    $variables['image'] = array(
+    $variables['image'] = [
       '#theme' => 'image_style',
       '#style_name' => $settings['style_name'],
-    );
+    ];
   }
   else {
-    $variables['image'] = array(
+    $variables['image'] = [
       '#theme' => 'image',
-    );
+    ];
   }
 
   if (!empty($variables['image'])) {
@@ -150,10 +152,14 @@ function template_preprocess_colorbox_formatter(&$variables) {
     // Do not output an empty 'title' attribute.
     if (Unicode::strlen($item->title) != 0) {
       $variables['image']['#title'] = $item->title;
+      $data_cbox_img_attrs['title'] = '"title":"' . $item->title . '"';
     }
 
-    foreach (array('width', 'height', 'alt') as $key) {
+    foreach (['width', 'height', 'alt'] as $key) {
       $variables['image']["#$key"] = $item->$key;
+      if ($key == 'alt') {
+        $data_cbox_img_attrs['alt'] = '"alt":"' . $item->alt . '"';
+      }
     }
 
     $variables['image']['#uri'] = empty($item->uri) ? $image_uri : $item->uri;
@@ -172,7 +178,7 @@ function template_preprocess_colorbox_formatter(&$variables) {
     // File id of the save file.
     $fid = $item->target_id;
     // Load file object.
-    $file_obj = file_load($fid);
+    $file_obj = File::load($fid);
     $file_array = $file_obj->toArray();
     // Populate the image title.
     if (!empty($file_array['field_image_title_text'][0]['value']) && empty($item->title) && $settings['colorbox_caption'] == 'title') {
@@ -187,4 +193,7 @@ function template_preprocess_colorbox_formatter(&$variables) {
   $variables['attributes']['title'] = $caption;
   $variables['attributes']['data-colorbox-gallery'] = $gallery_id;
   $variables['attributes']['class'] = $classes_array;
+  if (!empty($data_cbox_img_attrs)) {
+    $variables['attributes']['data-cbox-img-attrs'] = '{' . implode(',', $data_cbox_img_attrs) . '}';
+  }
 }

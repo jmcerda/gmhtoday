@@ -3,6 +3,8 @@
 namespace Drupal\custom_search\Form;
 
 use Drupal\Component\Utility\Unicode;
+use Drupal\Core\Entity\EntityTypeManagerInterface;
+use Drupal\Core\Entity\EntityRepositoryInterface;
 use Drupal\Core\Extension\ModuleHandlerInterface;
 use Drupal\Core\Form\FormBase;
 use Drupal\Core\Form\FormStateInterface;
@@ -34,16 +36,40 @@ class CustomSearchBlockForm extends FormBase {
   protected $searchPageRepository;
 
   /**
-   * Constructs a new SearchBlockForm.
+   * The entity type manager.
+   *
+   * @var \Drupal\Core\Entity\EntityTypeManagerInterface
+   */
+  protected $entityTypeManager;
+
+  /**
+   * The entity repository.
+   *
+   * @var \Drupal\Core\Entity\EntityRepositoryInterface
+   */
+  protected $entityRepository;
+
+  /**   * Constructs a new SearchBlockForm.
    *
    * @param \Drupal\search\SearchPageRepositoryInterface $search_page_repository
    *   The search page repository.
    * @param \Drupal\Core\Extension\ModuleHandlerInterface $module_handler
    *   The Module handler object.
+   * @param \Drupal\Core\Entity\EntityTypeManagerInterface $entity_type_manager
+   *   The entity type manager.
+   * @param \Drupal\Core\Entity\EntityRepositoryInterface $entity_repository
+   *   The entity repository.
    */
-  public function __construct(SearchPageRepositoryInterface $search_page_repository, ModuleHandlerInterface $module_handler) {
+  public function __construct(
+    SearchPageRepositoryInterface $search_page_repository,
+    ModuleHandlerInterface $module_handler,
+    EntityTypeManagerInterface $entity_type_manager,
+    EntityRepositoryInterface $entity_repository
+  ) {
     $this->searchPageRepository = $search_page_repository;
     $this->moduleHandler = $module_handler;
+    $this->entityTypeManager = $entity_type_manager;
+    $this->entityRepository = $entity_repository;
   }
 
   /**
@@ -52,7 +78,9 @@ class CustomSearchBlockForm extends FormBase {
   public static function create(ContainerInterface $container) {
     return new static(
       $container->get('search.search_page_repository'),
-      $container->get('module_handler')
+      $container->get('module_handler'),
+      $container->get('entity_type.manager'),
+      $container->get('entity.repository')
     );
   }
 
@@ -94,7 +122,7 @@ class CustomSearchBlockForm extends FormBase {
     );
 
     // Content.
-    $toptions = array();
+    $toptions = [];
     $types = array_keys(array_filter($config['content']['types']));
     if (count($types)) {
       $names = node_type_get_names();
@@ -105,19 +133,19 @@ class CustomSearchBlockForm extends FormBase {
         $toptions['c-' . $type] = $names[$type];
       }
     }
-    $options = array();
+    $options = [];
     // Other searches.
-    $others = array_keys(array_filter($config['content']['other']));
+    $others = !empty($config['content']['other']) ? array_keys(array_filter($config['content']['other'])) : [];
     // If content types and other searches are combined, make an optgroup.
     if (count($others) && count($toptions) && $config['content']['selector']['type'] == 'select') {
-      $search_page = entity_load('search_page', $config['content']['page']);
+      $search_page = $this->entityTypeManager->getStorage('search_page')->load($config['content']['page']);
       $options[Html::escape($search_page->label())] = $toptions;
     }
     else {
       $options = $toptions;
     }
     if (count($others)) {
-      $other_pages = entity_load_multiple('search_page', $others);
+      $other_pages = $this->entityTypeManager->getStorage('search_page')->loadMultiple($others);
       foreach ($others as $other) {
         $options['o-' . Html::escape($other_pages[$other]->id())] = Html::escape($other_pages[$other]->label());
       }
@@ -155,40 +183,44 @@ class CustomSearchBlockForm extends FormBase {
     }
 
     // Taxonomy.
-    $vocabularies = entity_load_multiple('taxonomy_vocabulary');
-    foreach ($vocabularies as $voc) {
-      $vid = $voc->id();
-      if ($config['taxonomy'][$vid]['type'] != 'disabled') {
-        $options = array();
-        $options['c-all'] = $config['taxonomy'][$vid]['all_text'];
-        $vocabulary_depth = (!$config['taxonomy'][$vid]['depth']) ? NULL : $config['taxonomy'][$vid]['depth'];
-        $terms = taxonomy_get_tree($vid, 0, $vocabulary_depth, TRUE);
-        foreach ($terms as $term) {
-          $termName = Html::escape(\Drupal::entityManager()->getTranslationFromContext($term)->label());
-          $options['c-' . $term->id()] = (Unicode::substr($config['taxonomy'][$vid]['type'], 0, 6) == 'select') ? str_repeat('-', $term->depth) . ' ' . $termName : $termName;
-        }
-        $selector_type = $config['taxonomy'][$vid]['type'];
-        if ($selector_type == 'selectmultiple') {
-          $selector_type = 'select';
-          $multiple = TRUE;
-        }
-        else {
-          $multiple = FALSE;
-        }
-        $form['vocabulary_' . $vid] = array(
-          '#type'           => $selector_type,
-          '#multiple'       => $multiple,
-          '#title'          => Html::escape($config['taxonomy'][$vid]['label']),
-          '#title_display'  => $config['taxonomy'][$vid]['label_visibility'] ? 'before' : 'invisible',
-          '#options'        => $options,
-          '#default_value'  => ($selector_type == 'checkboxes') ? array('c-all') : 'c-all',
-          '#attributes'     => array('class' => array('custom-search-selector', 'custom-search-vocabulary')),
-          '#weight'         => $config['taxonomy'][$vid]['weight'],
-        );
+    $vocabularies = $this->entityTypeManager->getStorage('taxonomy_vocabulary')->loadMultiple();
+    if (count($config['taxonomy']) > 0) {
+      $taxonomy_term_storage = \Drupal::entityManager()->getStorage('taxonomy_term');
 
-        if ($config['taxonomy'][$vid]['region'] == 'popup') {
-          $form['popup']['vocabulary_' . $vid] = $form['vocabulary_' . $vid];
-          unset($form['vocabulary_' . $vid]);
+      foreach ($vocabularies as $voc) {
+        $vid = $voc->id();
+        if ($config['taxonomy'][$vid]['type'] != 'disabled') {
+          $options = array();
+          $options['c-all'] = $config['taxonomy'][$vid]['all_text'];
+          $vocabulary_depth = (!$config['taxonomy'][$vid]['depth']) ? NULL : $config['taxonomy'][$vid]['depth'];
+          $terms = $taxonomy_term_storage->loadTree($vid, 0, $vocabulary_depth, TRUE);
+          foreach ($terms as $term) {
+            $termName = Html::escape($this->entityRepository->getTranslationFromContext($term)->label());
+            $options['c-' . $term->id()] = (Unicode::substr($config['taxonomy'][$vid]['type'], 0, 6) == 'select') ? str_repeat('-', $term->depth) . ' ' . $termName : $termName;
+          }
+          $selector_type = $config['taxonomy'][$vid]['type'];
+          if ($selector_type == 'selectmultiple') {
+            $selector_type = 'select';
+            $multiple = TRUE;
+          }
+          else {
+            $multiple = FALSE;
+          }
+          $form['vocabulary_' . $vid] = array(
+            '#type'           => $selector_type,
+            '#multiple'       => $multiple,
+            '#title'          => Html::escape($config['taxonomy'][$vid]['label']),
+            '#title_display'  => $config['taxonomy'][$vid]['label_visibility'] ? 'before' : 'invisible',
+            '#options'        => $options,
+            '#default_value'  => ($selector_type == 'checkboxes') ? array('c-all') : 'c-all',
+            '#attributes'     => array('class' => array('custom-search-selector', 'custom-search-vocabulary')),
+            '#weight'         => $config['taxonomy'][$vid]['weight'],
+          );
+
+          if ($config['taxonomy'][$vid]['region'] == 'popup') {
+            $form['popup']['vocabulary_' . $vid] = $form['vocabulary_' . $vid];
+            unset($form['vocabulary_' . $vid]);
+          }
         }
       }
     }
@@ -356,7 +388,7 @@ class CustomSearchBlockForm extends FormBase {
     $first_type = current($types);
     if (substr($first_type, 0, 2) == 'o-') {
       $search_page_id = substr($first_type, 2);
-      $search_pages = entity_load_multiple('search_page', array($search_page_id));
+      $search_pages = $this->entityTypeManager->getStorage('search_page')->loadMultiple(array($search_page_id));
       if (!empty($search_pages)) {
         $route = 'search.view_' . $search_page_id;
       }
@@ -402,7 +434,7 @@ class CustomSearchBlockForm extends FormBase {
       // Taxonomy filters.
       if ($this->moduleHandler->moduleExists('taxonomy')) {
         $terms = array();
-        $vocabularies = entity_load_multiple('taxonomy_vocabulary');
+        $vocabularies = $this->entityTypeManager->getStorage('taxonomy_vocabulary')->loadMultiple();
         foreach ($vocabularies as $voc) {
           $vid = $voc->id();
           if ($form_state->hasValue('vocabulary_' . $vid)) {
@@ -464,7 +496,7 @@ class CustomSearchBlockForm extends FormBase {
     // Build a custom path if needed.
     if ($form_state->hasValue('paths') && $form_state->getValue('paths') != '') {
       $route = $form_state->getValue('paths');
-	  $route = str_replace('[current_path]', \Drupal::service('path.current')->getPath(), $route);
+      $route = str_replace('[current_path]', \Drupal::service('path.current')->getPath(), $route);
       $route = str_replace('[key]', $keys, $route);
       if (strpos($route, '[types]') !== FALSE) {
         $route = str_replace('[types]', (isset($types) && count($types)) ? implode($config['paths']['separator'], $types) : '', $route);

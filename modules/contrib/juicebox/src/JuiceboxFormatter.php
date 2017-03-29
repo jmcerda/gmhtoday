@@ -8,10 +8,11 @@ use Drupal\Core\Config\ConfigFactoryInterface;
 use Drupal\Core\StringTranslation\TranslationInterface;
 use Drupal\Core\Routing\UrlGeneratorInterface;
 use Drupal\Core\Extension\ModuleHandlerInterface;
-use Drupal\Component\Utility\SafeMarkup;
+use Drupal\Component\Render\FormattableMarkup;
 use Drupal\Component\Utility\Html;
 use Drupal\Component\Utility\Unicode;
 use Drupal\file\FileInterface;
+use Drupal\image\Entity\ImageStyle;
 
 /**
  * Class to define a Drupal service with common formatter methods.
@@ -238,7 +239,7 @@ class JuiceboxFormatter implements JuiceboxFormatterInterface {
       $output['#suffix'] .= $gallery->renderXml($embed_xml_id);
     }
     // Ensure that our suffix is not further sanitized.
-    $output['#suffix'] = SafeMarkup::format($output['#suffix'], array());
+    $output['#suffix'] = new FormattableMarkup($output['#suffix'], array());
     return $output;
   }
 
@@ -327,7 +328,7 @@ class JuiceboxFormatter implements JuiceboxFormatterInterface {
       }
       foreach ($sizes as $size => $style_each) {
         if (!empty($style_each)) {
-          $style_obj = entity_load('image_style', $style_each);
+          $style_obj = ImageStyle::load($style_each);
           if ($style_obj) {
             $image_data[$size] = $style_obj->buildUrl($file->getFileUri());
           }

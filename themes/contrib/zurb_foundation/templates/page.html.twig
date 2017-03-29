@@ -93,15 +93,12 @@
             {% endif %}
           </div>
         {% endif %}
-      </header>
-
-      {% if page.header %}
-        <div class="row">
+        {% if page.header %}
           <div class="large-12 columns">
             {{ page.header }}
           </div>
-        </div>
-      {% endif %}
+        {% endif %}
+      </header>
 
       <div class="row">
         {% if show_account_info %}

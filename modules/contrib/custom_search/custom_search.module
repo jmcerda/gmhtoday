@@ -15,7 +15,7 @@ use Drupal\Core\Language\Language;
 function custom_search_entity_bundle_create($entity_type, $bundle) {
   if ($entity_type == 'node') {
     // Add default config for Results settings.
-    $search_pages = entity_load_multiple('search_page');
+    $search_pages = \Drupal::entityTypeManager()->getStorage('search_page')->loadMultiple();
     foreach ($search_pages as $page) {
       $pageId = $page->id();
       $advanced_types = \Drupal::config('custom_search.settings.results')->get($pageId . '.advanced.types');
@@ -31,7 +31,7 @@ function custom_search_entity_bundle_create($entity_type, $bundle) {
 function custom_search_configurable_language_create(\Drupal\Core\Entity\EntityInterface $entity) {
   if ($entity->id()) {
     // Add default config for Advanced search fieldset settings.
-    $search_pages = entity_load_multiple('search_page');
+    $search_pages = \Drupal::entityTypeManager()->getStorage('search_page')->loadMultiple();
     foreach ($search_pages as $page) {
       $pageId = $page->id();
       $languageId = $entity->id();
@@ -282,20 +282,20 @@ function custom_search_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $
               unset($form['advanced']['types-fieldset']['type']['#options'][$name]);
             }
           }
-          if (!count($form['advanced']['types-fieldset']['type']['#options'])) {
+          if (isset($form['advanced']['types-fieldset']) && !count($form['advanced']['types-fieldset']['type']['#options'])) {
             unset($form['advanced']['types-fieldset']);
           } elseif (isset($reselect['type'])) {
             // Reselect content types.
             $form['advanced']['types-fieldset']['type']['#default_value'] = $reselect['type'];
           }
-          
+
           // Languages.
           foreach ($page_config['advanced']['languages'] as $name => $language) {
             if (!$language) {
               unset($form['advanced']['lang-fieldset']['language']['#options'][$name]);
             }
           }
-          if (!count($form['advanced']['lang-fieldset']['language']['#options'])) {
+          if (isset($form['advanced']['lang-fieldset']) && !count($form['advanced']['lang-fieldset']['language']['#options'])) {
             unset($form['advanced']['lang-fieldset']);
           } elseif (isset($reselect['language'])) {
             // Reselect languages.
@@ -385,17 +385,62 @@ function custom_search_preprocess_block(&$variables) {
 function custom_search_theme($existing, $type, $theme, $path) {
 
   $custom_search_theme_array = array(
+    'custom_search_results' => [
+      'variables' => [
+        'variables' => [
+          'items' => [],
+          'title' => '',
+          'list_type' => 'ul',
+          'attributes' => [],
+          'empty' => NULL,
+          'filter_position' => FALSE,
+          'filter' => '',
+        ],
+      ],
+      'file' => 'custom_search.pages.inc',
+    ],
     'search_result' => array(
-      'variables' => array('result' => NULL, 'plugin_id' => NULL),
+      'variables' => [
+        'result' => NULL,
+        'plugin_id' => NULL,
+        'url' => '',
+        'title' => '',
+        'title_attributes' => [],
+        'content_attributes' => [],
+        'type' => '',
+        'user' => NULL,
+        'date' => NULL,
+        'extra' => [],
+        'snippet' => '',
+        'info_split' => [],
+        'info' => '',
+      ],
       'file'      => 'custom_search.pages.inc',
-      'template'  => 'custom_search-result',
+      'template'  => 'custom-search-result',
     ),
     'item_list__search_results' => array(
       'variables' => array('items' => array(), 'title' => '', 'list_type' => 'ul', 'attributes' => array(), 'empty' => NULL),
       'file'      => 'custom_search.pages.inc',
-      'template'  => 'custom_search-results',
+      'template'  => 'custom-search-results',
     ),
   );
 
   return $custom_search_theme_array;
+}
+
+/**
+ * Implements hook_theme_registry_alter().
+ * @see https://api.drupal.org/api/drupal/core!lib!Drupal!Core!Render!theme.api.php/function/hook_theme_registry_alter
+ */
+function custom_search_theme_registry_alter(&$theme_registry) {
+  if (isset($theme_registry['item_list__search_results'])) {
+    $theme_registry['item_list__search_results']['template'] = 'custom-search-results';
+    $theme_registry['item_list__search_results']['path'] = drupal_get_path('module', 'custom_search') . '/templates';
+    $theme_registry['item_list__search_results']['variables']['filter_position'] = FALSE;
+    $theme_registry['item_list__search_results']['variables']['filter'] = '';
+  }
+  if (isset($theme_registry['search_result'])) {
+    $theme_registry['search_result']['template'] = 'custom-search-result';
+    $theme_registry['search_result']['path'] = drupal_get_path('module', 'custom_search') . '/templates';
+  }
 }

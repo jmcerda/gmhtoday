@@ -3,6 +3,7 @@
 namespace Drupal\juicebox\Tests;
 
 use Drupal\Component\Utility\Html;
+use Drupal\image\Entity\ImageStyle;
 
 /**
  * Tests global configuration logic for Juicebox galleries.
@@ -131,9 +132,9 @@ class JuiceboxConfGlobalCase extends JuiceboxBaseCase {
     $this->assertText(t('Your settings have been saved.'), 'Gallery configuration changes saved.');
     // Calculate the multi-size styles that should be found in the XML.
     $uri = \Drupal\file\Entity\File::load($node->{$this->instFieldName}[0]->target_id)->getFileUri();
-    $formatted_image_small = entity_load('image_style', 'juicebox_small')->buildUrl($uri);
-    $formatted_image_medium = entity_load('image_style', 'juicebox_medium')->buildUrl($uri);
-    $formatted_image_large = entity_load('image_style', 'large')->buildUrl($uri);
+    $formatted_image_small = ImageStyle::load('juicebox_small')->buildUrl($uri);
+    $formatted_image_medium = ImageStyle::load('juicebox_medium')->buildUrl($uri);
+    $formatted_image_large = ImageStyle::load('large')->buildUrl($uri);
     // Now check the resulting XML again as an anon user.
     $this->drupalLogout();
     $this->drupalGet('juicebox/xml/field/node/' . $node->id() . '/' . $this->instFieldName . '/full');

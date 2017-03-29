@@ -4,6 +4,7 @@ namespace Drupal\juicebox\Tests;
 
 use Drupal\Component\Utility\Html;
 use Drupal\Core\Url;
+use Drupal\image\Entity\ImageStyle;
 
 /**
  * Tests the Juicebox XML generation via a sub-request.
@@ -59,8 +60,8 @@ class JuiceboxSubRequestCase extends JuiceboxBaseCase {
     $xml_url = Url::fromRoute('juicebox.xml_field', array('entityType' => 'node', 'entityId' => $node->id(), 'fieldName' => $this->instFieldName, 'displayName' => '_custom'));
     // Get the urls to the test image and thumb derivative used by default.
     $uri = \Drupal\file\Entity\File::load($node->{$this->instFieldName}[0]->target_id)->getFileUri();
-    $test_image_url = entity_load('image_style', 'juicebox_medium')->buildUrl($uri);
-    $test_thumb_url = entity_load('image_style', 'juicebox_square_thumb')->buildUrl($uri);
+    $test_image_url = ImageStyle::load('juicebox_medium')->buildUrl($uri);
+    $test_thumb_url = ImageStyle::load('juicebox_square_thumb')->buildUrl($uri);
     // Check for correct embed markup. This will also prime the cache.
     $content = $this->drupalGet('juicebox_test_row_formatter');
     $this->assertRaw(trim(json_encode(array('configUrl' => $xml_url)), '{}"'), 'Gallery setting found in Drupal.settings.');

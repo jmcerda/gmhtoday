@@ -5,7 +5,7 @@
   "license": "MIT",
   "homepage": "https://www.drupal.org/project/zurb_foundation",
   "dependencies": {
-    "foundation-sites": "~6.3.0",
+    "foundation-sites": "~6.3.1",
     "motion-ui": "~1.2.2"
   },
   "ignore": [

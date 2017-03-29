@@ -4,6 +4,8 @@ namespace Drupal\juicebox\Tests;
 
 use Drupal\simpletest\WebTestBase;
 use Drupal\Core\Field\FieldStorageDefinitionInterface;
+use Drupal\field\Entity\FieldConfig;
+use Drupal\field\Entity\FieldStorageConfig;
 
 /**
  * Common helper class for Juicebox module tests.
@@ -39,7 +41,7 @@ abstract class JuiceboxBaseCase extends WebTestBase {
       'settings' => $field_storage_settings,
       'cardinality' => FieldStorageDefinitionInterface::CARDINALITY_UNLIMITED,
     );
-    entity_create('field_storage_config', $field_storage)->save();
+    FieldStorageConfig::create($field_storage)->save();
     // Prep a field instance.
     $field_settings = array();
     if ($this->instFieldType == 'image') {
@@ -60,9 +62,10 @@ abstract class JuiceboxBaseCase extends WebTestBase {
       'required' => FALSE,
       'settings' => $field_settings,
     );
-    entity_create('field_config', $field)->save();
+    FieldConfig::create($field)->save();
     // Setup widget.
-    entity_get_form_display('node', $this->instBundle, 'default')
+    \Drupal::entityTypeManager()->getStorage('entity_form_display')
+      ->load('node.' . $this->instBundle . '.default')
       ->setComponent($this->instFieldName, array(
         'type' => 'file_generic',
         'settings' => array(),
@@ -78,7 +81,8 @@ abstract class JuiceboxBaseCase extends WebTestBase {
    * Helper to activate a Juicebox field formatter on a field.
    */
   protected function activateJuiceboxFieldFormatter() {
-    entity_get_display('node', $this->instBundle, 'default')
+    \Drupal::entityTypeManager()->getStorage('entity_view_display')
+      ->load('node.' . $this->instBundle . '.default')
       ->setComponent($this->instFieldName, array(
         'type' => 'juicebox_formatter',
         'settings' => array(),
@@ -93,7 +97,7 @@ abstract class JuiceboxBaseCase extends WebTestBase {
     $file = current($this->drupalGetTestFiles($file_type));
     $edit = array(
       'title[0][value]' => 'Test Juicebox Gallery Node',
-      'files[' . $this->instFieldName . '_0]' . ($multivalue ? '[]' : '') => drupal_realpath($file->uri),
+      'files[' . $this->instFieldName . '_0]' . ($multivalue ? '[]' : '') => \Drupal::service('file_system')->realpath($file->uri),
     );
     $this->drupalPostForm('node/add/' . $this->instBundle, $edit, t('Save and publish'));
     // Get ID of the newly created node from the current URL.

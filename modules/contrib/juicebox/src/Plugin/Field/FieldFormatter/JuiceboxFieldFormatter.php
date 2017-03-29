@@ -12,6 +12,7 @@ use Drupal\field\FieldConfigInterface;
 use Drupal\Core\Entity\EntityTypeManagerInterface;
 use Drupal\Core\Utility\LinkGeneratorInterface;
 use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Render\RendererInterface;
 use Drupal\juicebox\JuiceboxFormatterInterface;
 use Drupal\juicebox\JuiceboxGalleryInterface;
 use Drupal\Core\Url;
@@ -60,6 +61,13 @@ class JuiceboxFieldFormatter extends ImageFormatterBase implements ContainerFact
   protected $request;
 
   /**
+   * The renderer.
+   *
+   * @var \Drupal\Core\Render\RendererInterface
+   */
+  protected $renderer;
+
+  /**
    * Constructor.
    *
    * @param \Drupal\Core\Entity\EntityTypeManagerInterface $entity_type_manager
@@ -70,13 +78,16 @@ class JuiceboxFieldFormatter extends ImageFormatterBase implements ContainerFact
    *   The Symfony request stack from which to extract the current request.
    * @param \Drupal\juicebox\JuiceboxFormatterInterface
    *   A Juicebox formatter service.
+   * @param \Drupal\Core\Render\RendererInterface $renderer
+   *   The renderer service.
    */
-  public function __construct(array $configuration, $plugin_id, array $plugin_definition, EntityTypeManagerInterface $entity_type_manager, LinkGeneratorInterface $link_generator, RequestStack $request_stack, JuiceboxFormatterInterface $juicebox) {
+  public function __construct(array $configuration, $plugin_id, array $plugin_definition, EntityTypeManagerInterface $entity_type_manager, LinkGeneratorInterface $link_generator, RequestStack $request_stack, JuiceboxFormatterInterface $juicebox, RendererInterface $renderer) {
     parent::__construct($plugin_id, $plugin_definition, $configuration['field_definition'], $configuration['settings'], $configuration['label'], $configuration['view_mode'], $configuration['third_party_settings']);
     $this->entityTypeManager = $entity_type_manager;
     $this->linkGenerator = $link_generator;
     $this->request = $request_stack->getCurrentRequest();
     $this->juicebox = $juicebox;
+    $this->renderer = $renderer;
   }
 
   /**
@@ -86,7 +97,7 @@ class JuiceboxFieldFormatter extends ImageFormatterBase implements ContainerFact
     // Create a new instance of the plugin. This also allows us to extract
     // services from the container and inject them into our plugin via its own
     // constructor as needed.
-    return new static($configuration, $plugin_id, $plugin_definition, $container->get('entity.manager'), $container->get('link_generator'), $container->get('request_stack'), $container->get('juicebox.formatter'));
+    return new static($configuration, $plugin_id, $plugin_definition, $container->get('entity.manager'), $container->get('link_generator'), $container->get('request_stack'), $container->get('juicebox.formatter'), $container->get('renderer'));
   }
 
   /**
@@ -407,7 +418,7 @@ class JuiceboxFieldFormatter extends ImageFormatterBase implements ContainerFact
       if (isset($entity_properties[$source])) {
         // A processed_text render array will utilize text filters on rendering.
         $text_to_build = array('#type' => 'processed_text', '#text' => $item->entity->get($source)->value);
-        return drupal_render($text_to_build);
+        return $this->renderer->render($text_to_build);
       }
     }
     // Otherwise we are dealing with an item value (such as image alt or title
@@ -418,7 +429,7 @@ class JuiceboxFieldFormatter extends ImageFormatterBase implements ContainerFact
     if (isset($item->{$source}) && is_string($item->{$source})) {
       // A processed_text render array will utilize text filters on rendering.
       $text_to_build = array('#type' => 'processed_text', '#text' => $item->{$source});
-      return drupal_render($text_to_build);
+      return $this->renderer->render($text_to_build);
     }
     // @todo: Add support for fieldable file entities and/or media entities.
     return '';

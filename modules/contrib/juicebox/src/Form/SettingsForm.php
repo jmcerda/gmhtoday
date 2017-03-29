@@ -5,7 +5,7 @@ namespace Drupal\juicebox\Form;
 use Drupal\Core\Form\ConfigFormBase;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Cache\Cache;
-use Drupal\Component\Utility\SafeMarkup;
+use Drupal\Component\Render\FormattableMarkup;
 
 /**
  * Defines a form that configures global Juicebox settings.
@@ -83,7 +83,7 @@ class SettingsForm extends ConfigFormBase {
     $form['multilingual']['base_languagelist_suggestion'] = array(
       '#type' => 'item',
       '#title' => t('Suggested base string for currently detected Juicebox version (@version)', array('@version' => $version)),
-      '#description' => SafeMarkup::format('<pre>' . $library['base_languagelist'] . '</pre>', array()),
+      '#description' => new FormattableMarkup('<pre>' . $library['base_languagelist'] . '</pre>', array()),
       '#states' => array(
         // Hide the settings when the translate option is disabled.
         'invisible' => array(
@@ -97,7 +97,7 @@ class SettingsForm extends ConfigFormBase {
       $multisize_description .= '<p><strong>' . t('Your currently detected Juicebox version (@version) is not compatible with multi-size features, so the options below have been disabled.', array('@version' => $version)) . '</strong></p>';
     }
     // Mark our description, and its markup, as safe for unescaped display.
-    $multisize_description = SafeMarkup::format($multisize_description, array());
+    $multisize_description = new FormattableMarkup($multisize_description, array());
     $form['juicebox_multisize'] = array(
       '#type' => 'details',
       '#title' => t('Juicebox PRO multi-size style configuration'),
