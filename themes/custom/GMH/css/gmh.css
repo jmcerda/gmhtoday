@@ -4522,7 +4522,8 @@ h2 {
   .block-region-events h2 {
     color: #ffffff;
     text-align: center;
-    font-size: 2.5em; }
+    font-size: 2.5em;
+    font-weight: bold; }
     @media screen and (min-width: 40em) {
       .block-region-events h2 {
         font-size: 1.5em; } }
