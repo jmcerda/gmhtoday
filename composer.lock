@@ -1700,7 +1700,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/acquia_connector-8.x-1.8.zip",
-                "reference": null,
+                "reference": "8.x-1.8",
                 "shasum": "457e44a9a9411c4d54dfd7284a1b55e6ed5a4ed3"
             },
             "require": {
@@ -2119,8 +2119,7 @@
             "support": {
                 "source": "https://cgit.drupalcode.org/colorbox",
                 "issues": "https://www.drupal.org/project/colorbox"
-            },
-            "time": "2017-03-24 07:54:47"
+            }
         },
         {
             "name": "drupal/colorbox_inline",
@@ -2927,8 +2926,7 @@
             "homepage": "https://www.drupal.org/project/custom_search",
             "support": {
                 "source": "http://cgit.drupalcode.org/custom_search"
-            },
-            "time": "2017-03-08 08:17:50"
+            }
         },
         {
             "name": "drupal/diff",
@@ -3068,8 +3066,7 @@
             "homepage": "http://drupal.org/project/disqus",
             "support": {
                 "source": "http://cgit.drupalcode.org/disqus"
-            },
-            "time": "2017-03-26 19:09:31"
+            }
         },
         {
             "name": "drupal/dropzonejs",
@@ -3146,8 +3143,7 @@
                 "source": "https://www.drupal.org/project/dropzonejs",
                 "issues": "https://www.drupal.org/project/issues/dropzonejs",
                 "irc": "irc://irc.freenode.org/drupal-contribute"
-            },
-            "time": "2017-03-22 16:03:11"
+            }
         },
         {
             "name": "drupal/embed",
@@ -3335,7 +3331,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/entity_browser-8.x-1.0-rc2.zip",
-                "reference": null,
+                "reference": "8.x-1.0-rc2",
                 "shasum": "7954668b9134a8ec2dac2604c482d6521e43ee91"
             },
             "require": {
@@ -3480,7 +3476,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/features-8.x-3.5.zip",
-                "reference": null,
+                "reference": "8.x-3.5",
                 "shasum": "546b34387018f9adbe742b6992c4d473f9447c41"
             },
             "require": {
@@ -3662,8 +3658,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/geocoder_autocomplete",
                 "issues": "http://drupal.org/project/issues/geocoder_autocomplete"
-            },
-            "time": "2017-03-06 15:10:36"
+            }
         },
         {
             "name": "drupal/geofield",
@@ -3741,8 +3736,7 @@
                 "source": "http://git.drupal.org/project/geofield.git",
                 "issues": "https://www.drupal.org/project/issues/geofield",
                 "irc": "irc://irc.freenode.org/drupal-contribute"
-            },
-            "time": "2017-03-22 17:57:49"
+            }
         },
         {
             "name": "drupal/geolocation",
@@ -3755,7 +3749,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/geolocation-8.x-1.10.zip",
-                "reference": null,
+                "reference": "8.x-1.10",
                 "shasum": "030acbb1eb4e43766712472295842bf4248079bc"
             },
             "require": {
@@ -3854,7 +3848,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/honeypot-8.x-1.24.zip",
-                "reference": null,
+                "reference": "8.x-1.24",
                 "shasum": "f17d22e80a2b7226e4ee444900de0b933881ee40"
             },
             "require": {
@@ -4030,8 +4024,7 @@
             "homepage": "https://www.drupal.org/project/juicebox",
             "support": {
                 "source": "http://cgit.drupalcode.org/juicebox"
-            },
-            "time": "2017-03-28 02:02:52"
+            }
         },
         {
             "name": "drupal/key_value",
@@ -4188,8 +4181,7 @@
                 "source": "http://cgit.drupalcode.org/libraries",
                 "issues": "http://drupal.org/project/issues/libraries",
                 "irc": "irc://irc.freenode.org/drupal-contribute"
-            },
-            "time": "2017-03-15 17:04:08"
+            }
         },
         {
             "name": "drupal/mailchimp",
@@ -4878,7 +4870,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/ng_lightbox-8.x-1.0-beta3.zip",
-                "reference": null,
+                "reference": "8.x-1.0-beta3",
                 "shasum": "e990a144e34777ceeee60911ef8ee8013ec6acfb"
             },
             "require": {
@@ -5151,7 +5143,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/panelizer-8.x-3.0-beta1.zip",
-                "reference": null,
+                "reference": "8.x-3.0-beta1",
                 "shasum": "1a61865b5e8ad1b28b2dbcdb1bafc7caf02c1fa2"
             },
             "require": {
@@ -5217,7 +5209,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/panels-8.x-3.0-beta6.zip",
-                "reference": null,
+                "reference": "8.x-3.0-beta6",
                 "shasum": "44b59e5009d16d1d1b17907cd3305f488c22a757"
             },
             "require": {
@@ -5515,7 +5507,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/scheduled_updates-8.x-1.0-alpha6.zip",
-                "reference": null,
+                "reference": "8.x-1.0-alpha6",
                 "shasum": "3746c71d480fb62c5c55db7e08be41370edb4d03"
             },
             "require": {
@@ -5672,7 +5664,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/slick-8.x-1.0-rc3.zip",
-                "reference": null,
+                "reference": "8.x-1.0-rc3",
                 "shasum": "e47be5189e3d03e2824a6ecfd41f14c45eea9a55"
             },
             "require": {
@@ -5850,7 +5842,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/snippet_manager-8.x-1.0-rc7.zip",
-                "reference": null,
+                "reference": "8.x-1.0-rc7",
                 "shasum": "85f5ebfc81188261e77f6046d5a4b59079e1fb94"
             },
             "require": {
@@ -6003,7 +5995,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/twig_tweak-8.x-1.6.zip",
-                "reference": null,
+                "reference": "8.x-1.6",
                 "shasum": "afdc20b0bfe238364b128ee4b66c1cf7d970baed"
             },
             "require": {
@@ -6514,8 +6506,7 @@
             "homepage": "https://www.drupal.org/project/zurb_foundation",
             "support": {
                 "source": "http://cgit.drupalcode.org/zurb_foundation"
-            },
-            "time": "2017-03-24 17:12:13"
+            }
         },
         {
             "name": "easyrdf/easyrdf",
