@@ -68,9 +68,11 @@ footer {
       li {
         height: 42px;
         a {
-          margin: .5em;
+          margin: 1px;
           position: relative;
-          top: -3px;
+          top: -40px;
+          width: 80%;
+          float: right;
         }
       }
       li:before {

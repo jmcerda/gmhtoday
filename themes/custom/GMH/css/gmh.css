@@ -4182,9 +4182,11 @@ footer {
     footer #block-gmh-footer ul li {
       height: 42px; }
       footer #block-gmh-footer ul li a {
-        margin: .5em;
+        margin: 1px;
         position: relative;
-        top: -3px; }
+        top: -40px;
+        width: 80%;
+        float: right; }
     footer #block-gmh-footer ul li:before {
       position: relative;
       top: 5px; }
