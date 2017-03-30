@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "2bb3fda0270b584b27d691a422bcf010",
-    "content-hash": "e6c91e6030304748d533cef09db6f47f",
+    "hash": "3fd85f9a666c14d872910274fab65fa7",
+    "content-hash": "d2394668af3651ec4643945ea784ad17",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -3156,7 +3156,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/embed-8.x-1.0.zip",
-                "reference": null,
+                "reference": "8.x-1.0",
                 "shasum": "cc746ad807260e01c7788dd82110dcebbb4d678a"
             },
             "require": {
@@ -3949,6 +3949,57 @@
             "homepage": "https://www.drupal.org/project/inline_entity_form",
             "support": {
                 "source": "http://cgit.drupalcode.org/inline_entity_form"
+            }
+        },
+        {
+            "name": "drupal/inline_responsive_images",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/inline_responsive_images",
+                "reference": "8.x-2.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/inline_responsive_images-8.x-2.0.zip",
+                "reference": null,
+                "shasum": "a8d01d874a27ea707547ce41740764704bf4c496"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-2.x": "2.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-2.0",
+                    "datestamp": "1465196339"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Betawerk",
+                    "homepage": "https://www.drupal.org/user/426816"
+                },
+                {
+                    "name": "jeroen_betawerk",
+                    "homepage": "https://www.drupal.org/user/2700643"
+                },
+                {
+                    "name": "mitchalbert",
+                    "homepage": "https://www.drupal.org/user/2255518"
+                }
+            ],
+            "description": "Allows you to use responsive images in the WYSIWYG editor.",
+            "homepage": "https://www.drupal.org/project/inline_responsive_images",
+            "support": {
+                "source": "http://cgit.drupalcode.org/inline_responsive_images"
             }
         },
         {
