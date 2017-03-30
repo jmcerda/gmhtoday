@@ -66,8 +66,8 @@ function gmh_preprocess_page(&$variables) {
 	$menu = Block::load('mainnavigation');
   		$variables['mainnavigation'] = \Drupal::entityTypeManager()->getViewBuilder('block')->view($menu);
   //Load search form.
-  $menu = Block::load('customsearchform');
-      $variables['customsearchform'] = \Drupal::entityTypeManager()->getViewBuilder('block')->view($menu);
+  // $menu = Block::load('customsearchform');
+  //     $variables['customsearchform'] = \Drupal::entityTypeManager()->getViewBuilder('block')->view($menu);
 	// Load footer menus.
 	$menu = Block::load('advertisinginfo');
   		$variables['advertising_info_menu'] = \Drupal::entityTypeManager()->getViewBuilder('block')->view($menu);
