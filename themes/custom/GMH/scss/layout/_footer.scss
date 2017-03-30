@@ -34,6 +34,9 @@ footer {
 	// Advertising Info
   .footer_advertising {
     height: 250px;
+    li {
+      display: inline;
+    }
   }
 	#block-advertisinginfo {
     h2 {

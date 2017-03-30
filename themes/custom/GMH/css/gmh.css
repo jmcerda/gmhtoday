@@ -4160,6 +4160,8 @@ footer {
     border-bottom: 1px dashed #fff; }
   footer .footer_advertising {
     height: 250px; }
+    footer .footer_advertising li {
+      display: inline; }
   footer #block-advertisinginfo h2 {
     margin-bottom: 0; }
   footer #block-advertisinginfo ul {
