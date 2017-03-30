@@ -4181,7 +4181,8 @@ footer {
     margin-bottom: 5px; }
     footer #block-gmh-footer ul li {
       height: 42px;
-      position: flex; }
+      display: -ms-flexbox;
+      display: flex; }
       footer #block-gmh-footer ul li a {
         margin: 1px;
         top: -40px;
