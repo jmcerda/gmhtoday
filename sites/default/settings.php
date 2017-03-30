@@ -43,3 +43,9 @@ if (isset($_SERVER['DEVDESKTOP_DRUPAL_SETTINGS_DIR']) && file_exists($_SERVER['D
   require $_SERVER['DEVDESKTOP_DRUPAL_SETTINGS_DIR'] . '/loc_gmhtoday_dd.inc';
 }
 // </DDSETTINGS>
+
+// String Overrides
+$conf['locale_custom_strings_en'][''] = array(
+  'GMH Today' => 'gmhToday',
+  'Gilroy Morgan Hill Today' => 'gmhToday',
+);
