@@ -4180,10 +4180,10 @@ footer {
     margin-left: 0;
     margin-bottom: 5px; }
     footer #block-gmh-footer ul li {
-      height: 42px; }
+      height: 42px;
+      position: flex; }
       footer #block-gmh-footer ul li a {
         margin: 1px;
-        position: relative;
         top: -40px;
         width: 80%;
         float: right; }

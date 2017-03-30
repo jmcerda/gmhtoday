@@ -67,9 +67,10 @@ footer {
       margin-bottom: 5px;
       li {
         height: 42px;
+        position: flex;
         a {
           margin: 1px;
-          position: relative;
+          // position: relative;
           top: -40px;
           width: 80%;
           float: right;
