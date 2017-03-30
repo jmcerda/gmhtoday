@@ -1,0 +1,8 @@
+name: 'Search pages'
+description: 'Create search pages using Search API indexes.'
+dependencies:
+  - search_api
+core: 8.x
+package: Search
+type: module
+configure: entity.search_api_page.collection
