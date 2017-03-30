@@ -70,4 +70,9 @@
   {% if info %}
     <p class="search-info">{{ info }}</p>
   {% endif %}
+  {% if (info_split.comment) %}
+    <span class="info-author">
+      {{ info_split.user }}
+    </span>
+  {% endif %}
 </div>
