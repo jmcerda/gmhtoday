@@ -4172,6 +4172,8 @@ footer {
       padding-top: 5px; }
   footer .footer_quicklinks {
     height: 250px; }
+    footer .footer_quicklinks li {
+      display: inline; }
   footer #block-gmh-footer h2 {
     margin-bottom: 0; }
   footer #block-gmh-footer ul {

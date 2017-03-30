@@ -54,6 +54,9 @@ footer {
 	// Quicklinks
   .footer_quicklinks {
     height: 250px;
+    li {
+      display: inline;
+    }
   }
 	#block-gmh-footer {
     h2 {
